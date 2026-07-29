@@ -8,7 +8,7 @@
 - Positionierung: KI- & Transformationsberater · EU AI Act · Hamburg
 - Standort: Wentorf bei Hamburg, Deutschland
 - Verfügbarkeit: Ab sofort — Projekte und Festanstellung
-- Website: https://marco-strote.de
+- Website: https://marco-strote.vercel.app
 - E-Mail: mstrote@yahoo.de
 - LinkedIn: https://www.linkedin.com/in/marco-strote/
 
@@ -60,9 +60,9 @@
 
 ## Beiträge
 
-- [Das KI-Inventar — der unspektakulärste erste Schritt](https://marco-strote.de/blog/ki-inventar-aufbauen.html) — Praxis, 2026-06-25. Ohne Bestandsaufnahme keine Risikoklassifizierung, ohne Klassifizierung keine Compliance. Eine Anleitung, wie ein belastbares KI-Inventar entsteht — und woran es meist scheitert.
-- [Agentic AI und Artikel 14 — der ungelöste Konflikt](https://marco-strote.de/blog/agentic-ai-und-artikel-14.html) — Analyse, 2026-05-28. Der EU AI Act verlangt menschliche Aufsicht über KI-Entscheidungen. Autonome Agenten entscheiden mit Maschinengeschwindigkeit. Was Unternehmen trotzdem sicherstellen müssen.
-- [Betreiber, nicht nur Anbieter — wen der EU AI Act wirklich trifft](https://marco-strote.de/blog/betreiber-nicht-nur-anbieter.html) — Analyse, 2026-05-20. Die meisten Unternehmen glauben, der EU AI Act betreffe nur die, die KI bauen. Wer fremde KI einsetzt, ist Betreiber — und hat Pflichten. Seit Februar 2025.
+- [Das KI-Inventar — der unspektakulärste erste Schritt](https://marco-strote.vercel.app/blog/ki-inventar-aufbauen.html) — Praxis, 2026-06-25. Ohne Bestandsaufnahme keine Risikoklassifizierung, ohne Klassifizierung keine Compliance. Eine Anleitung, wie ein belastbares KI-Inventar entsteht — und woran es meist scheitert.
+- [Agentic AI und Artikel 14 — der ungelöste Konflikt](https://marco-strote.vercel.app/blog/agentic-ai-und-artikel-14.html) — Analyse, 2026-05-28. Der EU AI Act verlangt menschliche Aufsicht über KI-Entscheidungen. Autonome Agenten entscheiden mit Maschinengeschwindigkeit. Was Unternehmen trotzdem sicherstellen müssen.
+- [Betreiber, nicht nur Anbieter — wen der EU AI Act wirklich trifft](https://marco-strote.vercel.app/blog/betreiber-nicht-nur-anbieter.html) — Analyse, 2026-05-20. Die meisten Unternehmen glauben, der EU AI Act betreffe nur die, die KI bauen. Wer fremde KI einsetzt, ist Betreiber — und hat Pflichten. Seit Februar 2025.
 
 ## Häufige Fragen
 
@@ -100,11 +100,11 @@ Per E-Mail an mstrote@yahoo.de oder über LinkedIn. Ich antworte in der Regel in
 
 ## Seiten
 
-- [Startseite (Deutsch)](https://marco-strote.de/)
-- [Homepage (English)](https://marco-strote.de/en/)
-- [Lebenslauf](https://marco-strote.de/lebenslauf.html)
-- [Beiträge](https://marco-strote.de/blog/)
-- [Impressum](https://marco-strote.de/impressum.html)
-- [Datenschutz](https://marco-strote.de/datenschutz.html)
+- [Startseite (Deutsch)](https://marco-strote.vercel.app/)
+- [Homepage (English)](https://marco-strote.vercel.app/en/)
+- [Lebenslauf](https://marco-strote.vercel.app/lebenslauf.html)
+- [Beiträge](https://marco-strote.vercel.app/blog/)
+- [Impressum](https://marco-strote.vercel.app/impressum.html)
+- [Datenschutz](https://marco-strote.vercel.app/datenschutz.html)
 
 Stand: 2026-07-29

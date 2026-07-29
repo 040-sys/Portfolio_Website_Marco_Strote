@@ -3,7 +3,7 @@
   "locale": "en_US",
   "site": {
     "name": "Marco Strote",
-    "domain": "https://marco-strote.de",
+    "domain": "https://marco-strote.vercel.app",
     "basePath": "",
     "path": "/en/",
     "altPath": "/",

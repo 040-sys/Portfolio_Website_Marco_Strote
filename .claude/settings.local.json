@@ -29,7 +29,9 @@
       "mcp__claude-in-chrome__browser_batch",
       "Bash(node src/make-cv.js)",
       "Bash(git push *)",
-      "Bash(git commit -q -m 'Datumsangabe korrigiert: 2. August 2026 liegt noch in der Zukunft *)"
+      "Bash(git commit -q -m 'Datumsangabe korrigiert: 2. August 2026 liegt noch in der Zukunft *)",
+      "Bash(rm -f .github/workflows/deploy.yml)",
+      "Bash(rmdir .github/workflows .github)"
     ]
   }
 }

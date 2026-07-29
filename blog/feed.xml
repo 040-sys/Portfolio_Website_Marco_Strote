@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Beiträge — Marco Strote</title>
-    <link>https://marco-strote.de/blog/</link>
+    <link>https://marco-strote.vercel.app/blog/</link>
     <description>Fachbeiträge von Marco Strote zum EU AI Act, zu KI-Governance, Risikoklassifizierung und der praktischen Umsetzung von KI-Compliance.</description>
     <language>de</language>
-    <lastBuildDate>Wed, 29 Jul 2026 18:39:08 GMT</lastBuildDate>
-    <atom:link href="https://marco-strote.de/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Wed, 29 Jul 2026 19:01:25 GMT</lastBuildDate>
+    <atom:link href="https://marco-strote.vercel.app/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Das KI-Inventar — der unspektakulärste erste Schritt</title>
-      <link>https://marco-strote.de/blog/ki-inventar-aufbauen.html</link>
-      <guid isPermaLink="true">https://marco-strote.de/blog/ki-inventar-aufbauen.html</guid>
+      <link>https://marco-strote.vercel.app/blog/ki-inventar-aufbauen.html</link>
+      <guid isPermaLink="true">https://marco-strote.vercel.app/blog/ki-inventar-aufbauen.html</guid>
       <description>Ohne Bestandsaufnahme keine Risikoklassifizierung, ohne Klassifizierung keine Compliance. Eine Anleitung, wie ein belastbares KI-Inventar entsteht — und woran es meist scheitert.</description>
       <category>Praxis</category>
       <pubDate>Thu, 25 Jun 2026 09:00:00 GMT</pubDate>
     </item>
     <item>
       <title>Agentic AI und Artikel 14 — der ungelöste Konflikt</title>
-      <link>https://marco-strote.de/blog/agentic-ai-und-artikel-14.html</link>
-      <guid isPermaLink="true">https://marco-strote.de/blog/agentic-ai-und-artikel-14.html</guid>
+      <link>https://marco-strote.vercel.app/blog/agentic-ai-und-artikel-14.html</link>
+      <guid isPermaLink="true">https://marco-strote.vercel.app/blog/agentic-ai-und-artikel-14.html</guid>
       <description>Der EU AI Act verlangt menschliche Aufsicht über KI-Entscheidungen. Autonome Agenten entscheiden mit Maschinengeschwindigkeit. Was Unternehmen trotzdem sicherstellen müssen.</description>
       <category>Analyse</category>
       <pubDate>Thu, 28 May 2026 09:00:00 GMT</pubDate>
     </item>
     <item>
       <title>Betreiber, nicht nur Anbieter — wen der EU AI Act wirklich trifft</title>
-      <link>https://marco-strote.de/blog/betreiber-nicht-nur-anbieter.html</link>
-      <guid isPermaLink="true">https://marco-strote.de/blog/betreiber-nicht-nur-anbieter.html</guid>
+      <link>https://marco-strote.vercel.app/blog/betreiber-nicht-nur-anbieter.html</link>
+      <guid isPermaLink="true">https://marco-strote.vercel.app/blog/betreiber-nicht-nur-anbieter.html</guid>
       <description>Die meisten Unternehmen glauben, der EU AI Act betreffe nur die, die KI bauen. Wer fremde KI einsetzt, ist Betreiber — und hat Pflichten. Seit Februar 2025.</description>
       <category>Analyse</category>
       <pubDate>Wed, 20 May 2026 09:00:00 GMT</pubDate>

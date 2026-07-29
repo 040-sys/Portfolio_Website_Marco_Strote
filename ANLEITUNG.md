@@ -80,9 +80,15 @@ Richtig:
 
 ## Die Seite ist live
 
-    https://040-sys.github.io/Portfolio_Website_Marco_Strote/
+    https://marco-strote.vercel.app
 
-Repository: https://github.com/040-sys/Portfolio_Website_Marco_Strote
+| Wo | Wofür |
+|---|---|
+| https://vercel.com/mstrote-9879s-projects | Hosting — hier läuft die Seite |
+| https://github.com/040-sys/Portfolio_Website_Marco_Strote | Speicherort aller Dateien |
+
+Vercel beobachtet das Repository: Sobald dort etwas hochgeladen wird, baut es die
+Seite automatisch neu.
 
 ### Änderungen veröffentlichen
 
@@ -93,21 +99,15 @@ Minuten später ist die neue Fassung online.
 ### Eigene Domain (z. B. marco-strote.de)
 
 1. Domain bei einem Anbieter kaufen (IONOS, Strato, Namecheap — etwa 10–15 € pro Jahr)
-2. Beim Anbieter diese DNS-Einträge setzen:
+2. Bei Vercel im Projekt auf **Settings → Domains → Add** die Domain eintragen
+3. Vercel zeigt an, welche DNS-Einträge beim Domain-Anbieter zu hinterlegen sind —
+   in der Regel ein A-Eintrag auf `76.76.21.21` und ein CNAME für `www`
+4. Warten, bis Vercel „Valid Configuration" meldet. Das HTTPS-Zertifikat wird
+   automatisch ausgestellt.
 
-   | Typ | Name | Wert |
-   |---|---|---|
-   | A | @ | 185.199.108.153 |
-   | A | @ | 185.199.109.153 |
-   | A | @ | 185.199.110.153 |
-   | A | @ | 185.199.111.153 |
-   | CNAME | www | `<dein-benutzername>.github.io` |
-
-3. Auf github.com unter **Settings → Pages → Custom domain** die Domain eintragen
-4. Haken bei **Enforce HTTPS** setzen (kann bis zu 24 Stunden dauern)
-
-Sag mir Bescheid, sobald die Domain steht — ich passe die Adressangaben in der
-Website an, damit Google und die KI-Suchmaschinen die richtige Adresse sehen.
+**Danach ist nichts weiter zu tun.** Die Website liest ihre eigene Adresse aus
+Vercel aus — Verweise, Sitemap und die Angaben für Google stellen sich von selbst
+auf die neue Domain um.
 
 ---
 

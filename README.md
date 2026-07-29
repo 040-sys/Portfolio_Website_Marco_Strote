@@ -111,6 +111,21 @@ Datenschutzerklärung liegen in beiden Sprachen vor.
 
 ## Veröffentlichung
 
-Push auf `main` löst `.github/workflows/deploy.yml` aus: Die Seite wird gebaut
-und auf GitHub Pages veröffentlicht. Einmalig muss unter *Settings → Pages* als
-Quelle **GitHub Actions** gewählt werden.
+Gehostet bei Vercel: **https://marco-strote.vercel.app**
+
+Ein Push auf `main` löst dort automatisch einen neuen Build aus. Die Steuerung
+liegt in `vercel.json`:
+
+- `buildCommand` ist `node src/build.js`, `installCommand` ist bewusst leer —
+  der Seitenbau braucht keine Pakete
+- Sicherheits-Header, Zwischenspeicher-Regeln und Kurzadressen
+  (`/lebenslauf`, `/impressum`, `/feed`)
+
+Die Adresse kommt zur Bauzeit aus `VERCEL_PROJECT_PRODUCTION_URL`. Wird später
+eine eigene Domain verbunden, stellen sich `canonical`, Sitemap und `llms.txt`
+ohne Zutun darauf um.
+
+**Vorschau-Bereitstellungen** (jeder Branch, jeder Pull Request) erhalten
+`noindex` und ein sperrendes `robots.txt`, erkennbar an `VERCEL_ENV !== 'production'`.
+Ohne das würden Zwischenstände unter wechselnden Adressen mit der echten Seite um
+den Suchindex konkurrieren.

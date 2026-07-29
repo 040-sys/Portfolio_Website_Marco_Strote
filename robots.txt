@@ -64,4 +64,4 @@ Allow: /
 User-agent: Diffbot
 Allow: /
 
-Sitemap: https://marco-strote.de/sitemap.xml
+Sitemap: https://marco-strote.vercel.app/sitemap.xml
