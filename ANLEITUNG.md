@@ -78,17 +78,17 @@ Richtig:
 
 ---
 
-## Live schalten
+## Die Seite ist live
 
-Die Website liegt auf GitHub und wird über **GitHub Pages** veröffentlicht. Nach
-dem ersten Einrichten passiert alles automatisch: Sobald eine Änderung
-hochgeladen wird, ist die Seite ein bis zwei Minuten später online.
+    https://040-sys.github.io/Portfolio_Website_Marco_Strote/
 
-### Einmalig einrichten
+Repository: https://github.com/040-sys/Portfolio_Website_Marco_Strote
 
-1. Auf github.com im Repository **Settings → Pages** öffnen
-2. Bei „Source" **GitHub Actions** auswählen
-3. Fertig — die Seite läuft unter `https://<dein-benutzername>.github.io/Portfolio_Website_Marco_Strote/`
+### Änderungen veröffentlichen
+
+Doppelklick auf **`aenderungen-hochladen.cmd`**. Das Skript baut Website und
+Lebenslauf neu, lädt alles hoch und stößt die Veröffentlichung an. Ein bis zwei
+Minuten später ist die neue Fassung online.
 
 ### Eigene Domain (z. B. marco-strote.de)
 

@@ -27,7 +27,8 @@
       "mcp__claude-in-chrome__navigate",
       "mcp__claude-in-chrome__get_page_text",
       "mcp__claude-in-chrome__browser_batch",
-      "Bash(node src/make-cv.js)"
+      "Bash(node src/make-cv.js)",
+      "Bash(git push *)"
     ]
   }
 }
