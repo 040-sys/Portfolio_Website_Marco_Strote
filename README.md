@@ -24,13 +24,31 @@ content/en.json  ─┘                      impressum.html, datenschutz.html,
 
 | Befehl | Wirkung |
 |---|---|
-| `npm run build` | Seite aus den JSON-Dateien erzeugen |
+| `npm run build` | Seiten aus den JSON-Dateien erzeugen |
 | `npm start` | Vorschau-Server auf http://localhost:4173 |
 | `npm run dev` | beides nacheinander |
-| `npm run images` | OG-Vorschaubild und Touch-Icon neu erzeugen (braucht `sharp`) |
+| `npm run images` | Porträt-Varianten, OG-Vorschaubild und Touch-Icon (braucht `sharp`) |
+| `npm run cv` | Lebenslauf-PDF in beiden Sprachen (braucht `puppeteer`) |
 
-`npm run build` und `npm start` laufen ohne installierte Pakete. `sharp` wird
-ausschließlich für die Rastergrafiken gebraucht.
+`npm run build` und `npm start` laufen ohne installierte Pakete. `sharp` und
+`puppeteer` werden ausschließlich zur Erzeugung von Bildern und PDF gebraucht;
+die Ergebnisse liegen im Repository, damit der Deploy ohne sie auskommt.
+
+## Lebenslauf
+
+`lebenslauf.html` und `en/cv.html` werden aus denselben Inhaltsdaten gerendert
+wie die Website — es gibt keine zweite Datenquelle, die auseinanderlaufen
+könnte. `src/make-cv.js` startet einen kurzlebigen lokalen Server, rendert
+beide Seiten mit Chromium und schreibt daraus:
+
+```
+assets/files/Lebenslauf-Marco-Strote.pdf
+assets/files/CV-Marco-Strote.pdf
+```
+
+Das PDF entsteht aus demselben Stylesheet wie die Bildschirmansicht und sieht
+deshalb identisch aus. Der Download-Button auf der Startseite erscheint nur,
+wenn die jeweilige Datei tatsächlich vorhanden ist.
 
 ## Seitenstruktur
 

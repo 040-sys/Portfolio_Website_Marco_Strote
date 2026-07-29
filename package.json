@@ -6,10 +6,12 @@
   "scripts": {
     "build": "node src/build.js",
     "images": "node src/make-images.js",
+    "cv": "node src/build.js && node src/make-cv.js",
     "start": "node src/serve.js",
     "dev": "node src/build.js && node src/serve.js"
   },
   "devDependencies": {
+    "puppeteer": "^25.4.0",
     "sharp": "^0.33.5"
   },
   "engines": {

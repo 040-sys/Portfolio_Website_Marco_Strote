@@ -1,0 +1,364 @@
+/* ==========================================================================
+   Lebenslauf — gleiche Designsprache wie die Website, für A4 gebaut.
+   Am Bildschirm liegt das Dokument als Blatt auf grauem Grund,
+   beim Drucken bzw. als PDF wird daraus eine randlose A4-Seite.
+   ========================================================================== */
+
+:root {
+  --bg:          #ffffff;
+  --paper-bg:    #e8e4dc;
+  --ink:         #14130f;
+  --ink-soft:    #3d3931;
+  --muted:       #6e6a61;
+  --line:        #ded8cc;
+  --line-strong: #c3bcae;
+  --accent:      #a84d24;
+
+  --font-serif: ui-serif, Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+  --font-sans:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono:  ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  --page-w: 210mm;
+  --page-pad-x: 16mm;
+  --page-pad-y: 14mm;
+  --date-col: 33mm;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper-bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 9.2pt;
+  line-height: 1.48;
+  -webkit-font-smoothing: antialiased;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+.page {
+  width: var(--page-w);
+  min-height: 297mm;
+  margin: 8mm auto;
+  padding: var(--page-pad-y) var(--page-pad-x);
+  background: var(--bg);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.14);
+}
+
+/* --- Kopfbereich ---------------------------------------------------------- */
+
+.cv-head {
+  display: grid;
+  grid-template-columns: 1fr 26mm;
+  gap: 8mm;
+  align-items: start;
+  padding-bottom: 6mm;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.cv-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 7pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cv-name {
+  font-family: var(--font-serif);
+  font-size: 30pt;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  margin-top: 1.5mm;
+}
+
+.cv-role {
+  font-family: var(--font-serif);
+  font-size: 12pt;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--accent);
+  margin-top: 2.5mm;
+}
+
+.cv-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5mm 5mm;
+  margin-top: 5mm;
+  font-size: 8.6pt;
+}
+.cv-contact div { display: flex; gap: 2mm; }
+.cv-contact dt {
+  font-family: var(--font-mono);
+  font-size: 6.8pt;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 0.6mm;
+  flex: none;
+  width: 21mm;
+}
+.cv-contact dd { color: var(--ink-soft); }
+
+.cv-photo img {
+  width: 26mm;
+  height: 32.5mm;
+  object-fit: cover;
+  border-radius: 1mm;
+}
+
+/* --- Abschnitte ----------------------------------------------------------- */
+
+.cv-section { padding-top: 4.4mm; break-inside: auto; }
+.cv-section + .cv-section { border-top: 1px solid var(--line); margin-top: 4.4mm; }
+
+.cv-section > h2 {
+  font-family: var(--font-mono);
+  font-size: 7.4pt;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 3.2mm;
+  break-after: avoid;
+}
+
+.cv-profile {
+  font-size: 9.2pt;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 165mm;
+}
+
+/* --- Kompetenzen ---------------------------------------------------------- */
+
+.cv-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2mm 10mm;
+}
+.cv-skill-group { break-inside: avoid; }
+.cv-skill-group h3 {
+  font-size: 9pt;
+  font-weight: 600;
+  margin-bottom: 1.2mm;
+}
+.cv-skill-group p {
+  font-size: 8.4pt;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+/* --- Werdegang ------------------------------------------------------------ */
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: var(--date-col) 1fr;
+  gap: 0 6mm;
+  padding-bottom: 3.8mm;
+  break-inside: avoid;
+}
+.cv-entry:last-child { padding-bottom: 0; }
+
+/* Ältere Stationen ohne Detailpunkte: gleiche Struktur, weniger Raum */
+.cv-entry.is-compact { padding-bottom: 2.8mm; }
+.cv-entry.is-compact h3 { font-size: 10.5pt; }
+.cv-entry.is-compact .cv-summary { margin-top: 0.9mm; font-size: 8.3pt; line-height: 1.42; }
+
+.cv-period {
+  font-family: var(--font-mono);
+  font-size: 7.6pt;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  padding-top: 0.9mm;
+}
+
+.cv-entry h3 {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.cv-org {
+  font-size: 8.8pt;
+  color: var(--accent);
+  margin-top: 0.6mm;
+}
+.cv-org span { color: var(--muted); }
+
+.cv-entry .cv-summary {
+  font-size: 8.5pt;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  margin-top: 1.3mm;
+  max-width: 160mm;
+}
+
+.cv-highlights { margin-top: 1.3mm; display: grid; gap: 0.7mm; }
+.cv-highlights li {
+  position: relative;
+  padding-left: 4mm;
+  font-size: 8.3pt;
+  line-height: 1.42;
+  color: var(--muted);
+}
+.cv-highlights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.75mm;
+  width: 2.2mm;
+  height: 0.5pt;
+  background: var(--line-strong);
+}
+
+/* --- Zertifizierungen ----------------------------------------------------- */
+
+.cv-cert-group { break-inside: avoid; margin-bottom: 3.5mm; }
+.cv-cert-group:last-child { margin-bottom: 0; }
+.cv-cert-group h3 {
+  font-size: 8.4pt;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 1.4mm;
+  padding-bottom: 1mm;
+  border-bottom: 1px solid var(--line);
+}
+.cv-certs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8mm 8mm; }
+.cv-certs li {
+  display: flex;
+  justify-content: space-between;
+  gap: 3mm;
+  font-size: 8.3pt;
+  line-height: 1.38;
+}
+.cv-certs b { font-weight: 400; color: var(--ink-soft); }
+.cv-certs time {
+  font-family: var(--font-mono);
+  font-size: 7.4pt;
+  color: var(--muted);
+  white-space: nowrap;
+  padding-top: 0.4mm;
+}
+
+/* --- Ausbildung und Sprachen --------------------------------------------- */
+
+.cv-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10mm;
+  break-inside: avoid;
+}
+.cv-two-col > section > h2 {
+  font-family: var(--font-mono);
+  font-size: 7.4pt;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 3mm;
+}
+/* Eigene, schmalere Datumsspalte — in der halbbreiten Spalte bliebe für den
+   Abschluss sonst zu wenig Platz. */
+.cv-simple li {
+  display: grid;
+  grid-template-columns: 21mm 1fr;
+  gap: 0 4mm;
+  padding-bottom: 2mm;
+}
+.cv-simple .cv-period { font-size: 7.2pt; }
+.cv-simple .cv-period { padding-top: 0.3mm; }
+.cv-simple strong { font-size: 9pt; font-weight: 600; display: block; }
+.cv-simple span { font-size: 8.6pt; color: var(--muted); }
+
+.cv-languages li {
+  display: flex;
+  justify-content: space-between;
+  gap: 4mm;
+  padding-bottom: 1.4mm;
+  font-size: 8.9pt;
+  border-bottom: 1px solid var(--line);
+  max-width: 70mm;
+  margin-bottom: 1.4mm;
+}
+.cv-languages strong { font-weight: 600; }
+.cv-languages span { color: var(--muted); }
+
+/* --- Fuß ------------------------------------------------------------------ */
+
+.cv-foot {
+  margin-top: 6mm;
+  padding-top: 3mm;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 6mm;
+  font-family: var(--font-mono);
+  font-size: 7pt;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.cv-foot a { color: var(--accent); }
+
+/* Nur am Bildschirm: Hinweisleiste mit Druck-Schaltfläche */
+.cv-hint {
+  width: var(--page-w);
+  margin: 8mm auto -4mm;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4mm;
+  padding: 3mm 5mm;
+  background: var(--ink);
+  color: #f7f5f1;
+  border-radius: 1mm;
+  font-size: 9pt;
+}
+.cv-hint button {
+  font: inherit;
+  font-weight: 600;
+  color: var(--ink);
+  background: #f7f5f1;
+  border: 0;
+  border-radius: 1mm;
+  padding: 2mm 4mm;
+  cursor: pointer;
+}
+.cv-hint a { color: #d9d4c9; text-decoration: underline; }
+
+/* --- Druck / PDF ---------------------------------------------------------- */
+
+@page {
+  size: A4;
+  margin: 11mm 0 11mm 0;
+}
+
+@media print {
+  body { background: #fff; }
+  .page {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0 var(--page-pad-x);
+    box-shadow: none;
+  }
+  .cv-hint { display: none; }
+  .cv-section { break-inside: auto; }
+  .cv-entry, .cv-skill-group, .cv-cert-group, .cv-two-col { break-inside: avoid; }
+  .cv-section > h2 { break-after: avoid; }
+  a { color: inherit; }
+  .cv-foot a { color: var(--accent); }
+}

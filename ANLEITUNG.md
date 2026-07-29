@@ -18,15 +18,32 @@ Inhalte**. Auf der Website siehst du sie als **orange markierte Felder**.
 
 | Was | Wohin | Warum |
 |---|---|---|
-| **Lebenslauf-Text** (Stationen, Zertifikate, Ausbildung) | einfach im Chat schicken | füllt Erfahrung, Qualifikationen, Über mich |
-| **Porträtfoto** | `assets/img/portrait.jpg`, hochkant, mind. 800 × 1000 Pixel | Hero-Bereich |
-| **Lebenslauf als PDF** | `assets/files/Lebenslauf-Marco-Strote.pdf` | Download-Button |
-| **Deine Postanschrift** | im Chat schicken | Impressum — in Deutschland gesetzlich vorgeschrieben |
+| **Ergebniszahlen zu zwei Projekten** | im Chat schicken | Abschnitt „Projekte" — Zahlen unterscheiden eine Case Study von einer Tätigkeitsbeschreibung |
 | **2–3 Empfehlungen** | im Chat schicken | Abschnitt „Stimmen" |
 
 > **Zum Download-Button:** Solange keine PDF-Datei vorhanden ist, wird der Button
 > automatisch ausgeblendet. Ein Button, der ins Leere führt, wirkt bei Recruitern
 > schlechter als gar kein Button.
+
+---
+
+## Der Lebenslauf
+
+Der Lebenslauf wird **aus denselben Daten erzeugt wie die Website**. Du pflegst
+also nichts doppelt: Sobald sich in `content/de.json` etwas ändert, ändert sich
+auch der Lebenslauf.
+
+Es gibt ihn in drei Formen:
+
+| Form | Wo |
+|---|---|
+| Als Webseite | `lebenslauf.html` (englisch: `en/cv.html`) |
+| Als PDF zum Herunterladen | `assets/files/Lebenslauf-Marco-Strote.pdf` |
+| Als Download-Button | auf der Startseite, oben und im Kontaktbereich |
+
+**Nach einer inhaltlichen Änderung** genügt ein Doppelklick auf
+**`lebenslauf-erstellen.cmd`** — dann werden Website und PDF gemeinsam neu
+erzeugt.
 
 ---
 

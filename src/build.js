@@ -6,6 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const { renderHome, renderLegal, clean, isPlaceholder } = require('./template');
+const { renderCv } = require('./cv-template');
 
 const ROOT = path.join(__dirname, '..');
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
@@ -63,6 +64,9 @@ const written = [];
 written.push(write('index.html', renderHome(de)));
 written.push(write('en/index.html', renderHome(en)));
 
+written.push(write('lebenslauf.html', renderCv(de)));
+written.push(write('en/cv.html', renderCv(en)));
+
 written.push(
   write('impressum.html', renderLegal(de, 'imprint', { self: '/impressum.html', alt: '/en/imprint.html', de: '/impressum.html', en: '/en/imprint.html' }))
 );
@@ -110,6 +114,8 @@ Sitemap: ${DOMAIN}/sitemap.xml
 const pages = [
   { loc: '/', de: '/', en: '/en/', priority: '1.0', changefreq: 'monthly' },
   { loc: '/en/', de: '/', en: '/en/', priority: '0.9', changefreq: 'monthly' },
+  { loc: '/lebenslauf.html', de: '/lebenslauf.html', en: '/en/cv.html', priority: '0.8', changefreq: 'monthly' },
+  { loc: '/en/cv.html', de: '/lebenslauf.html', en: '/en/cv.html', priority: '0.7', changefreq: 'monthly' },
   { loc: '/impressum.html', de: '/impressum.html', en: '/en/imprint.html', priority: '0.2', changefreq: 'yearly' },
   { loc: '/datenschutz.html', de: '/datenschutz.html', en: '/en/privacy.html', priority: '0.2', changefreq: 'yearly' },
   { loc: '/en/imprint.html', de: '/impressum.html', en: '/en/imprint.html', priority: '0.2', changefreq: 'yearly' },

@@ -345,6 +345,31 @@
     "availability": "Immediately — projects and permanent roles",
     "cvCta": { "href": "/assets/files/CV-Marco-Strote.pdf", "label": "CV as PDF" }
   },
+  "cv": {
+    "fileName": "CV-Marco-Strote.pdf",
+    "docTitle": "Curriculum Vitae",
+    "profileTitle": "Profile",
+    "profile": "AI and transformation consultant focused on the EU AI Act. More than fifteen years at the intersection of market, business and delivery — first in B2B sales of digital and regulatory solutions, complemented since 2020 by thirteen certifications in project management, business analysis, agile methods and IT strategy. Today I help organisations adopt AI in a compliant way and with measurable results.",
+    "skillsTitle": "Skills",
+    "experienceTitle": "Professional experience",
+    "certificationsTitle": "Certifications",
+    "educationTitle": "Education",
+    "languagesTitle": "Languages",
+    "languages": [
+      { "name": "German", "level": "Native" },
+      { "name": "English", "level": "Full professional proficiency" }
+    ],
+    "labels": {
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "location": "Location",
+      "availability": "Availability",
+      "web": "Website",
+      "issuedBy": "issued by"
+    },
+    "footNote": "As of July 2026",
+    "backLink": "To the website"
+  },
   "footer": {
     "tagline": "AI & Transformation Consultant · EU AI Act · Hamburg",
     "links": [

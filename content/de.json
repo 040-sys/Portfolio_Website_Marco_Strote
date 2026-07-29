@@ -345,6 +345,31 @@
     "availability": "Ab sofort — Projekte und Festanstellung",
     "cvCta": { "href": "/assets/files/Lebenslauf-Marco-Strote.pdf", "label": "Lebenslauf als PDF" }
   },
+  "cv": {
+    "fileName": "Lebenslauf-Marco-Strote.pdf",
+    "docTitle": "Lebenslauf",
+    "profileTitle": "Kurzprofil",
+    "profile": "KI- und Transformationsberater mit Schwerpunkt EU AI Act. Über 15 Jahre Erfahrung an der Schnittstelle von Markt, Fachbereich und Umsetzung — zunächst im B2B-Vertrieb digitaler und regulatorischer Lösungen, seit 2020 ergänzt um dreizehn Zertifizierungen in Projektmanagement, Business Analyse, agilen Methoden und IT-Strategie. Heute begleite ich Unternehmen dabei, KI regulatorisch sauber und mit messbarem Ergebnis einzusetzen.",
+    "skillsTitle": "Kompetenzen",
+    "experienceTitle": "Beruflicher Werdegang",
+    "certificationsTitle": "Zertifizierungen",
+    "educationTitle": "Ausbildung",
+    "languagesTitle": "Sprachen",
+    "languages": [
+      { "name": "Deutsch", "level": "Muttersprache" },
+      { "name": "Englisch", "level": "Verhandlungssicher" }
+    ],
+    "labels": {
+      "email": "E-Mail",
+      "linkedin": "LinkedIn",
+      "location": "Standort",
+      "availability": "Verfügbarkeit",
+      "web": "Website",
+      "issuedBy": "ausgestellt von"
+    },
+    "footNote": "Stand: Juli 2026",
+    "backLink": "Zur Website"
+  },
   "footer": {
     "tagline": "KI- & Transformationsberater · EU AI Act · Hamburg",
     "links": [

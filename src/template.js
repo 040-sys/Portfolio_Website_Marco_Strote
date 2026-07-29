@@ -702,4 +702,4 @@ function linkify(html) {
   return html.replace(/(https?:\/\/[^\s<]+[^\s<.,;:)])/g, '<a href="$1" rel="noopener noreferrer" target="_blank">$1</a>');
 }
 
-module.exports = { renderHome, renderLegal, clean, isPlaceholder, esc };
+module.exports = { renderHome, renderLegal, clean, isPlaceholder, esc, t, ta, u, abs, jsonLd };
