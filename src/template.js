@@ -312,20 +312,13 @@ function certSection(c) {
 </section>`;
 }
 
-function experienceSection(c) {
-  const s = c.experience;
-  return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
-  <div class="wrap">
-    <div class="section-head" data-reveal>
-      <span class="eyebrow">${t(s.eyebrow)}</span>
-      <h2 id="${esc(s.id)}-title">${t(s.title)}</h2>
-      <p class="lead">${t(s.lead)}</p>
-    </div>
-
-    <ol class="timeline">
-      ${s.items
-        .map(
-          (it) => `<li class="tl-item" data-reveal>
+/* Timeline. Die jüngsten Stationen stehen offen, ältere liegen hinter einem
+   Aufklapper — sie bleiben aber im Quelltext und damit für Suchmaschinen und
+   KI-Assistenten lesbar. Verborgene Einträge bekommen bewusst kein
+   data-reveal: Ihre Einblend-Animation würde nie ausgelöst, weil sie beim
+   Laden nicht sichtbar sind. */
+function timeline(s) {
+  const item = (it, reveal) => `<li class="tl-item"${reveal ? ' data-reveal' : ''}>
         <p class="tl-period">${t(it.period)}</p>
         <div class="tl-body">
           <h3>${t(it.role)}</h3>
@@ -339,10 +332,40 @@ function experienceSection(c) {
               : ''
           }
         </div>
-      </li>`
-        )
-        .join('\n      ')}
-    </ol>
+      </li>`;
+
+  const visible = s.visibleEntries || s.items.length;
+  const shown = s.items.slice(0, visible);
+  const hidden = s.items.slice(visible);
+
+  return `<div class="timeline-wrap">
+      <ol class="timeline">
+        ${shown.map((it) => item(it, true)).join('\n        ')}
+      </ol>
+      ${
+        hidden.length
+          ? `<details class="tl-more">
+        <summary>${esc((s.moreLabel || '+ {n}').replace('{n}', hidden.length))}</summary>
+        <ol class="timeline" start="${visible + 1}">
+          ${hidden.map((it) => item(it, false)).join('\n          ')}
+        </ol>
+      </details>`
+          : ''
+      }
+    </div>`;
+}
+
+function experienceSection(c) {
+  const s = c.experience;
+  return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">${t(s.eyebrow)}</span>
+      <h2 id="${esc(s.id)}-title">${t(s.title)}</h2>
+      <p class="lead">${t(s.lead)}</p>
+    </div>
+
+    ${timeline(s)}
 
     ${
       s.education && s.education.items.length

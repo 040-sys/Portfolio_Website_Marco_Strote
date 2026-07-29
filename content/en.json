@@ -100,6 +100,8 @@
     "eyebrow": "03 — Experience",
     "title": "Career",
     "lead": "More than fifteen years at the intersection of market, technology and delivery.",
+    "visibleEntries": 3,
+    "moreLabel": "+ {n} earlier positions",
     "items": [
       {
         "period": "July 2025 — present",

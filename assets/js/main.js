@@ -117,7 +117,15 @@
     track.setAttribute('aria-hidden', 'true');
   }
 
-  /* --- 8. Jahreszahl im Footer ----------------------------------------- */
+  /* --- 8. Vor dem Drucken alles aufklappen ------------------------------
+     Auf Papier kann niemand einen Aufklapper öffnen — was zugeklappt bliebe,
+     wäre für den Leser schlicht verloren. */
+  window.addEventListener('beforeprint', function () {
+    document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+    document.querySelectorAll('.faq-item').forEach(function (i) { i.classList.add('is-open'); });
+  });
+
+  /* --- 9. Jahreszahl im Footer ----------------------------------------- */
   document.querySelectorAll('[data-current-year]').forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
   });
