@@ -1,0 +1,308 @@
+{
+  "lang": "en",
+  "locale": "en_US",
+  "site": {
+    "name": "Marco Strote",
+    "domain": "https://marco-strote.de",
+    "path": "/en/",
+    "altPath": "/",
+    "altLang": "de",
+    "altLabel": "DE",
+    "altTitle": "Zur deutschen Version wechseln"
+  },
+  "meta": {
+    "title": "Marco Strote — Consultant & Product Owner | Portfolio",
+    "description": "[[PLACEHOLDER: positioning in 155 characters]] Marco Strote combines consulting perspective with product ownership: strategy, delivery and measurable outcomes. Location and availability at a glance.",
+    "keywords": "Marco Strote, consultant, product owner, product manager, portfolio, CV, resume",
+    "ogImage": "/assets/img/og-image.png",
+    "ogImageAlt": "Marco Strote — Consultant and Product Owner"
+  },
+  "nav": {
+    "skipToContent": "Skip to content",
+    "menuLabel": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "items": [
+      { "href": "#skills", "label": "Skills" },
+      { "href": "#credentials", "label": "Credentials" },
+      { "href": "#experience", "label": "Experience" },
+      { "href": "#about", "label": "About" },
+      { "href": "#work", "label": "Work" },
+      { "href": "#faq", "label": "FAQ" }
+    ],
+    "cta": { "href": "#contact", "label": "Contact" }
+  },
+  "hero": {
+    "eyebrow": "Portfolio",
+    "name": "Marco Strote",
+    "headline": "[[PLACEHOLDER: positioning in one sentence]] I combine a consultant's perspective with product ownership — from strategy through to delivery.",
+    "intro": "[[PLACEHOLDER: 2 sentences of context]] As a consultant I work out what a business actually needs. As a product owner I make sure it gets built and shipped.",
+    "facts": [
+      { "label": "Location", "value": "[[PLACEHOLDER: city]], Germany" },
+      { "label": "Availability", "value": "[[PLACEHOLDER: e.g. immediately / Q4 2026]]" },
+      { "label": "Work setup", "value": "[[PLACEHOLDER: remote / hybrid / on-site]]" }
+    ],
+    "primaryCta": { "href": "#contact", "label": "Get in touch" },
+    "secondaryCta": { "href": "/assets/files/CV-Marco-Strote.pdf", "label": "Download CV" },
+    "portraitSrc": "/assets/img/portrait.svg",
+    "portraitAlt": "Portrait photo of Marco Strote",
+    "scrollHint": "Scroll down"
+  },
+  "skills": {
+    "id": "skills",
+    "eyebrow": "01 — Skills",
+    "title": "Where I am strong",
+    "lead": "Scannable in three seconds: the areas I work in every day.",
+    "groups": [
+      {
+        "title": "Consulting & Strategy",
+        "tags": ["[[PLACEHOLDER]] Requirements analysis", "Process design", "Stakeholder management", "Workshop facilitation", "Business case", "Change support"]
+      },
+      {
+        "title": "Product & Delivery",
+        "tags": ["[[PLACEHOLDER]] Product ownership", "Roadmapping", "Backlog management", "Scrum / Kanban", "Discovery", "Go-to-market"]
+      },
+      {
+        "title": "Data & Technology",
+        "tags": ["[[PLACEHOLDER]] Data analysis", "AI use cases", "Interfaces / API", "Automation", "Reporting", "Tool selection"]
+      },
+      {
+        "title": "Leadership & Collaboration",
+        "tags": ["[[PLACEHOLDER]] Functional leadership", "Cross-functional teams", "Coaching", "Communication", "Conflict resolution", "Remote collaboration"]
+      }
+    ]
+  },
+  "certifications": {
+    "id": "credentials",
+    "eyebrow": "02 — Credentials",
+    "title": "Certifications",
+    "lead": "Nine certifications — verified, not claimed.",
+    "items": [
+      { "name": "[[PLACEHOLDER: certificate 1]]", "issuer": "Issuer", "year": "2025", "category": "Product" },
+      { "name": "[[PLACEHOLDER: certificate 2]]", "issuer": "Issuer", "year": "2025", "category": "Product" },
+      { "name": "[[PLACEHOLDER: certificate 3]]", "issuer": "Issuer", "year": "2024", "category": "Project" },
+      { "name": "[[PLACEHOLDER: certificate 4]]", "issuer": "Issuer", "year": "2024", "category": "Project" },
+      { "name": "[[PLACEHOLDER: certificate 5]]", "issuer": "Issuer", "year": "2023", "category": "Method" },
+      { "name": "[[PLACEHOLDER: certificate 6]]", "issuer": "Issuer", "year": "2023", "category": "Method" },
+      { "name": "[[PLACEHOLDER: certificate 7]]", "issuer": "Issuer", "year": "2022", "category": "Technology" },
+      { "name": "[[PLACEHOLDER: certificate 8]]", "issuer": "Issuer", "year": "2022", "category": "Technology" },
+      { "name": "[[PLACEHOLDER: certificate 9]]", "issuer": "Issuer", "year": "2021", "category": "Technology" }
+    ]
+  },
+  "experience": {
+    "id": "experience",
+    "eyebrow": "03 — Experience",
+    "title": "Career",
+    "lead": "Chronological, with the outcomes that matter.",
+    "items": [
+      {
+        "period": "[[PLACEHOLDER: 2023 — present]]",
+        "role": "[[PLACEHOLDER: role]]",
+        "company": "[[PLACEHOLDER: company]]",
+        "location": "[[PLACEHOLDER: location]]",
+        "summary": "[[PLACEHOLDER: 1–2 sentences on what the role covers.]]",
+        "highlights": [
+          "[[PLACEHOLDER: outcome with a number]]",
+          "[[PLACEHOLDER: scope of responsibility]]",
+          "[[PLACEHOLDER: notable project]]"
+        ]
+      },
+      {
+        "period": "[[PLACEHOLDER: 2020 — 2023]]",
+        "role": "[[PLACEHOLDER: role]]",
+        "company": "[[PLACEHOLDER: company]]",
+        "location": "[[PLACEHOLDER: location]]",
+        "summary": "[[PLACEHOLDER: 1–2 sentences.]]",
+        "highlights": ["[[PLACEHOLDER]]", "[[PLACEHOLDER]]"]
+      },
+      {
+        "period": "[[PLACEHOLDER: 2017 — 2020]]",
+        "role": "[[PLACEHOLDER: role]]",
+        "company": "[[PLACEHOLDER: company]]",
+        "location": "[[PLACEHOLDER: location]]",
+        "summary": "[[PLACEHOLDER: 1–2 sentences.]]",
+        "highlights": ["[[PLACEHOLDER]]", "[[PLACEHOLDER]]"]
+      }
+    ],
+    "education": {
+      "title": "Education",
+      "items": [
+        { "period": "[[PLACEHOLDER: year]]", "degree": "[[PLACEHOLDER: degree]]", "institution": "[[PLACEHOLDER: institution]]" }
+      ]
+    }
+  },
+  "about": {
+    "id": "about",
+    "eyebrow": "04 — About",
+    "title": "Two perspectives, one outcome",
+    "pullquote": "[[PLACEHOLDER: a sharp guiding sentence]] Consulting without delivery stays on paper. Delivery without consulting stays busywork.",
+    "paragraphs": [
+      "[[PLACEHOLDER: paragraph 1 — background and path.]] I have spent several years working at the intersection of business, technology and management.",
+      "[[PLACEHOLDER: paragraph 2 — the consulting perspective.]] As a consultant I start with the question of which problem actually needs solving.",
+      "[[PLACEHOLDER: paragraph 3 — the product perspective.]] As a product owner I carry the consequences of those decisions all the way into delivery.",
+      "[[PLACEHOLDER: paragraph 4 — what drives me.]] I am drawn to work where structure and people matter in equal measure."
+    ],
+    "principles": [
+      { "title": "[[PLACEHOLDER]] Clarity before speed", "text": "A properly understood problem saves more time than any shortcut." },
+      { "title": "[[PLACEHOLDER]] Outcome before method", "text": "Frameworks are tools, not the point." },
+      { "title": "[[PLACEHOLDER]] Close to the user", "text": "Decisions belong where the product is actually used." }
+    ]
+  },
+  "projects": {
+    "id": "work",
+    "eyebrow": "05 — Work",
+    "title": "Selected projects",
+    "lead": "Evidence rather than assertion — situation, approach, result.",
+    "items": [
+      {
+        "title": "[[PLACEHOLDER: project title]]",
+        "client": "[[PLACEHOLDER: industry or client]]",
+        "year": "[[PLACEHOLDER: 2025]]",
+        "role": "[[PLACEHOLDER: your role]]",
+        "challenge": "[[PLACEHOLDER: what problem existed?]]",
+        "approach": "[[PLACEHOLDER: what did you actually do?]]",
+        "result": "[[PLACEHOLDER: what measurable result came out?]]",
+        "tags": ["[[PLACEHOLDER]]", "[[PLACEHOLDER]]"]
+      },
+      {
+        "title": "[[PLACEHOLDER: project title]]",
+        "client": "[[PLACEHOLDER: industry or client]]",
+        "year": "[[PLACEHOLDER: 2024]]",
+        "role": "[[PLACEHOLDER: your role]]",
+        "challenge": "[[PLACEHOLDER]]",
+        "approach": "[[PLACEHOLDER]]",
+        "result": "[[PLACEHOLDER]]",
+        "tags": ["[[PLACEHOLDER]]", "[[PLACEHOLDER]]"]
+      },
+      {
+        "title": "[[PLACEHOLDER: project title]]",
+        "client": "[[PLACEHOLDER: industry or client]]",
+        "year": "[[PLACEHOLDER: 2023]]",
+        "role": "[[PLACEHOLDER: your role]]",
+        "challenge": "[[PLACEHOLDER]]",
+        "approach": "[[PLACEHOLDER]]",
+        "result": "[[PLACEHOLDER]]",
+        "tags": ["[[PLACEHOLDER]]", "[[PLACEHOLDER]]"]
+      }
+    ]
+  },
+  "testimonials": {
+    "id": "testimonials",
+    "eyebrow": "06 — Testimonials",
+    "title": "What others say",
+    "lead": "Recommendations from people I have worked with.",
+    "items": [
+      {
+        "quote": "[[PLACEHOLDER: quote from a LinkedIn recommendation or reference letter.]]",
+        "author": "[[PLACEHOLDER: name]]",
+        "role": "[[PLACEHOLDER: role]]",
+        "company": "[[PLACEHOLDER: company]]"
+      },
+      {
+        "quote": "[[PLACEHOLDER: quote.]]",
+        "author": "[[PLACEHOLDER: name]]",
+        "role": "[[PLACEHOLDER: role]]",
+        "company": "[[PLACEHOLDER: company]]"
+      },
+      {
+        "quote": "[[PLACEHOLDER: quote.]]",
+        "author": "[[PLACEHOLDER: name]]",
+        "role": "[[PLACEHOLDER: role]]",
+        "company": "[[PLACEHOLDER: company]]"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq",
+    "eyebrow": "07 — FAQ",
+    "title": "Answered directly",
+    "lead": "The questions recruiters ask in a first call anyway.",
+    "items": [
+      {
+        "q": "What role am I looking for?",
+        "a": "[[PLACEHOLDER: name concrete titles, e.g. Senior Product Owner, Business Consultant. Give 2–3 titles and the scope of responsibility.]]"
+      },
+      {
+        "q": "Why a change?",
+        "a": "[[PLACEHOLDER: factual and positive — what you want to shape next, not what bothers you about your current employer.]]"
+      },
+      {
+        "q": "When am I available?",
+        "a": "[[PLACEHOLDER: notice period and earliest possible start date.]]"
+      },
+      {
+        "q": "Remote, hybrid or on-site?",
+        "a": "[[PLACEHOLDER: preference plus travel willingness in percent and catchment area.]]"
+      },
+      {
+        "q": "Which industries have I worked in?",
+        "a": "[[PLACEHOLDER: list industries with rough years each.]]"
+      },
+      {
+        "q": "How do I prefer to work?",
+        "a": "[[PLACEHOLDER: working style, team size, methodology, expectations around decision-making.]]"
+      },
+      {
+        "q": "What is my salary range?",
+        "a": "[[PLACEHOLDER: either give a range or 'Happy to discuss in person, depending on role and overall package.']]"
+      },
+      {
+        "q": "What is the fastest way to reach me?",
+        "a": "[[PLACEHOLDER: email and LinkedIn, plus typical response time.]]"
+      }
+    ]
+  },
+  "contact": {
+    "id": "contact",
+    "eyebrow": "08 — Contact",
+    "title": "Let's talk",
+    "lead": "Whether it is a specific vacancy, a project enquiry or an informal exchange — I usually reply within 24 hours.",
+    "emailUser": "mstrote",
+    "emailDomain": "yahoo.de",
+    "emailLabel": "Send an email",
+    "linkedin": { "url": "[[PLACEHOLDER: https://www.linkedin.com/in/your-profile/]]", "label": "LinkedIn profile" },
+    "location": "[[PLACEHOLDER: city]], Germany",
+    "locationLabel": "Location",
+    "availabilityLabel": "Availability",
+    "availability": "[[PLACEHOLDER: e.g. immediately]]",
+    "cvCta": { "href": "/assets/files/CV-Marco-Strote.pdf", "label": "CV as PDF" }
+  },
+  "footer": {
+    "tagline": "[[PLACEHOLDER: short claim]] Consultant & Product Owner",
+    "links": [
+      { "href": "/en/imprint.html", "label": "Imprint" },
+      { "href": "/en/privacy.html", "label": "Privacy" }
+    ],
+    "backToTop": "Back to top",
+    "copyright": "All rights reserved."
+  },
+  "legal": {
+    "imprint": {
+      "title": "Imprint",
+      "intro": "Information pursuant to § 5 DDG (German Digital Services Act)",
+      "blocks": [
+        { "heading": "Responsible for content", "lines": ["Marco Strote", "[[PLACEHOLDER: street and number]]", "[[PLACEHOLDER: postcode city]]", "Germany"] },
+        { "heading": "Contact", "lines": ["Email: mstrote@yahoo.de", "Phone: [[PLACEHOLDER: optional]]"] },
+        { "heading": "Responsible pursuant to § 18 (2) MStV", "lines": ["Marco Strote", "[[PLACEHOLDER: address as above]]"] },
+        { "heading": "Dispute resolution", "lines": ["The European Commission provides a platform for online dispute resolution: https://ec.europa.eu/consumers/odr", "I am neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board."] },
+        { "heading": "Liability for content", "lines": ["As a service provider I am responsible for my own content on these pages in accordance with § 7 (1) DDG and general law. Under §§ 8 to 10 DDG, however, I am not obliged to monitor transmitted or stored third-party information."] },
+        { "heading": "Liability for links", "lines": ["This site contains links to external third-party websites over whose content I have no influence. The respective provider is always responsible for the content of linked pages."] },
+        { "heading": "Copyright", "lines": ["Content and works created by the site operator on these pages are subject to German copyright law."] }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "This website is deliberately built to minimise data: no cookies, no tracking, no external fonts, no analytics services.",
+      "blocks": [
+        { "heading": "1. Controller", "lines": ["Marco Strote", "[[PLACEHOLDER: address]]", "Email: mstrote@yahoo.de"] },
+        { "heading": "2. Hosting", "lines": ["This website is hosted on GitHub Pages (GitHub Inc., 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA). When you access the site, GitHub processes technically necessary connection data (including IP address, time of access, file requested, browser type) in server log files. The legal basis is Art. 6 (1) (f) GDPR (legitimate interest in secure and stable operation of the website). Transfers to the USA are based on the Standard Contractual Clauses and the EU-US Data Privacy Framework. Further information: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement"] },
+        { "heading": "3. No cookies, no tracking", "lines": ["This website sets no cookies and embeds no analytics, advertising or social media services. There is no reach measurement and no profiling. Fonts are loaded exclusively from your operating system; no connection is made to Google Fonts or comparable services."] },
+        { "heading": "4. Contact by email", "lines": ["If you contact me by email, I process the data you provide (name, email address, content of your message) solely to handle your enquiry. The legal basis is Art. 6 (1) (b) GDPR where a contractual or employment relationship is being initiated, otherwise Art. 6 (1) (f) GDPR. The data is deleted once the purpose ceases to apply and no statutory retention obligations prevent this."] },
+        { "heading": "5. External links", "lines": ["The website links to external profiles, in particular LinkedIn. Data is only transmitted to the respective provider once you click such a link. No social media plugins are embedded that would transmit data on page load."] },
+        { "heading": "6. Your rights", "lines": ["You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection to processing (Art. 21 GDPR). You also have the right to lodge a complaint with a data protection supervisory authority."] },
+        { "heading": "7. Last updated", "lines": ["This privacy policy was last updated: [[PLACEHOLDER: month year]]"] }
+      ]
+    },
+    "backLink": "Back to homepage"
+  }
+}

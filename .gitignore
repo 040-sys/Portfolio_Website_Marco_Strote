@@ -1,0 +1,9 @@
+node_modules/
+.claude/settings.local.json
+npm-debug.log*
+.DS_Store
+Thumbs.db
+desktop.ini
+*.local
+.vscode/
+.idea/

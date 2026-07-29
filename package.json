@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-website-marco-strote",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio-Website von Marco Strote — statisch, ohne Tracking, SEO- und GEO-optimiert.",
+  "scripts": {
+    "build": "node src/build.js",
+    "images": "node src/make-images.js",
+    "start": "node src/serve.js",
+    "dev": "node src/build.js && node src/serve.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}

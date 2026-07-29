@@ -1,0 +1,22 @@
+{
+  "name": "Marco Strote",
+  "short_name": "M. Strote",
+  "description": "Marco Strote verbindet Beratung und Produktverantwortung: Strategie, Umsetzung und messbare Ergebnisse. Standort und Verfügbarkeit im Überblick.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f5f1",
+  "theme_color": "#f7f5f1",
+  "lang": "de",
+  "icons": [
+    {
+      "src": "/assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

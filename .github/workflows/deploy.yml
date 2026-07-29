@@ -1,0 +1,51 @@
+name: Deploy to GitHub Pages
+
+# Baut die Seite bei jedem Push auf main neu und veröffentlicht sie.
+# Dadurch reicht es, content/de.json bzw. content/en.json zu ändern —
+# das fertige HTML wird automatisch erzeugt.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Seite bauen
+        run: node src/build.js
+
+      - name: Auf Platzhalter prüfen (nur Hinweis, kein Abbruch)
+        run: node src/build.js | tail -n 3
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

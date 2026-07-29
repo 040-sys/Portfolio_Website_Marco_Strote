@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(gh --version)",
+      "PowerShell(gh auth status)",
+      "PowerShell(node --version)",
+      "WebFetch(domain:www.hamsabalegaar.com)",
+      "WebFetch(domain:mariusgensler.com)",
+      "WebFetch(domain:www.allies.studio)",
+      "WebSearch",
+      "WebFetch(domain:www.linkedin.com)",
+      "WebFetch(domain:theorg.com)",
+      "mcp__claude-in-chrome__list_connected_browsers",
+      "Bash(node -e ' *)",
+      "Bash(node src/build.js)",
+      "Bash(npm install *)",
+      "Bash(node src/make-images.js)",
+      "Bash(winget --version)",
+      "Bash(git add *)",
+      "Bash(git -c core.quotepath=false status --short)",
+      "Bash(winget install *)",
+      "Bash(git rm *)",
+      "Bash(git commit *)"
+    ]
+  }
+}

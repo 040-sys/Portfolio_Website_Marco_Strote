@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Platzhalter für Porträtfoto">
+  <rect width="800" height="1000" fill="#efeae1"/>
+  <g fill="none" stroke="#c8c1b2" stroke-width="2">
+    <circle cx="400" cy="420" r="118"/>
+    <path d="M212 760c0-104 84-188 188-188s188 84 188 188"/>
+  </g>
+  <text x="400" y="880" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#6e6a61">
+    Porträtfoto folgt
+  </text>
+  <text x="400" y="916" text-anchor="middle"
+        font-family="system-ui, sans-serif" font-size="17" fill="#8c877d">
+    portrait.jpg · 800 × 1000 px
+  </text>
+</svg>
