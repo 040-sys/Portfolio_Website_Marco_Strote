@@ -43,9 +43,7 @@ function renderCv(c) {
 
   /* Stationen ohne Detailpunkte werden kompakter gesetzt — die weiter
      zurueckliegenden Positionen brauchen weniger Raum als die aktuellen. */
-  const experience = c.experience.items
-    .map(
-      (it) => `<article class="cv-entry${it.highlights && it.highlights.length ? '' : ' is-compact'}">
+  const entry = (it) => `<article class="cv-entry${it.highlights && it.highlights.length ? '' : ' is-compact'}">
         <p class="cv-period">${t(it.period)}</p>
         <div>
           <h3>${t(it.role)}</h3>
@@ -57,9 +55,25 @@ function renderCv(c) {
               : ''
           }
         </div>
-      </article>`
-    )
-    .join('\n      ');
+      </article>`;
+
+  /* Am Bildschirm stehen die juengsten Stationen offen, der Rest liegt hinter
+     einem Aufklapper. Im PDF wird er geoeffnet ausgegeben — was dort
+     zugeklappt waere, koennte niemand mehr aufklappen. */
+  const VISIBLE = c.cv.visibleEntries || 3;
+  const shown = c.experience.items.slice(0, VISIBLE);
+  const hidden = c.experience.items.slice(VISIBLE);
+
+  const experience =
+    shown.map(entry).join('\n      ') +
+    (hidden.length
+      ? `\n      <details class="cv-more">
+        <summary>${esc(c.cv.moreLabel.replace('{n}', hidden.length))}</summary>
+        <div class="cv-more-body">
+          ${hidden.map(entry).join('\n          ')}
+        </div>
+      </details>`
+      : '');
 
   const certifications = groupCertifications(c.certifications.items)
     .map(
@@ -97,6 +111,13 @@ ${jsonLd(person)}
   <span>${esc(cv.docTitle)} — mit „Als PDF speichern" drucken oder <a href="${esc(u(c, '/assets/files/' + cv.fileName))}">fertiges PDF herunterladen</a>.</span>
   <button type="button" onclick="window.print()">Drucken / PDF</button>
 </div>
+
+<script>
+  /* Vor dem Drucken alle Aufklapper oeffnen, damit im PDF keine Station fehlt. */
+  addEventListener('beforeprint', function () {
+    document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+  });
+</script>
 
 <div class="page">
 

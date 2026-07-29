@@ -31,6 +31,13 @@
   <button type="button" onclick="window.print()">Drucken / PDF</button>
 </div>
 
+<script>
+  /* Vor dem Drucken alle Aufklapper oeffnen, damit im PDF keine Station fehlt. */
+  addEventListener('beforeprint', function () {
+    document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+  });
+</script>
+
 <div class="page">
 
   <header class="cv-head">
@@ -107,7 +114,10 @@
           <ul class="cv-highlights"><li>Leitung cross-funktionaler Teams für Entwicklung und Implementierung neuer LIMS-Technologien</li><li>Anforderungsanalysen sowie Use-Case-Modelle, Mind-Maps und Rich Pictures zur Lösungsdokumentation</li><li>Koordination interner und externer Stakeholder hinsichtlich Ziel-, Budget- und Zeitplanung</li><li>Projektziele innerhalb des vereinbarten Zeit- und Budgetrahmens umgesetzt</li></ul>
         </div>
       </article>
-      <article class="cv-entry">
+      <details class="cv-more">
+        <summary>+ 7 weitere Stationen</summary>
+        <div class="cv-more-body">
+          <article class="cv-entry">
         <p class="cv-period">Mai 2020 — Mai 2021</p>
         <div>
           <h3>Intensive Weiterbildungsphase</h3>
@@ -116,7 +126,7 @@
           <ul class="cv-highlights"><li>ITIL 4 Strategic Leader — Digital &amp; IT Strategy sowie Direct, Plan and Improve</li><li>PRINCE2, PRINCE2 Agile und Scrum (Master und Product Owner)</li><li>EXIN BCS Business Analysis und Requirements Engineering</li></ul>
         </div>
       </article>
-      <article class="cv-entry is-compact">
+          <article class="cv-entry is-compact">
         <p class="cv-period">Juli 2019 — Apr. 2021</p>
         <div>
           <h3>Berater für Digitalisierung &amp; Transformation</h3>
@@ -125,7 +135,7 @@
           
         </div>
       </article>
-      <article class="cv-entry is-compact">
+          <article class="cv-entry is-compact">
         <p class="cv-period">2017 — 2019</p>
         <div>
           <h3>Account Executive, HazMat Compliance Solutions</h3>
@@ -134,7 +144,7 @@
           
         </div>
       </article>
-      <article class="cv-entry is-compact">
+          <article class="cv-entry is-compact">
         <p class="cv-period">2016</p>
         <div>
           <h3>Senior Sales Manager</h3>
@@ -143,7 +153,7 @@
           
         </div>
       </article>
-      <article class="cv-entry is-compact">
+          <article class="cv-entry is-compact">
         <p class="cv-period">2014 — 2016</p>
         <div>
           <h3>Account Manager Online</h3>
@@ -152,7 +162,7 @@
           
         </div>
       </article>
-      <article class="cv-entry is-compact">
+          <article class="cv-entry is-compact">
         <p class="cv-period">2011 — 2013</p>
         <div>
           <h3>Key Account Manager &amp; Sales Manager</h3>
@@ -161,7 +171,7 @@
           
         </div>
       </article>
-      <article class="cv-entry is-compact">
+          <article class="cv-entry is-compact">
         <p class="cv-period">2009 — 2011</p>
         <div>
           <h3>Berater für Digitalisierung &amp; Transformation</h3>
@@ -170,6 +180,8 @@
           
         </div>
       </article>
+        </div>
+      </details>
   </section>
 
   <section class="cv-section">

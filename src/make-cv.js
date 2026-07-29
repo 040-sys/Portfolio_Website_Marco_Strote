@@ -77,6 +77,12 @@ const jobs = [
       const page = await browser.newPage();
       await page.goto(`http://localhost:${PORT}${job.page}`, { waitUntil: 'networkidle0' });
 
+      /* Alle Aufklapper oeffnen: im PDF muss jede Station stehen, weil sie
+         dort niemand aufklappen kann. */
+      await page.evaluate(() => {
+        document.querySelectorAll('details').forEach((d) => { d.open = true; });
+      });
+
       /* Bilder sicher abwarten — ein halb geladenes Portraet waere im PDF leer */
       await page.evaluate(() =>
         Promise.all(
