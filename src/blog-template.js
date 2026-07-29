@@ -37,7 +37,7 @@ function shell(c, page, body, extraSchemas = []) {
 <title>${esc(page.title)}</title>
 <meta name="description" content="${ta(page.description)}">
 <meta name="author" content="${esc(c.site.name)}">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="robots" content="${c.site.noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'}">
 <meta name="theme-color" content="#f7f5f1" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)">
 

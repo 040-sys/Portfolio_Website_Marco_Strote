@@ -97,7 +97,7 @@ function renderCv(c) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(cv.docTitle)} — ${esc(c.site.name)}</title>
 <meta name="description" content="${ta(cv.profile).slice(0, 200)}">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="${c.site.noindex ? 'noindex, follow' : 'index, follow'}">
 <link rel="canonical" href="${esc(abs(c, c.lang === 'de' ? '/lebenslauf.html' : '/en/cv.html'))}">
 <link rel="icon" href="${esc(u(c, '/assets/img/favicon.svg'))}" type="image/svg+xml">
 <link rel="stylesheet" href="${esc(u(c, '/assets/css/cv.css'))}">

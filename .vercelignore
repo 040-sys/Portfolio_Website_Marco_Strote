@@ -1,0 +1,12 @@
+# Quellen und Werkzeuge werden nicht ausgeliefert — nur das fertige Ergebnis.
+# (Der Bau selbst braucht src/ und content/, deshalb stehen sie hier nicht drin:
+#  .vercelignore wirkt auf das Hochladen, nicht auf den Build-Schritt.)
+
+node_modules
+.git
+.github
+.claude
+*.cmd
+ANLEITUNG.md
+assets/img/portrait-original.jpg
+assets/img/og-image.svg

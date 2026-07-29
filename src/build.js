@@ -27,10 +27,24 @@ const en = read('content/en.json');
    Workflow uebergibt beides automatisch, damit die Seite sowohl unter einer
    eigenen Domain als auch als GitHub-Projektseite (…github.io/Repo-Name/)
    funktioniert. */
-const BASE = (process.env.BASE_PATH || de.site.basePath || '').replace(/\/$/, '');
+/* Vercel liefert im Wurzelverzeichnis aus — dort gibt es keinen Basis-Pfad.
+   VERCEL_PROJECT_PRODUCTION_URL ist die dauerhafte Adresse des Projekts und
+   zeigt auf eine eigene Domain, sobald eine verbunden ist. */
+const ON_VERCEL = !!process.env.VERCEL;
+const VERCEL_HOST = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+
+const BASE = ON_VERCEL ? '' : (process.env.BASE_PATH || de.site.basePath || '').replace(/\/$/, '');
+
+/* Vorschau-Bereitstellungen dürfen nicht in den Suchindex: sonst konkurrieren
+   Zwischenstände unter wechselnden Adressen mit der echten Seite. */
+const NOINDEX = ON_VERCEL && process.env.VERCEL_ENV !== 'production';
+
 for (const c of [de, en]) {
   c.site.basePath = BASE;
+  c.site.noindex = NOINDEX;
+
   if (process.env.SITE_URL) c.site.domain = new URL(process.env.SITE_URL).origin;
+  else if (VERCEL_HOST) c.site.domain = 'https://' + VERCEL_HOST;
 }
 
 /* Der Lebenslauf-Button wird nur ausgegeben, wenn die PDF-Datei wirklich
@@ -145,7 +159,9 @@ const aiCrawlers = [
 written.push(
   write(
     'robots.txt',
-    `# ${de.site.name} — robots.txt
+    NOINDEX
+      ? `# Vorschau-Bereitstellung — nicht indexieren.\nUser-agent: *\nDisallow: /\n`
+      : `# ${de.site.name} — robots.txt
 # Diese Seite soll gefunden UND von KI-Assistenten zitiert werden.
 
 User-agent: *

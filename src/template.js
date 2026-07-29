@@ -82,7 +82,7 @@ function head(c, page) {
 <meta name="description" content="${ta(page.description)}">
 ${page.keywords ? `<meta name="keywords" content="${esc(page.keywords)}">` : ''}
 <meta name="author" content="${esc(c.site.name)}">
-<meta name="robots" content="${page.noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}">
+<meta name="robots" content="${page.noindex || c.site.noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}">
 <meta name="theme-color" content="#f7f5f1" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)">
 <meta name="format-detection" content="telephone=no">
