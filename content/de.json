@@ -15,7 +15,7 @@
     "title": "Marco Strote — Berater & Produktverantwortlicher | Portfolio",
     "description": "[[PLATZHALTER: Positionierung in 155 Zeichen]] Marco Strote verbindet Beratung und Produktverantwortung: Strategie, Umsetzung und messbare Ergebnisse. Standort und Verfügbarkeit im Überblick.",
     "keywords": "Marco Strote, Berater, Produktverantwortlicher, Product Owner, Consultant, Portfolio, Lebenslauf",
-    "ogImage": "/assets/img/og-image.png",
+    "ogImage": "/assets/img/og-image.jpg",
     "ogImageAlt": "Marco Strote — Berater und Produktverantwortlicher"
   },
   "nav": {
@@ -39,13 +39,13 @@
     "headline": "[[PLATZHALTER: Positionierung in einem Satz]] Ich verbinde Beratungsperspektive mit Produktverantwortung — von der Strategie bis zur Umsetzung.",
     "intro": "[[PLATZHALTER: 2 Sätze Kontext]] Als Berater analysiere ich, was ein Unternehmen wirklich braucht. Als Produktverantwortlicher sorge ich dafür, dass es auch gebaut und ausgeliefert wird.",
     "facts": [
-      { "label": "Standort", "value": "[[PLATZHALTER: Stadt]], Deutschland" },
+      { "label": "Standort", "value": "Wentorf bei Hamburg" },
       { "label": "Verfügbarkeit", "value": "[[PLATZHALTER: z. B. ab sofort / Q4 2026]]" },
       { "label": "Arbeitsmodell", "value": "[[PLATZHALTER: Remote / Hybrid / Vor Ort]]" }
     ],
     "primaryCta": { "href": "#kontakt", "label": "Kontakt aufnehmen" },
     "secondaryCta": { "href": "/assets/files/Lebenslauf-Marco-Strote.pdf", "label": "Lebenslauf herunterladen" },
-    "portraitSrc": "/assets/img/portrait.svg",
+    "portraitSrc": "/assets/img/portrait.jpg",
     "portraitAlt": "Porträtfoto von Marco Strote",
     "scrollHint": "Nach unten scrollen"
   },
@@ -262,7 +262,7 @@
     "emailDomain": "yahoo.de",
     "emailLabel": "E-Mail schreiben",
     "linkedin": { "url": "[[PLATZHALTER: https://www.linkedin.com/in/dein-profil/]]", "label": "LinkedIn-Profil" },
-    "location": "[[PLATZHALTER: Stadt]], Deutschland",
+    "location": "Wentorf bei Hamburg, Deutschland",
     "locationLabel": "Standort",
     "availabilityLabel": "Verfügbarkeit",
     "availability": "[[PLATZHALTER: z. B. ab sofort]]",
@@ -282,9 +282,9 @@
       "title": "Impressum",
       "intro": "Angaben gemäß § 5 DDG",
       "blocks": [
-        { "heading": "Verantwortlich für den Inhalt", "lines": ["Marco Strote", "[[PLATZHALTER: Straße und Hausnummer]]", "[[PLATZHALTER: PLZ Ort]]", "Deutschland"] },
-        { "heading": "Kontakt", "lines": ["E-Mail: mstrote@yahoo.de", "Telefon: [[PLATZHALTER: optional]]"] },
-        { "heading": "Verantwortlich gemäß § 18 Abs. 2 MStV", "lines": ["Marco Strote", "[[PLATZHALTER: Anschrift wie oben]]"] },
+        { "heading": "Verantwortlich für den Inhalt", "lines": ["Marco Strote", "Eulenkamp 20 a", "21465 Wentorf bei Hamburg", "Deutschland"] },
+        { "heading": "Kontakt", "lines": ["E-Mail: mstrote@yahoo.de"] },
+        { "heading": "Verantwortlich gemäß § 18 Abs. 2 MStV", "lines": ["Marco Strote", "Eulenkamp 20 a, 21465 Wentorf bei Hamburg"] },
         { "heading": "Streitschlichtung", "lines": ["Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: https://ec.europa.eu/consumers/odr", "Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."] },
         { "heading": "Haftung für Inhalte", "lines": ["Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen."] },
         { "heading": "Haftung für Links", "lines": ["Dieses Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich."] },
@@ -295,13 +295,13 @@
       "title": "Datenschutzerklärung",
       "intro": "Diese Website ist bewusst datensparsam gebaut: keine Cookies, kein Tracking, keine externen Schriftarten, keine Analyse-Dienste.",
       "blocks": [
-        { "heading": "1. Verantwortlicher", "lines": ["Marco Strote", "[[PLATZHALTER: Anschrift]]", "E-Mail: mstrote@yahoo.de"] },
+        { "heading": "1. Verantwortlicher", "lines": ["Marco Strote", "Eulenkamp 20 a, 21465 Wentorf bei Hamburg", "E-Mail: mstrote@yahoo.de"] },
         { "heading": "2. Hosting", "lines": ["Diese Website wird bei GitHub Pages gehostet (GitHub Inc., 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA). Beim Aufruf der Seite verarbeitet GitHub technisch notwendige Verbindungsdaten (u. a. IP-Adresse, Zeitpunkt des Zugriffs, aufgerufene Datei, Browsertyp) in Server-Logfiles. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren und stabilen Betrieb der Website). Die Datenübermittlung in die USA stützt sich auf die Standardvertragsklauseln sowie das EU-US Data Privacy Framework. Weitere Informationen: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement"] },
         { "heading": "3. Keine Cookies, kein Tracking", "lines": ["Diese Website setzt keine Cookies und bindet keine Analyse-, Werbe- oder Social-Media-Dienste ein. Es findet keine Reichweitenmessung und keine Profilbildung statt. Schriftarten werden ausschließlich lokal aus dem Betriebssystem geladen; es besteht keine Verbindung zu Google Fonts oder vergleichbaren Diensten."] },
         { "heading": "4. Kontaktaufnahme per E-Mail", "lines": ["Wenn Sie mich per E-Mail kontaktieren, verarbeite ich die von Ihnen übermittelten Daten (Name, E-Mail-Adresse, Inhalt der Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bei Anbahnung eines Vertrags- oder Beschäftigungsverhältnisses, im Übrigen Art. 6 Abs. 1 lit. f DSGVO. Die Daten werden gelöscht, sobald der Zweck entfällt und keine gesetzlichen Aufbewahrungspflichten entgegenstehen."] },
         { "heading": "5. Externe Links", "lines": ["Die Website verlinkt auf externe Profile, insbesondere LinkedIn. Erst mit einem Klick auf einen solchen Link werden Daten an den jeweiligen Anbieter übertragen. Es sind keine Social-Media-Plugins eingebunden, die bereits beim Seitenaufruf Daten übermitteln."] },
         { "heading": "6. Ihre Rechte", "lines": ["Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie Widerspruch gegen die Verarbeitung (Art. 21 DSGVO). Zudem steht Ihnen ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu."] },
-        { "heading": "7. Stand", "lines": ["Stand dieser Datenschutzerklärung: [[PLATZHALTER: Monat Jahr]]"] }
+        { "heading": "7. Stand", "lines": ["Stand dieser Datenschutzerklärung: Juli 2026"] }
       ]
     },
     "backLink": "Zurück zur Startseite"

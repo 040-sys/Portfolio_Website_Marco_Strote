@@ -201,6 +201,30 @@ function sectionHead(s, delay = 0) {
     </div>`;
 }
 
+/* Porträt. Liegen neben der Bilddatei eine WebP- und eine @2x-Fassung, werden
+   sie mitgeliefert: WebP spart etwa ein Drittel Ladezeit, @2x sorgt auf
+   hochauflösenden Displays für ein scharfes Bild. Fehlen die Varianten,
+   entsteht schlicht ein einfaches <img>. */
+function portraitMarkup(c, h) {
+  const src = h.portraitSrc;
+  const v = h.portraitVariants || {};
+  const base = src.replace(/\.(jpg|jpeg|png)$/i, '');
+  const ext = (src.match(/\.(jpg|jpeg|png)$/i) || [''])[0];
+
+  const img = `<img src="${esc(u(c, src))}"${
+    v.retina ? ` srcset="${esc(u(c, src))} 1x, ${esc(u(c, base + '@2x' + ext))} 2x"` : ''
+  } alt="${ta(h.portraitAlt)}" width="800" height="1000" fetchpriority="high" decoding="async">`;
+
+  if (!v.webp) return img;
+
+  return `<picture>
+        <source type="image/webp" srcset="${esc(u(c, base + '.webp'))} 1x${
+          v.retinaWebp ? `, ${esc(u(c, base + '@2x.webp'))} 2x` : ''
+        }">
+        ${img}
+      </picture>`;
+}
+
 function heroSection(c) {
   const h = c.hero;
   return `<section class="hero">
@@ -222,7 +246,7 @@ function heroSection(c) {
     </div>
 
     <figure class="hero-portrait" data-reveal style="--reveal-delay:160ms">
-      <img src="${esc(u(c, h.portraitSrc))}" alt="${ta(h.portraitAlt)}" width="800" height="1000" fetchpriority="high" decoding="async">
+      ${portraitMarkup(c, h)}
     </figure>
   </div>
 </section>

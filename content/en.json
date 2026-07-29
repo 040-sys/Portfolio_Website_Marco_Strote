@@ -15,7 +15,7 @@
     "title": "Marco Strote — Consultant & Product Owner | Portfolio",
     "description": "[[PLACEHOLDER: positioning in 155 characters]] Marco Strote combines consulting perspective with product ownership: strategy, delivery and measurable outcomes. Location and availability at a glance.",
     "keywords": "Marco Strote, consultant, product owner, product manager, portfolio, CV, resume",
-    "ogImage": "/assets/img/og-image.png",
+    "ogImage": "/assets/img/og-image.jpg",
     "ogImageAlt": "Marco Strote — Consultant and Product Owner"
   },
   "nav": {
@@ -39,13 +39,13 @@
     "headline": "[[PLACEHOLDER: positioning in one sentence]] I combine a consultant's perspective with product ownership — from strategy through to delivery.",
     "intro": "[[PLACEHOLDER: 2 sentences of context]] As a consultant I work out what a business actually needs. As a product owner I make sure it gets built and shipped.",
     "facts": [
-      { "label": "Location", "value": "[[PLACEHOLDER: city]], Germany" },
+      { "label": "Location", "value": "Wentorf bei Hamburg" },
       { "label": "Availability", "value": "[[PLACEHOLDER: e.g. immediately / Q4 2026]]" },
       { "label": "Work setup", "value": "[[PLACEHOLDER: remote / hybrid / on-site]]" }
     ],
     "primaryCta": { "href": "#contact", "label": "Get in touch" },
     "secondaryCta": { "href": "/assets/files/CV-Marco-Strote.pdf", "label": "Download CV" },
-    "portraitSrc": "/assets/img/portrait.svg",
+    "portraitSrc": "/assets/img/portrait.jpg",
     "portraitAlt": "Portrait photo of Marco Strote",
     "scrollHint": "Scroll down"
   },
@@ -262,7 +262,7 @@
     "emailDomain": "yahoo.de",
     "emailLabel": "Send an email",
     "linkedin": { "url": "[[PLACEHOLDER: https://www.linkedin.com/in/your-profile/]]", "label": "LinkedIn profile" },
-    "location": "[[PLACEHOLDER: city]], Germany",
+    "location": "Wentorf bei Hamburg, Germany",
     "locationLabel": "Location",
     "availabilityLabel": "Availability",
     "availability": "[[PLACEHOLDER: e.g. immediately]]",
@@ -282,9 +282,9 @@
       "title": "Imprint",
       "intro": "Information pursuant to § 5 DDG (German Digital Services Act)",
       "blocks": [
-        { "heading": "Responsible for content", "lines": ["Marco Strote", "[[PLACEHOLDER: street and number]]", "[[PLACEHOLDER: postcode city]]", "Germany"] },
-        { "heading": "Contact", "lines": ["Email: mstrote@yahoo.de", "Phone: [[PLACEHOLDER: optional]]"] },
-        { "heading": "Responsible pursuant to § 18 (2) MStV", "lines": ["Marco Strote", "[[PLACEHOLDER: address as above]]"] },
+        { "heading": "Responsible for content", "lines": ["Marco Strote", "Eulenkamp 20 a", "21465 Wentorf bei Hamburg", "Germany"] },
+        { "heading": "Contact", "lines": ["Email: mstrote@yahoo.de"] },
+        { "heading": "Responsible pursuant to § 18 (2) MStV", "lines": ["Marco Strote", "Eulenkamp 20 a, 21465 Wentorf bei Hamburg"] },
         { "heading": "Dispute resolution", "lines": ["The European Commission provides a platform for online dispute resolution: https://ec.europa.eu/consumers/odr", "I am neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board."] },
         { "heading": "Liability for content", "lines": ["As a service provider I am responsible for my own content on these pages in accordance with § 7 (1) DDG and general law. Under §§ 8 to 10 DDG, however, I am not obliged to monitor transmitted or stored third-party information."] },
         { "heading": "Liability for links", "lines": ["This site contains links to external third-party websites over whose content I have no influence. The respective provider is always responsible for the content of linked pages."] },
@@ -295,13 +295,13 @@
       "title": "Privacy Policy",
       "intro": "This website is deliberately built to minimise data: no cookies, no tracking, no external fonts, no analytics services.",
       "blocks": [
-        { "heading": "1. Controller", "lines": ["Marco Strote", "[[PLACEHOLDER: address]]", "Email: mstrote@yahoo.de"] },
+        { "heading": "1. Controller", "lines": ["Marco Strote", "Eulenkamp 20 a, 21465 Wentorf bei Hamburg", "Email: mstrote@yahoo.de"] },
         { "heading": "2. Hosting", "lines": ["This website is hosted on GitHub Pages (GitHub Inc., 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA). When you access the site, GitHub processes technically necessary connection data (including IP address, time of access, file requested, browser type) in server log files. The legal basis is Art. 6 (1) (f) GDPR (legitimate interest in secure and stable operation of the website). Transfers to the USA are based on the Standard Contractual Clauses and the EU-US Data Privacy Framework. Further information: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement"] },
         { "heading": "3. No cookies, no tracking", "lines": ["This website sets no cookies and embeds no analytics, advertising or social media services. There is no reach measurement and no profiling. Fonts are loaded exclusively from your operating system; no connection is made to Google Fonts or comparable services."] },
         { "heading": "4. Contact by email", "lines": ["If you contact me by email, I process the data you provide (name, email address, content of your message) solely to handle your enquiry. The legal basis is Art. 6 (1) (b) GDPR where a contractual or employment relationship is being initiated, otherwise Art. 6 (1) (f) GDPR. The data is deleted once the purpose ceases to apply and no statutory retention obligations prevent this."] },
         { "heading": "5. External links", "lines": ["The website links to external profiles, in particular LinkedIn. Data is only transmitted to the respective provider once you click such a link. No social media plugins are embedded that would transmit data on page load."] },
         { "heading": "6. Your rights", "lines": ["You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection to processing (Art. 21 GDPR). You also have the right to lodge a complaint with a data protection supervisory authority."] },
-        { "heading": "7. Last updated", "lines": ["This privacy policy was last updated: [[PLACEHOLDER: month year]]"] }
+        { "heading": "7. Last updated", "lines": ["This privacy policy was last updated: July 2026"] }
       ]
     },
     "backLink": "Back to homepage"

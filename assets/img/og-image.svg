@@ -1,16 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#14130f"/>
+      <stop offset="0.72" stop-color="#14130f"/>
+      <stop offset="1" stop-color="#14130f" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
   <rect width="1200" height="630" fill="#14130f"/>
+  
   <rect x="0" y="0" width="1200" height="6" fill="#a84d24"/>
 
   <text x="80" y="132" font-family="'Segoe UI', system-ui, Arial, Helvetica, sans-serif" font-size="20" letter-spacing="4" fill="#a8a296">PORTFOLIO</text>
-
   <text x="80" y="248" font-family="Georgia, 'Times New Roman', Times, serif" font-size="92" fill="#f7f5f1">Marco Strote</text>
-
   <rect x="80" y="292" width="120" height="2" fill="#a84d24"/>
 
   <text x="80" y="368" font-family="Georgia, 'Times New Roman', Times, serif" font-size="38" fill="#d9d4c9">Ich verbinde Beratungsperspektive mit</text>
-  <text x="80" y="420" font-family="Georgia, 'Times New Roman', Times, serif" font-size="38" fill="#d9d4c9">Produktverantwortung — von der Strategie bis zur</text>
-  <text x="80" y="472" font-family="Georgia, 'Times New Roman', Times, serif" font-size="38" fill="#d9d4c9">Umsetzung.</text>
+  <text x="80" y="420" font-family="Georgia, 'Times New Roman', Times, serif" font-size="38" fill="#d9d4c9">Produktverantwortung — von der Strategie</text>
+  <text x="80" y="472" font-family="Georgia, 'Times New Roman', Times, serif" font-size="38" fill="#d9d4c9">bis zur Umsetzung.</text>
 
   <text x="80" y="556" font-family="'Segoe UI', system-ui, Arial, Helvetica, sans-serif" font-size="24" fill="#a8a296">Berater &amp; Produktverantwortlicher</text>
   <text x="1120" y="556" text-anchor="end" font-family="'Segoe UI', system-ui, Arial, Helvetica, sans-serif" font-size="24" fill="#a84d24">marco-strote.de</text>

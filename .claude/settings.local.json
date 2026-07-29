@@ -21,7 +21,8 @@
       "Bash(winget install *)",
       "Bash(git rm *)",
       "Bash(git commit *)",
-      "Bash(BASE_PATH=/Portfolio_Website_Marco_Strote SITE_URL=https://marcostrote.github.io node src/build.js)"
+      "Bash(BASE_PATH=/Portfolio_Website_Marco_Strote SITE_URL=https://marcostrote.github.io node src/build.js)",
+      "Bash(awk '{printf \"%-28s %8.0f KB\\\\n\", $9, $5/1024}')"
     ]
   }
 }

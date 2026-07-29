@@ -40,6 +40,19 @@ for (const c of [de, en]) {
     if (!cta.available && !cvMissing.includes(cta.href)) cvMissing.push(cta.href);
   }
 }
+
+/* Welche Porträt-Varianten liegen tatsächlich vor? Nur vorhandene Dateien
+   werden im HTML angeboten — sonst entstünden tote Verweise. */
+const hasImg = (p) => fs.existsSync(path.join(ROOT, p.replace(/^\//, '')));
+for (const c of [de, en]) {
+  const base = c.hero.portraitSrc.replace(/\.(jpg|jpeg|png)$/i, '');
+  const ext = (c.hero.portraitSrc.match(/\.(jpg|jpeg|png)$/i) || [''])[0];
+  c.hero.portraitVariants = {
+    webp: hasImg(base + '.webp'),
+    retina: !!ext && hasImg(base + '@2x' + ext),
+    retinaWebp: hasImg(base + '@2x.webp'),
+  };
+}
 const DOMAIN = de.site.domain.replace(/\/$/, '') + BASE;
 const TODAY = new Date().toISOString().slice(0, 10);
 
