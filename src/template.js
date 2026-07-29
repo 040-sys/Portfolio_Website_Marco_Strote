@@ -193,13 +193,9 @@ ${footer(c, page)}
 
 /* --- Sektionen der Startseite --------------------------------------------- */
 
-function sectionHead(s, delay = 0) {
-  return `<div class="section-head" data-reveal${delay ? ` style="--reveal-delay:${delay}ms"` : ''}>
-      <span class="eyebrow">${t(s.eyebrow)}</span>
-      <h2>${t(s.title)}</h2>
-      ${s.lead ? `<p class="lead">${t(s.lead)}</p>` : ''}
-    </div>`;
-}
+/* Abschnittsnummern werden beim Rendern vergeben, nicht im Inhalt gepflegt.
+   So bleibt die Zählung lückenlos, wenn ein Abschnitt abgeschaltet wird. */
+const sectionNo = (no) => (no ? String(no).padStart(2, '0') + ' — ' : '');
 
 /* Porträt. Liegen neben der Bilddatei eine WebP- und eine @2x-Fassung, werden
    sie mitgeliefert: WebP spart etwa ein Drittel Ladezeit, @2x sorgt auf
@@ -258,12 +254,12 @@ function heroSection(c) {
 </div>`;
 }
 
-function skillsSection(c) {
+function skillsSection(c, no) {
   const s = c.skills;
   return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="eyebrow">${t(s.eyebrow)}</span>
+      <span class="eyebrow">${sectionNo(no)}${t(s.eyebrow)}</span>
       <h2 id="${esc(s.id)}-title">${t(s.title)}</h2>
       <p class="lead">${t(s.lead)}</p>
     </div>
@@ -284,12 +280,12 @@ function skillsSection(c) {
 </section>`;
 }
 
-function certSection(c) {
+function certSection(c, no) {
   const s = c.certifications;
   return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="eyebrow">${t(s.eyebrow)}</span>
+      <span class="eyebrow">${sectionNo(no)}${t(s.eyebrow)}</span>
       <h2 id="${esc(s.id)}-title">${t(s.title)}</h2>
       <p class="lead">${t(s.lead)}</p>
     </div>
@@ -355,12 +351,12 @@ function timeline(s) {
     </div>`;
 }
 
-function experienceSection(c) {
+function experienceSection(c, no) {
   const s = c.experience;
   return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="eyebrow">${t(s.eyebrow)}</span>
+      <span class="eyebrow">${sectionNo(no)}${t(s.eyebrow)}</span>
       <h2 id="${esc(s.id)}-title">${t(s.title)}</h2>
       <p class="lead">${t(s.lead)}</p>
     </div>
@@ -389,12 +385,12 @@ function experienceSection(c) {
 </section>`;
 }
 
-function aboutSection(c) {
+function aboutSection(c, no) {
   const s = c.about;
   return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="eyebrow">${t(s.eyebrow)}</span>
+      <span class="eyebrow">${sectionNo(no)}${t(s.eyebrow)}</span>
       <h2 id="${esc(s.id)}-title">${t(s.title)}</h2>
     </div>
 
@@ -419,7 +415,7 @@ function aboutSection(c) {
 </section>`;
 }
 
-function projectsSection(c) {
+function projectsSection(c, no) {
   const s = c.projects;
   const L = c.lang === 'de'
     ? { challenge: 'Ausgangslage', approach: 'Vorgehen', result: 'Ergebnis', client: 'Kunde', year: 'Jahr', role: 'Rolle' }
@@ -428,7 +424,7 @@ function projectsSection(c) {
   return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="eyebrow">${t(s.eyebrow)}</span>
+      <span class="eyebrow">${sectionNo(no)}${t(s.eyebrow)}</span>
       <h2 id="${esc(s.id)}-title">${t(s.title)}</h2>
       <p class="lead">${t(s.lead)}</p>
     </div>
@@ -459,12 +455,12 @@ function projectsSection(c) {
 </section>`;
 }
 
-function testimonialsSection(c) {
+function testimonialsSection(c, no) {
   const s = c.testimonials;
   return `<section class="section testimonials-section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="eyebrow">${t(s.eyebrow)}</span>
+      <span class="eyebrow">${sectionNo(no)}${t(s.eyebrow)}</span>
       <h2 id="${esc(s.id)}-title">${t(s.title)}</h2>
       <p class="lead">${t(s.lead)}</p>
     </div>
@@ -486,12 +482,12 @@ function testimonialsSection(c) {
 </section>`;
 }
 
-function faqSection(c) {
+function faqSection(c, no) {
   const s = c.faq;
   return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="eyebrow">${t(s.eyebrow)}</span>
+      <span class="eyebrow">${sectionNo(no)}${t(s.eyebrow)}</span>
       <h2 id="${esc(s.id)}-title">${t(s.title)}</h2>
       <p class="lead">${t(s.lead)}</p>
     </div>
@@ -517,7 +513,7 @@ function faqSection(c) {
 </section>`;
 }
 
-function contactSection(c) {
+function contactSection(c, no) {
   const s = c.contact;
   const mailAttrs = `data-mail-user="${esc(s.emailUser)}" data-mail-domain="${esc(s.emailDomain)}"`;
   const mailText = `${esc(s.emailUser)}&#64;${esc(s.emailDomain)}`;
@@ -526,7 +522,7 @@ function contactSection(c) {
   return `<section class="section contact-section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
   <div class="wrap contact-grid">
     <div data-reveal>
-      <span class="eyebrow">${t(s.eyebrow)}</span>
+      <span class="eyebrow">${sectionNo(no)}${t(s.eyebrow)}</span>
       <h2 class="contact-title" id="${esc(s.id)}-title">${t(s.title)}</h2>
       <p class="lead" style="margin-top:1.25rem">${t(s.lead)}</p>
       <a class="contact-mail" href="#" ${mailAttrs} data-mail-print>${mailText}</a>
@@ -673,16 +669,21 @@ function renderHome(c) {
     hrefEn: c.lang === 'en' ? c.site.path : c.site.altPath,
   };
 
+  /* Abschnitte lassen sich über "enabled": false in content/*.json
+     abschalten. Die Nummerierung läuft dann lückenlos weiter. */
+  const on = (section) => section.enabled !== false;
+  let no = 0;
+
   const body = [
     heroSection(c),
-    skillsSection(c),
-    certSection(c),
-    experienceSection(c),
-    aboutSection(c),
-    projectsSection(c),
-    testimonialsSection(c),
-    faqSection(c),
-    contactSection(c),
+    skillsSection(c, ++no),
+    certSection(c, ++no),
+    experienceSection(c, ++no),
+    aboutSection(c, ++no),
+    projectsSection(c, ++no),
+    ...(on(c.testimonials) ? [testimonialsSection(c, ++no)] : []),
+    faqSection(c, ++no),
+    contactSection(c, ++no),
   ].join('\n\n');
 
   return shell(c, page, body);

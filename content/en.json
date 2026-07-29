@@ -52,7 +52,7 @@
   },
   "skills": {
     "id": "skills",
-    "eyebrow": "01 — Skills",
+    "eyebrow": "Skills",
     "title": "Where I am strong",
     "lead": "Four areas that rarely come together in AI projects — which is exactly why they are so often missing.",
     "groups": [
@@ -76,7 +76,7 @@
   },
   "certifications": {
     "id": "credentials",
-    "eyebrow": "02 — Credentials",
+    "eyebrow": "Credentials",
     "title": "Certifications",
     "lead": "Thirteen certifications from AXELOS and EXIN — verified, not claimed.",
     "items": [
@@ -97,7 +97,7 @@
   },
   "experience": {
     "id": "experience",
-    "eyebrow": "03 — Experience",
+    "eyebrow": "Experience",
     "title": "Career",
     "lead": "More than fifteen years at the intersection of market, technology and delivery.",
     "visibleEntries": 3,
@@ -213,7 +213,7 @@
   },
   "about": {
     "id": "about",
-    "eyebrow": "04 — About",
+    "eyebrow": "About",
     "title": "Two perspectives, one outcome",
     "pullquote": "AI projects rarely fail on technology. They fail because nobody organises the passage from ambition to everyday practice.",
     "paragraphs": [
@@ -230,7 +230,7 @@
   },
   "projects": {
     "id": "work",
-    "eyebrow": "05 — Work",
+    "eyebrow": "Work",
     "title": "Selected projects",
     "lead": "Evidence rather than assertion — situation, approach, result.",
     "items": [
@@ -267,8 +267,9 @@
     ]
   },
   "testimonials": {
+    "enabled": false,
     "id": "testimonials",
-    "eyebrow": "06 — Testimonials",
+    "eyebrow": "Testimonials",
     "title": "What others say",
     "lead": "Recommendations from people I have worked with.",
     "items": [
@@ -294,7 +295,7 @@
   },
   "faq": {
     "id": "faq",
-    "eyebrow": "07 — FAQ",
+    "eyebrow": "FAQ",
     "title": "Answered directly",
     "lead": "The questions that come up in a first call anyway.",
     "items": [
@@ -334,7 +335,7 @@
   },
   "contact": {
     "id": "contact",
-    "eyebrow": "08 — Contact",
+    "eyebrow": "Contact",
     "title": "Let's talk",
     "lead": "Whether a specific vacancy, a consulting engagement or an informal exchange about the EU AI Act — I usually reply within 24 hours.",
     "emailUser": "mstrote",

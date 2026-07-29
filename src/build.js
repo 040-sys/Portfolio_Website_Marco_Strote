@@ -256,10 +256,15 @@ written.push(
 
 /* --- 6. Bericht ------------------------------------------------------------ */
 
+/* Abgeschaltete Abschnitte werden übersprungen — vor Platzhaltern zu warnen,
+   die gar nicht auf der Seite erscheinen, wäre nur Rauschen. */
 const countPlaceholders = (node) => {
   if (typeof node === 'string') return isPlaceholder(node) ? 1 : 0;
   if (Array.isArray(node)) return node.reduce((n, v) => n + countPlaceholders(v), 0);
-  if (node && typeof node === 'object') return Object.values(node).reduce((n, v) => n + countPlaceholders(v), 0);
+  if (node && typeof node === 'object') {
+    if (node.enabled === false) return 0;
+    return Object.values(node).reduce((n, v) => n + countPlaceholders(v), 0);
+  }
   return 0;
 };
 
