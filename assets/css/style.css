@@ -482,23 +482,14 @@ body.nav-locked { overflow: hidden; }
 /* Porträt */
 .hero-portrait { position: relative; max-width: 24rem; justify-self: start; width: 100%; }
 @media (min-width: 62rem) { .hero-portrait { justify-self: end; max-width: none; } }
+/* Das Foto wird unverändert gezeigt: natürliche Farben, kein Filter,
+   kein Hover-Effekt. */
 .hero-portrait img {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: var(--radius-lg);
-  filter: grayscale(1) contrast(1.04);
-  transition: filter 0.7s var(--ease);
   background: var(--bg-alt);
-}
-.hero-portrait:hover img { filter: grayscale(0) contrast(1); }
-.hero-portrait::after {
-  content: "";
-  position: absolute;
-  inset: 0.75rem -0.75rem -0.75rem 0.75rem;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-lg);
-  z-index: -1;
 }
 
 /* Marquee */
