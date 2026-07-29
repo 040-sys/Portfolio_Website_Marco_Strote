@@ -351,6 +351,54 @@ function timeline(s) {
     </div>`;
 }
 
+/* --- Blog-Teaser auf der Startseite ---------------------------------------
+   Liegt hier und nicht in blog-template.js, weil dieses Modul bereits von dort
+   eingebunden wird — umgekehrt entstünde ein Zirkelbezug. */
+
+const postDate = (iso, lang) =>
+  new Date(iso + 'T12:00:00Z').toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
+
+function blogSection(c, posts, no) {
+  const s = c.blog;
+  return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">${sectionNo(no)}${t(s.eyebrow)}</span>
+      <h2 id="${esc(s.id)}-title">${t(s.title)}</h2>
+      <p class="lead">${t(s.lead)}</p>
+    </div>
+
+    <ol class="post-list">
+      ${posts
+        .slice(0, 3)
+        .map(
+          (p) => `<li class="post-card" data-reveal>
+        <a href="${esc(u(c, p.url))}">
+          <div class="post-meta">
+            <span class="post-category">${esc(p.category)}</span>
+            <time datetime="${esc(p.date)}">${esc(postDate(p.date, c.lang))}</time>
+            <span class="post-reading">${esc(s.readingTime.replace('{n}', String(p.minutes)))}</span>
+          </div>
+          <h3>${esc(p.title)}</h3>
+          <p>${esc(p.description)}</p>
+          <span class="post-more">${icon.arrowRight}</span>
+        </a>
+      </li>`
+        )
+        .join('\n      ')}
+    </ol>
+
+    <div class="blog-all" data-reveal>
+      <a class="btn btn-ghost" href="${esc(u(c, s.path))}">${t(s.allLabel)} ${icon.arrowRight}</a>
+    </div>
+  </div>
+</section>`;
+}
+
 function experienceSection(c, no) {
   const s = c.experience;
   return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
@@ -656,7 +704,7 @@ function legalSchema(c, page) {
 
 /* --- Seiten --------------------------------------------------------------- */
 
-function renderHome(c) {
+function renderHome(c, posts = []) {
   const page = {
     type: 'home',
     path: c.site.path,
@@ -671,7 +719,7 @@ function renderHome(c) {
 
   /* Abschnitte lassen sich über "enabled": false in content/*.json
      abschalten. Die Nummerierung läuft dann lückenlos weiter. */
-  const on = (section) => section.enabled !== false;
+  const on = (section) => section && section.enabled !== false;
   let no = 0;
 
   const body = [
@@ -680,7 +728,8 @@ function renderHome(c) {
     certSection(c, ++no),
     experienceSection(c, ++no),
     aboutSection(c, ++no),
-    projectsSection(c, ++no),
+    ...(on(c.blog) && posts.length ? [blogSection(c, posts, ++no)] : []),
+    ...(on(c.projects) ? [projectsSection(c, ++no)] : []),
     ...(on(c.testimonials) ? [testimonialsSection(c, ++no)] : []),
     faqSection(c, ++no),
     contactSection(c, ++no),

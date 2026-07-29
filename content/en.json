@@ -29,7 +29,6 @@
       { "href": "#credentials", "label": "Credentials" },
       { "href": "#experience", "label": "Experience" },
       { "href": "#about", "label": "About" },
-      { "href": "#work", "label": "Work" },
       { "href": "#faq", "label": "FAQ" }
     ],
     "cta": { "href": "#contact", "label": "Contact" }
@@ -228,7 +227,32 @@
       { "title": "Measurable or not at all", "text": "A transformation project without a defined effect is a budget line. I agree on outcomes before I start." }
     ]
   },
+  "blog": {
+    "enabled": false,
+    "id": "writing",
+    "path": "/blog/",
+    "eyebrow": "Writing",
+    "title": "Written",
+    "lead": "Articles on the EU AI Act, AI governance and putting compliance into practice.",
+    "allLabel": "All articles",
+    "indexTitle": "Writing — Marco Strote",
+    "indexHeading": "Writing",
+    "indexLead": "Analysis and practical guidance on the EU AI Act, AI governance and digital transformation.",
+    "indexDescription": "Articles by Marco Strote on the EU AI Act, AI governance, risk classification and the practice of AI compliance.",
+    "backLabel": "All articles",
+    "toHomeLabel": "To the homepage",
+    "readingTime": "{n} min read",
+    "relatedTitle": "More articles",
+    "contentsTitle": "Contents",
+    "allCategories": "All",
+    "authorLabel": "By",
+    "ctaTitle": "Questions on this topic?",
+    "ctaText": "I advise organisations on implementing the EU AI Act — from inventory to governance structure.",
+    "ctaLabel": "Get in touch",
+    "feedLabel": "RSS feed"
+  },
   "projects": {
+    "enabled": false,
     "id": "work",
     "eyebrow": "Work",
     "title": "Selected projects",

@@ -58,6 +58,12 @@
 - Internationales Kundenportfolio für Compliance-SaaS (3E — EHS Product Compliance, 2022 — 2025) — Ausgangslage: Unternehmen im EMEA-Raum stehen unter wachsendem Druck durch Gefahrstoff- und Produktregulierung, verfügen aber selten über eine belastbare Systemlandschaft für Product Stewardship. Vorgehen: Aufbau langfristiger Kundenpartnerschaften statt Einzelabschlüssen: Analyse der jeweiligen Compliance-Lage, Entwicklung individueller Lösungskonzepte und enge Verzahnung mit Produkt- und Implementierungsteams. Ergebnis: 
 - EU-AI-Act-Bestandsaufnahme und KI-Roadmap (Mittelstand & Großunternehmen, seit 2025) — Ausgangslage: Viele Unternehmen setzen KI längst ein — ChatGPT in einzelnen Teams, Copilot in HR, ein Chatbot auf der Website — ohne zu wissen, dass sie damit als Betreiber im Sinne des EU AI Act gelten und seit Februar 2025 Pflichten haben. Vorgehen: Systematische KI-Inventarisierung als erster Schritt, darauf aufbauend Risikoklassifizierung nach Anhang III, Definition von Interventionspunkten und Verantwortlichkeiten sowie eine priorisierte Roadmap bis zur vollen Durchsetzung ab August 2026. Ergebnis: 
 
+## Beiträge
+
+- [Das KI-Inventar — der unspektakulärste erste Schritt](https://marco-strote.de/blog/ki-inventar-aufbauen.html) — Praxis, 2026-06-25. Ohne Bestandsaufnahme keine Risikoklassifizierung, ohne Klassifizierung keine Compliance. Eine Anleitung, wie ein belastbares KI-Inventar entsteht — und woran es meist scheitert.
+- [Agentic AI und Artikel 14 — der ungelöste Konflikt](https://marco-strote.de/blog/agentic-ai-und-artikel-14.html) — Analyse, 2026-05-28. Der EU AI Act verlangt menschliche Aufsicht über KI-Entscheidungen. Autonome Agenten entscheiden mit Maschinengeschwindigkeit. Was Unternehmen trotzdem sicherstellen müssen.
+- [Betreiber, nicht nur Anbieter — wen der EU AI Act wirklich trifft](https://marco-strote.de/blog/betreiber-nicht-nur-anbieter.html) — Analyse, 2026-05-20. Die meisten Unternehmen glauben, der EU AI Act betreffe nur die, die KI bauen. Wer fremde KI einsetzt, ist Betreiber — und hat Pflichten. Seit Februar 2025.
+
 ## Häufige Fragen
 
 ### Welche Rolle sucht Marco Strote?
@@ -96,6 +102,8 @@ Per E-Mail an mstrote@yahoo.de oder über LinkedIn. Ich antworte in der Regel in
 
 - [Startseite (Deutsch)](https://marco-strote.de/)
 - [Homepage (English)](https://marco-strote.de/en/)
+- [Lebenslauf](https://marco-strote.de/lebenslauf.html)
+- [Beiträge](https://marco-strote.de/blog/)
 - [Impressum](https://marco-strote.de/impressum.html)
 - [Datenschutz](https://marco-strote.de/datenschutz.html)
 

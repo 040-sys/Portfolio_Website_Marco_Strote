@@ -7,6 +7,8 @@ const fs = require('fs');
 const path = require('path');
 const { renderHome, renderLegal, clean, isPlaceholder } = require('./template');
 const { renderCv } = require('./cv-template');
+const { renderBlogIndex, renderPost, renderFeed } = require('./blog-template');
+const { parseFrontmatter, toPlainText } = require('./markdown');
 
 const ROOT = path.join(__dirname, '..');
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
@@ -59,13 +61,60 @@ const TODAY = new Date().toISOString().slice(0, 10);
 
 const written = [];
 
+/* --- Blog-Artikel einlesen ------------------------------------------------ */
+/* Quelle sind Markdown-Dateien in content/blog. Die Reihenfolge ergibt sich
+   aus dem Datum im Frontmatter, nicht aus dem Dateinamen. */
+
+const BLOG_DIR = path.join(ROOT, 'content/blog');
+
+const posts = (fs.existsSync(BLOG_DIR) ? fs.readdirSync(BLOG_DIR) : [])
+  .filter((f) => f.endsWith('.md'))
+  .map((file) => {
+    const raw = fs.readFileSync(path.join(BLOG_DIR, file), 'utf8');
+    const { data, body } = parseFrontmatter(raw);
+    const slug = file.replace(/\.md$/, '');
+    const words = toPlainText(body).split(/\s+/).filter(Boolean).length;
+
+    if (!data.title || !data.date) {
+      console.log(`⚠  content/blog/${file}: title oder date fehlt — Artikel übersprungen.`);
+      return null;
+    }
+
+    return {
+      slug,
+      file,
+      body,
+      words,
+      minutes: Math.max(1, Math.round(words / 200)),
+      title: data.title,
+      description: data.description || '',
+      date: data.date,
+      category: data.category || 'Notiz',
+      tags: Array.isArray(data.tags) ? data.tags : data.tags ? [data.tags] : [],
+      url: `/blog/${slug}.html`,
+    };
+  })
+  .filter(Boolean)
+  .sort((a, b) => (a.date < b.date ? 1 : -1));
+
 /* --- 1. HTML-Seiten -------------------------------------------------------- */
 
-written.push(write('index.html', renderHome(de)));
-written.push(write('en/index.html', renderHome(en)));
+written.push(write('index.html', renderHome(de, de.blog.enabled ? posts : [])));
+written.push(write('en/index.html', renderHome(en, en.blog.enabled ? posts : [])));
 
 written.push(write('lebenslauf.html', renderCv(de)));
 written.push(write('en/cv.html', renderCv(en)));
+
+/* Blog — derzeit nur auf Deutsch; en.json hat blog.enabled: false */
+if (de.blog.enabled && posts.length) {
+  written.push(write('blog/index.html', renderBlogIndex(de, posts)));
+  written.push(write('blog/feed.xml', renderFeed(de, posts)));
+
+  for (const post of posts) {
+    const related = posts.filter((p) => p.slug !== post.slug).slice(0, 2);
+    written.push(write(`blog/${post.slug}.html`, renderPost(de, post, related)));
+  }
+}
 
 written.push(
   write('impressum.html', renderLegal(de, 'imprint', { self: '/impressum.html', alt: '/en/imprint.html', de: '/impressum.html', en: '/en/imprint.html' }))
@@ -122,6 +171,15 @@ const pages = [
   { loc: '/en/privacy.html', de: '/datenschutz.html', en: '/en/privacy.html', priority: '0.2', changefreq: 'yearly' },
 ];
 
+/* Blog-Seiten gibt es bisher nur auf Deutsch — deshalb ohne Sprachalternativen.
+   Ein hreflang auf eine nicht existierende englische Fassung wäre ein Fehler. */
+if (de.blog.enabled && posts.length) {
+  pages.push({ loc: de.blog.path, priority: '0.9', changefreq: 'weekly', noAlt: true });
+  for (const post of posts) {
+    pages.push({ loc: post.url, priority: '0.8', changefreq: 'yearly', lastmod: post.date, noAlt: true });
+  }
+}
+
 written.push(
   write(
     'sitemap.xml',
@@ -130,11 +188,15 @@ written.push(
 ${pages
   .map(
     (p) => `  <url>
-    <loc>${DOMAIN}${p.loc}</loc>
+    <loc>${DOMAIN}${p.loc}</loc>${
+      p.noAlt
+        ? ''
+        : `
     <xhtml:link rel="alternate" hreflang="de" href="${DOMAIN}${p.de}"/>
     <xhtml:link rel="alternate" hreflang="en" href="${DOMAIN}${p.en}"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="${DOMAIN}${p.de}"/>
-    <lastmod>${TODAY}</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${DOMAIN}${p.de}"/>`
+    }
+    <lastmod>${p.lastmod || TODAY}</lastmod>
     <changefreq>${p.changefreq}</changefreq>
     <priority>${p.priority}</priority>
   </url>`
@@ -208,6 +270,14 @@ const llms = [
     .map((p) => `- ${clean(p.title)} (${clean(p.client)}, ${clean(p.year)}) — Ausgangslage: ${clean(p.challenge)} Vorgehen: ${clean(p.approach)} Ergebnis: ${clean(p.result)}`)
     .join('\n') || '- (noch nicht hinterlegt)',
   '',
+  '## Beiträge',
+  '',
+  posts.length
+    ? posts
+        .map((p) => `- [${p.title}](${DOMAIN}${p.url}) — ${p.category}, ${p.date}. ${p.description}`)
+        .join('\n')
+    : '- (noch keine)',
+  '',
   '## Häufige Fragen',
   '',
   de.faq.items
@@ -219,6 +289,8 @@ const llms = [
   '',
   `- [Startseite (Deutsch)](${DOMAIN}/)`,
   `- [Homepage (English)](${DOMAIN}/en/)`,
+  `- [Lebenslauf](${DOMAIN}/lebenslauf.html)`,
+  ...(posts.length ? [`- [Beiträge](${DOMAIN}/blog/)`] : []),
   `- [Impressum](${DOMAIN}/impressum.html)`,
   `- [Datenschutz](${DOMAIN}/datenschutz.html)`,
   '',

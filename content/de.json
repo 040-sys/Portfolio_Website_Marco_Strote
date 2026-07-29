@@ -29,7 +29,7 @@
       { "href": "#qualifikationen", "label": "Qualifikationen" },
       { "href": "#erfahrung", "label": "Erfahrung" },
       { "href": "#ueber-mich", "label": "Über mich" },
-      { "href": "#projekte", "label": "Projekte" },
+      { "href": "#beitraege", "label": "Beiträge" },
       { "href": "#faq", "label": "FAQ" }
     ],
     "cta": { "href": "#kontakt", "label": "Kontakt" }
@@ -228,7 +228,32 @@
       { "title": "Messbar oder gar nicht", "text": "Ein Transformationsprojekt ohne definierte Wirkung ist ein Budgetposten. Ich vereinbare Ergebnisse, bevor ich anfange." }
     ]
   },
+  "blog": {
+    "enabled": true,
+    "id": "beitraege",
+    "path": "/blog/",
+    "eyebrow": "Beiträge",
+    "title": "Geschrieben",
+    "lead": "Fachbeiträge zum EU AI Act, zu KI-Governance und zur Praxis der Umsetzung.",
+    "allLabel": "Alle Beiträge",
+    "indexTitle": "Beiträge — Marco Strote",
+    "indexHeading": "Beiträge",
+    "indexLead": "Analysen und Anleitungen rund um den EU AI Act, KI-Governance und digitale Transformation. Neue Texte erscheinen zuerst hier.",
+    "indexDescription": "Fachbeiträge von Marco Strote zum EU AI Act, zu KI-Governance, Risikoklassifizierung und der praktischen Umsetzung von KI-Compliance.",
+    "backLabel": "Alle Beiträge",
+    "toHomeLabel": "Zur Startseite",
+    "readingTime": "{n} Min. Lesezeit",
+    "relatedTitle": "Weitere Beiträge",
+    "contentsTitle": "Inhalt",
+    "allCategories": "Alle",
+    "authorLabel": "Von",
+    "ctaTitle": "Fragen zum Thema?",
+    "ctaText": "Ich berate Unternehmen bei der Umsetzung des EU AI Act — von der Bestandsaufnahme bis zur Governance-Struktur.",
+    "ctaLabel": "Kontakt aufnehmen",
+    "feedLabel": "RSS-Feed"
+  },
   "projects": {
+    "enabled": false,
     "id": "projekte",
     "eyebrow": "Projekte",
     "title": "Ausgewählte Projekte",

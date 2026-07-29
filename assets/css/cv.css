@@ -362,8 +362,113 @@ img { display: block; max-width: 100%; }
   border-radius: 1mm;
   padding: 2mm 4mm;
   cursor: pointer;
+  min-height: 2.75rem;
 }
 .cv-hint a { color: #d9d4c9; text-decoration: underline; }
+
+/* --- Nur am Bildschirm ----------------------------------------------------
+   Trefferflächen für Finger. Im PDF wäre die Mindesthöhe verschenkter Platz,
+   deshalb ausdrücklich auf screen begrenzt. */
+
+@media screen {
+  .cv-eyebrow { font-size: 0.75rem; }
+
+  .cv-contact a,
+  .cv-foot a,
+  .cv-hint a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.5rem;
+  }
+}
+
+/* --- Kleine Bildschirme ---------------------------------------------------
+   Die A4-Breite von 210 mm passt auf kein Telefon. Unterhalb der Blattbreite
+   wird aus dem Dokument ein normales, fließendes Layout — einspaltig, größere
+   Schrift, keine feste Breite. Die Druckausgabe bleibt davon unberührt. */
+
+@media screen and (max-width: 64rem) {
+  body {
+    background: var(--bg);
+    font-size: 1rem;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+  }
+
+  .page {
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: calc(1.25rem + 3vw) clamp(1.1rem, 4vw, 2rem) 3rem;
+    box-shadow: none;
+  }
+
+  .cv-hint {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0.9rem clamp(1.1rem, 4vw, 2rem);
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+  }
+  .cv-hint button { padding: 0.65rem 1rem; min-height: 2.75rem; }
+
+  .cv-eyebrow { font-size: 0.75rem; }
+  .cv-head { grid-template-columns: 1fr; gap: 1.25rem; }
+  .cv-photo { order: -1; }
+  .cv-photo img { width: 5.5rem; height: 6.875rem; }
+  .cv-name { font-size: clamp(2rem, 1.4rem + 3vw, 2.75rem); }
+  .cv-role { font-size: 1.0625rem; }
+
+  .cv-contact { grid-template-columns: 1fr; gap: 0.5rem; font-size: 0.9375rem; }
+  .cv-contact div { gap: 0.75rem; }
+  .cv-contact dt { width: 6.5rem; font-size: 0.6875rem; }
+  .cv-contact a { display: inline-flex; align-items: center; min-height: 1.75rem; }
+
+  .cv-section { padding-top: 1.75rem; }
+  .cv-section + .cv-section { margin-top: 1.75rem; }
+  .cv-section > h2 { font-size: 0.6875rem; margin-bottom: 1rem; }
+  .cv-profile { font-size: 1rem; line-height: 1.6; max-width: none; }
+
+  .cv-skills { grid-template-columns: 1fr; gap: 1.1rem; }
+  .cv-skill-group h3 { font-size: 1rem; }
+  .cv-skill-group p { font-size: 0.9375rem; line-height: 1.55; }
+
+  /* Zeitraum über den Eintrag statt in eine eigene Spalte */
+  .cv-entry { grid-template-columns: 1fr; gap: 0.3rem; padding-bottom: 1.6rem; }
+  .cv-entry.is-compact { padding-bottom: 1.25rem; }
+  .cv-period { font-size: 0.75rem; padding-top: 0; }
+  .cv-entry h3, .cv-entry.is-compact h3 { font-size: 1.1875rem; }
+  .cv-org { font-size: 0.9375rem; }
+  .cv-entry .cv-summary,
+  .cv-entry.is-compact .cv-summary { font-size: 0.9375rem; line-height: 1.6; margin-top: 0.5rem; max-width: none; }
+  .cv-highlights { margin-top: 0.6rem; gap: 0.4rem; }
+  .cv-highlights li { font-size: 0.9375rem; line-height: 1.55; padding-left: 1rem; }
+  .cv-highlights li::before { top: 0.7em; width: 0.6rem; }
+
+  .cv-more > summary {
+    margin-left: 0;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9375rem;
+    min-height: 2.75rem;
+    border-radius: 100px;
+  }
+
+  .cv-cert-group h3 { font-size: 0.9375rem; }
+  .cv-certs { grid-template-columns: 1fr; gap: 0.55rem; }
+  .cv-certs li { flex-direction: column; gap: 0.1rem; font-size: 0.9375rem; }
+  .cv-certs time { font-size: 0.75rem; }
+
+  .cv-two-col { grid-template-columns: 1fr; gap: 1.75rem; }
+  .cv-two-col > section > h2 { font-size: 0.6875rem; }
+  .cv-simple li { grid-template-columns: 1fr; gap: 0.15rem; padding-bottom: 0.75rem; }
+  .cv-simple strong { font-size: 1rem; }
+  .cv-simple span { font-size: 0.9375rem; }
+  .cv-languages li { max-width: none; font-size: 1rem; padding-bottom: 0.6rem; margin-bottom: 0.6rem; }
+
+  .cv-foot { flex-direction: column; gap: 0.5rem; font-size: 0.75rem; margin-top: 2.5rem; }
+  .cv-foot a { display: inline-flex; align-items: center; min-height: 1.75rem; }
+}
 
 /* --- Druck / PDF ---------------------------------------------------------- */
 

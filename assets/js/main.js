@@ -117,7 +117,27 @@
     track.setAttribute('aria-hidden', 'true');
   }
 
-  /* --- 8. Vor dem Drucken alles aufklappen ------------------------------
+  /* --- 8. Blog: Filter nach Rubrik --------------------------------------
+     Reine Anzeigehilfe. Ohne JavaScript sind schlicht alle Beiträge sichtbar,
+     was der brauchbare Ausgangszustand ist. */
+  var filterButtons = document.querySelectorAll('.blog-filter .chip');
+
+  if (filterButtons.length) {
+    var cards = document.querySelectorAll('.post-card');
+
+    filterButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var wanted = btn.dataset.filter;
+
+        filterButtons.forEach(function (b) { b.classList.toggle('is-active', b === btn); });
+        cards.forEach(function (card) {
+          card.hidden = wanted !== '*' && card.dataset.category !== wanted;
+        });
+      });
+    });
+  }
+
+  /* --- 9. Vor dem Drucken alles aufklappen ------------------------------
      Auf Papier kann niemand einen Aufklapper öffnen — was zugeklappt bliebe,
      wäre für den Leser schlicht verloren. */
   window.addEventListener('beforeprint', function () {
@@ -125,7 +145,7 @@
     document.querySelectorAll('.faq-item').forEach(function (i) { i.classList.add('is-open'); });
   });
 
-  /* --- 9. Jahreszahl im Footer ----------------------------------------- */
+  /* --- 10. Jahreszahl im Footer ---------------------------------------- */
   document.querySelectorAll('[data-current-year]').forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
   });
