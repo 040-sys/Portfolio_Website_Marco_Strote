@@ -12,11 +12,12 @@
     "altTitle": "Switch to English"
   },
   "meta": {
-    "title": "Marco Strote — Berater & Produktverantwortlicher | Portfolio",
-    "description": "[[PLATZHALTER: Positionierung in 155 Zeichen]] Marco Strote verbindet Beratung und Produktverantwortung: Strategie, Umsetzung und messbare Ergebnisse. Standort und Verfügbarkeit im Überblick.",
-    "keywords": "Marco Strote, Berater, Produktverantwortlicher, Product Owner, Consultant, Portfolio, Lebenslauf",
+    "title": "Marco Strote — KI- & Transformationsberater | EU AI Act | Hamburg",
+    "description": "KI- und Transformationsberater aus Hamburg. Schwerpunkt EU AI Act, KI-Strategie und Digitalisierung mit messbarem Business Impact. 13 Zertifizierungen, über 15 Jahre Erfahrung.",
+    "keywords": "Marco Strote, KI-Berater, EU AI Act, KI-Compliance, Transformationsberater, Digitalisierung, Projektmanagement, PRINCE2, ITIL, Scrum, Hamburg",
     "ogImage": "/assets/img/og-image.jpg",
-    "ogImageAlt": "Marco Strote — Berater und Produktverantwortlicher"
+    "ogImageAlt": "Marco Strote — KI- und Transformationsberater aus Hamburg",
+    "jobTitle": "KI- & Transformationsberater"
   },
   "nav": {
     "skipToContent": "Zum Inhalt springen",
@@ -36,12 +37,12 @@
   "hero": {
     "eyebrow": "Portfolio",
     "name": "Marco Strote",
-    "headline": "[[PLATZHALTER: Positionierung in einem Satz]] Ich verbinde Beratungsperspektive mit Produktverantwortung — von der Strategie bis zur Umsetzung.",
-    "intro": "[[PLATZHALTER: 2 Sätze Kontext]] Als Berater analysiere ich, was ein Unternehmen wirklich braucht. Als Produktverantwortlicher sorge ich dafür, dass es auch gebaut und ausgeliefert wird.",
+    "headline": "Ich mache KI im Unternehmen anwendbar — regulatorisch sauber und mit messbarem Ergebnis.",
+    "intro": "KI- und Transformationsberater mit Schwerpunkt EU AI Act. Über 15 Jahre zwischen Markt, Fachbereich und Umsetzung: erst im B2B-Vertrieb digitaler Lösungen, heute in der Beratung von Unternehmen, die KI einsetzen wollen, ohne die Compliance aus dem Blick zu verlieren.",
     "facts": [
-      { "label": "Standort", "value": "Wentorf bei Hamburg" },
-      { "label": "Verfügbarkeit", "value": "[[PLATZHALTER: z. B. ab sofort / Q4 2026]]" },
-      { "label": "Arbeitsmodell", "value": "[[PLATZHALTER: Remote / Hybrid / Vor Ort]]" }
+      { "label": "Standort", "value": "Hamburg & Umgebung" },
+      { "label": "Verfügbarkeit", "value": "Ab sofort — Projekte und Festanstellung" },
+      { "label": "Arbeitsmodell", "value": "Vor Ort, hybrid oder remote" }
     ],
     "primaryCta": { "href": "#kontakt", "label": "Kontakt aufnehmen" },
     "secondaryCta": { "href": "/assets/files/Lebenslauf-Marco-Strote.pdf", "label": "Lebenslauf herunterladen" },
@@ -53,23 +54,23 @@
     "id": "kompetenzen",
     "eyebrow": "01 — Kompetenzen",
     "title": "Worin ich stark bin",
-    "lead": "In drei Sekunden scanbar: die Felder, in denen ich täglich arbeite.",
+    "lead": "Vier Felder, die in KI-Projekten selten zusammen auftreten — und genau deshalb so oft fehlen.",
     "groups": [
       {
-        "title": "Beratung & Strategie",
-        "tags": ["[[PLATZHALTER]] Anforderungsanalyse", "Prozessdesign", "Stakeholder-Management", "Workshop-Moderation", "Business Case", "Change-Begleitung"]
+        "title": "KI & EU AI Act",
+        "tags": ["KI-Strategie & Roadmap", "EU AI Act Compliance", "KI-Inventarisierung", "Risikoklassifizierung", "KI-Governance", "Agentic AI", "Use-Case-Bewertung"]
       },
       {
-        "title": "Produkt & Delivery",
-        "tags": ["[[PLATZHALTER]] Product Ownership", "Roadmapping", "Backlog-Management", "Scrum / Kanban", "Discovery", "Go-to-Market"]
+        "title": "Digitale Transformation",
+        "tags": ["Digitalstrategie", "Prozessanalyse & -optimierung", "Automatisierung", "Change Management", "Stakeholder-Kommunikation", "Business Development"]
       },
       {
-        "title": "Daten & Technologie",
-        "tags": ["[[PLATZHALTER]] Datenanalyse", "KI-Anwendungsfälle", "Schnittstellen / API", "Automatisierung", "Reporting", "Tool-Auswahl"]
+        "title": "Projekt & Umsetzung",
+        "tags": ["Projektleitung", "PRINCE2 & PRINCE2 Agile", "Scrum Master", "Product Owner", "Interimsmanagement", "Business Analyse", "Requirements Engineering", "ITIL 4 Service Management"]
       },
       {
-        "title": "Führung & Zusammenarbeit",
-        "tags": ["[[PLATZHALTER]] Fachliche Führung", "Cross-funktionale Teams", "Coaching", "Kommunikation", "Konfliktklärung", "Remote-Zusammenarbeit"]
+        "title": "Markt & Kunde",
+        "tags": ["B2B-Vertrieb", "Key Account Management", "SaaS-Lösungsvertrieb", "Regulatory & Product Compliance", "Internationale Kundenportfolios", "E-Commerce & MarTech"]
       }
     ]
   },
@@ -77,58 +78,134 @@
     "id": "qualifikationen",
     "eyebrow": "02 — Qualifikationen",
     "title": "Zertifizierungen",
-    "lead": "Neun Zertifizierungen — geprüft, nicht behauptet.",
+    "lead": "Dreizehn Zertifizierungen von AXELOS und EXIN — geprüft, nicht behauptet.",
     "items": [
-      { "name": "[[PLATZHALTER: Zertifikat 1]]", "issuer": "Anbieter", "year": "2025", "category": "Produkt" },
-      { "name": "[[PLATZHALTER: Zertifikat 2]]", "issuer": "Anbieter", "year": "2025", "category": "Produkt" },
-      { "name": "[[PLATZHALTER: Zertifikat 3]]", "issuer": "Anbieter", "year": "2024", "category": "Projekt" },
-      { "name": "[[PLATZHALTER: Zertifikat 4]]", "issuer": "Anbieter", "year": "2024", "category": "Projekt" },
-      { "name": "[[PLATZHALTER: Zertifikat 5]]", "issuer": "Anbieter", "year": "2023", "category": "Methode" },
-      { "name": "[[PLATZHALTER: Zertifikat 6]]", "issuer": "Anbieter", "year": "2023", "category": "Methode" },
-      { "name": "[[PLATZHALTER: Zertifikat 7]]", "issuer": "Anbieter", "year": "2022", "category": "Technologie" },
-      { "name": "[[PLATZHALTER: Zertifikat 8]]", "issuer": "Anbieter", "year": "2022", "category": "Technologie" },
-      { "name": "[[PLATZHALTER: Zertifikat 9]]", "issuer": "Anbieter", "year": "2021", "category": "Technologie" }
+      { "name": "ITIL® 4 Leader: Digital & IT Strategy", "issuer": "AXELOS Global Best Practice", "year": "2021", "category": "IT-Strategie" },
+      { "name": "ITIL® 4 Strategist: Direct, Plan and Improve", "issuer": "AXELOS Global Best Practice", "year": "2021", "category": "IT-Strategie" },
+      { "name": "ITIL® Foundation in IT Service Management", "issuer": "AXELOS Global Best Practice", "year": "2020", "category": "IT-Strategie" },
+      { "name": "PRINCE2 Agile® Practitioner in Agile Project Management", "issuer": "AXELOS Global Best Practice", "year": "2020", "category": "Projektmanagement" },
+      { "name": "PRINCE2® Practitioner in Project Management", "issuer": "AXELOS Global Best Practice", "year": "2020", "category": "Projektmanagement" },
+      { "name": "PRINCE2® Foundation in Project Management", "issuer": "AXELOS Global Best Practice", "year": "2020", "category": "Projektmanagement" },
+      { "name": "EXIN BCS Practitioner in Requirements Engineering", "issuer": "EXIN", "year": "2020", "category": "Business Analyse" },
+      { "name": "EXIN BCS Practitioner in Business Analysis Practice", "issuer": "EXIN", "year": "2020", "category": "Business Analyse" },
+      { "name": "EXIN BCS Practitioner in Modelling Business Processes", "issuer": "EXIN", "year": "2021", "category": "Business Analyse" },
+      { "name": "EXIN BCS Foundation in Business Analysis", "issuer": "EXIN", "year": "2020", "category": "Business Analyse" },
+      { "name": "Agile Scrum Product Owner", "issuer": "EXIN", "year": "2020", "category": "Agile" },
+      { "name": "Agile Scrum Master", "issuer": "EXIN", "year": "2020", "category": "Agile" },
+      { "name": "Agile Scrum Foundation", "issuer": "EXIN", "year": "2020", "category": "Agile" }
     ]
   },
   "experience": {
     "id": "erfahrung",
     "eyebrow": "03 — Erfahrung",
     "title": "Beruflicher Werdegang",
-    "lead": "Chronologisch, mit den Ergebnissen, die zählen.",
+    "lead": "Über 15 Jahre an der Schnittstelle von Markt, Technologie und Umsetzung.",
     "items": [
       {
-        "period": "[[PLATZHALTER: 2023 — heute]]",
-        "role": "[[PLATZHALTER: Rolle]]",
-        "company": "[[PLATZHALTER: Unternehmen]]",
-        "location": "[[PLATZHALTER: Ort]]",
-        "summary": "[[PLATZHALTER: 1–2 Sätze, was die Rolle umfasst.]]",
+        "period": "Juli 2025 — heute",
+        "role": "Berater für KI, Digitalisierung & Transformation",
+        "company": "Selbstständig",
+        "location": "Hamburg & Umgebung",
+        "summary": "Begleitung von Unternehmen bei der strategischen und operativen Umsetzung von KI-Projekten, digitalen Transformationsvorhaben und Prozessoptimierungen — mit dem Ziel, messbaren Business Impact zu erzielen.",
         "highlights": [
-          "[[PLATZHALTER: Ergebnis mit Zahl]]",
-          "[[PLATZHALTER: Verantwortungsumfang]]",
-          "[[PLATZHALTER: Besonderes Projekt]]"
+          "Entwicklung von KI-Strategien und Roadmaps für mittelständische und große Unternehmen",
+          "EU AI Act: KI-Inventarisierung, Risikoklassifizierung und Aufbau von Governance-Strukturen",
+          "Konzeption und Steuerung digitaler Transformationsprojekte, agil wie klassisch",
+          "Prozessanalyse, -optimierung und Automatisierungsberatung",
+          "Interim-Projektleitung und agile Teamsteuerung (Scrum, PRINCE2, PRINCE2 Agile)"
         ]
       },
       {
-        "period": "[[PLATZHALTER: 2020 — 2023]]",
-        "role": "[[PLATZHALTER: Rolle]]",
-        "company": "[[PLATZHALTER: Unternehmen]]",
-        "location": "[[PLATZHALTER: Ort]]",
-        "summary": "[[PLATZHALTER: 1–2 Sätze.]]",
-        "highlights": ["[[PLATZHALTER]]", "[[PLATZHALTER]]"]
+        "period": "März 2022 — Juni 2025",
+        "role": "Account Manager, EMEA Sales",
+        "company": "3E",
+        "location": "Vollzeit",
+        "summary": "Aufbau und Entwicklung strategischer Kundenbeziehungen im EMEA-Raum für SaaS-Lösungen im Bereich EHS Product Compliance und Product Stewardship — Gefahrstoffmanagement und Regulatory Compliance.",
+        "highlights": [
+          "Eigenverantwortliche Steuerung eines internationalen B2B-Kundenportfolios",
+          "Entwicklung individueller Lösungskonzepte für Compliance-Herausforderungen",
+          "Enge Verzahnung mit Produkt- und Implementierungsteams zur Sicherstellung des Kundenerfolgs",
+          "Marktfeedback aktiv in Produkt- und Unternehmensstrategie eingespeist"
+        ]
       },
       {
-        "period": "[[PLATZHALTER: 2017 — 2020]]",
-        "role": "[[PLATZHALTER: Rolle]]",
-        "company": "[[PLATZHALTER: Unternehmen]]",
-        "location": "[[PLATZHALTER: Ort]]",
-        "summary": "[[PLATZHALTER: 1–2 Sätze.]]",
-        "highlights": ["[[PLATZHALTER]]", "[[PLATZHALTER]]"]
+        "period": "Mai 2021 — Feb. 2022",
+        "role": "IT-Projektmanager",
+        "company": "Dr. Jörg Freytag",
+        "location": "Umweltanalytik-Labor",
+        "summary": "Projektmanagement für Einführung und Weiterentwicklung eines Laborinformationsmanagementsystems (LIMS) in einem auf Umweltanalysen spezialisierten Labor.",
+        "highlights": [
+          "Leitung cross-funktionaler Teams für Entwicklung und Implementierung neuer LIMS-Technologien",
+          "Anforderungsanalysen sowie Use-Case-Modelle, Mind-Maps und Rich Pictures zur Lösungsdokumentation",
+          "Koordination interner und externer Stakeholder hinsichtlich Ziel-, Budget- und Zeitplanung",
+          "Projektziele innerhalb des vereinbarten Zeit- und Budgetrahmens umgesetzt"
+        ]
+      },
+      {
+        "period": "Mai 2020 — Mai 2021",
+        "role": "Intensive Weiterbildungsphase",
+        "company": "AXELOS & EXIN",
+        "location": "Zertifizierungskurse",
+        "summary": "Bewusste Entscheidung, die Pandemiezeit für eine vollständige methodische Neuaufstellung zu nutzen: dreizehn Zertifizierungen in Projektmanagement, Business Analyse, agilen Methoden und IT-Strategie.",
+        "highlights": [
+          "ITIL 4 Strategic Leader — Digital & IT Strategy sowie Direct, Plan and Improve",
+          "PRINCE2, PRINCE2 Agile und Scrum (Master und Product Owner)",
+          "EXIN BCS Business Analysis und Requirements Engineering"
+        ]
+      },
+      {
+        "period": "Juli 2019 — Apr. 2021",
+        "role": "Berater für Digitalisierung & Transformation",
+        "company": "Selbstständig",
+        "location": "Hamburg & Umgebung",
+        "summary": "Beratung zu Digitalisierungsvorhaben und Prozessgestaltung, parallel zur methodischen Weiterqualifizierung.",
+        "highlights": []
+      },
+      {
+        "period": "2017 — 2019",
+        "role": "Account Executive, HazMat Compliance Solutions",
+        "company": "1WorldSync",
+        "location": "DACH",
+        "summary": "Vertrieb von SaaS-Lösungen für Product Compliance und Gefahrstoffmanagement im B2B-Bereich. Aufbau und Entwicklung von Kundenbeziehungen im DACH-Raum.",
+        "highlights": []
+      },
+      {
+        "period": "2016",
+        "role": "Senior Sales Manager",
+        "company": "Akanoo",
+        "location": "Hamburg & Umgebung",
+        "summary": "Vertrieb einer KI-gestützten Personalisierungslösung für E-Commerce — selbstlernende Kaufanreize in Echtzeit. Frühe Praxiserfahrung im Vertrieb von KI-Produkten und MarTech.",
+        "highlights": []
+      },
+      {
+        "period": "2014 — 2016",
+        "role": "Account Manager Online",
+        "company": "For Sale Digital Internet-Agentur GmbH",
+        "location": "Hamburg & Umgebung",
+        "summary": "Betreuung und Entwicklung von Kunden im Bereich digitaler Vertriebs- und Marketinglösungen.",
+        "highlights": []
+      },
+      {
+        "period": "2011 — 2013",
+        "role": "Key Account Manager & Sales Manager",
+        "company": "hmmh AG",
+        "location": "Hamburg",
+        "summary": "Key-Account-Betreuung und Neugeschäftsentwicklung bei einer der führenden deutschen E-Commerce-Agenturen.",
+        "highlights": []
+      },
+      {
+        "period": "2009 — 2011",
+        "role": "Berater für Digitalisierung & Transformation",
+        "company": "Selbstständig",
+        "location": "Hamburg & Umgebung",
+        "summary": "Erste selbstständige Beratungstätigkeit rund um Digitalisierung und Geschäftsprozesse.",
+        "highlights": []
       }
     ],
     "education": {
       "title": "Ausbildung",
       "items": [
-        { "period": "[[PLATZHALTER: Jahr]]", "degree": "[[PLATZHALTER: Abschluss]]", "institution": "[[PLATZHALTER: Hochschule]]" }
+        { "period": "1994 — 1998", "degree": "Betriebswirt (WAH), International Business Administration", "institution": "Wirtschaftsakademie Hamburg (WAH)" }
       ]
     }
   },
@@ -136,17 +213,17 @@
     "id": "ueber-mich",
     "eyebrow": "04 — Über mich",
     "title": "Zwei Perspektiven, ein Ergebnis",
-    "pullquote": "[[PLATZHALTER: Ein prägnanter Leitsatz]] Beratung ohne Umsetzung bleibt Papier. Umsetzung ohne Beratung bleibt Beschäftigung.",
+    "pullquote": "KI-Projekte scheitern selten an der Technik. Sie scheitern daran, dass niemand den Übergang zwischen Anspruch und Alltag organisiert.",
     "paragraphs": [
-      "[[PLATZHALTER: Absatz 1 — Herkunft und Weg.]] Ich arbeite seit mehreren Jahren an der Schnittstelle von Fachbereich, Technik und Management.",
-      "[[PLATZHALTER: Absatz 2 — Die Beraterperspektive.]] Als Berater beginne ich mit der Frage, welches Problem tatsächlich gelöst werden soll.",
-      "[[PLATZHALTER: Absatz 3 — Die Produktperspektive.]] Als Produktverantwortlicher trage ich die Konsequenz dieser Entscheidungen bis in die Auslieferung.",
-      "[[PLATZHALTER: Absatz 4 — Was mich antreibt.]] Was mich interessiert, sind Aufgaben, bei denen Struktur und Menschen gleichermaßen zählen."
+      "Ich habe über fünfzehn Jahre auf der Marktseite verbracht: als Key Account Manager bei einer E-Commerce-Agentur, im Vertrieb einer KI-gestützten Personalisierungslösung, zuletzt mit einem internationalen Kundenportfolio für Compliance-Software im EMEA-Raum. In dieser Zeit habe ich vor allem eines gelernt: Unternehmen kaufen keine Technologie. Sie kaufen die Lösung eines Problems, das sie oft selbst noch nicht scharf benannt haben.",
+      "2020 habe ich mich bewusst methodisch neu aufgestellt und in gut einem Jahr dreizehn Zertifizierungen abgeschlossen — Projektmanagement, Business Analyse, agile Methoden, IT-Strategie. Nicht als Sammelleidenschaft, sondern weil ich die andere Hälfte beherrschen wollte: nicht nur verkaufen, was ein System kann, sondern verantworten, dass es tatsächlich eingeführt wird. Direkt danach habe ich als IT-Projektmanager die Einführung eines Laborinformationssystems geleitet.",
+      "Heute berate ich Unternehmen zu KI und digitaler Transformation, mit besonderem Schwerpunkt auf dem EU AI Act. Das Thema verbindet beide Seiten meiner Erfahrung: Es ist gleichzeitig eine regulatorische Frage, eine strategische Entscheidung und ein ganz handfestes Umsetzungsproblem. Die meisten Unternehmen wissen nicht einmal, welche KI-Systeme sie bereits einsetzen — und sind damit seit Februar 2025 in der Betreiberpflicht.",
+      "Was mich an dieser Arbeit interessiert, ist der Moment, in dem aus einer abstrakten Anforderung eine konkrete Liste wird, an der ein Team am Montagmorgen weiterarbeiten kann. Alles davor ist Vorbereitung, alles danach ist Handwerk."
     ],
     "principles": [
-      { "title": "[[PLATZHALTER]] Klarheit vor Tempo", "text": "Ein sauber verstandenes Problem spart mehr Zeit als jede Abkürzung." },
-      { "title": "[[PLATZHALTER]] Ergebnis vor Methode", "text": "Frameworks sind Werkzeuge, kein Selbstzweck." },
-      { "title": "[[PLATZHALTER]] Nähe zum Nutzer", "text": "Entscheidungen entstehen dort, wo das Produkt tatsächlich verwendet wird." }
+      { "title": "Erst das Inventar, dann die Strategie", "text": "Wer nicht weiß, was bereits im Einsatz ist, kann weder klassifizieren noch priorisieren. Der unspektakulärste Schritt ist meistens der wichtigste." },
+      { "title": "Regulatorik ist kein Bremsklotz", "text": "Der EU AI Act zwingt zu Klarheit über Zweck, Verantwortung und Risiko. Genau diese Klarheit fehlt den meisten KI-Vorhaben ohnehin." },
+      { "title": "Messbar oder gar nicht", "text": "Ein Transformationsprojekt ohne definierte Wirkung ist ein Budgetposten. Ich vereinbare Ergebnisse, bevor ich anfange." }
     ]
   },
   "projects": {
@@ -156,34 +233,34 @@
     "lead": "Belege statt Behauptungen — Ausgangslage, Vorgehen, Ergebnis.",
     "items": [
       {
-        "title": "[[PLATZHALTER: Projekttitel]]",
-        "client": "[[PLATZHALTER: Branche oder Auftraggeber]]",
-        "year": "[[PLATZHALTER: 2025]]",
-        "role": "[[PLATZHALTER: Deine Rolle]]",
-        "challenge": "[[PLATZHALTER: Welches Problem lag vor?]]",
-        "approach": "[[PLATZHALTER: Was hast du konkret getan?]]",
-        "result": "[[PLATZHALTER: Welches messbare Ergebnis kam heraus?]]",
-        "tags": ["[[PLATZHALTER]]", "[[PLATZHALTER]]"]
+        "title": "Einführung eines Laborinformationssystems (LIMS)",
+        "client": "Dr. Jörg Freytag — Umweltanalytik",
+        "year": "2021 — 2022",
+        "role": "IT-Projektmanager",
+        "challenge": "Ein auf Umweltanalysen spezialisiertes Labor benötigte ein neues Laborinformationsmanagementsystem. Anforderungen lagen verstreut bei Fachbereich, IT und externen Dienstleistern vor, ohne gemeinsame Grundlage.",
+        "approach": "Strukturierte Anforderungsanalyse mit Use-Case-Modellen, Mind-Maps und Rich Pictures als gemeinsame Verständigungsbasis. Leitung cross-funktionaler Teams und Koordination interner wie externer Stakeholder entlang Ziel-, Budget- und Zeitplanung.",
+        "result": "Die Projektziele wurden innerhalb des vereinbarten Zeit- und Budgetrahmens umgesetzt. [[PLATZHALTER: Falls vorhanden — konkrete Zahl ergänzen, z. B. Durchlaufzeit pro Probe, Anzahl abgelöster Altsysteme oder Zahl der Nutzer.]]",
+        "tags": ["Projektleitung", "Anforderungsanalyse", "LIMS", "Stakeholder-Management"]
       },
       {
-        "title": "[[PLATZHALTER: Projekttitel]]",
-        "client": "[[PLATZHALTER: Branche oder Auftraggeber]]",
-        "year": "[[PLATZHALTER: 2024]]",
-        "role": "[[PLATZHALTER: Deine Rolle]]",
-        "challenge": "[[PLATZHALTER]]",
-        "approach": "[[PLATZHALTER]]",
-        "result": "[[PLATZHALTER]]",
-        "tags": ["[[PLATZHALTER]]", "[[PLATZHALTER]]"]
+        "title": "Internationales Kundenportfolio für Compliance-SaaS",
+        "client": "3E — EHS Product Compliance",
+        "year": "2022 — 2025",
+        "role": "Account Manager, EMEA Sales",
+        "challenge": "Unternehmen im EMEA-Raum stehen unter wachsendem Druck durch Gefahrstoff- und Produktregulierung, verfügen aber selten über eine belastbare Systemlandschaft für Product Stewardship.",
+        "approach": "Aufbau langfristiger Kundenpartnerschaften statt Einzelabschlüssen: Analyse der jeweiligen Compliance-Lage, Entwicklung individueller Lösungskonzepte und enge Verzahnung mit Produkt- und Implementierungsteams.",
+        "result": "[[PLATZHALTER: Hier zählt eine Zahl — Portfoliogröße, Umsatzentwicklung, Verlängerungsquote oder Anzahl betreuter Länder. Ohne Zahl bleibt dieser Abschnitt hinter den beiden anderen zurück.]]",
+        "tags": ["B2B-Vertrieb", "Regulatory Compliance", "SaaS", "EMEA"]
       },
       {
-        "title": "[[PLATZHALTER: Projekttitel]]",
-        "client": "[[PLATZHALTER: Branche oder Auftraggeber]]",
-        "year": "[[PLATZHALTER: 2023]]",
-        "role": "[[PLATZHALTER: Deine Rolle]]",
-        "challenge": "[[PLATZHALTER]]",
-        "approach": "[[PLATZHALTER]]",
-        "result": "[[PLATZHALTER]]",
-        "tags": ["[[PLATZHALTER]]", "[[PLATZHALTER]]"]
+        "title": "EU-AI-Act-Bestandsaufnahme und KI-Roadmap",
+        "client": "Mittelstand & Großunternehmen",
+        "year": "seit 2025",
+        "role": "Berater für KI & Transformation",
+        "challenge": "Viele Unternehmen setzen KI längst ein — ChatGPT in einzelnen Teams, Copilot in HR, ein Chatbot auf der Website — ohne zu wissen, dass sie damit als Betreiber im Sinne des EU AI Act gelten und seit Februar 2025 Pflichten haben.",
+        "approach": "Systematische KI-Inventarisierung als erster Schritt, darauf aufbauend Risikoklassifizierung nach Anhang III, Definition von Interventionspunkten und Verantwortlichkeiten sowie eine priorisierte Roadmap bis zur vollen Durchsetzung ab August 2026.",
+        "result": "[[PLATZHALTER: Sobald ein Mandat abgeschlossen ist — Anzahl erfasster KI-Systeme, Zeitbedarf bis zur Klassifizierung oder eine Kundenstimme. Bis dahin bleibt dieser Punkt vorsichtig formuliert.]]",
+        "tags": ["EU AI Act", "KI-Governance", "Risikoklassifizierung", "Roadmap"]
       }
     ]
   },
@@ -194,7 +271,7 @@
     "lead": "Empfehlungen aus Zusammenarbeit.",
     "items": [
       {
-        "quote": "[[PLATZHALTER: Zitat aus einer LinkedIn-Empfehlung oder einem Arbeitszeugnis.]]",
+        "quote": "[[PLATZHALTER: Zitat aus einem Arbeitszeugnis oder einer LinkedIn-Empfehlung. Zwei bis drei Sätze reichen.]]",
         "author": "[[PLATZHALTER: Name]]",
         "role": "[[PLATZHALTER: Rolle]]",
         "company": "[[PLATZHALTER: Unternehmen]]"
@@ -217,39 +294,39 @@
     "id": "faq",
     "eyebrow": "07 — FAQ",
     "title": "Direkt beantwortet",
-    "lead": "Die Fragen, die Recruiter im Erstgespräch ohnehin stellen.",
+    "lead": "Die Fragen, die im Erstgespräch ohnehin kommen.",
     "items": [
       {
-        "q": "Welche Rolle suche ich?",
-        "a": "[[PLATZHALTER: Konkrete Rollenbezeichnungen nennen, z. B. Senior Product Owner, Business Consultant, Product Manager. Nenne 2–3 Titel und den Verantwortungsbereich.]]"
+        "q": "Welche Rolle sucht Marco Strote?",
+        "a": "Ich bin offen für beides: Beratungsmandate als selbstständiger Berater und eine Festanstellung. Passende Rollen sind KI-Berater, AI Governance Manager, Referent oder Manager KI-Compliance, Transformationsberater, Digitalisierungsmanager sowie Projekt- und Programmleitung im Digitalisierungsumfeld. Auch Interim-Mandate in der Projektleitung kommen infrage."
       },
       {
-        "q": "Warum ein Wechsel?",
-        "a": "[[PLATZHALTER: Sachlich und positiv formuliert — was du als Nächstes gestalten willst, nicht was am aktuellen Arbeitgeber stört.]]"
-      },
-      {
-        "q": "Ab wann bin ich verfügbar?",
-        "a": "[[PLATZHALTER: Kündigungsfrist und frühestmögliches Startdatum, z. B. 'Zum 1. Januar 2027, bei Bedarf früher nach Absprache.']]"
+        "q": "Ab wann ist Marco Strote verfügbar?",
+        "a": "Ab sofort. Als selbstständiger Berater bin ich an keine Kündigungsfrist gebunden und kann kurzfristig einsteigen — sowohl in ein Projekt als auch in eine Festanstellung."
       },
       {
         "q": "Remote, hybrid oder vor Ort?",
-        "a": "[[PLATZHALTER: Präferenz plus Reisebereitschaft in Prozent und Einzugsgebiet.]]"
+        "a": "Alle drei Modelle sind möglich. Mein Standort ist Wentorf bei Hamburg, die Metropolregion Hamburg erreiche ich täglich ohne Umstände. Für Projekte außerhalb bin ich reisebereit, arbeite dazwischen aber gerne remote."
       },
       {
-        "q": "In welchen Branchen habe ich Erfahrung?",
-        "a": "[[PLATZHALTER: Branchen aufzählen und jeweils grob die Jahre nennen.]]"
+        "q": "Warum der Wechsel von Vertrieb zu Beratung?",
+        "a": "Es ist weniger ein Wechsel als eine Vervollständigung. Im Vertrieb digitaler und regulatorischer Lösungen habe ich über Jahre gesehen, woran Einführungen tatsächlich scheitern — fast nie an der Technik, fast immer an unklaren Anforderungen und fehlender Verantwortung. 2020 habe ich mir die Methodenseite systematisch angeeignet, direkt danach als IT-Projektmanager ein System eingeführt. Heute kann ich beide Seiten bedienen: den Nutzen erklären und die Umsetzung verantworten."
       },
       {
-        "q": "Wie arbeite ich am liebsten?",
-        "a": "[[PLATZHALTER: Arbeitsweise, Teamgröße, Methodik, Erwartung an Entscheidungswege.]]"
+        "q": "Was macht die Erfahrung mit dem EU AI Act besonders?",
+        "a": "Der EU AI Act betrifft nicht nur Unternehmen, die KI entwickeln, sondern auch alle, die fremde KI einsetzen — diese gelten als Betreiber und haben seit Februar 2025 Pflichten. Die volle Durchsetzung beginnt am 2. August 2026, mit Bußgeldern von bis zu 35 Millionen Euro bei Hochrisiko-Systemen. Ich arbeite an genau dieser Schnittstelle: KI-Inventarisierung, Risikoklassifizierung nach Anhang III, Governance-Strukturen und die besonders ungeklärte Frage, wie Agentic AI mit der Anforderung menschlicher Aufsicht nach Artikel 14 vereinbar bleibt."
       },
       {
-        "q": "Wie sieht mein Gehaltsrahmen aus?",
-        "a": "[[PLATZHALTER: Entweder Rahmen nennen oder 'Gerne im persönlichen Gespräch, abhängig von Rolle und Gesamtpaket.']]"
+        "q": "In welchen Branchen hat Marco Strote gearbeitet?",
+        "a": "Schwerpunkte sind Chemie und Gefahrstoffmanagement (drei Jahre Product Compliance und Product Stewardship bei 3E, zwei Jahre bei 1WorldSync), Labor- und Umweltanalytik (LIMS-Einführung), E-Commerce und digitales Marketing (hmmh AG, For Sale Digital, Akanoo) sowie branchenübergreifend Mittelstand und Großunternehmen in der KI- und Digitalisierungsberatung."
       },
       {
-        "q": "Wie erreicht man mich am schnellsten?",
-        "a": "[[PLATZHALTER: E-Mail und LinkedIn, plus übliche Antwortzeit, z. B. 'in der Regel innerhalb von 24 Stunden'.]]"
+        "q": "Welche Zertifizierungen liegen vor?",
+        "a": "Dreizehn Zertifizierungen von AXELOS und EXIN: ITIL 4 Strategic Leader mit Digital & IT Strategy und Direct, Plan and Improve sowie ITIL 4 Foundation; PRINCE2 Foundation, PRINCE2 Practitioner und PRINCE2 Agile Practitioner; Agile Scrum Foundation, Scrum Master und Scrum Product Owner; EXIN BCS Foundation in Business Analysis sowie die Practitioner-Zertifikate in Business Analysis Practice, Requirements Engineering und Modelling Business Processes."
+      },
+      {
+        "q": "Wie erreicht man Marco Strote am schnellsten?",
+        "a": "Per E-Mail an mstrote@yahoo.de oder über LinkedIn. Ich antworte in der Regel innerhalb von 24 Stunden. Für ein erstes Gespräch genügt eine kurze Nachricht mit Rolle beziehungsweise Vorhaben und dem gewünschten Zeitrahmen."
       }
     ]
   },
@@ -257,19 +334,19 @@
     "id": "kontakt",
     "eyebrow": "08 — Kontakt",
     "title": "Sprechen wir darüber",
-    "lead": "Ob konkrete Vakanz, Projektanfrage oder unverbindlicher Austausch — ich antworte in der Regel innerhalb von 24 Stunden.",
+    "lead": "Ob konkrete Vakanz, Beratungsmandat oder unverbindlicher Austausch zum EU AI Act — ich antworte in der Regel innerhalb von 24 Stunden.",
     "emailUser": "mstrote",
     "emailDomain": "yahoo.de",
     "emailLabel": "E-Mail schreiben",
-    "linkedin": { "url": "[[PLATZHALTER: https://www.linkedin.com/in/dein-profil/]]", "label": "LinkedIn-Profil" },
+    "linkedin": { "url": "https://www.linkedin.com/in/marco-strote/", "label": "linkedin.com/in/marco-strote" },
     "location": "Wentorf bei Hamburg, Deutschland",
     "locationLabel": "Standort",
     "availabilityLabel": "Verfügbarkeit",
-    "availability": "[[PLATZHALTER: z. B. ab sofort]]",
+    "availability": "Ab sofort — Projekte und Festanstellung",
     "cvCta": { "href": "/assets/files/Lebenslauf-Marco-Strote.pdf", "label": "Lebenslauf als PDF" }
   },
   "footer": {
-    "tagline": "[[PLATZHALTER: Kurzclaim]] Berater & Produktverantwortlicher",
+    "tagline": "KI- & Transformationsberater · EU AI Act · Hamburg",
     "links": [
       { "href": "/impressum.html", "label": "Impressum" },
       { "href": "/datenschutz.html", "label": "Datenschutz" }
@@ -288,7 +365,7 @@
         { "heading": "Streitschlichtung", "lines": ["Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: https://ec.europa.eu/consumers/odr", "Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."] },
         { "heading": "Haftung für Inhalte", "lines": ["Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen."] },
         { "heading": "Haftung für Links", "lines": ["Dieses Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich."] },
-        { "heading": "Urheberrecht", "lines": ["Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht."] }
+        { "heading": "Urheberrecht", "lines": ["Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Genannte Marken- und Produktnamen, insbesondere ITIL®, PRINCE2® und PRINCE2 Agile®, sind eingetragene Marken der jeweiligen Rechteinhaber."] }
       ]
     },
     "privacy": {

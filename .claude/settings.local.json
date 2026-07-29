@@ -22,7 +22,11 @@
       "Bash(git rm *)",
       "Bash(git commit *)",
       "Bash(BASE_PATH=/Portfolio_Website_Marco_Strote SITE_URL=https://marcostrote.github.io node src/build.js)",
-      "Bash(awk '{printf \"%-28s %8.0f KB\\\\n\", $9, $5/1024}')"
+      "Bash(awk '{printf \"%-28s %8.0f KB\\\\n\", $9, $5/1024}')",
+      "mcp__claude-in-chrome__tabs_context_mcp",
+      "mcp__claude-in-chrome__navigate",
+      "mcp__claude-in-chrome__get_page_text",
+      "mcp__claude-in-chrome__browser_batch"
     ]
   }
 }

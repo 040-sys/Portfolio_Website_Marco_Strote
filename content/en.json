@@ -12,11 +12,12 @@
     "altTitle": "Zur deutschen Version wechseln"
   },
   "meta": {
-    "title": "Marco Strote — Consultant & Product Owner | Portfolio",
-    "description": "[[PLACEHOLDER: positioning in 155 characters]] Marco Strote combines consulting perspective with product ownership: strategy, delivery and measurable outcomes. Location and availability at a glance.",
-    "keywords": "Marco Strote, consultant, product owner, product manager, portfolio, CV, resume",
+    "title": "Marco Strote — AI & Transformation Consultant | EU AI Act | Hamburg",
+    "description": "AI and transformation consultant based in Hamburg, Germany. Focused on the EU AI Act, AI strategy and digitalisation with measurable business impact. 13 certifications, 15+ years of experience.",
+    "keywords": "Marco Strote, AI consultant, EU AI Act, AI compliance, AI governance, transformation consultant, digitalisation, project management, PRINCE2, ITIL, Scrum, Hamburg",
     "ogImage": "/assets/img/og-image.jpg",
-    "ogImageAlt": "Marco Strote — Consultant and Product Owner"
+    "ogImageAlt": "Marco Strote — AI and transformation consultant based in Hamburg",
+    "jobTitle": "AI & Transformation Consultant"
   },
   "nav": {
     "skipToContent": "Skip to content",
@@ -36,12 +37,12 @@
   "hero": {
     "eyebrow": "Portfolio",
     "name": "Marco Strote",
-    "headline": "[[PLACEHOLDER: positioning in one sentence]] I combine a consultant's perspective with product ownership — from strategy through to delivery.",
-    "intro": "[[PLACEHOLDER: 2 sentences of context]] As a consultant I work out what a business actually needs. As a product owner I make sure it gets built and shipped.",
+    "headline": "I make AI usable inside organisations — compliant by design and measurable in outcome.",
+    "intro": "AI and transformation consultant with a focus on the EU AI Act. More than fifteen years between market, business and delivery: first in B2B sales of digital solutions, today advising companies that want to adopt AI without losing sight of compliance.",
     "facts": [
-      { "label": "Location", "value": "Wentorf bei Hamburg" },
-      { "label": "Availability", "value": "[[PLACEHOLDER: e.g. immediately / Q4 2026]]" },
-      { "label": "Work setup", "value": "[[PLACEHOLDER: remote / hybrid / on-site]]" }
+      { "label": "Location", "value": "Hamburg area, Germany" },
+      { "label": "Availability", "value": "Immediately — projects and permanent roles" },
+      { "label": "Work setup", "value": "On-site, hybrid or remote" }
     ],
     "primaryCta": { "href": "#contact", "label": "Get in touch" },
     "secondaryCta": { "href": "/assets/files/CV-Marco-Strote.pdf", "label": "Download CV" },
@@ -53,23 +54,23 @@
     "id": "skills",
     "eyebrow": "01 — Skills",
     "title": "Where I am strong",
-    "lead": "Scannable in three seconds: the areas I work in every day.",
+    "lead": "Four areas that rarely come together in AI projects — which is exactly why they are so often missing.",
     "groups": [
       {
-        "title": "Consulting & Strategy",
-        "tags": ["[[PLACEHOLDER]] Requirements analysis", "Process design", "Stakeholder management", "Workshop facilitation", "Business case", "Change support"]
+        "title": "AI & EU AI Act",
+        "tags": ["AI strategy & roadmap", "EU AI Act compliance", "AI inventory", "Risk classification", "AI governance", "Agentic AI", "Use case assessment"]
       },
       {
-        "title": "Product & Delivery",
-        "tags": ["[[PLACEHOLDER]] Product ownership", "Roadmapping", "Backlog management", "Scrum / Kanban", "Discovery", "Go-to-market"]
+        "title": "Digital transformation",
+        "tags": ["Digital strategy", "Process analysis & optimisation", "Automation", "Change management", "Stakeholder communication", "Business development"]
       },
       {
-        "title": "Data & Technology",
-        "tags": ["[[PLACEHOLDER]] Data analysis", "AI use cases", "Interfaces / API", "Automation", "Reporting", "Tool selection"]
+        "title": "Project & delivery",
+        "tags": ["Project management", "PRINCE2 & PRINCE2 Agile", "Scrum Master", "Product Owner", "Interim management", "Business analysis", "Requirements engineering", "ITIL 4 service management"]
       },
       {
-        "title": "Leadership & Collaboration",
-        "tags": ["[[PLACEHOLDER]] Functional leadership", "Cross-functional teams", "Coaching", "Communication", "Conflict resolution", "Remote collaboration"]
+        "title": "Market & customer",
+        "tags": ["B2B sales", "Key account management", "SaaS solution sales", "Regulatory & product compliance", "International account portfolios", "E-commerce & MarTech"]
       }
     ]
   },
@@ -77,58 +78,134 @@
     "id": "credentials",
     "eyebrow": "02 — Credentials",
     "title": "Certifications",
-    "lead": "Nine certifications — verified, not claimed.",
+    "lead": "Thirteen certifications from AXELOS and EXIN — verified, not claimed.",
     "items": [
-      { "name": "[[PLACEHOLDER: certificate 1]]", "issuer": "Issuer", "year": "2025", "category": "Product" },
-      { "name": "[[PLACEHOLDER: certificate 2]]", "issuer": "Issuer", "year": "2025", "category": "Product" },
-      { "name": "[[PLACEHOLDER: certificate 3]]", "issuer": "Issuer", "year": "2024", "category": "Project" },
-      { "name": "[[PLACEHOLDER: certificate 4]]", "issuer": "Issuer", "year": "2024", "category": "Project" },
-      { "name": "[[PLACEHOLDER: certificate 5]]", "issuer": "Issuer", "year": "2023", "category": "Method" },
-      { "name": "[[PLACEHOLDER: certificate 6]]", "issuer": "Issuer", "year": "2023", "category": "Method" },
-      { "name": "[[PLACEHOLDER: certificate 7]]", "issuer": "Issuer", "year": "2022", "category": "Technology" },
-      { "name": "[[PLACEHOLDER: certificate 8]]", "issuer": "Issuer", "year": "2022", "category": "Technology" },
-      { "name": "[[PLACEHOLDER: certificate 9]]", "issuer": "Issuer", "year": "2021", "category": "Technology" }
+      { "name": "ITIL® 4 Leader: Digital & IT Strategy", "issuer": "AXELOS Global Best Practice", "year": "2021", "category": "IT strategy" },
+      { "name": "ITIL® 4 Strategist: Direct, Plan and Improve", "issuer": "AXELOS Global Best Practice", "year": "2021", "category": "IT strategy" },
+      { "name": "ITIL® Foundation in IT Service Management", "issuer": "AXELOS Global Best Practice", "year": "2020", "category": "IT strategy" },
+      { "name": "PRINCE2 Agile® Practitioner in Agile Project Management", "issuer": "AXELOS Global Best Practice", "year": "2020", "category": "Project management" },
+      { "name": "PRINCE2® Practitioner in Project Management", "issuer": "AXELOS Global Best Practice", "year": "2020", "category": "Project management" },
+      { "name": "PRINCE2® Foundation in Project Management", "issuer": "AXELOS Global Best Practice", "year": "2020", "category": "Project management" },
+      { "name": "EXIN BCS Practitioner in Requirements Engineering", "issuer": "EXIN", "year": "2020", "category": "Business analysis" },
+      { "name": "EXIN BCS Practitioner in Business Analysis Practice", "issuer": "EXIN", "year": "2020", "category": "Business analysis" },
+      { "name": "EXIN BCS Practitioner in Modelling Business Processes", "issuer": "EXIN", "year": "2021", "category": "Business analysis" },
+      { "name": "EXIN BCS Foundation in Business Analysis", "issuer": "EXIN", "year": "2020", "category": "Business analysis" },
+      { "name": "Agile Scrum Product Owner", "issuer": "EXIN", "year": "2020", "category": "Agile" },
+      { "name": "Agile Scrum Master", "issuer": "EXIN", "year": "2020", "category": "Agile" },
+      { "name": "Agile Scrum Foundation", "issuer": "EXIN", "year": "2020", "category": "Agile" }
     ]
   },
   "experience": {
     "id": "experience",
     "eyebrow": "03 — Experience",
     "title": "Career",
-    "lead": "Chronological, with the outcomes that matter.",
+    "lead": "More than fifteen years at the intersection of market, technology and delivery.",
     "items": [
       {
-        "period": "[[PLACEHOLDER: 2023 — present]]",
-        "role": "[[PLACEHOLDER: role]]",
-        "company": "[[PLACEHOLDER: company]]",
-        "location": "[[PLACEHOLDER: location]]",
-        "summary": "[[PLACEHOLDER: 1–2 sentences on what the role covers.]]",
+        "period": "July 2025 — present",
+        "role": "Consultant for AI, Digitalisation & Transformation",
+        "company": "Independent",
+        "location": "Hamburg area",
+        "summary": "Supporting organisations through the strategic and operational delivery of AI projects, digital transformation programmes and process optimisation — with measurable business impact as the objective.",
         "highlights": [
-          "[[PLACEHOLDER: outcome with a number]]",
-          "[[PLACEHOLDER: scope of responsibility]]",
-          "[[PLACEHOLDER: notable project]]"
+          "AI strategies and roadmaps for mid-sized and large organisations",
+          "EU AI Act: AI inventory, risk classification and governance structures",
+          "Design and steering of digital transformation projects, agile and classic",
+          "Process analysis, optimisation and automation advisory",
+          "Interim project management and agile team leadership (Scrum, PRINCE2, PRINCE2 Agile)"
         ]
       },
       {
-        "period": "[[PLACEHOLDER: 2020 — 2023]]",
-        "role": "[[PLACEHOLDER: role]]",
-        "company": "[[PLACEHOLDER: company]]",
-        "location": "[[PLACEHOLDER: location]]",
-        "summary": "[[PLACEHOLDER: 1–2 sentences.]]",
-        "highlights": ["[[PLACEHOLDER]]", "[[PLACEHOLDER]]"]
+        "period": "March 2022 — June 2025",
+        "role": "Account Manager, EMEA Sales",
+        "company": "3E",
+        "location": "Full-time",
+        "summary": "Building and developing strategic customer relationships across EMEA for SaaS solutions in EHS product compliance and product stewardship — hazardous materials management and regulatory compliance.",
+        "highlights": [
+          "Ownership of an international B2B account portfolio",
+          "Tailored solution concepts for customer compliance challenges",
+          "Close alignment with product and implementation teams to secure customer success",
+          "Market feedback fed actively into product and company strategy"
+        ]
       },
       {
-        "period": "[[PLACEHOLDER: 2017 — 2020]]",
-        "role": "[[PLACEHOLDER: role]]",
-        "company": "[[PLACEHOLDER: company]]",
-        "location": "[[PLACEHOLDER: location]]",
-        "summary": "[[PLACEHOLDER: 1–2 sentences.]]",
-        "highlights": ["[[PLACEHOLDER]]", "[[PLACEHOLDER]]"]
+        "period": "May 2021 — Feb. 2022",
+        "role": "IT Project Manager",
+        "company": "Dr. Jörg Freytag",
+        "location": "Environmental analysis laboratory",
+        "summary": "Project management for the introduction and further development of a Laboratory Information Management System (LIMS) at a laboratory specialising in environmental analysis.",
+        "highlights": [
+          "Led cross-functional teams developing and implementing new LIMS technology",
+          "Requirements analysis plus use case models, mind maps and rich pictures for solution documentation",
+          "Coordination of internal and external stakeholders across scope, budget and schedule",
+          "Project objectives delivered within the agreed time and budget frame"
+        ]
+      },
+      {
+        "period": "May 2020 — May 2021",
+        "role": "Intensive certification period",
+        "company": "AXELOS & EXIN",
+        "location": "Professional training",
+        "summary": "A deliberate decision to use the pandemic period for a complete methodological repositioning: thirteen certifications in project management, business analysis, agile methods and IT strategy.",
+        "highlights": [
+          "ITIL 4 Strategic Leader — Digital & IT Strategy and Direct, Plan and Improve",
+          "PRINCE2, PRINCE2 Agile and Scrum (Master and Product Owner)",
+          "EXIN BCS Business Analysis and Requirements Engineering"
+        ]
+      },
+      {
+        "period": "July 2019 — Apr. 2021",
+        "role": "Consultant for Digitalisation & Transformation",
+        "company": "Independent",
+        "location": "Hamburg area",
+        "summary": "Advisory on digitalisation initiatives and process design, alongside methodological qualification.",
+        "highlights": []
+      },
+      {
+        "period": "2017 — 2019",
+        "role": "Account Executive, HazMat Compliance Solutions",
+        "company": "1WorldSync",
+        "location": "DACH",
+        "summary": "Sales of SaaS solutions for product compliance and hazardous materials management in B2B. Building and developing customer relationships across the DACH region.",
+        "highlights": []
+      },
+      {
+        "period": "2016",
+        "role": "Senior Sales Manager",
+        "company": "Akanoo",
+        "location": "Hamburg area",
+        "summary": "Sales of an AI-driven personalisation solution for e-commerce — self-learning purchase incentives in real time. Early hands-on experience selling AI products and MarTech.",
+        "highlights": []
+      },
+      {
+        "period": "2014 — 2016",
+        "role": "Account Manager Online",
+        "company": "For Sale Digital Internet-Agentur GmbH",
+        "location": "Hamburg area",
+        "summary": "Account management and development for digital sales and marketing solutions.",
+        "highlights": []
+      },
+      {
+        "period": "2011 — 2013",
+        "role": "Key Account Manager & Sales Manager",
+        "company": "hmmh AG",
+        "location": "Hamburg",
+        "summary": "Key account management and new business development at one of Germany's leading e-commerce agencies.",
+        "highlights": []
+      },
+      {
+        "period": "2009 — 2011",
+        "role": "Consultant for Digitalisation & Transformation",
+        "company": "Independent",
+        "location": "Hamburg area",
+        "summary": "First independent advisory work around digitalisation and business processes.",
+        "highlights": []
       }
     ],
     "education": {
       "title": "Education",
       "items": [
-        { "period": "[[PLACEHOLDER: year]]", "degree": "[[PLACEHOLDER: degree]]", "institution": "[[PLACEHOLDER: institution]]" }
+        { "period": "1994 — 1998", "degree": "Business Administration Diploma (WAH), International Business Administration", "institution": "Wirtschaftsakademie Hamburg (WAH)" }
       ]
     }
   },
@@ -136,17 +213,17 @@
     "id": "about",
     "eyebrow": "04 — About",
     "title": "Two perspectives, one outcome",
-    "pullquote": "[[PLACEHOLDER: a sharp guiding sentence]] Consulting without delivery stays on paper. Delivery without consulting stays busywork.",
+    "pullquote": "AI projects rarely fail on technology. They fail because nobody organises the passage from ambition to everyday practice.",
     "paragraphs": [
-      "[[PLACEHOLDER: paragraph 1 — background and path.]] I have spent several years working at the intersection of business, technology and management.",
-      "[[PLACEHOLDER: paragraph 2 — the consulting perspective.]] As a consultant I start with the question of which problem actually needs solving.",
-      "[[PLACEHOLDER: paragraph 3 — the product perspective.]] As a product owner I carry the consequences of those decisions all the way into delivery.",
-      "[[PLACEHOLDER: paragraph 4 — what drives me.]] I am drawn to work where structure and people matter in equal measure."
+      "I spent more than fifteen years on the market side: as key account manager at an e-commerce agency, selling an AI-driven personalisation platform, most recently managing an international portfolio for compliance software across EMEA. Those years taught me one thing above all: organisations do not buy technology. They buy the resolution of a problem they often have not yet named precisely.",
+      "In 2020 I deliberately rebuilt my methodological foundation and completed thirteen certifications within roughly a year — project management, business analysis, agile methods, IT strategy. Not as a collection, but because I wanted to master the other half: not only to explain what a system can do, but to be accountable for it actually being implemented. Immediately afterwards I led the introduction of a laboratory information system as IT project manager.",
+      "Today I advise organisations on AI and digital transformation, with particular emphasis on the EU AI Act. That subject joins both halves of my experience: it is simultaneously a regulatory question, a strategic decision and a very practical delivery problem. Most companies do not even know which AI systems they already run — and have been subject to deployer obligations since February 2025.",
+      "What interests me in this work is the moment an abstract requirement turns into a concrete list a team can pick up on Monday morning. Everything before that is preparation; everything after it is craft."
     ],
     "principles": [
-      { "title": "[[PLACEHOLDER]] Clarity before speed", "text": "A properly understood problem saves more time than any shortcut." },
-      { "title": "[[PLACEHOLDER]] Outcome before method", "text": "Frameworks are tools, not the point." },
-      { "title": "[[PLACEHOLDER]] Close to the user", "text": "Decisions belong where the product is actually used." }
+      { "title": "Inventory before strategy", "text": "Without knowing what is already in use, you can neither classify nor prioritise. The least glamorous step is usually the decisive one." },
+      { "title": "Regulation is not a brake", "text": "The EU AI Act forces clarity about purpose, accountability and risk. Most AI initiatives lack exactly that clarity anyway." },
+      { "title": "Measurable or not at all", "text": "A transformation project without a defined effect is a budget line. I agree on outcomes before I start." }
     ]
   },
   "projects": {
@@ -156,34 +233,34 @@
     "lead": "Evidence rather than assertion — situation, approach, result.",
     "items": [
       {
-        "title": "[[PLACEHOLDER: project title]]",
-        "client": "[[PLACEHOLDER: industry or client]]",
-        "year": "[[PLACEHOLDER: 2025]]",
-        "role": "[[PLACEHOLDER: your role]]",
-        "challenge": "[[PLACEHOLDER: what problem existed?]]",
-        "approach": "[[PLACEHOLDER: what did you actually do?]]",
-        "result": "[[PLACEHOLDER: what measurable result came out?]]",
-        "tags": ["[[PLACEHOLDER]]", "[[PLACEHOLDER]]"]
+        "title": "Introduction of a Laboratory Information Management System",
+        "client": "Dr. Jörg Freytag — environmental analysis",
+        "year": "2021 — 2022",
+        "role": "IT Project Manager",
+        "challenge": "A laboratory specialising in environmental analysis needed a new laboratory information management system. Requirements were scattered across the business, IT and external providers, with no shared basis.",
+        "approach": "Structured requirements analysis using use case models, mind maps and rich pictures as a common language. Leadership of cross-functional teams and coordination of internal and external stakeholders across scope, budget and schedule.",
+        "result": "Project objectives were delivered within the agreed time and budget frame. [[PLACEHOLDER: add a concrete figure if available — throughput per sample, number of legacy systems replaced, or number of users.]]",
+        "tags": ["Project management", "Requirements analysis", "LIMS", "Stakeholder management"]
       },
       {
-        "title": "[[PLACEHOLDER: project title]]",
-        "client": "[[PLACEHOLDER: industry or client]]",
-        "year": "[[PLACEHOLDER: 2024]]",
-        "role": "[[PLACEHOLDER: your role]]",
-        "challenge": "[[PLACEHOLDER]]",
-        "approach": "[[PLACEHOLDER]]",
-        "result": "[[PLACEHOLDER]]",
-        "tags": ["[[PLACEHOLDER]]", "[[PLACEHOLDER]]"]
+        "title": "International account portfolio for compliance SaaS",
+        "client": "3E — EHS product compliance",
+        "year": "2022 — 2025",
+        "role": "Account Manager, EMEA Sales",
+        "challenge": "Organisations across EMEA face growing pressure from hazardous materials and product regulation, yet rarely operate a dependable system landscape for product stewardship.",
+        "approach": "Building long-term customer partnerships rather than isolated deals: analysing each compliance situation, developing tailored solution concepts and aligning closely with product and implementation teams.",
+        "result": "[[PLACEHOLDER: a number belongs here — portfolio size, revenue development, renewal rate or number of countries covered. Without one, this entry stays weaker than the other two.]]",
+        "tags": ["B2B sales", "Regulatory compliance", "SaaS", "EMEA"]
       },
       {
-        "title": "[[PLACEHOLDER: project title]]",
-        "client": "[[PLACEHOLDER: industry or client]]",
-        "year": "[[PLACEHOLDER: 2023]]",
-        "role": "[[PLACEHOLDER: your role]]",
-        "challenge": "[[PLACEHOLDER]]",
-        "approach": "[[PLACEHOLDER]]",
-        "result": "[[PLACEHOLDER]]",
-        "tags": ["[[PLACEHOLDER]]", "[[PLACEHOLDER]]"]
+        "title": "EU AI Act assessment and AI roadmap",
+        "client": "Mid-sized and large organisations",
+        "year": "since 2025",
+        "role": "AI & transformation consultant",
+        "challenge": "Many organisations already use AI — ChatGPT in individual teams, Copilot in HR, a chatbot on the website — without realising that this makes them deployers under the EU AI Act, with obligations in force since February 2025.",
+        "approach": "Systematic AI inventory as the first step, followed by risk classification under Annex III, definition of intervention points and accountabilities, and a prioritised roadmap up to full enforcement from August 2026.",
+        "result": "[[PLACEHOLDER: once an engagement concludes — number of AI systems catalogued, time to classification, or a client quote. Until then this stays deliberately cautious.]]",
+        "tags": ["EU AI Act", "AI governance", "Risk classification", "Roadmap"]
       }
     ]
   },
@@ -194,7 +271,7 @@
     "lead": "Recommendations from people I have worked with.",
     "items": [
       {
-        "quote": "[[PLACEHOLDER: quote from a LinkedIn recommendation or reference letter.]]",
+        "quote": "[[PLACEHOLDER: quote from a reference letter or LinkedIn recommendation. Two or three sentences are enough.]]",
         "author": "[[PLACEHOLDER: name]]",
         "role": "[[PLACEHOLDER: role]]",
         "company": "[[PLACEHOLDER: company]]"
@@ -217,39 +294,39 @@
     "id": "faq",
     "eyebrow": "07 — FAQ",
     "title": "Answered directly",
-    "lead": "The questions recruiters ask in a first call anyway.",
+    "lead": "The questions that come up in a first call anyway.",
     "items": [
       {
-        "q": "What role am I looking for?",
-        "a": "[[PLACEHOLDER: name concrete titles, e.g. Senior Product Owner, Business Consultant. Give 2–3 titles and the scope of responsibility.]]"
+        "q": "What role is Marco Strote looking for?",
+        "a": "Both are open: consulting engagements as an independent adviser and a permanent position. Suitable roles include AI consultant, AI governance manager, AI compliance manager, transformation consultant, digitalisation manager, and project or programme lead in a digitalisation context. Interim project leadership mandates are also of interest."
       },
       {
-        "q": "Why a change?",
-        "a": "[[PLACEHOLDER: factual and positive — what you want to shape next, not what bothers you about your current employer.]]"
-      },
-      {
-        "q": "When am I available?",
-        "a": "[[PLACEHOLDER: notice period and earliest possible start date.]]"
+        "q": "When is Marco Strote available?",
+        "a": "Immediately. As an independent consultant I am not bound by a notice period and can start at short notice, whether on a project or in a permanent role."
       },
       {
         "q": "Remote, hybrid or on-site?",
-        "a": "[[PLACEHOLDER: preference plus travel willingness in percent and catchment area.]]"
+        "a": "All three work. My base is Wentorf bei Hamburg, and I reach the Hamburg metropolitan region daily without difficulty. For projects further afield I am willing to travel and work remotely in between."
       },
       {
-        "q": "Which industries have I worked in?",
-        "a": "[[PLACEHOLDER: list industries with rough years each.]]"
+        "q": "Why the move from sales to consulting?",
+        "a": "It is less a move than a completion. Selling digital and regulatory solutions, I saw over years where implementations actually fail — almost never on technology, almost always on unclear requirements and absent accountability. In 2020 I acquired the methodological side systematically, then immediately led a system introduction as IT project manager. Today I can serve both sides: explain the value and own the delivery."
       },
       {
-        "q": "How do I prefer to work?",
-        "a": "[[PLACEHOLDER: working style, team size, methodology, expectations around decision-making.]]"
+        "q": "What makes the EU AI Act experience distinctive?",
+        "a": "The EU AI Act affects not only organisations that build AI, but everyone deploying third-party AI — they count as deployers and have had obligations since February 2025. Full enforcement begins on 2 August 2026, with fines of up to 35 million euros for high-risk systems. I work at exactly that intersection: AI inventory, risk classification under Annex III, governance structures, and the still unsettled question of how agentic AI can be reconciled with the human oversight required by Article 14."
       },
       {
-        "q": "What is my salary range?",
-        "a": "[[PLACEHOLDER: either give a range or 'Happy to discuss in person, depending on role and overall package.']]"
+        "q": "Which industries has Marco Strote worked in?",
+        "a": "Principally chemicals and hazardous materials management (three years in product compliance and product stewardship at 3E, two years at 1WorldSync), laboratory and environmental analysis (LIMS implementation), e-commerce and digital marketing (hmmh AG, For Sale Digital, Akanoo), and across sectors with mid-sized and large organisations in AI and digitalisation advisory."
       },
       {
-        "q": "What is the fastest way to reach me?",
-        "a": "[[PLACEHOLDER: email and LinkedIn, plus typical response time.]]"
+        "q": "Which certifications are held?",
+        "a": "Thirteen certifications from AXELOS and EXIN: ITIL 4 Strategic Leader covering Digital & IT Strategy and Direct, Plan and Improve, plus ITIL 4 Foundation; PRINCE2 Foundation, PRINCE2 Practitioner and PRINCE2 Agile Practitioner; Agile Scrum Foundation, Scrum Master and Scrum Product Owner; EXIN BCS Foundation in Business Analysis together with Practitioner certificates in Business Analysis Practice, Requirements Engineering and Modelling Business Processes."
+      },
+      {
+        "q": "What is the fastest way to reach Marco Strote?",
+        "a": "By email at mstrote@yahoo.de or via LinkedIn. I usually reply within 24 hours. A short message with the role or initiative and your intended timeframe is enough for a first conversation."
       }
     ]
   },
@@ -257,19 +334,19 @@
     "id": "contact",
     "eyebrow": "08 — Contact",
     "title": "Let's talk",
-    "lead": "Whether it is a specific vacancy, a project enquiry or an informal exchange — I usually reply within 24 hours.",
+    "lead": "Whether a specific vacancy, a consulting engagement or an informal exchange about the EU AI Act — I usually reply within 24 hours.",
     "emailUser": "mstrote",
     "emailDomain": "yahoo.de",
     "emailLabel": "Send an email",
-    "linkedin": { "url": "[[PLACEHOLDER: https://www.linkedin.com/in/your-profile/]]", "label": "LinkedIn profile" },
+    "linkedin": { "url": "https://www.linkedin.com/in/marco-strote/", "label": "linkedin.com/in/marco-strote" },
     "location": "Wentorf bei Hamburg, Germany",
     "locationLabel": "Location",
     "availabilityLabel": "Availability",
-    "availability": "[[PLACEHOLDER: e.g. immediately]]",
+    "availability": "Immediately — projects and permanent roles",
     "cvCta": { "href": "/assets/files/CV-Marco-Strote.pdf", "label": "CV as PDF" }
   },
   "footer": {
-    "tagline": "[[PLACEHOLDER: short claim]] Consultant & Product Owner",
+    "tagline": "AI & Transformation Consultant · EU AI Act · Hamburg",
     "links": [
       { "href": "/en/imprint.html", "label": "Imprint" },
       { "href": "/en/privacy.html", "label": "Privacy" }
@@ -288,7 +365,7 @@
         { "heading": "Dispute resolution", "lines": ["The European Commission provides a platform for online dispute resolution: https://ec.europa.eu/consumers/odr", "I am neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board."] },
         { "heading": "Liability for content", "lines": ["As a service provider I am responsible for my own content on these pages in accordance with § 7 (1) DDG and general law. Under §§ 8 to 10 DDG, however, I am not obliged to monitor transmitted or stored third-party information."] },
         { "heading": "Liability for links", "lines": ["This site contains links to external third-party websites over whose content I have no influence. The respective provider is always responsible for the content of linked pages."] },
-        { "heading": "Copyright", "lines": ["Content and works created by the site operator on these pages are subject to German copyright law."] }
+        { "heading": "Copyright", "lines": ["Content and works created by the site operator on these pages are subject to German copyright law. Brand and product names mentioned, in particular ITIL®, PRINCE2® and PRINCE2 Agile®, are registered trademarks of their respective owners."] }
       ]
     },
     "privacy": {

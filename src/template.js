@@ -544,7 +544,7 @@ function contactSection(c) {
 
 function homeSchemas(c) {
   const url = abs(c, c.site.path);
-  const jobTitle = clean(c.footer.tagline);
+  const jobTitle = clean(c.meta.jobTitle || c.footer.tagline);
   const sameAs = isPlaceholder(c.contact.linkedin.url) ? [] : [clean(c.contact.linkedin.url)];
 
   const person = {
@@ -568,8 +568,12 @@ function homeSchemas(c) {
     person.address = { '@type': 'PostalAddress', addressLocality: clean(c.contact.location).split(',')[0].trim(), addressCountry: 'DE' };
   }
 
+  /* worksFor nur bei einem echten Arbeitgeber. Bei Selbstständigkeit waere
+     die Angabe irrefuehrend — Suchmaschinen wuerden "Selbstständig" als
+     Unternehmen interpretieren. */
   const currentRole = c.experience.items[0];
-  if (currentRole && !isPlaceholder(currentRole.company)) {
+  const selfEmployed = /^(selbstst[äa]ndig|independent|freelance|freiberuflich)$/i.test(clean(currentRole && currentRole.company));
+  if (currentRole && !isPlaceholder(currentRole.company) && !selfEmployed) {
     person.worksFor = { '@type': 'Organization', name: clean(currentRole.company) };
   }
 

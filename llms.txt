@@ -1,40 +1,96 @@
 # Marco Strote
 
-> Ich verbinde Beratungsperspektive mit Produktverantwortung — von der Strategie bis zur Umsetzung.
+> Ich mache KI im Unternehmen anwendbar — regulatorisch sauber und mit messbarem Ergebnis.
 
 ## Kurzprofil
 
 - Name: Marco Strote
+- Positionierung: KI- & Transformationsberater · EU AI Act · Hamburg
 - Standort: Wentorf bei Hamburg, Deutschland
+- Verfügbarkeit: Ab sofort — Projekte und Festanstellung
 - Website: https://marco-strote.de
 - E-Mail: mstrote@yahoo.de
+- LinkedIn: https://www.linkedin.com/in/marco-strote/
 
 ## Kompetenzen
 
-- Beratung & Strategie: Anforderungsanalyse, Prozessdesign, Stakeholder-Management, Workshop-Moderation, Business Case, Change-Begleitung
-- Produkt & Delivery: Product Ownership, Roadmapping, Backlog-Management, Scrum / Kanban, Discovery, Go-to-Market
-- Daten & Technologie: Datenanalyse, KI-Anwendungsfälle, Schnittstellen / API, Automatisierung, Reporting, Tool-Auswahl
-- Führung & Zusammenarbeit: Fachliche Führung, Cross-funktionale Teams, Coaching, Kommunikation, Konfliktklärung, Remote-Zusammenarbeit
+- KI & EU AI Act: KI-Strategie & Roadmap, EU AI Act Compliance, KI-Inventarisierung, Risikoklassifizierung, KI-Governance, Agentic AI, Use-Case-Bewertung
+- Digitale Transformation: Digitalstrategie, Prozessanalyse & -optimierung, Automatisierung, Change Management, Stakeholder-Kommunikation, Business Development
+- Projekt & Umsetzung: Projektleitung, PRINCE2 & PRINCE2 Agile, Scrum Master, Product Owner, Interimsmanagement, Business Analyse, Requirements Engineering, ITIL 4 Service Management
+- Markt & Kunde: B2B-Vertrieb, Key Account Management, SaaS-Lösungsvertrieb, Regulatory & Product Compliance, Internationale Kundenportfolios, E-Commerce & MarTech
 
 ## Zertifizierungen
 
-- (noch nicht hinterlegt)
+- ITIL® 4 Leader: Digital & IT Strategy (AXELOS Global Best Practice, 2021)
+- ITIL® 4 Strategist: Direct, Plan and Improve (AXELOS Global Best Practice, 2021)
+- ITIL® Foundation in IT Service Management (AXELOS Global Best Practice, 2020)
+- PRINCE2 Agile® Practitioner in Agile Project Management (AXELOS Global Best Practice, 2020)
+- PRINCE2® Practitioner in Project Management (AXELOS Global Best Practice, 2020)
+- PRINCE2® Foundation in Project Management (AXELOS Global Best Practice, 2020)
+- EXIN BCS Practitioner in Requirements Engineering (EXIN, 2020)
+- EXIN BCS Practitioner in Business Analysis Practice (EXIN, 2020)
+- EXIN BCS Practitioner in Modelling Business Processes (EXIN, 2021)
+- EXIN BCS Foundation in Business Analysis (EXIN, 2020)
+- Agile Scrum Product Owner (EXIN, 2020)
+- Agile Scrum Master (EXIN, 2020)
+- Agile Scrum Foundation (EXIN, 2020)
 
 ## Beruflicher Werdegang
 
-- (noch nicht hinterlegt)
+- Juli 2025 — heute — Berater für KI, Digitalisierung & Transformation, Selbstständig (Hamburg & Umgebung): Begleitung von Unternehmen bei der strategischen und operativen Umsetzung von KI-Projekten, digitalen Transformationsvorhaben und Prozessoptimierungen — mit dem Ziel, messbaren Business Impact zu erzielen.
+- März 2022 — Juni 2025 — Account Manager, EMEA Sales, 3E (Vollzeit): Aufbau und Entwicklung strategischer Kundenbeziehungen im EMEA-Raum für SaaS-Lösungen im Bereich EHS Product Compliance und Product Stewardship — Gefahrstoffmanagement und Regulatory Compliance.
+- Mai 2021 — Feb. 2022 — IT-Projektmanager, Dr. Jörg Freytag (Umweltanalytik-Labor): Projektmanagement für Einführung und Weiterentwicklung eines Laborinformationsmanagementsystems (LIMS) in einem auf Umweltanalysen spezialisierten Labor.
+- Mai 2020 — Mai 2021 — Intensive Weiterbildungsphase, AXELOS & EXIN (Zertifizierungskurse): Bewusste Entscheidung, die Pandemiezeit für eine vollständige methodische Neuaufstellung zu nutzen: dreizehn Zertifizierungen in Projektmanagement, Business Analyse, agilen Methoden und IT-Strategie.
+- Juli 2019 — Apr. 2021 — Berater für Digitalisierung & Transformation, Selbstständig (Hamburg & Umgebung): Beratung zu Digitalisierungsvorhaben und Prozessgestaltung, parallel zur methodischen Weiterqualifizierung.
+- 2017 — 2019 — Account Executive, HazMat Compliance Solutions, 1WorldSync (DACH): Vertrieb von SaaS-Lösungen für Product Compliance und Gefahrstoffmanagement im B2B-Bereich. Aufbau und Entwicklung von Kundenbeziehungen im DACH-Raum.
+- 2016 — Senior Sales Manager, Akanoo (Hamburg & Umgebung): Vertrieb einer KI-gestützten Personalisierungslösung für E-Commerce — selbstlernende Kaufanreize in Echtzeit. Frühe Praxiserfahrung im Vertrieb von KI-Produkten und MarTech.
+- 2014 — 2016 — Account Manager Online, For Sale Digital Internet-Agentur GmbH (Hamburg & Umgebung): Betreuung und Entwicklung von Kunden im Bereich digitaler Vertriebs- und Marketinglösungen.
+- 2011 — 2013 — Key Account Manager & Sales Manager, hmmh AG (Hamburg): Key-Account-Betreuung und Neugeschäftsentwicklung bei einer der führenden deutschen E-Commerce-Agenturen.
+- 2009 — 2011 — Berater für Digitalisierung & Transformation, Selbstständig (Hamburg & Umgebung): Erste selbstständige Beratungstätigkeit rund um Digitalisierung und Geschäftsprozesse.
 
 ## Ausbildung
 
-- (noch nicht hinterlegt)
+- 1994 — 1998 — Betriebswirt (WAH), International Business Administration, Wirtschaftsakademie Hamburg (WAH)
 
 ## Projekte
 
-- (noch nicht hinterlegt)
+- Einführung eines Laborinformationssystems (LIMS) (Dr. Jörg Freytag — Umweltanalytik, 2021 — 2022) — Ausgangslage: Ein auf Umweltanalysen spezialisiertes Labor benötigte ein neues Laborinformationsmanagementsystem. Anforderungen lagen verstreut bei Fachbereich, IT und externen Dienstleistern vor, ohne gemeinsame Grundlage. Vorgehen: Strukturierte Anforderungsanalyse mit Use-Case-Modellen, Mind-Maps und Rich Pictures als gemeinsame Verständigungsbasis. Leitung cross-funktionaler Teams und Koordination interner wie externer Stakeholder entlang Ziel-, Budget- und Zeitplanung. Ergebnis: Die Projektziele wurden innerhalb des vereinbarten Zeit- und Budgetrahmens umgesetzt.
+- Internationales Kundenportfolio für Compliance-SaaS (3E — EHS Product Compliance, 2022 — 2025) — Ausgangslage: Unternehmen im EMEA-Raum stehen unter wachsendem Druck durch Gefahrstoff- und Produktregulierung, verfügen aber selten über eine belastbare Systemlandschaft für Product Stewardship. Vorgehen: Aufbau langfristiger Kundenpartnerschaften statt Einzelabschlüssen: Analyse der jeweiligen Compliance-Lage, Entwicklung individueller Lösungskonzepte und enge Verzahnung mit Produkt- und Implementierungsteams. Ergebnis: 
+- EU-AI-Act-Bestandsaufnahme und KI-Roadmap (Mittelstand & Großunternehmen, seit 2025) — Ausgangslage: Viele Unternehmen setzen KI längst ein — ChatGPT in einzelnen Teams, Copilot in HR, ein Chatbot auf der Website — ohne zu wissen, dass sie damit als Betreiber im Sinne des EU AI Act gelten und seit Februar 2025 Pflichten haben. Vorgehen: Systematische KI-Inventarisierung als erster Schritt, darauf aufbauend Risikoklassifizierung nach Anhang III, Definition von Interventionspunkten und Verantwortlichkeiten sowie eine priorisierte Roadmap bis zur vollen Durchsetzung ab August 2026. Ergebnis: 
 
 ## Häufige Fragen
 
-(noch nicht hinterlegt)
+### Welche Rolle sucht Marco Strote?
+
+Ich bin offen für beides: Beratungsmandate als selbstständiger Berater und eine Festanstellung. Passende Rollen sind KI-Berater, AI Governance Manager, Referent oder Manager KI-Compliance, Transformationsberater, Digitalisierungsmanager sowie Projekt- und Programmleitung im Digitalisierungsumfeld. Auch Interim-Mandate in der Projektleitung kommen infrage.
+
+### Ab wann ist Marco Strote verfügbar?
+
+Ab sofort. Als selbstständiger Berater bin ich an keine Kündigungsfrist gebunden und kann kurzfristig einsteigen — sowohl in ein Projekt als auch in eine Festanstellung.
+
+### Remote, hybrid oder vor Ort?
+
+Alle drei Modelle sind möglich. Mein Standort ist Wentorf bei Hamburg, die Metropolregion Hamburg erreiche ich täglich ohne Umstände. Für Projekte außerhalb bin ich reisebereit, arbeite dazwischen aber gerne remote.
+
+### Warum der Wechsel von Vertrieb zu Beratung?
+
+Es ist weniger ein Wechsel als eine Vervollständigung. Im Vertrieb digitaler und regulatorischer Lösungen habe ich über Jahre gesehen, woran Einführungen tatsächlich scheitern — fast nie an der Technik, fast immer an unklaren Anforderungen und fehlender Verantwortung. 2020 habe ich mir die Methodenseite systematisch angeeignet, direkt danach als IT-Projektmanager ein System eingeführt. Heute kann ich beide Seiten bedienen: den Nutzen erklären und die Umsetzung verantworten.
+
+### Was macht die Erfahrung mit dem EU AI Act besonders?
+
+Der EU AI Act betrifft nicht nur Unternehmen, die KI entwickeln, sondern auch alle, die fremde KI einsetzen — diese gelten als Betreiber und haben seit Februar 2025 Pflichten. Die volle Durchsetzung beginnt am 2. August 2026, mit Bußgeldern von bis zu 35 Millionen Euro bei Hochrisiko-Systemen. Ich arbeite an genau dieser Schnittstelle: KI-Inventarisierung, Risikoklassifizierung nach Anhang III, Governance-Strukturen und die besonders ungeklärte Frage, wie Agentic AI mit der Anforderung menschlicher Aufsicht nach Artikel 14 vereinbar bleibt.
+
+### In welchen Branchen hat Marco Strote gearbeitet?
+
+Schwerpunkte sind Chemie und Gefahrstoffmanagement (drei Jahre Product Compliance und Product Stewardship bei 3E, zwei Jahre bei 1WorldSync), Labor- und Umweltanalytik (LIMS-Einführung), E-Commerce und digitales Marketing (hmmh AG, For Sale Digital, Akanoo) sowie branchenübergreifend Mittelstand und Großunternehmen in der KI- und Digitalisierungsberatung.
+
+### Welche Zertifizierungen liegen vor?
+
+Dreizehn Zertifizierungen von AXELOS und EXIN: ITIL 4 Strategic Leader mit Digital & IT Strategy und Direct, Plan and Improve sowie ITIL 4 Foundation; PRINCE2 Foundation, PRINCE2 Practitioner und PRINCE2 Agile Practitioner; Agile Scrum Foundation, Scrum Master und Scrum Product Owner; EXIN BCS Foundation in Business Analysis sowie die Practitioner-Zertifikate in Business Analysis Practice, Requirements Engineering und Modelling Business Processes.
+
+### Wie erreicht man Marco Strote am schnellsten?
+
+Per E-Mail an mstrote@yahoo.de oder über LinkedIn. Ich antworte in der Regel innerhalb von 24 Stunden. Für ein erstes Gespräch genügt eine kurze Nachricht mit Rolle beziehungsweise Vorhaben und dem gewünschten Zeitrahmen.
 
 ## Seiten
 
