@@ -46,6 +46,6 @@ Die Vorstellung, das Modellhaus trage die Verantwortung, endet dort, wo aus eine
 
 ## Warum jetzt
 
-Seit dem 2. August 2026 werden die Pflichten für Hochrisiko-Systeme durchgesetzt. Agentische Architekturen sind die nächste Welle, und die Compliance-Praxis dafür ist noch kaum ausgeprägt. Wer erst anfängt zu dokumentieren und zu strukturieren, wenn die erste Anfrage einer Aufsichtsbehörde eintrifft, improvisiert unter Zeitdruck.
+Ab dem 2. August 2026 werden die Pflichten für Hochrisiko-Systeme durchgesetzt. Agentische Architekturen sind die nächste Welle, und die Compliance-Praxis dafür ist noch kaum ausgeprägt. Wer erst anfängt zu dokumentieren und zu strukturieren, wenn die erste Anfrage einer Aufsichtsbehörde eintrifft, improvisiert unter Zeitdruck.
 
 Wer jetzt beginnt, hat einen Vorsprung — und in vielen Fällen ein besser gebautes System.
