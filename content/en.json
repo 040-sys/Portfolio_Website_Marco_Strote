@@ -4,6 +4,7 @@
   "site": {
     "name": "Marco Strote",
     "domain": "https://marco-strote.de",
+    "basePath": "",
     "path": "/en/",
     "altPath": "/",
     "altLang": "de",

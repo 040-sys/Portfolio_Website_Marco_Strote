@@ -20,6 +20,16 @@ const write = (rel, content) => {
 const de = read('content/de.json');
 const en = read('content/en.json');
 
+/* Basis-Pfad und Domain koennen von aussen gesetzt werden. Der GitHub-Actions-
+   Workflow uebergibt beides automatisch, damit die Seite sowohl unter einer
+   eigenen Domain als auch als GitHub-Projektseite (…github.io/Repo-Name/)
+   funktioniert. */
+const BASE = (process.env.BASE_PATH || de.site.basePath || '').replace(/\/$/, '');
+for (const c of [de, en]) {
+  c.site.basePath = BASE;
+  if (process.env.SITE_URL) c.site.domain = new URL(process.env.SITE_URL).origin;
+}
+
 /* Der Lebenslauf-Button wird nur ausgegeben, wenn die PDF-Datei wirklich
    vorhanden ist — ein toter Download-Link auf der wichtigsten Schaltfläche
    wäre schlimmer als gar keine Schaltfläche. */
@@ -30,7 +40,7 @@ for (const c of [de, en]) {
     if (!cta.available && !cvMissing.includes(cta.href)) cvMissing.push(cta.href);
   }
 }
-const DOMAIN = de.site.domain.replace(/\/$/, '');
+const DOMAIN = de.site.domain.replace(/\/$/, '') + BASE;
 const TODAY = new Date().toISOString().slice(0, 10);
 
 const written = [];

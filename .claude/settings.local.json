@@ -20,7 +20,8 @@
       "Bash(git -c core.quotepath=false status --short)",
       "Bash(winget install *)",
       "Bash(git rm *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(BASE_PATH=/Portfolio_Website_Marco_Strote SITE_URL=https://marcostrote.github.io node src/build.js)"
     ]
   }
 }

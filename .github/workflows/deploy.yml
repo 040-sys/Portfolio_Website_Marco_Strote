@@ -28,13 +28,17 @@ jobs:
         with:
           node-version: 20
 
+      # Liefert die tatsächliche Veröffentlichungs-Adresse. Bei einer eigenen
+      # Domain ist base_path leer, bei einer Projektseite '/Repository-Name' —
+      # ohne diese Angabe würden dort alle Verweise auf CSS und Bilder brechen.
+      - id: pages
+        uses: actions/configure-pages@v5
+
       - name: Seite bauen
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          SITE_URL: ${{ steps.pages.outputs.origin }}
         run: node src/build.js
-
-      - name: Auf Platzhalter prüfen (nur Hinweis, kein Abbruch)
-        run: node src/build.js | tail -n 3
-
-      - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -48,7 +48,17 @@ const ta = (v) => {
 const jsonLd = (obj) =>
   JSON.stringify(obj, null, 2).replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026');
 
-const abs = (c, path) => c.site.domain.replace(/\/$/, '') + path;
+/* Interne URL. Der Basis-Pfad ist leer, wenn die Seite unter einer eigenen
+   Domain liegt, und '/Repository-Name', wenn sie als GitHub-Projektseite
+   veröffentlicht wird. Ohne diese Unterscheidung würden dort saemtliche
+   Verweise auf CSS, Bilder und Unterseiten ins Leere laufen. */
+const u = (c, p) => {
+  const s = String(p == null ? '' : p);
+  if (!s || s.startsWith('#') || s.startsWith('mailto:') || /^[a-z]+:/i.test(s)) return s;
+  return (c.site.basePath || '') + s;
+};
+
+const abs = (c, path) => c.site.domain.replace(/\/$/, '') + u(c, path);
 
 /* --- Icons (inline, damit keine externen Requests entstehen) -------------- */
 
@@ -98,11 +108,11 @@ ${isHome ? `<meta property="profile:first_name" content="Marco">\n<meta property
 <meta name="twitter:description" content="${ta(page.description)}">
 <meta name="twitter:image" content="${esc(abs(c, c.meta.ogImage))}">
 
-<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="/assets/css/style.css">
-<script src="/assets/js/main.js" defer></script>
+<link rel="icon" href="${esc(u(c, '/assets/img/favicon.svg'))}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="${esc(u(c, '/assets/img/apple-touch-icon.png'))}">
+<link rel="manifest" href="${esc(u(c, '/site.webmanifest'))}">
+<link rel="stylesheet" href="${esc(u(c, '/assets/css/style.css'))}">
+<script src="${esc(u(c, '/assets/js/main.js'))}" defer></script>
 
 ${schemas.map((s) => `<script type="application/ld+json">\n${jsonLd(s)}\n</script>`).join('\n')}`;
 }
@@ -111,12 +121,12 @@ function header(c, page) {
   const navItems = page.type === 'home' ? c.nav.items : [];
   return `<header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="${esc(page.homePath)}">${esc(c.site.name)}</a>
+    <a class="brand" href="${esc(u(c, page.homePath))}">${esc(c.site.name)}</a>
 
     <nav class="nav-desktop" aria-label="${ta(c.nav.menuLabel)}">
       ${navItems.map((i) => `<a class="nav-link" href="${esc(i.href)}">${t(i.label)}</a>`).join('\n      ')}
-      <a class="btn btn-primary" href="${esc(page.type === 'home' ? c.nav.cta.href : page.homePath + c.nav.cta.href)}">${t(c.nav.cta.label)}</a>
-      <a class="lang-switch" href="${esc(page.altPath)}" hreflang="${esc(c.site.altLang)}" lang="${esc(c.site.altLang)}" title="${ta(c.site.altTitle)}">${esc(c.site.altLabel)}</a>
+      <a class="btn btn-primary" href="${esc(u(c, page.type === 'home' ? c.nav.cta.href : page.homePath + c.nav.cta.href))}">${t(c.nav.cta.label)}</a>
+      <a class="lang-switch" href="${esc(u(c, page.altPath))}" hreflang="${esc(c.site.altLang)}" lang="${esc(c.site.altLang)}" title="${ta(c.site.altTitle)}">${esc(c.site.altLabel)}</a>
     </nav>
 
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-mobile"
@@ -131,13 +141,13 @@ function header(c, page) {
   <nav aria-label="${ta(c.nav.menuLabel)}">
     <ul>
       ${(page.type === 'home' ? c.nav.items.concat([c.nav.cta]) : [{ href: page.homePath, label: c.legal.backLink }])
-        .map((i, n) => `<li><a class="nav-m-link" href="${esc(i.href)}" style="--i:${n}"><span>${String(n + 1).padStart(2, '0')}</span>${t(i.label)}</a></li>`)
+        .map((i, n) => `<li><a class="nav-m-link" href="${esc(u(c, i.href))}" style="--i:${n}"><span>${String(n + 1).padStart(2, '0')}</span>${t(i.label)}</a></li>`)
         .join('\n      ')}
     </ul>
   </nav>
   <div class="nav-mobile-foot">
     <a href="#" data-mail-user="${esc(c.contact.emailUser)}" data-mail-domain="${esc(c.contact.emailDomain)}" data-mail-print>${esc(c.contact.emailUser)}&#64;${esc(c.contact.emailDomain)}</a>
-    <a class="lang-switch" href="${esc(page.altPath)}" hreflang="${esc(c.site.altLang)}" lang="${esc(c.site.altLang)}">${esc(c.site.altLabel)}</a>
+    <a class="lang-switch" href="${esc(u(c, page.altPath))}" hreflang="${esc(c.site.altLang)}" lang="${esc(c.site.altLang)}">${esc(c.site.altLabel)}</a>
   </div>
 </div>`;
 }
@@ -155,8 +165,8 @@ function footer(c, page) {
     <div class="footer-bottom">
       <p>&copy; <span data-current-year>2026</span> ${esc(c.site.name)}. ${t(c.footer.copyright)}</p>
       <nav class="footer-links" aria-label="Legal">
-        ${c.footer.links.map((l) => `<a href="${esc(l.href)}">${t(l.label)}</a>`).join('\n        ')}
-        <a href="${esc(page.altPath)}" hreflang="${esc(c.site.altLang)}" lang="${esc(c.site.altLang)}">${esc(c.site.altLabel)}</a>
+        ${c.footer.links.map((l) => `<a href="${esc(u(c, l.href))}">${t(l.label)}</a>`).join('\n        ')}
+        <a href="${esc(u(c, page.altPath))}" hreflang="${esc(c.site.altLang)}" lang="${esc(c.site.altLang)}">${esc(c.site.altLabel)}</a>
       </nav>
     </div>
   </div>
@@ -206,13 +216,13 @@ function heroSection(c) {
       </dl>
 
       <div class="hero-cta" data-reveal style="--reveal-delay:300ms">
-        <a class="btn btn-primary" href="${esc(h.primaryCta.href)}">${t(h.primaryCta.label)} ${icon.arrowRight}</a>
-        ${h.secondaryCta.available ? `<a class="btn btn-ghost" href="${esc(h.secondaryCta.href)}" download>${t(h.secondaryCta.label)} ${icon.download}</a>` : ''}
+        <a class="btn btn-primary" href="${esc(u(c, h.primaryCta.href))}">${t(h.primaryCta.label)} ${icon.arrowRight}</a>
+        ${h.secondaryCta.available ? `<a class="btn btn-ghost" href="${esc(u(c, h.secondaryCta.href))}" download>${t(h.secondaryCta.label)} ${icon.download}</a>` : ''}
       </div>
     </div>
 
     <figure class="hero-portrait" data-reveal style="--reveal-delay:160ms">
-      <img src="${esc(h.portraitSrc)}" alt="${ta(h.portraitAlt)}" width="800" height="1000" fetchpriority="high" decoding="async">
+      <img src="${esc(u(c, h.portraitSrc))}" alt="${ta(h.portraitAlt)}" width="800" height="1000" fetchpriority="high" decoding="async">
     </figure>
   </div>
 </section>
@@ -497,7 +507,7 @@ function contactSection(c) {
       ${
         s.cvCta.available
           ? `<div class="contact-cta">
-        <a class="btn btn-ghost" href="${esc(s.cvCta.href)}" download>${t(s.cvCta.label)} ${icon.download}</a>
+        <a class="btn btn-ghost" href="${esc(u(c, s.cvCta.href))}" download>${t(s.cvCta.label)} ${icon.download}</a>
       </div>`
           : ''
       }
@@ -652,7 +662,7 @@ function renderLegal(c, key, paths) {
     </section>`
       )
       .join('\n    ')}
-    <a class="legal-back" href="${esc(c.site.path)}">&larr; ${t(c.legal.backLink)}</a>
+    <a class="legal-back" href="${esc(u(c, c.site.path))}">&larr; ${t(c.legal.backLink)}</a>
   </div>
 </article>`;
 
