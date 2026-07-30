@@ -32,31 +32,40 @@ eigene Serverfunktion, ganz ohne eigene Domain nutzbar.
 statt des Formulars und verweist auf die E-Mail-Adresse. Nichts ist kaputt,
 es fehlt nur der eine Schlüssel.
 
-### So richtest du es ein
+### So ist es eingerichtet
 
-> **Hinweis:** Web3Forms lehnt die direkte Anmeldung mit `@yahoo.de`-Adressen
-> als Spamschutz-Maßnahme pauschal ab („This email or domain is not
-> allowed"). Der Weg über Google (Schritt 1) umgeht das — die
-> Empfangs-Adresse für die Nachrichten bleibt trotzdem `mstrote@yahoo.de`,
-> das stellst du in Schritt 2 separat ein.
+> **Hinweis:** Web3Forms lehnt `@yahoo.de`-Adressen als Spamschutz-Maßnahme
+> pauschal ab — sowohl beim Login als auch als Empfänger-Adresse
+> („This email or domain is not allowed"). Auch der Umweg über „Continue with
+> Google" hilft nicht, wenn das Google-Konto selbst mit einer yahoo.de-Adresse
+> verknüpft ist. Die funktionierende Lösung: ein separates, dediziertes
+> Gmail-Konto nur für dieses Formular.
 
-1. Auf [web3forms.com](https://web3forms.com/) über **„Continue with
-   Google"** anmelden (mit einem beliebigen Google-Konto — dient nur dem
-   Login, nicht dem Empfang der Nachrichten)
-2. Im Dashboard eine neue Form/einen Access Key anlegen und in den
-   **Form-Einstellungen** die Empfangs-E-Mail auf **mstrote@yahoo.de** setzen
-3. Den angezeigten **Access Key** kopieren
-4. Bei Vercel im Projekt: **Settings → Environment Variables**
-5. Neue Variable anlegen:
-   - Name: `WEB3FORMS_ACCESS_KEY`
-   - Wert: der kopierte Access Key
-   - Umgebungen: **Production** und **Preview** ankreuzen
-6. Speichern, dann im Vercel-Dashboard unter **Deployments** das letzte
-   Deployment über "..." → **Redeploy** einmal neu anstoßen
+**Aktueller Stand:**
 
-Ab da kommen alle Formular-Nachrichten direkt in dein normales Postfach —
-mit „Antworten" schreibst du der anfragenden Person unmittelbar zurück, weil
-ihre Adresse automatisch als Antwortziel hinterlegt ist.
+- **Login bei Web3Forms:** über Google, mit einem eigens dafür angelegten
+  Google-Konto
+- **Empfangs-Adresse der Formular-Nachrichten:**
+  `marco.strote.portfolio@gmail.com`
+- **Access Key:** liegt bei Vercel als Umgebungsvariable
+  `WEB3FORMS_ACCESS_KEY` (Settings → Environment Variables, für Production
+  und Preview aktiviert)
+
+**Tipp:** Wer nicht zwei Postfächer prüfen möchte, richtet in den
+Gmail-Einstellungen von `marco.strote.portfolio@gmail.com` unter
+„Weiterleitung und POP/IMAP" eine automatische Weiterleitung an
+`mstrote@yahoo.de` ein — dann landet trotzdem alles an einer Stelle.
+
+**Falls der Access Key jemals neu erzeugt werden muss** (z. B. bei Verdacht
+auf Missbrauch): bei [web3forms.com](https://web3forms.com/) mit dem oben
+genannten Google-Konto anmelden, neue Form anlegen, Empfangs-Adresse setzen,
+neuen Key kopieren, bei Vercel unter **Settings → Environment Variables** den
+Wert von `WEB3FORMS_ACCESS_KEY` ersetzen, danach unter **Deployments** →
+letztes Deployment → „..." → **Redeploy**.
+
+Bei jeder Formular-Nachricht ist die Adresse der anfragenden Person
+automatisch als Antwortziel hinterlegt — mit „Antworten" schreibst du direkt
+zurück.
 
 > **Datenschutz:** Die Datenschutzerklärung nennt Web3Forms bereits als
 > Auftragsverarbeiter (Abschnitt „Kontaktformular"). Nichts weiter zu tun.
