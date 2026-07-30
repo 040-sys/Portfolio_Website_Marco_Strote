@@ -757,8 +757,8 @@ function renderLegal(c, key, paths) {
     <p class="legal-intro">${t(data.intro)}</p>
     ${data.blocks
       .map(
-        (b) => `<section class="legal-block">
-      <h2>${t(b.heading)}</h2>
+        (b, i) => `<section class="legal-block">
+      <h2>${data.numbered ? `${i + 1}. ` : ''}${t(b.heading)}</h2>
       ${b.lines.map((l) => `<p>${linkify(t(l))}</p>`).join('\n      ')}
     </section>`
       )

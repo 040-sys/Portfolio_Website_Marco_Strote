@@ -395,6 +395,14 @@ img { display: block; max-width: 100%; }
     overflow-wrap: break-word;
   }
 
+  /* Silbentrennung wie auf der Website — in der schmalen Spalte brechen
+     Begriffe wie „Laborinformationsmanagementsystems" sonst unschön um. */
+  p, li, dd, h1, h2, h3 {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphenate-limit-chars: 8 4 4;
+  }
+
   .page {
     width: 100%;
     min-height: 0;

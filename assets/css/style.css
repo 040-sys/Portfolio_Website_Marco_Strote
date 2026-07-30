@@ -111,9 +111,17 @@ h1, h2, h3, .serif {
 
 /* Lange Komposita wie „Laborinformationsmanagementsystems" sprengen auf
    schmalen Bildschirmen sonst die Spalte. Silbentrennung im Fließtext,
-   harter Umbruch als Notnagel überall. */
+   harter Umbruch als Notnagel überall.
+   Überschriften brauchen sie ebenso: „Datenschutzerklärung" brach sonst
+   ohne Trennstrich mitten im Wort um. Bei kurzen Titeln greift die Regel
+   nicht, weil dort nichts zu trennen ist. */
 body { overflow-wrap: break-word; }
-p, li, dd, td, blockquote { hyphens: auto; }
+p, li, dd, td, blockquote,
+h1, h2, h3, h4 {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 8 4 4;
+}
 
 p { text-wrap: pretty; }
 
@@ -1101,7 +1109,19 @@ body.nav-locked { overflow: hidden; }
 .legal-page .legal-intro { color: var(--muted); margin-bottom: var(--sp-7); max-width: 60ch; }
 .legal-block { padding-block: var(--sp-5); border-top: 1px solid var(--line); }
 .legal-block h2 { font-size: var(--fs-lg); margin-bottom: var(--sp-3); }
-.legal-block p { color: var(--ink-soft); font-size: var(--fs-sm); line-height: 1.7; }
+/* Rechtstexte enthalten viele lange Komposita ("Verbraucherschlichtungsstelle",
+   "Standardvertragsklauseln") und ungeschützte URLs. Beides braucht auf
+   schmalen Bildschirmen Trennung, sonst ragt die Zeile aus der Spalte. */
+.legal-block p {
+  color: var(--ink-soft);
+  font-size: var(--fs-sm);
+  line-height: 1.7;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 8 4 4;
+  overflow-wrap: break-word;
+}
+.legal-block a { hyphens: none; -webkit-hyphens: none; word-break: break-all; }
 .legal-block p + p { margin-top: 0.5rem; }
 .legal-block a { color: var(--accent); word-break: break-word; border-bottom: 1px solid currentColor; }
 .legal-back { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: var(--sp-7); font-size: var(--fs-sm); color: var(--muted); transition: color 0.3s; min-height: 2.75rem; }
