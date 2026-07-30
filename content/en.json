@@ -85,8 +85,8 @@
   "skills": {
     "id": "skills",
     "eyebrow": "Skills",
-    "title": "Where I am strong",
-    "lead": "Four areas that rarely come together in AI projects — which is exactly why they are so often missing.",
+    "title": "What I bring",
+    "lead": "What derails an AI project is rarely the technology — it's that one of these four perspectives is missing.",
     "groups": [
       {
         "title": "AI & EU AI Act",
