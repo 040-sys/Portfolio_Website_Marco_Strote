@@ -302,6 +302,21 @@ p { text-wrap: pretty; }
 }
 .lang-switch:hover { color: var(--ink); border-color: var(--ink); background: var(--bg-alt); }
 
+/* Auf Mobilgeräten war der Sprachwechsel bislang nur im aufgeklappten Menü
+   erreichbar. Er sitzt jetzt direkt neben dem Menü-Knopf im Header, sodass
+   niemand erst suchen muss. Auf Desktop-Breite bleibt nur die Version in der
+   Navigationsleiste sichtbar (per .nav-mobile-only ausgeblendet). */
+.header-mobile-actions { display: flex; align-items: center; gap: 0.5rem; }
+@media (min-width: 62rem) { .header-mobile-actions { display: none; } }
+
+.header-mobile-actions .lang-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding-inline: 0.7rem;
+}
+
 /* --- Burger --- */
 .nav-toggle {
   display: grid;

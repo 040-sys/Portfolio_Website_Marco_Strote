@@ -129,11 +129,14 @@ function header(c, page) {
       <a class="lang-switch" href="${esc(u(c, page.altPath))}" hreflang="${esc(c.site.altLang)}" lang="${esc(c.site.altLang)}" title="${ta(c.site.altTitle)}">${esc(c.site.altLabel)}</a>
     </nav>
 
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-mobile"
-            aria-label="${ta(c.nav.openMenu)}"
-            data-label-open="${ta(c.nav.openMenu)}" data-label-close="${ta(c.nav.closeMenu)}">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-mobile-actions">
+      <a class="lang-switch nav-mobile-only" href="${esc(u(c, page.altPath))}" hreflang="${esc(c.site.altLang)}" lang="${esc(c.site.altLang)}" title="${ta(c.site.altTitle)}">${esc(c.site.altLabel)}</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-mobile"
+              aria-label="${ta(c.nav.openMenu)}"
+              data-label-open="${ta(c.nav.openMenu)}" data-label-close="${ta(c.nav.closeMenu)}">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -147,7 +150,6 @@ function header(c, page) {
   </nav>
   <div class="nav-mobile-foot">
     <a href="#" data-mail-user="${esc(c.contact.emailUser)}" data-mail-domain="${esc(c.contact.emailDomain)}" data-mail-print>${esc(c.contact.emailUser)}&#64;${esc(c.contact.emailDomain)}</a>
-    <a class="lang-switch" href="${esc(u(c, page.altPath))}" hreflang="${esc(c.site.altLang)}" lang="${esc(c.site.altLang)}">${esc(c.site.altLabel)}</a>
   </div>
 </div>`;
 }
