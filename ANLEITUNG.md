@@ -34,15 +34,24 @@ es fehlt nur der eine Schlüssel.
 
 ### So richtest du es ein
 
-1. Auf [web3forms.com](https://web3forms.com/) mit **mstrote@yahoo.de** anmelden
-   (nur die E-Mail-Adresse bestätigen, keine Kreditkarte nötig)
-2. Den angezeigten **Access Key** kopieren
-3. Bei Vercel im Projekt: **Settings → Environment Variables**
-4. Neue Variable anlegen:
+> **Hinweis:** Web3Forms lehnt die direkte Anmeldung mit `@yahoo.de`-Adressen
+> als Spamschutz-Maßnahme pauschal ab („This email or domain is not
+> allowed"). Der Weg über Google (Schritt 1) umgeht das — die
+> Empfangs-Adresse für die Nachrichten bleibt trotzdem `mstrote@yahoo.de`,
+> das stellst du in Schritt 2 separat ein.
+
+1. Auf [web3forms.com](https://web3forms.com/) über **„Continue with
+   Google"** anmelden (mit einem beliebigen Google-Konto — dient nur dem
+   Login, nicht dem Empfang der Nachrichten)
+2. Im Dashboard eine neue Form/einen Access Key anlegen und in den
+   **Form-Einstellungen** die Empfangs-E-Mail auf **mstrote@yahoo.de** setzen
+3. Den angezeigten **Access Key** kopieren
+4. Bei Vercel im Projekt: **Settings → Environment Variables**
+5. Neue Variable anlegen:
    - Name: `WEB3FORMS_ACCESS_KEY`
    - Wert: der kopierte Access Key
    - Umgebungen: **Production** und **Preview** ankreuzen
-5. Speichern, dann im Vercel-Dashboard unter **Deployments** das letzte
+6. Speichern, dann im Vercel-Dashboard unter **Deployments** das letzte
    Deployment über "..." → **Redeploy** einmal neu anstoßen
 
 Ab da kommen alle Formular-Nachrichten direkt in dein normales Postfach —
