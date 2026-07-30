@@ -852,20 +852,88 @@ body.nav-locked { overflow: hidden; }
 @media (min-width: 56rem) { .contact-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); column-gap: clamp(3rem, 1rem + 6vw, 6rem); align-items: start; } }
 
 .contact-title { font-size: var(--fs-3xl); }
-.contact-mail {
-  display: inline-block;
-  font-family: var(--font-serif);
-  font-size: clamp(1.25rem, 0.9rem + 1.6vw, 2rem);
-  letter-spacing: -0.02em;
-  margin-top: var(--sp-5);
-  word-break: break-word;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-size: 0% 1px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.45s var(--ease);
+
+/* --- Kontaktformular --- */
+
+.contact-form { margin-top: clamp(2rem, 1.4rem + 2vw, 2.75rem); display: grid; gap: var(--sp-5); max-width: 34rem; }
+
+/* Web3Forms-Honeypot: für Menschen unsichtbar, für simple Bots trotzdem
+   im DOM vorhanden. Kein display:none — manche Bots überspringen genau das. */
+.cf-botcheck {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
-.contact-mail:hover { background-size: 100% 1px; }
+
+.cf-row { display: grid; gap: var(--sp-4); }
+@media (min-width: 34rem) { .cf-row { grid-template-columns: 1fr 1fr; } }
+
+.cf-field { display: grid; gap: 0.5rem; }
+.cf-field label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cf-field input,
+.cf-field select,
+.cf-field textarea {
+  font: inherit;
+  font-size: var(--fs-sm);
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: 0.75rem 0.9rem;
+  min-height: 2.75rem;
+  transition: border-color 0.25s, background 0.25s;
+}
+.cf-field textarea { min-height: 8rem; resize: vertical; line-height: 1.6; }
+.cf-field select { cursor: pointer; }
+.cf-field input::placeholder, .cf-field textarea::placeholder { color: var(--muted); opacity: 0.8; }
+.cf-field input:hover, .cf-field select:hover, .cf-field textarea:hover { border-color: var(--ink-soft); }
+.cf-field input:focus-visible, .cf-field select:focus-visible, .cf-field textarea:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--bg);
+}
+.cf-field input:invalid:not(:placeholder-shown) { border-color: var(--accent); }
+
+.cf-foot { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-4); margin-top: 0.25rem; }
+.contact-form button[type="submit"] { min-width: 12rem; }
+.contact-form button[type="submit"]:disabled { opacity: 0.6; cursor: progress; }
+.cf-privacy { font-size: var(--fs-xs); color: var(--muted); max-width: 28ch; line-height: 1.5; }
+.cf-privacy a { color: var(--muted); border-bottom: 1px solid var(--line-strong); transition: color 0.3s, border-color 0.3s; }
+.cf-privacy a:hover { color: var(--accent); border-color: var(--accent); }
+
+.cf-status {
+  padding: 0.9rem 1.1rem;
+  border-radius: var(--radius-lg);
+  font-size: var(--fs-sm);
+  line-height: 1.55;
+}
+.cf-status strong { display: block; margin-bottom: 0.2rem; }
+.cf-status[data-state="ok"] { background: #eaf3e9; color: #2f5233; border: 1px solid #c3ddc0; }
+.cf-status[data-state="error"] { background: var(--accent-soft); color: var(--accent); border: 1px solid #e3c2ab; }
+
+.contact-form-pending { margin-top: clamp(1.5rem, 1rem + 1.5vw, 2rem); max-width: 34rem; }
+.contact-form-pending p { margin: 0; }
+
+.contact-list-heading {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--sp-4);
+}
 
 .contact-list { display: grid; gap: var(--sp-4); }
 .contact-list > div { padding-bottom: var(--sp-4); border-bottom: 1px solid var(--line-strong); }

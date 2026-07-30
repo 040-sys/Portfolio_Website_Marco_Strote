@@ -5,7 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { renderHome, renderLegal, clean, isPlaceholder } = require('./template');
+const { renderHome, renderLegal, renderThankYou, clean, isPlaceholder } = require('./template');
 const { renderCv } = require('./cv-template');
 const { renderBlogIndex, renderPost, renderFeed } = require('./blog-template');
 const { parseFrontmatter, toPlainText } = require('./markdown');
@@ -45,6 +45,17 @@ for (const c of [de, en]) {
 
   if (process.env.SITE_URL) c.site.domain = new URL(process.env.SITE_URL).origin;
   else if (VERCEL_HOST) c.site.domain = 'https://' + VERCEL_HOST;
+}
+
+/* Kontaktformular: der Web3Forms Access Key kommt aus einer Vercel-
+   Umgebungsvariable, nicht aus dem Repository. So bleibt er austauschbar,
+   ohne Code anzufassen, und steht nicht offen im Git-Verlauf. Ist keine
+   Umgebungsvariable gesetzt, bleibt der Platzhalter aus content/*.json
+   stehen — die Seite baut trotzdem, das Formular zeigt dann den
+   "wird eingerichtet"-Hinweis statt eines funktionslosen Formulars. */
+const WEB3FORMS_KEY = process.env.WEB3FORMS_ACCESS_KEY;
+if (WEB3FORMS_KEY) {
+  for (const c of [de, en]) c.contact.form.web3formsKey = WEB3FORMS_KEY;
 }
 
 /* Der Lebenslauf-Button wird nur ausgegeben, wenn die PDF-Datei wirklich
@@ -118,6 +129,12 @@ written.push(write('en/index.html', renderHome(en, en.blog.enabled ? posts : [])
 
 written.push(write('lebenslauf.html', renderCv(de)));
 written.push(write('en/cv.html', renderCv(en)));
+
+/* Danke-Seiten: Ziel des Web3Forms-"redirect"-Felds für Besucher ohne
+   JavaScript. Bewusst nicht in der Sitemap — sie sollen nicht über die
+   Suche gefunden werden, sondern nur nach einer Formularabgabe erscheinen. */
+written.push(write('kontakt-danke.html', renderThankYou(de)));
+written.push(write('en/thank-you.html', renderThankYou(en)));
 
 /* Blog — derzeit nur auf Deutsch; en.json hat blog.enabled: false */
 if (de.blog.enabled && posts.length) {

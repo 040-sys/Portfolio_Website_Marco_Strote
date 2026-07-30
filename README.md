@@ -50,18 +50,44 @@ Das PDF entsteht aus demselben Stylesheet wie die Bildschirmansicht und sieht
 deshalb identisch aus. Der Download-Button auf der Startseite erscheint nur,
 wenn die jeweilige Datei tatsächlich vorhanden ist.
 
+## Kontaktformular
+
+Läuft über [Web3Forms](https://web3forms.com/) — kein eigenes Backend nötig,
+das `<form>` sendet direkt an deren Endpunkt. Zwei Einreichungswege parallel:
+
+- **Ohne JavaScript:** natives `<form method="post" action="https://api.web3forms.com/submit">`
+  mit einem `redirect`-Feld auf `kontakt-danke.html` bzw. `en/thank-you.html`.
+  Web3Forms leitet nach der Verarbeitung selbst dorthin weiter.
+- **Mit JavaScript:** `main.js` fängt das Absenden ab, sendet per `fetch` als
+  JSON und zeigt Erfolg/Fehler direkt auf der Seite an, ohne Neuladen.
+
+Der Access Key kommt aus der Umgebungsvariable `WEB3FORMS_ACCESS_KEY` (in
+Vercel unter *Settings → Environment Variables* gesetzt), nicht aus dem
+Repository. Ist keine gesetzt, bleibt der Platzhalter aus `content/*.json`
+stehen — `contactForm()` in `src/template.js` erkennt das über `isPlaceholder()`
+und zeigt einen Hinweistext statt eines funktionslosen Formulars.
+
+Spam-Schutz: ein für Menschen unsichtbares, aber im DOM vorhandenes
+Honeypot-Feld (`botcheck`) — kein `display:none`, weil manche Bots genau das
+überspringen. Kein CAPTCHA, keine client-seitige Ratenbegrenzung.
+
 ## Seitenstruktur
 
 1. **Hero** — Name, Positionierung, Standort/Verfügbarkeit, Kontakt- und CV-Button
 2. **Kompetenzen** — Tag-Grid, in drei Sekunden scanbar
-3. **Qualifikationen** — neun Zertifizierungen als Kachel-Raster
-4. **Erfahrung** — Timeline mit Jahr, Rolle, Unternehmen, Ergebnissen
+3. **Qualifikationen** — Zertifizierungen als Kachel-Raster
+4. **Erfahrung** — Timeline mit Jahr, Rolle, Unternehmen, Ergebnissen; ältere
+   Stationen hinter einem Aufklapper, damit alle erhalten bleiben, ohne die
+   Seite zu strecken
 5. **Über mich** — Bio mit der Doppelperspektive Berater/Produktverantwortlicher
-6. **Projekte** — Case Studies nach dem Muster Ausgangslage → Vorgehen → Ergebnis
-7. **Stimmen** — Empfehlungen
-8. **FAQ** — Akkordeon mit den Standardfragen von Recruitern
-9. **Kontakt** — E-Mail, LinkedIn, Standort, Verfügbarkeit
-10. **Footer** — Namenszug, Impressum, Datenschutz
+6. **Beiträge** — Teaser der drei neuesten Blogartikel, Link zur Übersicht
+7. **FAQ** — Akkordeon mit den Standardfragen von Recruitern
+8. **Kontakt** — Kontaktformular (Web3Forms) als Hauptweg, E-Mail/LinkedIn/
+   Standort/Verfügbarkeit als Zweitoption
+9. **Footer** — Namenszug, Impressum, Datenschutz
+
+„Projekte" und „Stimmen" sind als Abschnitte vorbereitet, aber über
+`"enabled": false` in `content/de.json` abgeschaltet (siehe unten).
 
 ## SEO
 
@@ -104,6 +130,12 @@ Keine Cookies, kein Analytics, keine eingebetteten Social-Media-Plugins, keine
 Google Fonts. Schriften kommen aus dem Betriebssystem. Die E-Mail-Adresse wird
 erst im Browser zusammengesetzt (Spam-Schutz). Impressum und
 Datenschutzerklärung liegen in beiden Sprachen vor.
+
+Einzige Ausnahme von der Zero-Drittanbieter-Linie: Das Kontaktformular läuft
+über Web3Forms (Web3Creative, Kerala, Indien; Server bei AWS US-East) — als
+Alternative zur direkten E-Mail-Adresse, die weiterhin unverändert
+funktioniert. In der Datenschutzerklärung unter „Kontaktformular" offengelegt,
+samt Rechtsgrundlage für die Datenübermittlung außerhalb der EU.
 
 > Die Rechtstexte sind sorgfältig vorbereitet, aber keine Rechtsberatung. Vor
 > dem Livegang bitte auf Vollständigkeit prüfen — insbesondere die Anschrift im

@@ -13,17 +13,44 @@ Alle Texte der Website stehen in **zwei Dateien**: `content/de.json` (deutsch) u
 
 ## Was du liefern musst
 
-Die Seite steht vollständig — Design, Struktur, Technik. Was fehlt, sind **deine
-Inhalte**. Auf der Website siehst du sie als **orange markierte Felder**.
-
-| Was | Wohin | Warum |
-|---|---|---|
-| **Ergebniszahlen zu zwei Projekten** | im Chat schicken | Abschnitt „Projekte" — Zahlen unterscheiden eine Case Study von einer Tätigkeitsbeschreibung |
-| **2–3 Empfehlungen** | im Chat schicken | Abschnitt „Stimmen" |
+Die Seite steht vollständig — Design, Struktur, Technik. Offene inhaltliche
+Punkte siehst du auf der Website als **orange markierte Felder**.
 
 > **Zum Download-Button:** Solange keine PDF-Datei vorhanden ist, wird der Button
 > automatisch ausgeblendet. Ein Button, der ins Leere führt, wirkt bei Recruitern
-> schlechter als gar kein Button.
+> schlechter als gar kein Button. Genauso beim Kontaktformular weiter unten.
+
+---
+
+## Kontaktformular einrichten (einmalig)
+
+Das Kontaktformular sendet Nachrichten über den kostenlosen Dienst
+**[Web3Forms](https://web3forms.com/)** an deine E-Mail-Adresse — technisch ohne
+eigene Serverfunktion, ganz ohne eigene Domain nutzbar.
+
+**Solange dieser Schritt fehlt**, zeigt die Website automatisch einen Hinweis
+statt des Formulars und verweist auf die E-Mail-Adresse. Nichts ist kaputt,
+es fehlt nur der eine Schlüssel.
+
+### So richtest du es ein
+
+1. Auf [web3forms.com](https://web3forms.com/) mit **mstrote@yahoo.de** anmelden
+   (nur die E-Mail-Adresse bestätigen, keine Kreditkarte nötig)
+2. Den angezeigten **Access Key** kopieren
+3. Bei Vercel im Projekt: **Settings → Environment Variables**
+4. Neue Variable anlegen:
+   - Name: `WEB3FORMS_ACCESS_KEY`
+   - Wert: der kopierte Access Key
+   - Umgebungen: **Production** und **Preview** ankreuzen
+5. Speichern, dann im Vercel-Dashboard unter **Deployments** das letzte
+   Deployment über "..." → **Redeploy** einmal neu anstoßen
+
+Ab da kommen alle Formular-Nachrichten direkt in dein normales Postfach —
+mit „Antworten" schreibst du der anfragenden Person unmittelbar zurück, weil
+ihre Adresse automatisch als Antwortziel hinterlegt ist.
+
+> **Datenschutz:** Die Datenschutzerklärung nennt Web3Forms bereits als
+> Auftragsverarbeiter (Abschnitt „Kontaktformular"). Nichts weiter zu tun.
 
 ---
 

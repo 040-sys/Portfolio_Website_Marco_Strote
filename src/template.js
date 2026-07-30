@@ -563,6 +563,71 @@ function faqSection(c, no) {
 </section>`;
 }
 
+/* Kontaktformular. Web3Forms braucht keine eigene Serverless Function -
+   das Formular sendet die Daten direkt an deren Endpunkt.
+
+   Zwei Einreichungswege gleichzeitig, bewusst redundant:
+   - Ohne JavaScript: normales <form method="post" action="..."> mit einem
+     "redirect"-Feld, über das Web3Forms selbst auf die Danke-Seite leitet.
+   - Mit JavaScript: main.js fängt das Absenden ab, schickt es per fetch als
+     JSON und zeigt Erfolg/Fehler direkt auf der Seite, ohne Neuladen.
+   Beide Wege laufen über denselben Access Key und dieselbe Feldbelegung. */
+function contactForm(c) {
+  const s = c.contact;
+  const f = s.form;
+  const configured = !isPlaceholder(f.web3formsKey);
+  const legalLink = c.footer.links[1]; // Datenschutz / Privacy
+
+  if (!configured) {
+    return `<div class="contact-form-pending">
+        <p><mark class="todo">${t(f.notConfiguredText)}</mark></p>
+      </div>`;
+  }
+
+  return `<form class="contact-form" method="post" action="https://api.web3forms.com/submit"
+        data-web3forms data-subject="${ta(f.subject)}" data-success-title="${ta(f.successTitle)}"
+        data-success-text="${ta(f.successText)}" data-error-title="${ta(f.errorTitle)}"
+        data-error-text="${ta(f.errorText)}" novalidate>
+    <input type="hidden" name="access_key" value="${esc(f.web3formsKey)}">
+    <input type="hidden" name="subject" value="${ta(f.subject)}">
+    <input type="hidden" name="redirect" value="${esc(abs(c, f.thankYouPath))}">
+    <label class="visually-hidden" for="cf-botcheck">${ta(f.botcheckLabel)}</label>
+    <input class="cf-botcheck" type="checkbox" name="botcheck" id="cf-botcheck" tabindex="-1" autocomplete="off">
+
+    <div class="cf-row">
+      <div class="cf-field">
+        <label for="cf-name">${t(f.nameLabel)}</label>
+        <input type="text" id="cf-name" name="name" placeholder="${ta(f.namePlaceholder)}" autocomplete="name" required>
+      </div>
+      <div class="cf-field">
+        <label for="cf-email">${t(f.emailLabel)}</label>
+        <input type="email" id="cf-email" name="email" placeholder="${ta(f.emailPlaceholder)}" autocomplete="email" required>
+      </div>
+    </div>
+
+    <div class="cf-field">
+      <label for="cf-reason">${t(f.reasonLabel)}</label>
+      <select id="cf-reason" name="reason">
+        ${f.reasonOptions.map((o) => `<option value="${ta(o)}">${t(o)}</option>`).join('\n        ')}
+      </select>
+    </div>
+
+    <div class="cf-field">
+      <label for="cf-message">${t(f.messageLabel)}</label>
+      <textarea id="cf-message" name="message" rows="5" placeholder="${ta(f.messagePlaceholder)}" required></textarea>
+    </div>
+
+    <div class="cf-foot">
+      <button class="btn btn-primary" type="submit" data-label-idle="${ta(f.submitLabel)}" data-label-sending="${ta(f.submitLabelSending)}">
+        <span>${t(f.submitLabel)}</span> ${icon.arrowRight}
+      </button>
+      <p class="cf-privacy">${t(f.privacyNote)} <a href="${esc(u(c, legalLink.href))}">${t(f.privacyLinkLabel)}</a></p>
+    </div>
+
+    <div class="cf-status" role="status" aria-live="polite" hidden></div>
+  </form>`;
+}
+
 function contactSection(c, no) {
   const s = c.contact;
   const mailAttrs = `data-mail-user="${esc(s.emailUser)}" data-mail-domain="${esc(s.emailDomain)}"`;
@@ -575,10 +640,12 @@ function contactSection(c, no) {
       <span class="eyebrow">${sectionNo(no)}${t(s.eyebrow)}</span>
       <h2 class="contact-title" id="${esc(s.id)}-title">${t(s.title)}</h2>
       <p class="lead" style="margin-top:1.25rem">${t(s.lead)}</p>
-      <a class="contact-mail" href="#" ${mailAttrs} data-mail-print>${mailText}</a>
+
+      ${contactForm(c)}
     </div>
 
     <div data-reveal style="--reveal-delay:100ms">
+      <p class="contact-list-heading">${t(s.form.orEmailLabel)}</p>
       <dl class="contact-list">
         <div>
           <dt>${t(s.emailLabel)}</dt>
@@ -607,6 +674,33 @@ function contactSection(c, no) {
     </div>
   </div>
 </section>`;
+}
+
+/* Danke-Seite: Ziel des "redirect"-Felds für Besucher ohne JavaScript.
+   Web3Forms leitet nach erfolgreicher Verarbeitung selbst hierher weiter. */
+function renderThankYou(c) {
+  const ty = c.contact.form.thankYou;
+  const page = {
+    type: 'legal',
+    path: c.contact.form.thankYouPath,
+    altPath: c.lang === 'de' ? '/en/thank-you.html' : '/kontakt-danke.html',
+    homePath: c.site.path,
+    title: `${ty.title} — ${c.site.name}`,
+    description: clean(ty.text),
+    noindex: true,
+    hrefDe: '/kontakt-danke.html',
+    hrefEn: '/en/thank-you.html',
+  };
+
+  const body = `<article class="legal-page">
+  <div class="wrap">
+    <h1>${t(ty.title)}</h1>
+    <p class="legal-intro">${t(ty.text)}</p>
+    <a class="legal-back" href="${esc(u(c, c.site.path))}">&larr; ${t(ty.backLabel)}</a>
+  </div>
+</article>`;
+
+  return shell(c, page, body);
 }
 
 /* --- Strukturierte Daten (JSON-LD) ---------------------------------------- */
@@ -777,4 +871,4 @@ function linkify(html) {
   return html.replace(/(https?:\/\/[^\s<]+[^\s<.,;:)])/g, '<a href="$1" rel="noopener noreferrer" target="_blank">$1</a>');
 }
 
-module.exports = { renderHome, renderLegal, clean, isPlaceholder, esc, t, ta, u, abs, jsonLd };
+module.exports = { renderHome, renderLegal, renderThankYou, clean, isPlaceholder, esc, t, ta, u, abs, jsonLd };

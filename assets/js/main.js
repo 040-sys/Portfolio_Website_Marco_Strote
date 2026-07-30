@@ -137,7 +137,78 @@
     });
   }
 
-  /* --- 9. Vor dem Drucken alles aufklappen ------------------------------
+  /* --- 9. Kontaktformular: Absenden per fetch statt Seitenwechsel --------
+     Die <form> selbst funktioniert auch ohne dieses Skript: sie sendet nativ
+     an Web3Forms, das per "redirect"-Feld auf die Danke-Seite weiterleitet.
+     Mit JavaScript bleibt der Besucher auf der Seite und sieht sofort, ob es
+     geklappt hat. */
+  document.querySelectorAll('form[data-web3forms]').forEach(function (form) {
+    var status = form.querySelector('.cf-status');
+    var button = form.querySelector('button[type="submit"]');
+    var buttonLabel = button ? button.querySelector('span') : null;
+    var botcheck = form.querySelector('.cf-botcheck');
+
+    var showStatus = function (state, title, text) {
+      status.hidden = false;
+      status.dataset.state = state;
+      status.innerHTML = '';
+      var strong = document.createElement('strong');
+      strong.textContent = title;
+      var p = document.createElement('p');
+      p.textContent = text;
+      status.append(strong, p);
+      status.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    };
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      // Ausgefülltes Honeypot-Feld verrät ein automatisiertes Skript.
+      if (botcheck && botcheck.checked) return;
+
+      var data = Object.fromEntries(new FormData(form).entries());
+      var name = (data.name || '').trim();
+      var reason = data.reason || '';
+      data.subject = form.dataset.subject + (name ? ' — ' + name : '') + (reason ? ' (' + reason + ')' : '');
+      data.botcheck = false;
+
+      if (button) {
+        button.disabled = true;
+        if (buttonLabel) buttonLabel.textContent = button.dataset.labelSending;
+      }
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(data),
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (result) {
+          if (result.success) {
+            showStatus('ok', form.dataset.successTitle, form.dataset.successText);
+            form.reset();
+          } else {
+            showStatus('error', form.dataset.errorTitle, form.dataset.errorText);
+          }
+        })
+        .catch(function () {
+          showStatus('error', form.dataset.errorTitle, form.dataset.errorText);
+        })
+        .finally(function () {
+          if (button) {
+            button.disabled = false;
+            if (buttonLabel) buttonLabel.textContent = button.dataset.labelIdle;
+          }
+        });
+    });
+  });
+
+  /* --- 10. Vor dem Drucken alles aufklappen ------------------------------
      Auf Papier kann niemand einen Aufklapper öffnen — was zugeklappt bliebe,
      wäre für den Leser schlicht verloren. */
   window.addEventListener('beforeprint', function () {
@@ -145,7 +216,7 @@
     document.querySelectorAll('.faq-item').forEach(function (i) { i.classList.add('is-open'); });
   });
 
-  /* --- 10. Jahreszahl im Footer ---------------------------------------- */
+  /* --- 11. Jahreszahl im Footer ---------------------------------------- */
   document.querySelectorAll('[data-current-year]').forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
   });
