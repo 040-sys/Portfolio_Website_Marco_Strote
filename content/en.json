@@ -229,7 +229,7 @@
     "title": "Career",
     "lead": "More than fifteen years at the intersection of market, technology and delivery.",
     "visibleEntries": 3,
-    "moreLabel": "+ {n} earlier positions",
+    "moreLabel": "+ earlier positions",
     "items": [
       {
         "period": "July 2025 — present",
@@ -544,7 +544,12 @@
       "emailPlaceholder": "you@email.com",
       "botcheckLabel": "Please leave this field empty",
       "reasonLabel": "Reason for contact",
-      "reasonOptions": ["Job offer / permanent role", "Consulting engagement", "General enquiry", "Other"],
+      "reasonOptions": [
+        "Job offer / permanent role",
+        "Consulting engagement",
+        "General enquiry",
+        "Other"
+      ],
       "messageLabel": "Message",
       "messagePlaceholder": "How can I help?",
       "submitLabel": "Send message",
@@ -573,7 +578,7 @@
     "skillsTitle": "Skills",
     "experienceTitle": "Professional experience",
     "visibleEntries": 3,
-    "moreLabel": "+ {n} earlier positions",
+    "moreLabel": "+ earlier positions",
     "certificationsTitle": "Certifications",
     "educationTitle": "Education",
     "languagesTitle": "Languages",

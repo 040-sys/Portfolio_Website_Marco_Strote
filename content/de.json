@@ -233,7 +233,7 @@
     "title": "Beruflicher Werdegang",
     "lead": "Über 15 Jahre an der Schnittstelle von Markt, Technologie und Umsetzung.",
     "visibleEntries": 3,
-    "moreLabel": "+ {n} weitere Stationen",
+    "moreLabel": "+ weitere Stationen",
     "items": [
       {
         "period": "Juli 2025 — heute",
@@ -548,7 +548,12 @@
       "emailPlaceholder": "ihre@email.de",
       "botcheckLabel": "Bitte dieses Feld leer lassen",
       "reasonLabel": "Anliegen",
-      "reasonOptions": ["Jobangebot / Festanstellung", "Beratungsmandat", "Allgemeine Anfrage", "Sonstiges"],
+      "reasonOptions": [
+        "Jobangebot / Festanstellung",
+        "Beratungsmandat",
+        "Allgemeine Anfrage",
+        "Sonstiges"
+      ],
       "messageLabel": "Nachricht",
       "messagePlaceholder": "Wie kann ich Ihnen helfen?",
       "submitLabel": "Nachricht senden",
@@ -577,7 +582,7 @@
     "skillsTitle": "Kompetenzen",
     "experienceTitle": "Beruflicher Werdegang",
     "visibleEntries": 3,
-    "moreLabel": "+ {n} weitere Stationen",
+    "moreLabel": "+ weitere Stationen",
     "certificationsTitle": "Zertifizierungen",
     "educationTitle": "Ausbildung",
     "languagesTitle": "Sprachen",
