@@ -626,7 +626,14 @@ body.nav-locked { overflow: hidden; }
   transition: background 0.3s, border-color 0.3s, transform 0.3s var(--ease);
 }
 @media (min-width: 56rem) { .tl-item::before { left: calc(12rem - 4px); } }
-.tl-item:hover::before { background: var(--accent); border-color: var(--accent); transform: scale(1.25); }
+
+/* Nur auf Geräten mit echtem Maus-Hover aktivieren. Auf Touchscreens bleibt
+   :hover nach dem Antippen "hängen" (sticky hover), bis irgendwo anders
+   getippt wird — der Punkt wirkte dadurch dauerhaft "aktiv markiert",
+   unabhängig davon, welche Station gerade im Sichtfenster steht. */
+@media (hover: hover) and (pointer: fine) {
+  .tl-item:hover::before { background: var(--accent); border-color: var(--accent); transform: scale(1.25); }
+}
 
 .tl-period {
   font-family: var(--font-mono);

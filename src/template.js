@@ -343,7 +343,7 @@ function timeline(s) {
       ${
         hidden.length
           ? `<details class="tl-more">
-        <summary>${esc((s.moreLabel || '+ {n}').replace('{n}', hidden.length))}</summary>
+        <summary data-label-more="${ta((s.moreLabel || '+ {n}').replace('{n}', hidden.length))}" data-label-less="${ta(s.lessLabel || '')}">${esc((s.moreLabel || '+ {n}').replace('{n}', hidden.length))}</summary>
         <ol class="timeline" start="${visible + 1}">
           ${hidden.map((it) => item(it, false)).join('\n          ')}
         </ol>

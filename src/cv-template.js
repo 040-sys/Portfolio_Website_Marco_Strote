@@ -68,7 +68,7 @@ function renderCv(c) {
     shown.map(entry).join('\n      ') +
     (hidden.length
       ? `\n      <details class="cv-more">
-        <summary>${esc(c.cv.moreLabel.replace('{n}', hidden.length))}</summary>
+        <summary data-label-more="${ta(c.cv.moreLabel.replace('{n}', hidden.length))}" data-label-less="${ta(c.cv.lessLabel || '')}">${esc(c.cv.moreLabel.replace('{n}', hidden.length))}</summary>
         <div class="cv-more-body">
           ${hidden.map(entry).join('\n          ')}
         </div>
@@ -116,6 +116,20 @@ ${jsonLd(person)}
   /* Vor dem Drucken alle Aufklapper oeffnen, damit im PDF keine Station fehlt. */
   addEventListener('beforeprint', function () {
     document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+  });
+
+  /* Beschriftung des "weitere Stationen"-Aufklappers spiegelt den Zustand -
+     sonst bleibt der Text nach dem Oeffnen unveraendert stehen und laedt
+     zu einem zweiten, ungewollt wieder zuklappenden Tap ein.
+     In DOMContentLoaded, weil dieses Skript vor ".cv-more" im Markup steht
+     und die Elemente beim Ausfuehren sonst noch nicht existieren. */
+  addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.cv-more summary').forEach(function (s) {
+      if (!s.dataset.labelLess) return;
+      s.closest('details').addEventListener('toggle', function () {
+        s.textContent = this.open ? s.dataset.labelLess : s.dataset.labelMore;
+      });
+    });
   });
 </script>
 

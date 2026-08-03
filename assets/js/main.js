@@ -208,6 +208,20 @@
     });
   });
 
+  /* --- 9b. "Weitere Stationen"-Aufklapper: Beschriftung spiegelt den Zustand
+     Ohne das blieb der Button-Text beim Öffnen unverändert auf "+ weitere
+     Stationen" stehen. Ohne sichtbare Rückmeldung tippen Nutzer im Zweifel
+     ein zweites Mal — und klappen dabei über das native <details>-Verhalten
+     versehentlich wieder zu, bevor sie die zusätzlichen Stationen sehen. */
+  document.querySelectorAll('.tl-more, .cv-more').forEach(function (details) {
+    var summary = details.querySelector('summary');
+    if (!summary || !summary.dataset.labelLess) return;
+
+    details.addEventListener('toggle', function () {
+      summary.textContent = details.open ? summary.dataset.labelLess : summary.dataset.labelMore;
+    });
+  });
+
   /* --- 10. Vor dem Drucken alles aufklappen ------------------------------
      Auf Papier kann niemand einen Aufklapper öffnen — was zugeklappt bliebe,
      wäre für den Leser schlicht verloren. */

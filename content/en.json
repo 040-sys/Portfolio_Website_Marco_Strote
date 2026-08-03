@@ -341,7 +341,8 @@
           "institution": "Wirtschaftsakademie Hamburg (WAH)"
         }
       ]
-    }
+    },
+    "lessLabel": "− Show less"
   },
   "about": {
     "id": "about",
@@ -601,7 +602,8 @@
       "issuedBy": "issued by"
     },
     "footNote": "As of July 2026",
-    "backLink": "To the website"
+    "backLink": "To the website",
+    "lessLabel": "− Show less"
   },
   "footer": {
     "tagline": "AI & Transformation Consultant · EU AI Act · Hamburg",

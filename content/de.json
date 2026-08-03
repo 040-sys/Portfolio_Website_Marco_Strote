@@ -345,7 +345,8 @@
           "institution": "Wirtschaftsakademie Hamburg (WAH)"
         }
       ]
-    }
+    },
+    "lessLabel": "− Weniger anzeigen"
   },
   "about": {
     "id": "ueber-mich",
@@ -605,7 +606,8 @@
       "issuedBy": "ausgestellt von"
     },
     "footNote": "Stand: Juli 2026",
-    "backLink": "Zur Website"
+    "backLink": "Zur Website",
+    "lessLabel": "− Weniger anzeigen"
   },
   "footer": {
     "tagline": "KI- & Transformationsberater · EU AI Act · Hamburg",

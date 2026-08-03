@@ -36,6 +36,20 @@
   addEventListener('beforeprint', function () {
     document.querySelectorAll('details').forEach(function (d) { d.open = true; });
   });
+
+  /* Beschriftung des "weitere Stationen"-Aufklappers spiegelt den Zustand -
+     sonst bleibt der Text nach dem Oeffnen unveraendert stehen und laedt
+     zu einem zweiten, ungewollt wieder zuklappenden Tap ein.
+     In DOMContentLoaded, weil dieses Skript vor ".cv-more" im Markup steht
+     und die Elemente beim Ausfuehren sonst noch nicht existieren. */
+  addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.cv-more summary').forEach(function (s) {
+      if (!s.dataset.labelLess) return;
+      s.closest('details').addEventListener('toggle', function () {
+        s.textContent = this.open ? s.dataset.labelLess : s.dataset.labelMore;
+      });
+    });
+  });
 </script>
 
 <div class="page">
@@ -115,7 +129,7 @@
         </div>
       </article>
       <details class="cv-more">
-        <summary>+ weitere Stationen</summary>
+        <summary data-label-more="+ weitere Stationen" data-label-less="− Weniger anzeigen">+ weitere Stationen</summary>
         <div class="cv-more-body">
           <article class="cv-entry">
         <p class="cv-period">Mai 2020 — Mai 2021</p>
