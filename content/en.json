@@ -13,7 +13,7 @@
   },
   "meta": {
     "title": "Marco Strote — AI & Transformation Consultant | EU AI Act | Hamburg",
-    "description": "AI and transformation consultant based in Hamburg, Germany. Focused on the EU AI Act, AI strategy and digitalisation with measurable business impact. 13 certifications, 15+ years of experience.",
+    "description": "AI and transformation consultant based in Hamburg, Germany. Focused on the EU AI Act, AI strategy and digitalisation with measurable business impact. 13 certifications, 25+ years of experience.",
     "keywords": "Marco Strote, AI consultant, EU AI Act, AI compliance, AI governance, transformation consultant, digitalisation, project management, PRINCE2, ITIL, Scrum, Hamburg",
     "ogImage": "/assets/img/og-image.jpg",
     "ogImageAlt": "Marco Strote — AI and transformation consultant based in Hamburg",
@@ -55,7 +55,7 @@
     "eyebrow": "Portfolio",
     "name": "Marco Strote",
     "headline": "I make AI usable inside organisations — compliant by design and measurable in outcome.",
-    "intro": "AI and transformation consultant with a focus on the EU AI Act. More than fifteen years between market, business and delivery: first in B2B sales of digital solutions, today advising companies that want to adopt AI without losing sight of compliance.",
+    "intro": "AI and transformation consultant with a focus on the EU AI Act. More than twenty-five years between market, business and delivery: first in B2B sales of digital solutions, today advising companies that want to adopt AI without losing sight of compliance.",
     "facts": [
       {
         "label": "Location",
@@ -227,7 +227,7 @@
     "id": "experience",
     "eyebrow": "Experience",
     "title": "Career",
-    "lead": "More than fifteen years at the intersection of market, technology and delivery.",
+    "lead": "More than twenty-five years at the intersection of market, technology and delivery.",
     "visibleEntries": 3,
     "moreLabel": "+ earlier positions",
     "items": [
@@ -330,6 +330,54 @@
         "location": "Hamburg area",
         "summary": "First independent advisory work around digitalisation and business processes.",
         "highlights": []
+      },
+      {
+        "period": "2010",
+        "role": "Head of Sales",
+        "company": "ISA Internet Service Agentur",
+        "location": "Hamburg area",
+        "summary": "Sales leadership at a Hamburg-based internet agency.",
+        "highlights": []
+      },
+      {
+        "period": "2008 — 2009",
+        "role": "Sales Manager",
+        "company": "Egencia, an Expedia Inc. company",
+        "location": "Munich",
+        "summary": "Sales for Egencia, a business travel subsidiary of Expedia.",
+        "highlights": []
+      },
+      {
+        "period": "2002 — 2007",
+        "role": "Head of Sales & E-Commerce",
+        "company": "EURO TREND",
+        "location": "Hamburg area",
+        "summary": "Built and led sales and e-commerce over five years.",
+        "highlights": []
+      },
+      {
+        "period": "2001 — 2002",
+        "role": "Controller",
+        "company": "SinnerSchrader",
+        "location": "Hamburg area",
+        "summary": "Controlling at one of Germany's best-known digital agencies.",
+        "highlights": []
+      },
+      {
+        "period": "2000 — 2001",
+        "role": "Controller",
+        "company": "Kabel New Media AG",
+        "location": "Hamburg area",
+        "summary": "Controlling at a Hamburg media company.",
+        "highlights": []
+      },
+      {
+        "period": "1998 — 2000",
+        "role": "Controller",
+        "company": "TBG Nord-Beton",
+        "location": "Hamburg area",
+        "summary": "Career start in controlling at a building materials company.",
+        "highlights": []
       }
     ],
     "education": {
@@ -350,7 +398,7 @@
     "title": "Two perspectives, one outcome",
     "pullquote": "AI projects rarely fail on technology. They fail because nobody organises the passage from ambition to everyday practice.",
     "paragraphs": [
-      "I spent more than fifteen years on the market side: as key account manager at an e-commerce agency, selling an AI-driven personalisation platform, most recently managing an international portfolio for compliance software across EMEA. Those years taught me one thing above all: organisations do not buy technology. They buy the resolution of a problem they often have not yet named precisely.",
+      "I spent more than twenty years on the market side: as key account manager at an e-commerce agency, selling an AI-driven personalisation platform, most recently managing an international portfolio for compliance software across EMEA. Those years taught me one thing above all: organisations do not buy technology. They buy the resolution of a problem they often have not yet named precisely.",
       "In 2020 I deliberately rebuilt my methodological foundation and completed thirteen certifications within roughly a year — project management, business analysis, agile methods, IT strategy. Not as a collection, but because I wanted to master the other half: not only to explain what a system can do, but to be accountable for it actually being implemented. Immediately afterwards I led the introduction of a laboratory information system as IT project manager.",
       "Today I advise organisations on AI and digital transformation, with particular emphasis on the EU AI Act. That subject joins both halves of my experience: it is simultaneously a regulatory question, a strategic decision and a very practical delivery problem. Most companies do not even know which AI systems they already run — and have been subject to deployer obligations since February 2025.",
       "What interests me in this work is the moment an abstract requirement turns into a concrete list a team can pick up on Monday morning. Everything before that is preparation; everything after it is craft."
@@ -503,7 +551,7 @@
       },
       {
         "q": "Which industries has Marco Strote worked in?",
-        "a": "Principally chemicals and hazardous materials management (three years in product compliance and product stewardship at 3E, two years at 1WorldSync), laboratory and environmental analysis (LIMS implementation), e-commerce and digital marketing (hmmh AG, For Sale Digital, Akanoo), and across sectors with mid-sized and large organisations in AI and digitalisation advisory."
+        "a": "Principally chemicals and hazardous materials management (three years in product compliance and product stewardship at 3E, two years at 1WorldSync), laboratory and environmental analysis (LIMS implementation), e-commerce and digital marketing (hmmh AG, For Sale Digital, Akanoo), and across sectors with mid-sized and large organisations in AI and digitalisation advisory. Earlier in his career, also controlling and sales roles in media, travel and building materials (SinnerSchrader, Kabel New Media, Egencia, TBG Nord-Beton)."
       },
       {
         "q": "Which certifications are held?",
@@ -575,7 +623,7 @@
     "fileName": "CV-Marco-Strote.pdf",
     "docTitle": "Curriculum Vitae",
     "profileTitle": "Profile",
-    "profile": "AI and transformation consultant focused on the EU AI Act. More than fifteen years at the intersection of market, business and delivery — first in B2B sales of digital and regulatory solutions, complemented since 2020 by thirteen certifications in project management, business analysis, agile methods and IT strategy. Today I help organisations adopt AI in a compliant way and with measurable results.",
+    "profile": "AI and transformation consultant focused on the EU AI Act. More than twenty-five years at the intersection of market, business and delivery — first in B2B sales of digital and regulatory solutions, complemented since 2020 by thirteen certifications in project management, business analysis, agile methods and IT strategy. Today I help organisations adopt AI in a compliant way and with measurable results.",
     "skillsTitle": "Skills",
     "experienceTitle": "Professional experience",
     "visibleEntries": 3,

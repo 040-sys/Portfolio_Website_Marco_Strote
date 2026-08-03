@@ -13,7 +13,7 @@
   },
   "meta": {
     "title": "Marco Strote — KI- & Transformationsberater | EU AI Act | Hamburg",
-    "description": "KI- und Transformationsberater aus Hamburg. Schwerpunkt EU AI Act, KI-Strategie und Digitalisierung mit messbarem Business Impact. 13 Zertifizierungen, über 15 Jahre Erfahrung.",
+    "description": "KI- und Transformationsberater aus Hamburg. Schwerpunkt EU AI Act, KI-Strategie und Digitalisierung mit messbarem Business Impact. 13 Zertifizierungen, über 25 Jahre Erfahrung.",
     "keywords": "Marco Strote, KI-Berater, EU AI Act, KI-Compliance, Transformationsberater, Digitalisierung, Projektmanagement, PRINCE2, ITIL, Scrum, Hamburg",
     "ogImage": "/assets/img/og-image.jpg",
     "ogImageAlt": "Marco Strote — KI- und Transformationsberater aus Hamburg",
@@ -59,7 +59,7 @@
     "eyebrow": "Portfolio",
     "name": "Marco Strote",
     "headline": "Ich mache KI im Unternehmen anwendbar — regulatorisch sauber und mit messbarem Ergebnis.",
-    "intro": "KI- und Transformationsberater mit Schwerpunkt EU AI Act. Über 15 Jahre zwischen Markt, Fachbereich und Umsetzung: erst im B2B-Vertrieb digitaler Lösungen, heute in der Beratung von Unternehmen, die KI einsetzen wollen, ohne die Compliance aus dem Blick zu verlieren.",
+    "intro": "KI- und Transformationsberater mit Schwerpunkt EU AI Act. Über 25 Jahre zwischen Markt, Fachbereich und Umsetzung: erst im B2B-Vertrieb digitaler Lösungen, heute in der Beratung von Unternehmen, die KI einsetzen wollen, ohne die Compliance aus dem Blick zu verlieren.",
     "facts": [
       {
         "label": "Standort",
@@ -231,7 +231,7 @@
     "id": "erfahrung",
     "eyebrow": "Erfahrung",
     "title": "Beruflicher Werdegang",
-    "lead": "Über 15 Jahre an der Schnittstelle von Markt, Technologie und Umsetzung.",
+    "lead": "Über 25 Jahre an der Schnittstelle von Markt, Technologie und Umsetzung.",
     "visibleEntries": 3,
     "moreLabel": "+ weitere Stationen",
     "items": [
@@ -334,6 +334,54 @@
         "location": "Hamburg & Umgebung",
         "summary": "Erste selbstständige Beratungstätigkeit rund um Digitalisierung und Geschäftsprozesse.",
         "highlights": []
+      },
+      {
+        "period": "2010",
+        "role": "Leiter Vertrieb",
+        "company": "ISA Internet Service Agentur",
+        "location": "Hamburg & Umgebung",
+        "summary": "Vertriebsleitung bei einer Hamburger Internetagentur.",
+        "highlights": []
+      },
+      {
+        "period": "2008 — 2009",
+        "role": "Sales Manager",
+        "company": "Egencia, ein Unternehmen der Expedia Inc.",
+        "location": "München",
+        "summary": "Vertrieb für den Geschäftsreise-Anbieter Egencia, eine Tochtergesellschaft von Expedia.",
+        "highlights": []
+      },
+      {
+        "period": "2002 — 2007",
+        "role": "Leiter Vertrieb & E-Commerce",
+        "company": "EURO TREND",
+        "location": "Hamburg & Umgebung",
+        "summary": "Aufbau und Leitung von Vertrieb und E-Commerce über fünf Jahre.",
+        "highlights": []
+      },
+      {
+        "period": "2001 — 2002",
+        "role": "Controller",
+        "company": "SinnerSchrader",
+        "location": "Hamburg & Umgebung",
+        "summary": "Controlling bei einer der bekanntesten deutschen Digitalagenturen.",
+        "highlights": []
+      },
+      {
+        "period": "2000 — 2001",
+        "role": "Controller",
+        "company": "Kabel New Media AG",
+        "location": "Hamburg & Umgebung",
+        "summary": "Controlling in einem Hamburger Medienunternehmen.",
+        "highlights": []
+      },
+      {
+        "period": "1998 — 2000",
+        "role": "Controller",
+        "company": "TBG Nord-Beton",
+        "location": "Hamburg & Umgebung",
+        "summary": "Einstieg ins Berufsleben im Controlling eines Baustoffunternehmens.",
+        "highlights": []
       }
     ],
     "education": {
@@ -354,7 +402,7 @@
     "title": "Zwei Perspektiven, ein Ergebnis",
     "pullquote": "KI-Projekte scheitern selten an der Technik. Sie scheitern daran, dass niemand den Übergang zwischen Anspruch und Alltag organisiert.",
     "paragraphs": [
-      "Ich habe über fünfzehn Jahre auf der Marktseite verbracht: als Key Account Manager bei einer E-Commerce-Agentur, im Vertrieb einer KI-gestützten Personalisierungslösung, zuletzt mit einem internationalen Kundenportfolio für Compliance-Software im EMEA-Raum. In dieser Zeit habe ich vor allem eines gelernt: Unternehmen kaufen keine Technologie. Sie kaufen die Lösung eines Problems, das sie oft selbst noch nicht scharf benannt haben.",
+      "Ich habe über zwanzig Jahre auf der Marktseite verbracht: als Key Account Manager bei einer E-Commerce-Agentur, im Vertrieb einer KI-gestützten Personalisierungslösung, zuletzt mit einem internationalen Kundenportfolio für Compliance-Software im EMEA-Raum. In dieser Zeit habe ich vor allem eines gelernt: Unternehmen kaufen keine Technologie. Sie kaufen die Lösung eines Problems, das sie oft selbst noch nicht scharf benannt haben.",
       "2020 habe ich mich bewusst methodisch neu aufgestellt und in gut einem Jahr dreizehn Zertifizierungen abgeschlossen — Projektmanagement, Business Analyse, agile Methoden, IT-Strategie. Nicht als Sammelleidenschaft, sondern weil ich die andere Hälfte beherrschen wollte: nicht nur verkaufen, was ein System kann, sondern verantworten, dass es tatsächlich eingeführt wird. Direkt danach habe ich als IT-Projektmanager die Einführung eines Laborinformationssystems geleitet.",
       "Heute berate ich Unternehmen zu KI und digitaler Transformation, mit besonderem Schwerpunkt auf dem EU AI Act. Das Thema verbindet beide Seiten meiner Erfahrung: Es ist gleichzeitig eine regulatorische Frage, eine strategische Entscheidung und ein ganz handfestes Umsetzungsproblem. Die meisten Unternehmen wissen nicht einmal, welche KI-Systeme sie bereits einsetzen — und sind damit seit Februar 2025 in der Betreiberpflicht.",
       "Was mich an dieser Arbeit interessiert, ist der Moment, in dem aus einer abstrakten Anforderung eine konkrete Liste wird, an der ein Team am Montagmorgen weiterarbeiten kann. Alles davor ist Vorbereitung, alles danach ist Handwerk."
@@ -507,7 +555,7 @@
       },
       {
         "q": "In welchen Branchen hat Marco Strote gearbeitet?",
-        "a": "Schwerpunkte sind Chemie und Gefahrstoffmanagement (drei Jahre Product Compliance und Product Stewardship bei 3E, zwei Jahre bei 1WorldSync), Labor- und Umweltanalytik (LIMS-Einführung), E-Commerce und digitales Marketing (hmmh AG, For Sale Digital, Akanoo) sowie branchenübergreifend Mittelstand und Großunternehmen in der KI- und Digitalisierungsberatung."
+        "a": "Schwerpunkte sind Chemie und Gefahrstoffmanagement (drei Jahre Product Compliance und Product Stewardship bei 3E, zwei Jahre bei 1WorldSync), Labor- und Umweltanalytik (LIMS-Einführung), E-Commerce und digitales Marketing (hmmh AG, For Sale Digital, Akanoo) sowie branchenübergreifend Mittelstand und Großunternehmen in der KI- und Digitalisierungsberatung. In den ersten Berufsjahren zusätzlich Controlling und Vertrieb in Medien-, Reise- und Baustoffbranche (SinnerSchrader, Kabel New Media, Egencia, TBG Nord-Beton)."
       },
       {
         "q": "Welche Zertifizierungen liegen vor?",
@@ -579,7 +627,7 @@
     "fileName": "Lebenslauf-Marco-Strote.pdf",
     "docTitle": "Lebenslauf",
     "profileTitle": "Kurzprofil",
-    "profile": "KI- und Transformationsberater mit Schwerpunkt EU AI Act. Über 15 Jahre Erfahrung an der Schnittstelle von Markt, Fachbereich und Umsetzung — zunächst im B2B-Vertrieb digitaler und regulatorischer Lösungen, seit 2020 ergänzt um dreizehn Zertifizierungen in Projektmanagement, Business Analyse, agilen Methoden und IT-Strategie. Heute begleite ich Unternehmen dabei, KI regulatorisch sauber und mit messbarem Ergebnis einzusetzen.",
+    "profile": "KI- und Transformationsberater mit Schwerpunkt EU AI Act. Über 25 Jahre Erfahrung an der Schnittstelle von Markt, Fachbereich und Umsetzung — zunächst im B2B-Vertrieb digitaler und regulatorischer Lösungen, seit 2020 ergänzt um dreizehn Zertifizierungen in Projektmanagement, Business Analyse, agilen Methoden und IT-Strategie. Heute begleite ich Unternehmen dabei, KI regulatorisch sauber und mit messbarem Ergebnis einzusetzen.",
     "skillsTitle": "Kompetenzen",
     "experienceTitle": "Beruflicher Werdegang",
     "visibleEntries": 3,
