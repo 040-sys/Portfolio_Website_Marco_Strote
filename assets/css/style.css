@@ -604,7 +604,7 @@ body.nav-locked { overflow: hidden; }
   max-width: 60ch;
   margin: 0 0 var(--sp-6);
 }
-.service-grid { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; }
+.service-grid { display: grid; border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; }
 @media (min-width: 40rem) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 64rem) { .service-grid { grid-template-columns: repeat(4, 1fr); } }
 .service {
@@ -614,6 +614,12 @@ body.nav-locked { overflow: hidden; }
   flex-direction: column;
   gap: 0.6rem;
   transition: background 0.4s var(--ease);
+  /* Zellrahmen als Box-Shadow statt background+gap-Trick: die alte Technik
+     (1px Gap + Grid-Hintergrundfarbe) konnte bei krummen Spaltenbreiten
+     (z.B. 278.85px) durch Subpixel-Rundung an einzelnen Kanten verschwinden
+     -> Rahmen wirkte "nur teilweise sichtbar". Box-Shadow rendert die
+     Trennlinien pixelscharf, unabhaengig von der Spaltenbreite. */
+  box-shadow: -1px 0 0 0 var(--line), 0 -1px 0 0 var(--line);
 }
 .service:hover { background: var(--bg-alt); }
 .service h3 { font-size: 1.0625rem; font-family: var(--font-sans); font-weight: 600; line-height: 1.35; letter-spacing: 0; }
