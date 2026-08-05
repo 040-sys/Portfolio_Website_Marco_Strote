@@ -487,6 +487,21 @@
     "lead": "Belege statt Behauptungen — Ausgangslage, Vorgehen, Ergebnis.",
     "items": [
       {
+        "title": "Automatisierter Intake- und Governance-Workflow für Erstanfragen",
+        "client": "Vertraulich — Immobilien- und Finanzberatungsunternehmen (auf Kundenwunsch nicht namentlich genannt)",
+        "year": "2025",
+        "role": "KI-Consultant / Umsetzung",
+        "challenge": "Ein Immobilien- und Finanzberatungsunternehmen ertrank in Erstanfragen, die manuell klassifiziert, auf fehlende Angaben geprüft und priorisiert werden mussten — Zeit, die für die eigentliche Beratung fehlte. Der Intake-Prozess sollte nicht nur konzipiert, sondern tatsächlich lauffähig automatisiert werden — inklusive Fehlerbehandlung, Monitoring und einer belastbaren Wirtschaftlichkeitsrechnung.",
+        "approach": "Prozess mit SIPOC und 5-Whys analysiert, dann als 21-Node-Workflow in n8n umgesetzt: Ein KI-Agent mit strukturiertem Output klassifiziert Bearbeitungsrisiko und fehlende Angaben, ein Switch routet automatisch zu Prüfung, Rückfrage oder Governance-Review, eigene Fehlerpfade für alle kritischen Komponenten.",
+        "result": "2025 als Kundenprojekt konzipiert und produktiv umgesetzt, mit einer kalkulierten ROI-Größenordnung von rund 131 % über sechs Monate.",
+        "tags": [
+          "Automatisierung",
+          "No-Code",
+          "n8n",
+          "KI-Agent"
+        ]
+      },
+      {
         "title": "Eigene Portfolio-Website: KI-gesteuerter Aufbau von Content-System bis Deployment",
         "client": "Eigenprojekt — marco-strote.vercel.app",
         "year": "seit 2025",
@@ -514,21 +529,6 @@
           "Governance",
           "Use-Case-Bewertung",
           "MVPoc"
-        ]
-      },
-      {
-        "title": "Automatisierter Intake- und Governance-Workflow für Erstanfragen",
-        "client": "Vertraulich — Immobilien- und Finanzberatungsunternehmen (auf Kundenwunsch nicht namentlich genannt)",
-        "year": "2025",
-        "role": "KI-Consultant / Umsetzung",
-        "challenge": "Ein Immobilien- und Finanzberatungsunternehmen ertrank in Erstanfragen, die manuell klassifiziert, auf fehlende Angaben geprüft und priorisiert werden mussten — Zeit, die für die eigentliche Beratung fehlte. Der Intake-Prozess sollte nicht nur konzipiert, sondern tatsächlich lauffähig automatisiert werden — inklusive Fehlerbehandlung, Monitoring und einer belastbaren Wirtschaftlichkeitsrechnung.",
-        "approach": "Prozess mit SIPOC und 5-Whys analysiert, dann als 21-Node-Workflow in n8n umgesetzt: Ein KI-Agent mit strukturiertem Output klassifiziert Bearbeitungsrisiko und fehlende Angaben, ein Switch routet automatisch zu Prüfung, Rückfrage oder Governance-Review, eigene Fehlerpfade für alle kritischen Komponenten.",
-        "result": "2025 als Kundenprojekt konzipiert und produktiv umgesetzt, mit einer kalkulierten ROI-Größenordnung von rund 131 % über sechs Monate.",
-        "tags": [
-          "Automatisierung",
-          "No-Code",
-          "n8n",
-          "KI-Agent"
         ]
       },
       {

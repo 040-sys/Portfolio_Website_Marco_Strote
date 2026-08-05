@@ -483,6 +483,21 @@
     "lead": "Evidence rather than assertion — situation, approach, result.",
     "items": [
       {
+        "title": "Automated Intake and Governance Workflow for First-Contact Inquiries",
+        "client": "Confidential — real estate and financial advisory firm (name withheld at client's request)",
+        "year": "2025",
+        "role": "AI Consultant / Delivery",
+        "challenge": "A real estate and financial advisory firm was drowning in first-contact inquiries that had to be manually classified, checked for missing information and prioritised — time that was missing from actual advisory work. The intake process needed to move from concept to an actually working, automated system — including error handling, monitoring and a solid economic case.",
+        "approach": "Analysed the process with SIPOC and 5-Whys, then implemented a 21-node workflow in n8n: an AI agent with structured output classifies processing risk and missing information, a switch automatically routes to review, follow-up or governance review, with dedicated error paths for every critical component.",
+        "result": "Delivered and put into production as a client engagement in 2025, with a calculated ROI in the range of roughly 131% over six months.",
+        "tags": [
+          "Automation",
+          "No-code",
+          "n8n",
+          "AI agent"
+        ]
+      },
+      {
         "title": "My Own Portfolio Website: an AI-Directed Build, from Content System to Deployment",
         "client": "Own project — marco-strote.vercel.app",
         "year": "since 2025",
@@ -510,21 +525,6 @@
           "Governance",
           "Use-case assessment",
           "MVPoc"
-        ]
-      },
-      {
-        "title": "Automated Intake and Governance Workflow for First-Contact Inquiries",
-        "client": "Confidential — real estate and financial advisory firm (name withheld at client's request)",
-        "year": "2025",
-        "role": "AI Consultant / Delivery",
-        "challenge": "A real estate and financial advisory firm was drowning in first-contact inquiries that had to be manually classified, checked for missing information and prioritised — time that was missing from actual advisory work. The intake process needed to move from concept to an actually working, automated system — including error handling, monitoring and a solid economic case.",
-        "approach": "Analysed the process with SIPOC and 5-Whys, then implemented a 21-node workflow in n8n: an AI agent with structured output classifies processing risk and missing information, a switch automatically routes to review, follow-up or governance review, with dedicated error paths for every critical component.",
-        "result": "Delivered and put into production as a client engagement in 2025, with a calculated ROI in the range of roughly 131% over six months.",
-        "tags": [
-          "Automation",
-          "No-code",
-          "n8n",
-          "AI agent"
         ]
       },
       {
