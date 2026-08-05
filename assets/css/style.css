@@ -588,12 +588,13 @@ body.nav-locked { overflow: hidden; }
 .cert-group-label {
   grid-column: 1 / -1;
   background: var(--bg-alt);
-  padding: 0.6rem clamp(1.35rem, 1rem + 1vw, 1.85rem);
+  padding: 0.85rem clamp(1.35rem, 1rem + 1vw, 1.85rem);
 }
 .cert-group-label span {
   font-family: var(--font-mono);
-  font-size: var(--fs-xs);
-  letter-spacing: 0.14em;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
 }
