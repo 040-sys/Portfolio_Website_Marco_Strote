@@ -585,6 +585,19 @@ body.nav-locked { overflow: hidden; }
 @media (min-width: 40rem) { .cert-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 64rem) { .cert-grid { grid-template-columns: repeat(3, 1fr); } }
 
+.cert-group-label {
+  grid-column: 1 / -1;
+  background: var(--bg-alt);
+  padding: 0.6rem clamp(1.35rem, 1rem + 1vw, 1.85rem);
+}
+.cert-group-label span {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 .cert {
   background: var(--bg);
   padding: clamp(1.35rem, 1rem + 1vw, 1.85rem);
@@ -596,17 +609,10 @@ body.nav-locked { overflow: hidden; }
   position: relative;
 }
 .cert:hover { background: var(--bg-alt); }
-.cert-top { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-3); }
-.cert-cat {
-  font-family: var(--font-mono);
-  font-size: var(--fs-xs);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
+.cert-top { display: flex; align-items: center; justify-content: flex-end; gap: var(--sp-3); }
 .cert-year { font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--muted); }
 .cert h3 { font-size: 1.0625rem; font-family: var(--font-sans); font-weight: 600; line-height: 1.35; letter-spacing: 0; margin-top: auto; }
-.cert p { font-size: var(--fs-sm); color: var(--muted); }
+.cert p { font-size: var(--fs-xs); color: var(--muted); }
 
 /* --- Leistungen --- */
 .services-intro {
