@@ -483,6 +483,21 @@
     "lead": "Belege statt Behauptungen — Ausgangslage, Vorgehen, Ergebnis.",
     "items": [
       {
+        "title": "Eigene Portfolio-Website: KI-gesteuerter Aufbau von Content-System bis Deployment",
+        "client": "Eigenprojekt — marco-strote.vercel.app",
+        "year": "seit 2026",
+        "role": "Auftraggeber, Steuerung & Qualitätssicherung (Umsetzung mit Claude)",
+        "challenge": "Eine professionelle, datenschutzfreundliche Portfolio-Website sollte entstehen, ohne Wochen an Entwicklungszeit zu binden, die anderswo für die eigentliche Beratungstätigkeit fehlt — und ohne auf generische Baukasten-Templates mit Tracking auszuweichen.",
+        "approach": "Steuerung eines KI-gestützten Website-Baus über mehrere Sitzungen: Anforderungen und Positionierung geklärt, ein JSON-gestütztes Content-System ohne Framework-Abhängigkeit konzipiert, Design und Struktur iterativ verfeinert (u. a. ein eigenständiges CV-Design getrennt vom Website-Design), SEO- und GEO-Optimierung (llms.txt, JSON-LD, KI-Crawler-Freigabe) sowie Barrierefreiheit eingefordert, Deployment über GitHub und Vercel eingerichtet. Eigene Fehlersuche unter anderem bei einem Cache-Control-Bug, der Aktualisierungen verzögert auslieferte.",
+        "result": "Live und produktiv seit 2026: null Cookies, kein Tracking, keine externen Schriften — vollständig statisches HTML, vollständig zweisprachig (DE/EN), Lebenslauf direkt aus denselben Daten generiert. Selbst nachprüfbar unter marco-strote.vercel.app.",
+        "tags": [
+          "KI-gestützte Entwicklung",
+          "Prozessautomatisierung",
+          "SEO & GEO",
+          "Vibe-Coding"
+        ]
+      },
+      {
         "title": "KI-Roadmap für einen Erstkontakt- und Qualifizierungsassistenten",
         "client": "Trainingsprojekt · WBS-Modul KIUSCA (fiktives Fallunternehmen)",
         "year": "2026",
@@ -849,7 +864,7 @@
       },
       {
         "title": "Prozessautomatisierung mit KI",
-        "description": "Analyse bestehender Abläufe, Identifikation geeigneter Automatisierungs- und Prompt-Engineering-Ansätze, Umsetzungsbegleitung inklusive technischer Integration."
+        "description": "Analyse bestehender Abläufe, Identifikation geeigneter Automatisierungs- und Prompt-Engineering-Ansätze, Umsetzungsbegleitung inklusive technischer Integration — demonstriert am Beispiel dieser Website, die ich KI-gestützt konzipiert, gesteuert und qualitätsgesichert habe."
       },
       {
         "title": "Interim-Projektleitung",
