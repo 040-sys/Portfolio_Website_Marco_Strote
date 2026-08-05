@@ -38,16 +38,12 @@
         "label": "Experience"
       },
       {
-        "href": "#about",
-        "label": "About"
-      },
-      {
         "href": "#services",
         "label": "Services"
       },
       {
-        "href": "#work",
-        "label": "Projects"
+        "href": "#about",
+        "label": "About"
       },
       {
         "href": "#faq",
@@ -93,58 +89,48 @@
   "skills": {
     "id": "skills",
     "eyebrow": "Skills",
-    "title": "What I bring",
-    "lead": "What derails an AI project is rarely the technology — it's that one of these four perspectives is missing.",
-    "groups": [
+    "title": "Three areas, one point of contact",
+    "lead": "I'm the bridge between requirement and delivery — the orchestrator who holds these three areas together, instead of handing them off to separate specialists.",
+    "tiles": [
       {
-        "title": "AI Strategy & Technology",
-        "tags": [
+        "title": "Clarify & steer",
+        "tasks": [
+          "Clarify requirements and goals with leadership and the business",
+          "Assess and prioritise AI use cases, distil them into a roadmap",
+          "Build governance structures, classify EU AI Act risk",
+          "Mediate between IT, the business and decision-makers, steer the project"
+        ],
+        "highlights": [
           "AI strategy & roadmap",
+          "Use-case assessment",
+          "Governance & EU AI Act"
+        ]
+      },
+      {
+        "title": "Build & automate",
+        "tasks": [
+          "Analyse processes and automate them with AI",
+          "Deploy, test and continuously optimise AI applications",
+          "Design prompts and context for reliable, traceable results",
+          "Technical delivery, including own code contributions where needed"
+        ],
+        "highlights": [
+          "Process automation",
           "Prompt & context engineering",
-          "AI models & machine learning",
-          "Use case assessment",
-          "Agentic AI",
-          "AI governance",
-          "EU AI Act compliance",
-          "AI inventory",
-          "Risk classification",
-          "AI-driven process automation",
+          "AI applications"
+        ]
+      },
+      {
+        "title": "Prepare data",
+        "tasks": [
+          "Bring together data from various, often unstructured sources",
+          "Build structured data foundations and KPIs",
+          "Going forward: deepen data & AI management"
+        ],
+        "highlights": [
+          "Data integration",
+          "KPIs & reporting",
           "Data & AI management"
-        ]
-      },
-      {
-        "title": "Digital transformation",
-        "tags": [
-          "Digital strategy",
-          "Process analysis & optimisation",
-          "Automation",
-          "Change management",
-          "Stakeholder communication",
-          "Business development"
-        ]
-      },
-      {
-        "title": "Project & delivery",
-        "tags": [
-          "Project management",
-          "PRINCE2 & PRINCE2 Agile",
-          "Scrum Master",
-          "Product Owner",
-          "Interim management",
-          "Business analysis",
-          "Requirements engineering",
-          "ITIL 4 service management"
-        ]
-      },
-      {
-        "title": "Market & customer",
-        "tags": [
-          "B2B sales",
-          "Key account management",
-          "SaaS solution sales",
-          "Regulatory & product compliance",
-          "International account portfolios",
-          "E-commerce & MarTech"
         ]
       }
     ]
@@ -513,21 +499,6 @@
         ]
       },
       {
-        "title": "AI Roadmap for a First-Contact and Qualification Assistant",
-        "client": "Training project · WBS module KIUSCA (fictional case company)",
-        "year": "2026",
-        "role": "AI Consultant certification — scored highly",
-        "challenge": "An owner-run real estate and financial advisory firm was drowning in first-contact inquiries that had to be manually classified, checked for missing information and prioritised — time that was missing from actual advisory work.",
-        "approach": "Built a complete AI roadmap rather than a point solution: use-case assessment with a consultant scorecard and impact-effort matrix, an MS365-adjacent target architecture with human-in-the-loop, a four-week MVPoc with clear target metrics, and a red/amber/green governance gate that keeps decision authority firmly with people.",
-        "result": "The examiner specifically praised the clean separation of “evidenced”, “hypothesis” and “open”, and the traffic-light governance system. Training project from the WBS AI Consultant program, not a real client engagement — shows the methodology is directly transferable to real mandates.",
-        "tags": [
-          "AI strategy",
-          "Governance",
-          "Use-case assessment",
-          "MVPoc"
-        ]
-      },
-      {
         "title": "Hybrid AI Architecture for a Hardware Advisory Tool",
         "client": "Training project · WBS module EIOPAN (fictional case company)",
         "year": "2026",
@@ -540,6 +511,21 @@
           "RAG",
           "Responsible AI",
           "Quality assurance"
+        ]
+      },
+      {
+        "title": "AI Roadmap for a First-Contact and Qualification Assistant",
+        "client": "Training project · WBS module KIUSCA (fictional case company)",
+        "year": "2026",
+        "role": "AI Consultant certification — scored highly",
+        "challenge": "An owner-run real estate and financial advisory firm was drowning in first-contact inquiries that had to be manually classified, checked for missing information and prioritised — time that was missing from actual advisory work.",
+        "approach": "Built a complete AI roadmap rather than a point solution: use-case assessment with a consultant scorecard and impact-effort matrix, an MS365-adjacent target architecture with human-in-the-loop, a four-week MVPoc with clear target metrics, and a red/amber/green governance gate that keeps decision authority firmly with people.",
+        "result": "The examiner specifically praised the clean separation of “evidenced”, “hypothesis” and “open”, and the traffic-light governance system. Training project from the WBS AI Consultant program, not a real client engagement — shows the methodology is directly transferable to real mandates.",
+        "tags": [
+          "AI strategy",
+          "Governance",
+          "Use-case assessment",
+          "MVPoc"
         ]
       }
     ]

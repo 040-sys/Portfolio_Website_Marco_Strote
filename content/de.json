@@ -50,10 +50,6 @@
         "label": "Beiträge"
       },
       {
-        "href": "#projekte",
-        "label": "Projekte"
-      },
-      {
         "href": "#faq",
         "label": "FAQ"
       }
@@ -97,58 +93,48 @@
   "skills": {
     "id": "kompetenzen",
     "eyebrow": "Kompetenzen",
-    "title": "Was ich mitbringe",
-    "lead": "Was ein KI-Projekt zum Scheitern bringt, ist meist nicht die Technik — sondern dass eine dieser vier Perspektiven fehlt.",
-    "groups": [
+    "title": "Drei Aufgabenfelder, ein Ansprechpartner",
+    "lead": "Ich bin die Brücke zwischen Anforderung und Umsetzung — und der Orchestrator, der diese drei Aufgabenfelder zusammenhält, statt sie getrennten Spezialisten zu überlassen.",
+    "tiles": [
       {
-        "title": "KI-Strategie & Technologie",
-        "tags": [
+        "title": "Klären & steuern",
+        "tasks": [
+          "Anforderungen und Ziele mit Führung und Fachbereich klären",
+          "KI-Anwendungsfälle bewerten, priorisieren, zu einer Roadmap verdichten",
+          "Governance aufbauen, EU-AI-Act-Risiken klassifizieren",
+          "Zwischen IT, Fachbereich und Entscheidern vermitteln, Projekt steuern"
+        ],
+        "highlights": [
           "KI-Strategie & Roadmap",
-          "Prompt & Context Engineering",
-          "KI-Modelle & Machine Learning",
           "Use-Case-Bewertung",
-          "Agentic AI",
-          "KI-Governance",
-          "EU AI Act Compliance",
-          "KI-Inventarisierung",
-          "Risikoklassifizierung",
-          "KI-Automatisierung im Workflow",
+          "Governance & EU AI Act"
+        ]
+      },
+      {
+        "title": "Bauen & automatisieren",
+        "tasks": [
+          "Prozesse analysieren und mit KI automatisieren",
+          "KI-Anwendungen einsetzen, testen, laufend optimieren",
+          "Prompts und Kontext für zuverlässige Ergebnisse gestalten",
+          "Technische Umsetzung, inklusive eigenem Code-Beitrag wo nötig"
+        ],
+        "highlights": [
+          "Prozessautomatisierung",
+          "Prompt & Context Engineering",
+          "KI-Anwendungen"
+        ]
+      },
+      {
+        "title": "Daten aufbereiten",
+        "tasks": [
+          "Daten aus verschiedenen, teils unstrukturierten Quellen zusammenführen",
+          "Strukturierte Datengrundlagen und Kennzahlen aufbauen",
+          "Perspektivisch: Daten- und KI-Management vertiefen"
+        ],
+        "highlights": [
+          "Datenintegration",
+          "Kennzahlen & Reporting",
           "Daten- & KI-Management"
-        ]
-      },
-      {
-        "title": "Digitale Transformation",
-        "tags": [
-          "Digitalstrategie",
-          "Prozessanalyse & -optimierung",
-          "Automatisierung",
-          "Change Management",
-          "Stakeholder-Kommunikation",
-          "Business Development"
-        ]
-      },
-      {
-        "title": "Projekt & Umsetzung",
-        "tags": [
-          "Projektleitung",
-          "PRINCE2 & PRINCE2 Agile",
-          "Scrum Master",
-          "Product Owner",
-          "Interimsmanagement",
-          "Business Analyse",
-          "Requirements Engineering",
-          "ITIL 4 Service Management"
-        ]
-      },
-      {
-        "title": "Markt & Kunde",
-        "tags": [
-          "B2B-Vertrieb",
-          "Key Account Management",
-          "SaaS-Lösungsvertrieb",
-          "Regulatory & Product Compliance",
-          "Internationale Kundenportfolios",
-          "E-Commerce & MarTech"
         ]
       }
     ]
@@ -517,21 +503,6 @@
         ]
       },
       {
-        "title": "KI-Roadmap für einen Erstkontakt- und Qualifizierungsassistenten",
-        "client": "Trainingsprojekt · WBS-Modul KIUSCA (fiktives Fallunternehmen)",
-        "year": "2026",
-        "role": "KI-Consultant-Weiterbildung — sehr gut bewertet",
-        "challenge": "Ein inhabergeführtes Immobilien- und Finanzberatungsunternehmen ertrinkt in Erstanfragen, die manuell klassifiziert, auf fehlende Angaben geprüft und priorisiert werden müssen — Zeit, die für die eigentliche Beratung fehlt.",
-        "approach": "Entwicklung einer vollständigen KI-Roadmap statt einer Einzellösung: Use-Case-Bewertung mit Consultant Scorecard und Impact-Effort-Matrix, eine MS365-nahe Zielarchitektur mit Human-in-the-Loop, ein vierwöchiger MVPoc mit klaren Zielwerten und ein Grün/Gelb/Rot-Governance-Gate, das die Entscheidungshoheit konsequent beim Menschen belässt.",
-        "result": "Die Prüferin hob besonders die saubere Trennung von „Belegt“, „Hypothese“ und „Offen“ sowie das Ampel-Governance-System hervor. Trainingsprojekt aus der WBS-Weiterbildung, kein reales Kundenmandat — zeigt die Methodik 1:1 übertragbar auf echte Mandate.",
-        "tags": [
-          "KI-Strategie",
-          "Governance",
-          "Use-Case-Bewertung",
-          "MVPoc"
-        ]
-      },
-      {
         "title": "Hybride KI-Architektur für eine Hardware-Erstberatung",
         "client": "Trainingsprojekt · WBS-Modul EIOPAN (fiktives Fallunternehmen)",
         "year": "2026",
@@ -544,6 +515,21 @@
           "RAG",
           "Responsible AI",
           "Qualitätssicherung"
+        ]
+      },
+      {
+        "title": "KI-Roadmap für einen Erstkontakt- und Qualifizierungsassistenten",
+        "client": "Trainingsprojekt · WBS-Modul KIUSCA (fiktives Fallunternehmen)",
+        "year": "2026",
+        "role": "KI-Consultant-Weiterbildung — sehr gut bewertet",
+        "challenge": "Ein inhabergeführtes Immobilien- und Finanzberatungsunternehmen ertrinkt in Erstanfragen, die manuell klassifiziert, auf fehlende Angaben geprüft und priorisiert werden müssen — Zeit, die für die eigentliche Beratung fehlt.",
+        "approach": "Entwicklung einer vollständigen KI-Roadmap statt einer Einzellösung: Use-Case-Bewertung mit Consultant Scorecard und Impact-Effort-Matrix, eine MS365-nahe Zielarchitektur mit Human-in-the-Loop, ein vierwöchiger MVPoc mit klaren Zielwerten und ein Grün/Gelb/Rot-Governance-Gate, das die Entscheidungshoheit konsequent beim Menschen belässt.",
+        "result": "Die Prüferin hob besonders die saubere Trennung von „Belegt“, „Hypothese“ und „Offen“ sowie das Ampel-Governance-System hervor. Trainingsprojekt aus der WBS-Weiterbildung, kein reales Kundenmandat — zeigt die Methodik 1:1 übertragbar auf echte Mandate.",
+        "tags": [
+          "KI-Strategie",
+          "Governance",
+          "Use-Case-Bewertung",
+          "MVPoc"
         ]
       }
     ]
