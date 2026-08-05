@@ -250,12 +250,12 @@
         "role": "AI Consultant Certification Program",
         "company": "WBS TRAINING",
         "location": "part-time, alongside independent consulting",
-        "summary": "Focused technical deepening: prompt & context engineering, AI models and machine learning, AI-driven process automation, data & AI management. 7 of 10 modules completed with self-built practical projects (six scored 100%, one scored 94%) — see “Projects” below.",
+        "summary": "Focused technical deepening: prompt & context engineering, AI models and machine learning, AI-driven process automation, data & AI management. 7 of 10 modules completed with self-built practical projects, consistently scored highly — see “Projects” below.",
         "highlights": [
-          "Multimodal AI prototype with image recognition and rule-based planning logic (AUINKI, 100%)",
-          "Production code contribution in a team software migration, project lead role (KITEKO, 100%)",
-          "No-code automation workflow with an AI agent and ROI calculation (KIAUPRO, 94%)",
-          "Hybrid AI architecture with governance and quality safeguards (EIOPAN, 100%)"
+          "Multimodal AI prototype with image recognition and rule-based planning logic (AUINKI)",
+          "Production code contribution in a team software migration, project lead role (KITEKO)",
+          "No-code automation workflow with an AI agent and ROI calculation (KIAUPRO)",
+          "Hybrid AI architecture with governance and quality safeguards (EIOPAN)"
         ]
       },
       {
@@ -497,10 +497,10 @@
         "title": "AI Roadmap for a First-Contact and Qualification Assistant",
         "client": "Training project · WBS module KIUSCA (fictional case company)",
         "year": "2026",
-        "role": "AI Consultant certification — scored 100%",
+        "role": "AI Consultant certification — scored highly",
         "challenge": "An owner-run real estate and financial advisory firm was drowning in first-contact inquiries that had to be manually classified, checked for missing information and prioritised — time that was missing from actual advisory work.",
         "approach": "Built a complete AI roadmap rather than a point solution: use-case assessment with a consultant scorecard and impact-effort matrix, an MS365-adjacent target architecture with human-in-the-loop, a four-week MVPoc with clear target metrics, and a red/amber/green governance gate that keeps decision authority firmly with people.",
-        "result": "100 out of 100 points (completeness/methodology 40/40, strategy/reasoning 40/40, client orientation/pitch 20/20). The examiner specifically praised the clean separation of “evidenced”, “hypothesis” and “open”, and the traffic-light governance system. Training project from the WBS AI Consultant program, not a real client engagement — shows the methodology is directly transferable to real mandates.",
+        "result": "The examiner specifically praised the clean separation of “evidenced”, “hypothesis” and “open”, and the traffic-light governance system. Training project from the WBS AI Consultant program, not a real client engagement — shows the methodology is directly transferable to real mandates.",
         "tags": [
           "AI strategy",
           "Governance",
@@ -515,7 +515,7 @@
         "role": "AI Consultant / Delivery",
         "challenge": "A real estate and financial advisory firm was drowning in first-contact inquiries that had to be manually classified, checked for missing information and prioritised — time that was missing from actual advisory work. The intake process needed to move from concept to an actually working, automated system — including error handling, monitoring and a solid economic case.",
         "approach": "Analysed the process with SIPOC and 5-Whys, then implemented a 21-node workflow in n8n: an AI agent with structured output classifies processing risk and missing information, a switch automatically routes to review, follow-up or governance review, with dedicated error paths for every critical component.",
-        "result": "Delivered and put into production as a client engagement in 2025. The underlying methodology was also submitted in 2026 as a standalone practical exam in the WBS AI Consultant program and independently scored 94% (“convincing”) — including a calculated ROI in the range of roughly 131% over six months.",
+        "result": "Delivered and put into production as a client engagement in 2025, with a calculated ROI in the range of roughly 131% over six months.",
         "tags": [
           "Automation",
           "No-code",
@@ -527,10 +527,10 @@
         "title": "Hybrid AI Architecture for a Hardware Advisory Tool",
         "client": "Training project · WBS module EIOPAN (fictional case company)",
         "year": "2026",
-        "role": "AI Consultant certification — scored 100%",
+        "role": "AI Consultant certification — scored highly",
         "challenge": "Standard product filters do not reliably translate model size, quantisation, context length and use case into a sound hardware recommendation for locally run AI models — risking advice that is either wrong or altogether absent.",
         "approach": "Hybrid architecture combining a rule-based compatibility engine, versioned fact/benchmark data (RAG) and a language model used strictly for explanation — never for the technical judgement itself. An output validator blocks invented specifications, a reproducible decision record documents every recommendation, backed by four approval gates.",
-        "result": "100 out of 100 points, rated “absolute professional quality” by the examiner. Hard quality gates fully met: zero invented specifications, 100% source coverage, at least 98% of must-have requirements satisfied. Training project from the WBS AI Consultant program, not a real client engagement.",
+        "result": "Rated “absolute professional quality” by the examiner. Hard quality gates fully met: zero invented specifications, 100% source coverage, at least 98% of must-have requirements satisfied. Training project from the WBS AI Consultant program, not a real client engagement.",
         "tags": [
           "AI architecture",
           "RAG",
@@ -675,7 +675,7 @@
     "fileName": "CV-Marco-Strote.pdf",
     "docTitle": "Curriculum Vitae",
     "profileTitle": "Profile",
-    "profile": "AI Consultant with 25+ years of experience at the intersection of market, business and delivery — first in B2B sales of digital and regulatory solutions, complemented since 2020 by thirteen certifications in project management, business analysis, agile methods and IT strategy. I advise organisations on AI strategy, process automation and compliance — evidenced by seven self-built AI projects (six scored 100%, one scored 94%) from my ongoing AI Consultant certification program.",
+    "profile": "AI Consultant with 25+ years of experience at the intersection of market, business and delivery — first in B2B sales of digital and regulatory solutions, complemented since 2020 by thirteen certifications in project management, business analysis, agile methods and IT strategy. I advise organisations on AI strategy, process automation and compliance — evidenced by seven self-built, consistently high-scoring AI projects from my ongoing AI Consultant certification program.",
     "skillsTitle": "Skills",
     "experienceTitle": "Professional experience",
     "visibleEntries": 3,
