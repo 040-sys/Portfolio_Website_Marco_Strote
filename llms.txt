@@ -1,6 +1,6 @@
 # Marco Strote
 
-> Ich mache KI im Unternehmen anwendbar — regulatorisch sauber und mit messbarem Ergebnis.
+> Ich mache KI im Unternehmen anwendbar — von der Strategie bis zur einsatzfähigen Anwendung.
 
 ## Kurzprofil
 
@@ -14,10 +14,9 @@
 
 ## Kompetenzen
 
-- KI & EU AI Act: KI-Strategie & Roadmap, EU AI Act Compliance, KI-Inventarisierung, Risikoklassifizierung, KI-Governance, Agentic AI, Use-Case-Bewertung
-- Digitale Transformation: Digitalstrategie, Prozessanalyse & -optimierung, Automatisierung, Change Management, Stakeholder-Kommunikation, Business Development
-- Projekt & Umsetzung: Projektleitung, PRINCE2 & PRINCE2 Agile, Scrum Master, Product Owner, Interimsmanagement, Business Analyse, Requirements Engineering, ITIL 4 Service Management
-- Markt & Kunde: B2B-Vertrieb, Key Account Management, SaaS-Lösungsvertrieb, Regulatory & Product Compliance, Internationale Kundenportfolios, E-Commerce & MarTech
+- Klären & steuern: Anforderungen und Ziele mit Führung und Fachbereich klären; KI-Anwendungsfälle bewerten, priorisieren, zu einer Roadmap verdichten; Governance aufbauen, EU-AI-Act-Risiken klassifizieren; Zwischen IT, Fachbereich und Entscheidern vermitteln, Projekt steuern
+- Bauen & automatisieren: Prozesse analysieren und mit KI automatisieren; KI-Anwendungen einsetzen, testen, laufend optimieren; Prompts und Kontext für zuverlässige Ergebnisse gestalten; Technische Umsetzung, inklusive eigenem Code-Beitrag wo nötig
+- Daten aufbereiten: Daten aus verschiedenen, teils unstrukturierten Quellen zusammenführen; Strukturierte Datengrundlagen und Kennzahlen aufbauen; Perspektivisch: Daten- und KI-Management vertiefen
 
 ## Zertifizierungen
 
@@ -34,9 +33,11 @@
 - Agile Scrum Product Owner (EXIN, 2020)
 - Agile Scrum Master (EXIN, 2020)
 - Agile Scrum Foundation (EXIN, 2020)
+- WBS-Zertifikat KI-Consultant (WBS TRAINING, 2026)
 
 ## Beruflicher Werdegang
 
+- Apr. 2026 — Aug. 2026 — Weiterbildung KI-Consultant, WBS TRAINING (berufsbegleitend): Gezielte technische Vertiefung: Prompt & Context Engineering, KI-Modelle und maschinelles Lernen, KI-gestützte Prozessautomatisierung, Daten- und KI-Management. 7 von 10 Modulen bereits mit eigenständigen, durchweg sehr gut bewerteten Praxisprojekten abgeschlossen — Details siehe „Projekte“ unten.
 - Juli 2025 — heute — Berater für KI, Digitalisierung & Transformation, Selbstständig (Hamburg & Umgebung): Begleitung von Unternehmen bei der strategischen und operativen Umsetzung von KI-Projekten, digitalen Transformationsvorhaben und Prozessoptimierungen — mit dem Ziel, messbaren Business Impact zu erzielen.
 - März 2022 — Juni 2025 — Account Manager, EMEA Sales, 3E (Vollzeit): Aufbau und Entwicklung strategischer Kundenbeziehungen im EMEA-Raum für SaaS-Lösungen im Bereich EHS Product Compliance und Product Stewardship — Gefahrstoffmanagement und Regulatory Compliance.
 - Mai 2021 — Feb. 2022 — IT-Projektmanager, Dr. Jörg Freytag (Umweltanalytik-Labor): Projektmanagement für Einführung und Weiterentwicklung eines Laborinformationsmanagementsystems (LIMS) in einem auf Umweltanalysen spezialisierten Labor.
@@ -60,9 +61,10 @@
 
 ## Projekte
 
-- Einführung eines Laborinformationssystems (LIMS) (Dr. Jörg Freytag — Umweltanalytik, 2021 — 2022) — Ausgangslage: Ein auf Umweltanalysen spezialisiertes Labor benötigte ein neues Laborinformationsmanagementsystem. Anforderungen lagen verstreut bei Fachbereich, IT und externen Dienstleistern vor, ohne gemeinsame Grundlage. Vorgehen: Strukturierte Anforderungsanalyse mit Use-Case-Modellen, Mind-Maps und Rich Pictures als gemeinsame Verständigungsbasis. Leitung cross-funktionaler Teams und Koordination interner wie externer Stakeholder entlang Ziel-, Budget- und Zeitplanung. Ergebnis: Die Projektziele wurden innerhalb des vereinbarten Zeit- und Budgetrahmens umgesetzt.
-- Internationales Kundenportfolio für Compliance-SaaS (3E — EHS Product Compliance, 2022 — 2025) — Ausgangslage: Unternehmen im EMEA-Raum stehen unter wachsendem Druck durch Gefahrstoff- und Produktregulierung, verfügen aber selten über eine belastbare Systemlandschaft für Product Stewardship. Vorgehen: Aufbau langfristiger Kundenpartnerschaften statt Einzelabschlüssen: Analyse der jeweiligen Compliance-Lage, Entwicklung individueller Lösungskonzepte und enge Verzahnung mit Produkt- und Implementierungsteams. Ergebnis: 
-- EU-AI-Act-Bestandsaufnahme und KI-Roadmap (Mittelstand & Großunternehmen, seit 2025) — Ausgangslage: Viele Unternehmen setzen KI längst ein — ChatGPT in einzelnen Teams, Copilot in HR, ein Chatbot auf der Website — ohne zu wissen, dass sie damit als Betreiber im Sinne des EU AI Act gelten und seit Februar 2025 Pflichten haben. Vorgehen: Systematische KI-Inventarisierung als erster Schritt, darauf aufbauend Risikoklassifizierung nach Anhang III, Definition von Interventionspunkten und Verantwortlichkeiten sowie eine priorisierte Roadmap bis zur vollen Durchsetzung ab August 2026. Ergebnis: 
+- Automatisierter Intake- und Governance-Workflow für Erstanfragen (Vertraulich — Immobilien- und Finanzberatungsunternehmen (auf Kundenwunsch nicht namentlich genannt), 2025) — Ausgangslage: Ein Immobilien- und Finanzberatungsunternehmen ertrank in Erstanfragen, die manuell klassifiziert, auf fehlende Angaben geprüft und priorisiert werden mussten — Zeit, die für die eigentliche Beratung fehlte. Der Intake-Prozess sollte nicht nur konzipiert, sondern tatsächlich lauffähig automatisiert werden — inklusive Fehlerbehandlung, Monitoring und einer belastbaren Wirtschaftlichkeitsrechnung. Vorgehen: Prozess mit SIPOC und 5-Whys analysiert, dann als 21-Node-Workflow in n8n umgesetzt: Ein KI-Agent mit strukturiertem Output klassifiziert Bearbeitungsrisiko und fehlende Angaben, ein Switch routet automatisch zu Prüfung, Rückfrage oder Governance-Review, eigene Fehlerpfade für alle kritischen Komponenten. Ergebnis: 2025 als Kundenprojekt konzipiert und produktiv umgesetzt, mit einer kalkulierten ROI-Größenordnung von rund 131 % über sechs Monate.
+- Eigene Portfolio-Website: KI-gesteuerter Aufbau von Content-System bis Deployment (Eigenprojekt — marco-strote.vercel.app, seit 2025) — Ausgangslage: Eine professionelle, datenschutzfreundliche Portfolio-Website sollte entstehen, ohne Wochen an Entwicklungszeit zu binden, die anderswo für die eigentliche Beratungstätigkeit fehlt — und ohne auf generische Baukasten-Templates mit Tracking auszuweichen. Vorgehen: Steuerung eines KI-gestützten Website-Baus über mehrere Sitzungen: Anforderungen und Positionierung geklärt, ein JSON-gestütztes Content-System ohne Framework-Abhängigkeit konzipiert, Design und Struktur iterativ verfeinert (u. a. ein eigenständiges CV-Design getrennt vom Website-Design), SEO- und GEO-Optimierung (llms.txt, JSON-LD, KI-Crawler-Freigabe) sowie Barrierefreiheit eingefordert, Deployment über GitHub und Vercel eingerichtet. Eigene Fehlersuche unter anderem bei einem Cache-Control-Bug, der Aktualisierungen verzögert auslieferte. Ergebnis: Live und produktiv seit 2025: null Cookies, kein Tracking, keine externen Schriften — vollständig statisches HTML, vollständig zweisprachig (DE/EN), Lebenslauf direkt aus denselben Daten generiert. Selbst nachprüfbar unter marco-strote.vercel.app.
+- Hybride KI-Architektur für eine Hardware-Erstberatung (Trainingsprojekt · WBS-Modul EIOPAN (fiktives Fallunternehmen), 2026) — Ausgangslage: Klassische Produktfilter übersetzen Modellgröße, Quantisierung, Kontextlänge und Anwendungsfall nicht zuverlässig in eine passende Hardwareempfehlung für lokal betriebene KI-Modelle — mit dem Risiko, Kunden falsch oder gar nicht zu beraten. Vorgehen: Hybride Architektur aus regelbasierter Compatibility Engine, versionierten Fakten-/Benchmark-Daten (RAG) und einem Sprachmodell ausschließlich für Erklärung — nie für die fachliche Aussage selbst. Output-Validator gegen erfundene Spezifikationen, reproduzierbarer Decision Record, vier Freigabe-Gates. Ergebnis: Von der Prüferin als „absolute Profi-Qualität“ eingestuft. Harte Qualitätsstopps vollständig eingehalten: keine erfundenen Spezifikationen, 100 % Quellenbelegung, mindestens 98 % erfüllte Muss-Anforderungen. Trainingsprojekt aus der WBS-Weiterbildung, kein reales Kundenmandat.
+- KI-Roadmap für einen Erstkontakt- und Qualifizierungsassistenten (Trainingsprojekt · WBS-Modul KIUSCA (fiktives Fallunternehmen), 2026) — Ausgangslage: Ein inhabergeführtes Immobilien- und Finanzberatungsunternehmen ertrinkt in Erstanfragen, die manuell klassifiziert, auf fehlende Angaben geprüft und priorisiert werden müssen — Zeit, die für die eigentliche Beratung fehlt. Vorgehen: Entwicklung einer vollständigen KI-Roadmap statt einer Einzellösung: Use-Case-Bewertung mit Consultant Scorecard und Impact-Effort-Matrix, eine MS365-nahe Zielarchitektur mit Human-in-the-Loop, ein vierwöchiger MVPoc mit klaren Zielwerten und ein Grün/Gelb/Rot-Governance-Gate, das die Entscheidungshoheit konsequent beim Menschen belässt. Ergebnis: Die Prüferin hob besonders die saubere Trennung von „Belegt“, „Hypothese“ und „Offen“ sowie das Ampel-Governance-System hervor. Trainingsprojekt aus der WBS-Weiterbildung, kein reales Kundenmandat — zeigt die Methodik 1:1 übertragbar auf echte Mandate.
 
 ## Beiträge
 
@@ -92,13 +94,21 @@ Es ist weniger ein Wechsel als eine Vervollständigung. Im Vertrieb digitaler un
 
 Der EU AI Act betrifft nicht nur Unternehmen, die KI entwickeln, sondern auch alle, die fremde KI einsetzen — diese gelten als Betreiber und haben seit Februar 2025 Pflichten. Die volle Durchsetzung beginnt am 2. August 2026, mit Bußgeldern von bis zu 35 Millionen Euro bei Hochrisiko-Systemen. Ich arbeite an genau dieser Schnittstelle: KI-Inventarisierung, Risikoklassifizierung nach Anhang III, Governance-Strukturen und die besonders ungeklärte Frage, wie Agentic AI mit der Anforderung menschlicher Aufsicht nach Artikel 14 vereinbar bleibt.
 
+### Bist du auf EU AI Act spezialisiert oder breiter aufgestellt?
+
+Breiter aufgestellt. EU AI Act ist eines von mehreren Feldern — daneben KI-Strategie, Prozessautomatisierung und, seit 2026, vertiefte technische Kompetenz in Prompt Engineering und KI-Modellen aus einer laufenden Weiterbildung zum KI-Consultant.
+
+### Brauche ich für ein KI-Projekt nicht auch einen Data Scientist oder ML-Ingenieur?
+
+Kommt auf das Projekt an. Wenn ein eigenes Lernmodell trainiert oder statistisch abgesichert werden muss, arbeite ich gezielt mit spezialisierten Fachleuten zusammen. Die Rolle davor — Bedarf klären, Ziele schärfen, zwischen Geschäftsführung, Fachbereich und Technik übersetzen — decke ich seit über 25 Jahren ab. Die technische Anbindung und Integration baue ich aktiv aus: In meiner Weiterbildung zum KI-Consultant habe ich bereits mehrere eigenständige KI-Anwendungen mit Bestnote umgesetzt. Für die meisten Unternehmen heißt das: ein erfahrener Ansprechpartner für Strategie und Steuerung, mit belegter technischer Umsetzungsfähigkeit.
+
 ### In welchen Branchen hat Marco Strote gearbeitet?
 
 Schwerpunkte sind Chemie und Gefahrstoffmanagement (drei Jahre Product Compliance und Product Stewardship bei 3E, zwei Jahre bei 1WorldSync), Labor- und Umweltanalytik (LIMS-Einführung), E-Commerce und digitales Marketing (hmmh AG, For Sale Digital, Akanoo) sowie branchenübergreifend Mittelstand und Großunternehmen in der KI- und Digitalisierungsberatung. In den ersten Berufsjahren zusätzlich Controlling und Vertrieb in Medien-, Reise- und Baustoffbranche (SinnerSchrader, Kabel New Media, Egencia, TBG Nord-Beton).
 
 ### Welche Zertifizierungen liegen vor?
 
-Dreizehn Zertifizierungen von AXELOS und EXIN: ITIL 4 Strategic Leader mit Digital & IT Strategy und Direct, Plan and Improve sowie ITIL 4 Foundation; PRINCE2 Foundation, PRINCE2 Practitioner und PRINCE2 Agile Practitioner; Agile Scrum Foundation, Scrum Master und Scrum Product Owner; EXIN BCS Foundation in Business Analysis sowie die Practitioner-Zertifikate in Business Analysis Practice, Requirements Engineering und Modelling Business Processes.
+Vierzehn Zertifizierungen: dreizehn von AXELOS und EXIN — ITIL 4 Strategic Leader mit Digital & IT Strategy und Direct, Plan and Improve sowie ITIL 4 Foundation; PRINCE2 Foundation, PRINCE2 Practitioner und PRINCE2 Agile Practitioner; Agile Scrum Foundation, Scrum Master und Scrum Product Owner; EXIN BCS Foundation in Business Analysis sowie die Practitioner-Zertifikate in Business Analysis Practice, Requirements Engineering und Modelling Business Processes — ergänzt um das WBS-Zertifikat KI-Consultant (voraussichtlicher Abschluss: August 2026).
 
 ### Wie erreicht man Marco Strote am schnellsten?
 
@@ -113,4 +123,4 @@ Per E-Mail an mstrote@yahoo.de oder über LinkedIn. Ich antworte in der Regel in
 - [Impressum](https://marco-strote.vercel.app/impressum.html)
 - [Datenschutz](https://marco-strote.vercel.app/datenschutz.html)
 
-Stand: 2026-08-03
+Stand: 2026-08-05
