@@ -251,7 +251,7 @@ function heroSection(c) {
 
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    ${c.skills.groups.flatMap((g) => g.tags.slice(0, 3)).map((s) => `<span>${t(s)}</span>`).join('\n    ')}
+    ${c.skills.tiles.flatMap((tile) => tile.highlights).map((s) => `<span>${t(s)}</span>`).join('\n    ')}
   </div>
 </div>`;
 }
@@ -266,13 +266,13 @@ function skillsSection(c, no) {
       <p class="lead">${t(s.lead)}</p>
     </div>
 
-    <div class="skill-groups">
-      ${s.groups
+    <div class="skill-tiles">
+      ${s.tiles
         .map(
-          (g, i) => `<div class="skill-group" data-reveal style="--reveal-delay:${i * 80}ms">
-        <h3>${t(g.title)} <b>${String(g.tags.length).padStart(2, '0')}</b></h3>
-        <ul class="skill-tags">
-          ${g.tags.map((tag) => `<li class="tag">${t(tag)}</li>`).join('\n          ')}
+          (tile, i) => `<div class="skill-tile" data-reveal style="--reveal-delay:${i * 80}ms">
+        <h3>${t(tile.title)}</h3>
+        <ul class="skill-tasks">
+          ${tile.tasks.map((task) => `<li>${t(task)}</li>`).join('\n          ')}
         </ul>
       </div>`
         )
@@ -748,7 +748,7 @@ function homeSchemas(c) {
     url,
     image: abs(c, c.hero.portraitSrc),
     knowsLanguage: ['de', 'en'],
-    knowsAbout: c.skills.groups.flatMap((g) => g.tags.map(clean)).filter((s) => s && !isPlaceholder(s)),
+    knowsAbout: c.skills.tiles.flatMap((tile) => tile.highlights.map(clean)).filter((s) => s && !isPlaceholder(s)),
   };
 
   if (sameAs.length) person.sameAs = sameAs;

@@ -158,11 +158,11 @@ ${jsonLd(person)}
   <section class="cv-section">
     <h2>${esc(cv.skillsTitle)}</h2>
     <div class="cv-skills">
-      ${c.skills.groups
+      ${c.skills.tiles
         .map(
-          (g) => `<div class="cv-skill-group">
-        <h3>${t(g.title)}</h3>
-        <p>${g.tags.map((tag) => t(tag)).join(' · ')}</p>
+          (tile) => `<div class="cv-skill-group">
+        <h3>${t(tile.title)}</h3>
+        <p>${tile.highlights.map((h) => t(h)).join(' · ')}</p>
       </div>`
         )
         .join('\n      ')}

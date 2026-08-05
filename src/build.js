@@ -268,10 +268,10 @@ const llms = [
   '',
   '## Kompetenzen',
   '',
-  de.skills.groups
-    .map((g) => {
-      const tags = g.tags.map(clean).filter(Boolean);
-      return `- ${clean(g.title)}: ${tags.join(', ')}`;
+  de.skills.tiles
+    .map((tile) => {
+      const tasks = tile.tasks.map(clean).filter(Boolean);
+      return `- ${clean(tile.title)}: ${tasks.join('; ')}`;
     })
     .join('\n'),
   '',
