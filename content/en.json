@@ -481,11 +481,11 @@
       {
         "title": "My Own Portfolio Website: an AI-Directed Build, from Content System to Deployment",
         "client": "Own project — marco-strote.vercel.app",
-        "year": "since 2026",
+        "year": "since 2025",
         "role": "Client, direction & quality control (built with Claude)",
         "challenge": "A professional, privacy-first portfolio site needed to exist without tying up weeks of development time better spent on actual consulting work — and without falling back on generic, tracking-heavy website builders.",
         "approach": "Directed an AI-assisted website build across multiple sessions: clarified requirements and positioning, designed a JSON-driven content system with no framework dependency, iteratively refined design and structure (including a CV design deliberately kept separate from the website design), pushed for SEO and GEO optimisation (llms.txt, JSON-LD, AI-crawler allowlisting) and accessibility, and set up deployment via GitHub and Vercel. Personally diagnosed issues along the way, including a cache-control bug that delayed how updates reached visitors.",
-        "result": "Live and in production since 2026: zero cookies, no tracking, no external fonts — fully static HTML, fully bilingual (DE/EN), with the CV generated from the very same data. Verifiable first-hand at marco-strote.vercel.app.",
+        "result": "Live and in production since 2025: zero cookies, no tracking, no external fonts — fully static HTML, fully bilingual (DE/EN), with the CV generated from the very same data. Verifiable first-hand at marco-strote.vercel.app.",
         "tags": [
           "AI-directed development",
           "Process automation",
@@ -510,12 +510,12 @@
       },
       {
         "title": "Automated Intake and Governance Workflow for First-Contact Inquiries",
-        "client": "Training project · WBS module KIAUPRO (fictional case company)",
-        "year": "2026",
-        "role": "AI Consultant certification — scored 94%",
-        "challenge": "The roadmap designed in the prior training project needed to move from concept to an actually working, automated system — including error handling, monitoring and a solid economic case.",
+        "client": "Confidential — real estate and financial advisory firm (name withheld at client's request)",
+        "year": "2025",
+        "role": "AI Consultant / Delivery",
+        "challenge": "A real estate and financial advisory firm was drowning in first-contact inquiries that had to be manually classified, checked for missing information and prioritised — time that was missing from actual advisory work. The intake process needed to move from concept to an actually working, automated system — including error handling, monitoring and a solid economic case.",
         "approach": "Analysed the process with SIPOC and 5-Whys, then implemented a 21-node workflow in n8n: an AI agent with structured output classifies processing risk and missing information, a switch automatically routes to review, follow-up or governance review, with dedicated error paths for every critical component.",
-        "result": "94% score (“convincing”), with a calculated ROI of roughly 131% over six months. Training project from the WBS AI Consultant program, not a real client engagement — the first concretely built evidence for the automation capability behind the value proposition.",
+        "result": "Delivered and put into production as a client engagement in 2025. The underlying methodology was also submitted in 2026 as a standalone practical exam in the WBS AI Consultant program and independently scored 94% (“convincing”) — including a calculated ROI in the range of roughly 131% over six months.",
         "tags": [
           "Automation",
           "No-code",

@@ -485,11 +485,11 @@
       {
         "title": "Eigene Portfolio-Website: KI-gesteuerter Aufbau von Content-System bis Deployment",
         "client": "Eigenprojekt — marco-strote.vercel.app",
-        "year": "seit 2026",
+        "year": "seit 2025",
         "role": "Auftraggeber, Steuerung & Qualitätssicherung (Umsetzung mit Claude)",
         "challenge": "Eine professionelle, datenschutzfreundliche Portfolio-Website sollte entstehen, ohne Wochen an Entwicklungszeit zu binden, die anderswo für die eigentliche Beratungstätigkeit fehlt — und ohne auf generische Baukasten-Templates mit Tracking auszuweichen.",
         "approach": "Steuerung eines KI-gestützten Website-Baus über mehrere Sitzungen: Anforderungen und Positionierung geklärt, ein JSON-gestütztes Content-System ohne Framework-Abhängigkeit konzipiert, Design und Struktur iterativ verfeinert (u. a. ein eigenständiges CV-Design getrennt vom Website-Design), SEO- und GEO-Optimierung (llms.txt, JSON-LD, KI-Crawler-Freigabe) sowie Barrierefreiheit eingefordert, Deployment über GitHub und Vercel eingerichtet. Eigene Fehlersuche unter anderem bei einem Cache-Control-Bug, der Aktualisierungen verzögert auslieferte.",
-        "result": "Live und produktiv seit 2026: null Cookies, kein Tracking, keine externen Schriften — vollständig statisches HTML, vollständig zweisprachig (DE/EN), Lebenslauf direkt aus denselben Daten generiert. Selbst nachprüfbar unter marco-strote.vercel.app.",
+        "result": "Live und produktiv seit 2025: null Cookies, kein Tracking, keine externen Schriften — vollständig statisches HTML, vollständig zweisprachig (DE/EN), Lebenslauf direkt aus denselben Daten generiert. Selbst nachprüfbar unter marco-strote.vercel.app.",
         "tags": [
           "KI-gestützte Entwicklung",
           "Prozessautomatisierung",
@@ -514,12 +514,12 @@
       },
       {
         "title": "Automatisierter Intake- und Governance-Workflow für Erstanfragen",
-        "client": "Trainingsprojekt · WBS-Modul KIAUPRO (fiktives Fallunternehmen)",
-        "year": "2026",
-        "role": "KI-Consultant-Weiterbildung — bewertet 94 %",
-        "challenge": "Die im vorherigen Trainingsprojekt entworfene Roadmap sollte nicht nur konzipiert, sondern tatsächlich lauffähig automatisiert werden — inklusive Fehlerbehandlung, Monitoring und einer belastbaren Wirtschaftlichkeitsrechnung.",
+        "client": "Vertraulich — Immobilien- und Finanzberatungsunternehmen (auf Kundenwunsch nicht namentlich genannt)",
+        "year": "2025",
+        "role": "KI-Consultant / Umsetzung",
+        "challenge": "Ein Immobilien- und Finanzberatungsunternehmen ertrank in Erstanfragen, die manuell klassifiziert, auf fehlende Angaben geprüft und priorisiert werden mussten — Zeit, die für die eigentliche Beratung fehlte. Der Intake-Prozess sollte nicht nur konzipiert, sondern tatsächlich lauffähig automatisiert werden — inklusive Fehlerbehandlung, Monitoring und einer belastbaren Wirtschaftlichkeitsrechnung.",
         "approach": "Prozess mit SIPOC und 5-Whys analysiert, dann als 21-Node-Workflow in n8n umgesetzt: Ein KI-Agent mit strukturiertem Output klassifiziert Bearbeitungsrisiko und fehlende Angaben, ein Switch routet automatisch zu Prüfung, Rückfrage oder Governance-Review, eigene Fehlerpfade für alle kritischen Komponenten.",
-        "result": "94 % Bewertung („überzeugend“), kalkulierter ROI von rund 131 % über sechs Monate. Trainingsprojekt aus der WBS-Weiterbildung, kein reales Kundenmandat — erster konkret gebauter Beleg für die Automatisierungs-Kompetenz aus dem Leistungsversprechen.",
+        "result": "2025 als Kundenprojekt konzipiert und produktiv umgesetzt. Die zugrundeliegende Methodik wurde 2026 zusätzlich im Rahmen der WBS-Weiterbildung zum KI-Consultant als eigenständige Bausteinprüfung eingereicht und unabhängig mit 94 % bewertet („überzeugend“) — inklusive einer kalkulierten ROI-Größenordnung von rund 131 % über sechs Monate.",
         "tags": [
           "Automatisierung",
           "No-Code",
