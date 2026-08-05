@@ -465,6 +465,32 @@ function aboutSection(c, no) {
 </section>`;
 }
 
+function servicesSection(c, no) {
+  const s = c.services;
+  return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">${sectionNo(no)}${t(s.eyebrow)}</span>
+      <h2 id="${esc(s.id)}-title">${t(s.title)}</h2>
+      <p class="lead">${t(s.lead)}</p>
+    </div>
+
+    ${s.intro ? `<p class="services-intro" data-reveal>${t(s.intro)}</p>` : ''}
+
+    <div class="service-grid">
+      ${s.items
+        .map(
+          (it, i) => `<div class="service" data-reveal style="--reveal-delay:${(i % 4) * 70}ms">
+        <h3>${t(it.title)}</h3>
+        <p>${t(it.description)}</p>
+      </div>`
+        )
+        .join('\n      ')}
+    </div>
+  </div>
+</section>`;
+}
+
 function projectsSection(c, no) {
   const s = c.projects;
   const L = c.lang === 'de'
@@ -824,6 +850,7 @@ function renderHome(c, posts = []) {
     certSection(c, ++no),
     experienceSection(c, ++no),
     aboutSection(c, ++no),
+    ...(on(c.services) ? [servicesSection(c, ++no)] : []),
     ...(on(c.blog) && posts.length ? [blogSection(c, posts, ++no)] : []),
     ...(on(c.projects) ? [projectsSection(c, ++no)] : []),
     ...(on(c.testimonials) ? [testimonialsSection(c, ++no)] : []),
