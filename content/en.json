@@ -138,92 +138,92 @@
   "certifications": {
     "id": "credentials",
     "eyebrow": "Credentials",
-    "title": "Certifications",
-    "lead": "Fourteen certifications — thirteen of them from AXELOS and EXIN: verified, not claimed. Complemented by the WBS AI Consultant certificate.",
+    "title": "From agile to AI",
+    "lead": "Five areas of development, one throughline: from agile methods in 2020 to today's deepening in AI — each one externally verified.",
     "items": [
       {
-        "name": "ITIL® 4 Leader: Digital & IT Strategy",
-        "issuer": "AXELOS Global Best Practice",
-        "year": "2021",
-        "category": "IT strategy"
-      },
-      {
-        "name": "ITIL® 4 Strategist: Direct, Plan and Improve",
-        "issuer": "AXELOS Global Best Practice",
-        "year": "2021",
-        "category": "IT strategy"
-      },
-      {
-        "name": "ITIL® Foundation in IT Service Management",
-        "issuer": "AXELOS Global Best Practice",
-        "year": "2020",
-        "category": "IT strategy"
-      },
-      {
-        "name": "PRINCE2 Agile® Practitioner in Agile Project Management",
-        "issuer": "AXELOS Global Best Practice",
-        "year": "2020",
-        "category": "Project management"
-      },
-      {
-        "name": "PRINCE2® Practitioner in Project Management",
-        "issuer": "AXELOS Global Best Practice",
-        "year": "2020",
-        "category": "Project management"
-      },
-      {
-        "name": "PRINCE2® Foundation in Project Management",
-        "issuer": "AXELOS Global Best Practice",
-        "year": "2020",
-        "category": "Project management"
+        "name": "WBS AI Consultant Certificate",
+        "issuer": "WBS TRAINING",
+        "year": "2026",
+        "category": "AI Consulting"
       },
       {
         "name": "EXIN BCS Practitioner in Requirements Engineering",
         "issuer": "EXIN",
         "year": "2020",
-        "category": "Business analysis"
+        "category": "Business Analysis"
       },
       {
         "name": "EXIN BCS Practitioner in Business Analysis Practice",
         "issuer": "EXIN",
         "year": "2020",
-        "category": "Business analysis"
+        "category": "Business Analysis"
       },
       {
         "name": "EXIN BCS Practitioner in Modelling Business Processes",
         "issuer": "EXIN",
         "year": "2021",
-        "category": "Business analysis"
+        "category": "Business Analysis"
       },
       {
         "name": "EXIN BCS Foundation in Business Analysis",
         "issuer": "EXIN",
         "year": "2020",
-        "category": "Business analysis"
+        "category": "Business Analysis"
+      },
+      {
+        "name": "PRINCE2 Agile® Practitioner in Agile Project Management",
+        "issuer": "AXELOS Global Best Practice",
+        "year": "2020",
+        "category": "PRINCE2 Project Management"
+      },
+      {
+        "name": "PRINCE2® Practitioner in Project Management",
+        "issuer": "AXELOS Global Best Practice",
+        "year": "2020",
+        "category": "PRINCE2 Project Management"
+      },
+      {
+        "name": "PRINCE2® Foundation in Project Management",
+        "issuer": "AXELOS Global Best Practice",
+        "year": "2020",
+        "category": "PRINCE2 Project Management"
       },
       {
         "name": "Agile Scrum Product Owner",
         "issuer": "EXIN",
         "year": "2020",
-        "category": "Agile"
+        "category": "Scrum - Management Framework for Agile Processes"
       },
       {
         "name": "Agile Scrum Master",
         "issuer": "EXIN",
         "year": "2020",
-        "category": "Agile"
+        "category": "Scrum - Management Framework for Agile Processes"
       },
       {
         "name": "Agile Scrum Foundation",
         "issuer": "EXIN",
         "year": "2020",
-        "category": "Agile"
+        "category": "Scrum - Management Framework for Agile Processes"
       },
       {
-        "name": "WBS AI Consultant Certificate",
-        "issuer": "WBS TRAINING",
-        "year": "2026",
-        "category": "AI"
+        "name": "ITIL® 4 Leader: Digital & IT Strategy",
+        "issuer": "AXELOS Global Best Practice",
+        "year": "2021",
+        "category": "ITIL 4 IT Service Management / ITIL 4 Strategic Leader"
+      },
+      {
+        "name": "ITIL® 4 Strategist: Direct, Plan and Improve",
+        "issuer": "AXELOS Global Best Practice",
+        "year": "2021",
+        "category": "ITIL 4 IT Service Management / ITIL 4 Strategic Leader"
+      },
+      {
+        "name": "ITIL® Foundation in IT Service Management",
+        "issuer": "AXELOS Global Best Practice",
+        "year": "2020",
+        "category": "ITIL 4 IT Service Management / ITIL 4 Strategic Leader"
       }
     ]
   },

@@ -142,44 +142,14 @@
   "certifications": {
     "id": "qualifikationen",
     "eyebrow": "Qualifikationen",
-    "title": "Zertifizierungen",
-    "lead": "Vierzehn Zertifizierungen — dreizehn davon von AXELOS und EXIN: geprüft, nicht behauptet. Ergänzt um das WBS-Zertifikat zum KI-Consultant.",
+    "title": "Von Agile zu KI",
+    "lead": "Fünf Entwicklungsfelder, ein roter Faden: von agilen Methoden 2020 bis zur aktuellen Vertiefung in KI — jedes davon extern geprüft.",
     "items": [
       {
-        "name": "ITIL® 4 Leader: Digital & IT Strategy",
-        "issuer": "AXELOS Global Best Practice",
-        "year": "2021",
-        "category": "IT-Strategie"
-      },
-      {
-        "name": "ITIL® 4 Strategist: Direct, Plan and Improve",
-        "issuer": "AXELOS Global Best Practice",
-        "year": "2021",
-        "category": "IT-Strategie"
-      },
-      {
-        "name": "ITIL® Foundation in IT Service Management",
-        "issuer": "AXELOS Global Best Practice",
-        "year": "2020",
-        "category": "IT-Strategie"
-      },
-      {
-        "name": "PRINCE2 Agile® Practitioner in Agile Project Management",
-        "issuer": "AXELOS Global Best Practice",
-        "year": "2020",
-        "category": "Projektmanagement"
-      },
-      {
-        "name": "PRINCE2® Practitioner in Project Management",
-        "issuer": "AXELOS Global Best Practice",
-        "year": "2020",
-        "category": "Projektmanagement"
-      },
-      {
-        "name": "PRINCE2® Foundation in Project Management",
-        "issuer": "AXELOS Global Best Practice",
-        "year": "2020",
-        "category": "Projektmanagement"
+        "name": "WBS-Zertifikat KI-Consultant",
+        "issuer": "WBS TRAINING",
+        "year": "2026",
+        "category": "KI-Consulting"
       },
       {
         "name": "EXIN BCS Practitioner in Requirements Engineering",
@@ -206,28 +176,58 @@
         "category": "Business Analyse"
       },
       {
+        "name": "PRINCE2 Agile® Practitioner in Agile Project Management",
+        "issuer": "AXELOS Global Best Practice",
+        "year": "2020",
+        "category": "PRINCE2 Projektmanagement"
+      },
+      {
+        "name": "PRINCE2® Practitioner in Project Management",
+        "issuer": "AXELOS Global Best Practice",
+        "year": "2020",
+        "category": "PRINCE2 Projektmanagement"
+      },
+      {
+        "name": "PRINCE2® Foundation in Project Management",
+        "issuer": "AXELOS Global Best Practice",
+        "year": "2020",
+        "category": "PRINCE2 Projektmanagement"
+      },
+      {
         "name": "Agile Scrum Product Owner",
         "issuer": "EXIN",
         "year": "2020",
-        "category": "Agile"
+        "category": "Scrum - Management Framework für agile Prozesse"
       },
       {
         "name": "Agile Scrum Master",
         "issuer": "EXIN",
         "year": "2020",
-        "category": "Agile"
+        "category": "Scrum - Management Framework für agile Prozesse"
       },
       {
         "name": "Agile Scrum Foundation",
         "issuer": "EXIN",
         "year": "2020",
-        "category": "Agile"
+        "category": "Scrum - Management Framework für agile Prozesse"
       },
       {
-        "name": "WBS-Zertifikat KI-Consultant",
-        "issuer": "WBS TRAINING",
-        "year": "2026",
-        "category": "KI"
+        "name": "ITIL® 4 Leader: Digital & IT Strategy",
+        "issuer": "AXELOS Global Best Practice",
+        "year": "2021",
+        "category": "ITIL 4 IT Service Management / ITIL 4 Strategic Leader"
+      },
+      {
+        "name": "ITIL® 4 Strategist: Direct, Plan and Improve",
+        "issuer": "AXELOS Global Best Practice",
+        "year": "2021",
+        "category": "ITIL 4 IT Service Management / ITIL 4 Strategic Leader"
+      },
+      {
+        "name": "ITIL® Foundation in IT Service Management",
+        "issuer": "AXELOS Global Best Practice",
+        "year": "2020",
+        "category": "ITIL 4 IT Service Management / ITIL 4 Strategic Leader"
       }
     ]
   },
