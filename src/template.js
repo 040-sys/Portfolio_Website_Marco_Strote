@@ -284,6 +284,24 @@ function skillsSection(c, no) {
 
 function certSection(c, no) {
   const s = c.certifications;
+  let lastCategory = null;
+  const cards = s.items
+    .map((it, i) => {
+      const catLabel = t(it.category);
+      const divider =
+        catLabel !== lastCategory
+          ? `<li class="cert-group-label" role="presentation"><span>${catLabel}</span></li>`
+          : '';
+      lastCategory = catLabel;
+      return `${divider}<li class="cert" data-reveal style="--reveal-delay:${(i % 3) * 70}ms">
+        <div class="cert-top">
+          <span class="cert-year">${t(it.year)}</span>
+        </div>
+        <h3>${t(it.name)}</h3>
+        <p>${t(it.issuer)}</p>
+      </li>`;
+    })
+    .join('\n      ');
   return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
   <div class="wrap">
     <div class="section-head" data-reveal>
@@ -293,18 +311,7 @@ function certSection(c, no) {
     </div>
 
     <ul class="cert-grid">
-      ${s.items
-        .map(
-          (it, i) => `<li class="cert" data-reveal style="--reveal-delay:${(i % 3) * 70}ms">
-        <div class="cert-top">
-          <span class="cert-cat">${t(it.category)}</span>
-          <span class="cert-year">${t(it.year)}</span>
-        </div>
-        <h3>${t(it.name)}</h3>
-        <p>${t(it.issuer)}</p>
-      </li>`
-        )
-        .join('\n      ')}
+      ${cards}
     </ul>
   </div>
 </section>`;
