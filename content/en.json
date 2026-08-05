@@ -38,6 +38,10 @@
         "label": "Experience"
       },
       {
+        "href": "#services",
+        "label": "Services"
+      },
+      {
         "href": "#about",
         "label": "About"
       },
@@ -54,8 +58,8 @@
   "hero": {
     "eyebrow": "Portfolio",
     "name": "Marco Strote",
-    "headline": "I make AI usable inside organisations — compliant by design and measurable in outcome.",
-    "intro": "AI and transformation consultant with a focus on the EU AI Act. More than twenty-five years between market, business and delivery: first in B2B sales of digital solutions, today advising companies that want to adopt AI without losing sight of compliance.",
+    "headline": "I make AI usable inside organisations — from strategy to a working application.",
+    "intro": "AI and transformation consultant with 25+ years between market, business and delivery. I own needs assessment and steering end to end — and I am actively building out my technical delivery capability.",
     "facts": [
       {
         "label": "Location",
@@ -89,15 +93,19 @@
     "lead": "What derails an AI project is rarely the technology — it's that one of these four perspectives is missing.",
     "groups": [
       {
-        "title": "AI & EU AI Act",
+        "title": "AI Strategy & Technology",
         "tags": [
           "AI strategy & roadmap",
+          "Prompt & context engineering",
+          "AI models & machine learning",
+          "Use case assessment",
+          "Agentic AI",
+          "AI governance",
           "EU AI Act compliance",
           "AI inventory",
           "Risk classification",
-          "AI governance",
-          "Agentic AI",
-          "Use case assessment"
+          "AI-driven process automation",
+          "Data & AI management"
         ]
       },
       {
@@ -220,6 +228,12 @@
         "issuer": "EXIN",
         "year": "2020",
         "category": "Agile"
+      },
+      {
+        "name": "WBS AI Consultant Certificate",
+        "issuer": "WBS TRAINING",
+        "year": "2026",
+        "category": "AI"
       }
     ]
   },
@@ -231,6 +245,19 @@
     "visibleEntries": 3,
     "moreLabel": "+ earlier positions",
     "items": [
+      {
+        "period": "Apr 2026 — Aug 2026",
+        "role": "AI Consultant Certification Program",
+        "company": "WBS TRAINING",
+        "location": "part-time, alongside independent consulting",
+        "summary": "Focused technical deepening: prompt & context engineering, AI models and machine learning, AI-driven process automation, data & AI management. 7 of 10 modules completed with self-built practical projects (six scored 100%, one scored 94%) — see “Projects” below.",
+        "highlights": [
+          "Multimodal AI prototype with image recognition and rule-based planning logic (AUINKI, 100%)",
+          "Production code contribution in a team software migration, project lead role (KITEKO, 100%)",
+          "No-code automation workflow with an AI agent and ROI calculation (KIAUPRO, 94%)",
+          "Hybrid AI architecture with governance and quality safeguards (EIOPAN, 100%)"
+        ]
+      },
       {
         "period": "July 2025 — present",
         "role": "Consultant for AI, Digitalisation & Transformation",
@@ -400,7 +427,9 @@
     "paragraphs": [
       "I spent more than twenty years on the market side: as key account manager at an e-commerce agency, selling an AI-driven personalisation platform, most recently managing an international portfolio for compliance software across EMEA. Those years taught me one thing above all: organisations do not buy technology. They buy the resolution of a problem they often have not yet named precisely.",
       "In 2020 I deliberately rebuilt my methodological foundation and completed thirteen certifications within roughly a year — project management, business analysis, agile methods, IT strategy. Not as a collection, but because I wanted to master the other half: not only to explain what a system can do, but to be accountable for it actually being implemented. Immediately afterwards I led the introduction of a laboratory information system as IT project manager.",
-      "Today I advise organisations on AI and digital transformation, with particular emphasis on the EU AI Act. That subject joins both halves of my experience: it is simultaneously a regulatory question, a strategic decision and a very practical delivery problem. Most companies do not even know which AI systems they already run — and have been subject to deployer obligations since February 2025.",
+      "That same principle — evidence over assertion — is what I applied to the technical side of AI in 2026: in a part-time AI Consultant certification program, I am deepening prompt engineering, working with AI models, and hands-on workflow automation. Each module closes with a graded practical exam — the program is due to complete in August 2026.",
+      "An AI project has clearly distinct roles: one that clarifies need and goal and translates between leadership, IT and the business; one that collects, structures and makes data available; one that connects models and interfaces into a usable application; and two more that build and statistically validate their own learning models. I fully cover the first of these roles — AI manager — with 25+ years as a bridge-builder between leadership, IT, legal and the business. I am actively building out the technical delivery side: in my AI Consultant certification program I have already completed several self-built, top-scoring practical projects — including a multimodal AI prototype and a production code contribution to a team software migration. I bring adjacent data experience from earlier roles and current projects, and continue to deepen modern data infrastructure. For building custom learning models, I partner with specialised data scientists and ML engineers. For organisations, that means an experienced point of contact for needs assessment and steering, with technical delivery capability that is now concretely evidenced — so far from training, not yet from a client engagement.",
+      "Today I advise organisations on AI strategy, process automation and digital transformation — with deep expertise in the EU AI Act, where regulation becomes a strategic question. Most organisations do not even know which AI systems they already run — and have been subject to deployer obligations since February 2025.",
       "What interests me in this work is the moment an abstract requirement turns into a concrete list a team can pick up on Monday morning. Everything before that is preparation; everything after it is craft."
     ],
     "principles": [
@@ -443,55 +472,55 @@
     "feedLabel": "RSS feed"
   },
   "projects": {
-    "enabled": false,
+    "enabled": true,
     "id": "work",
     "eyebrow": "Work",
     "title": "Selected projects",
     "lead": "Evidence rather than assertion — situation, approach, result.",
     "items": [
       {
-        "title": "Introduction of a Laboratory Information Management System",
-        "client": "Dr. Jörg Freytag — environmental analysis",
-        "year": "2021 — 2022",
-        "role": "IT Project Manager",
-        "challenge": "A laboratory specialising in environmental analysis needed a new laboratory information management system. Requirements were scattered across the business, IT and external providers, with no shared basis.",
-        "approach": "Structured requirements analysis using use case models, mind maps and rich pictures as a common language. Leadership of cross-functional teams and coordination of internal and external stakeholders across scope, budget and schedule.",
-        "result": "Project objectives were delivered within the agreed time and budget frame. [[PLACEHOLDER: add a concrete figure if available — throughput per sample, number of legacy systems replaced, or number of users.]]",
+        "title": "AI Roadmap for a First-Contact and Qualification Assistant",
+        "client": "Training project · WBS module KIUSCA (fictional case company)",
+        "year": "2026",
+        "role": "AI Consultant certification — scored 100%",
+        "challenge": "An owner-run real estate and financial advisory firm was drowning in first-contact inquiries that had to be manually classified, checked for missing information and prioritised — time that was missing from actual advisory work.",
+        "approach": "Built a complete AI roadmap rather than a point solution: use-case assessment with a consultant scorecard and impact-effort matrix, an MS365-adjacent target architecture with human-in-the-loop, a four-week MVPoc with clear target metrics, and a red/amber/green governance gate that keeps decision authority firmly with people.",
+        "result": "100 out of 100 points (completeness/methodology 40/40, strategy/reasoning 40/40, client orientation/pitch 20/20). The examiner specifically praised the clean separation of “evidenced”, “hypothesis” and “open”, and the traffic-light governance system. Training project from the WBS AI Consultant program, not a real client engagement — shows the methodology is directly transferable to real mandates.",
         "tags": [
-          "Project management",
-          "Requirements analysis",
-          "LIMS",
-          "Stakeholder management"
+          "AI strategy",
+          "Governance",
+          "Use-case assessment",
+          "MVPoc"
         ]
       },
       {
-        "title": "International account portfolio for compliance SaaS",
-        "client": "3E — EHS product compliance",
-        "year": "2022 — 2025",
-        "role": "Account Manager, EMEA Sales",
-        "challenge": "Organisations across EMEA face growing pressure from hazardous materials and product regulation, yet rarely operate a dependable system landscape for product stewardship.",
-        "approach": "Building long-term customer partnerships rather than isolated deals: analysing each compliance situation, developing tailored solution concepts and aligning closely with product and implementation teams.",
-        "result": "[[PLACEHOLDER: a number belongs here — portfolio size, revenue development, renewal rate or number of countries covered. Without one, this entry stays weaker than the other two.]]",
+        "title": "Automated Intake and Governance Workflow for First-Contact Inquiries",
+        "client": "Training project · WBS module KIAUPRO (fictional case company)",
+        "year": "2026",
+        "role": "AI Consultant certification — scored 94%",
+        "challenge": "The roadmap designed in the prior training project needed to move from concept to an actually working, automated system — including error handling, monitoring and a solid economic case.",
+        "approach": "Analysed the process with SIPOC and 5-Whys, then implemented a 21-node workflow in n8n: an AI agent with structured output classifies processing risk and missing information, a switch automatically routes to review, follow-up or governance review, with dedicated error paths for every critical component.",
+        "result": "94% score (“convincing”), with a calculated ROI of roughly 131% over six months. Training project from the WBS AI Consultant program, not a real client engagement — the first concretely built evidence for the automation capability behind the value proposition.",
         "tags": [
-          "B2B sales",
-          "Regulatory compliance",
-          "SaaS",
-          "EMEA"
+          "Automation",
+          "No-code",
+          "n8n",
+          "AI agent"
         ]
       },
       {
-        "title": "EU AI Act assessment and AI roadmap",
-        "client": "Mid-sized and large organisations",
-        "year": "since 2025",
-        "role": "AI & transformation consultant",
-        "challenge": "Many organisations already use AI — ChatGPT in individual teams, Copilot in HR, a chatbot on the website — without realising that this makes them deployers under the EU AI Act, with obligations in force since February 2025.",
-        "approach": "Systematic AI inventory as the first step, followed by risk classification under Annex III, definition of intervention points and accountabilities, and a prioritised roadmap up to full enforcement from August 2026.",
-        "result": "[[PLACEHOLDER: once an engagement concludes — number of AI systems catalogued, time to classification, or a client quote. Until then this stays deliberately cautious.]]",
+        "title": "Hybrid AI Architecture for a Hardware Advisory Tool",
+        "client": "Training project · WBS module EIOPAN (fictional case company)",
+        "year": "2026",
+        "role": "AI Consultant certification — scored 100%",
+        "challenge": "Standard product filters do not reliably translate model size, quantisation, context length and use case into a sound hardware recommendation for locally run AI models — risking advice that is either wrong or altogether absent.",
+        "approach": "Hybrid architecture combining a rule-based compatibility engine, versioned fact/benchmark data (RAG) and a language model used strictly for explanation — never for the technical judgement itself. An output validator blocks invented specifications, a reproducible decision record documents every recommendation, backed by four approval gates.",
+        "result": "100 out of 100 points, rated “absolute professional quality” by the examiner. Hard quality gates fully met: zero invented specifications, 100% source coverage, at least 98% of must-have requirements satisfied. Training project from the WBS AI Consultant program, not a real client engagement.",
         "tags": [
-          "EU AI Act",
-          "AI governance",
-          "Risk classification",
-          "Roadmap"
+          "AI architecture",
+          "RAG",
+          "Responsible AI",
+          "Quality assurance"
         ]
       }
     ]
@@ -550,12 +579,20 @@
         "a": "The EU AI Act affects not only organisations that build AI, but everyone deploying third-party AI — they count as deployers and have had obligations since February 2025. Full enforcement begins on 2 August 2026, with fines of up to 35 million euros for high-risk systems. I work at exactly that intersection: AI inventory, risk classification under Annex III, governance structures, and the still unsettled question of how agentic AI can be reconciled with the human oversight required by Article 14."
       },
       {
+        "q": "Are you an EU AI Act specialist or more broadly positioned?",
+        "a": "More broadly positioned. The EU AI Act is one of several fields — alongside AI strategy, process automation and, since 2026, deepened technical skills in prompt engineering and AI models from an ongoing AI Consultant certification program."
+      },
+      {
+        "q": "Don't I also need a data scientist or ML engineer for an AI project?",
+        "a": "Depends on the project. If a custom model needs to be trained or statistically validated, I bring in specialised experts. The role before that — clarifying needs, sharpening goals, translating between leadership, the business and technology — I have covered for 25+ years. I am actively building out the technical integration side: in my AI Consultant certification program I have already delivered several self-built AI applications with top scores. For most organisations, that means an experienced point of contact for strategy and steering, with evidenced technical delivery capability."
+      },
+      {
         "q": "Which industries has Marco Strote worked in?",
         "a": "Principally chemicals and hazardous materials management (three years in product compliance and product stewardship at 3E, two years at 1WorldSync), laboratory and environmental analysis (LIMS implementation), e-commerce and digital marketing (hmmh AG, For Sale Digital, Akanoo), and across sectors with mid-sized and large organisations in AI and digitalisation advisory. Earlier in his career, also controlling and sales roles in media, travel and building materials (SinnerSchrader, Kabel New Media, Egencia, TBG Nord-Beton)."
       },
       {
         "q": "Which certifications are held?",
-        "a": "Thirteen certifications from AXELOS and EXIN: ITIL 4 Strategic Leader covering Digital & IT Strategy and Direct, Plan and Improve, plus ITIL 4 Foundation; PRINCE2 Foundation, PRINCE2 Practitioner and PRINCE2 Agile Practitioner; Agile Scrum Foundation, Scrum Master and Scrum Product Owner; EXIN BCS Foundation in Business Analysis together with Practitioner certificates in Business Analysis Practice, Requirements Engineering and Modelling Business Processes."
+        "a": "Fourteen certifications: thirteen from AXELOS and EXIN — ITIL 4 Strategic Leader covering Digital & IT Strategy and Direct, Plan and Improve, plus ITIL 4 Foundation; PRINCE2 Foundation, PRINCE2 Practitioner and PRINCE2 Agile Practitioner; Agile Scrum Foundation, Scrum Master and Scrum Product Owner; EXIN BCS Foundation in Business Analysis together with Practitioner certificates in Business Analysis Practice, Requirements Engineering and Modelling Business Processes — plus the WBS AI Consultant Certificate (expected completion: August 2026)."
       },
       {
         "q": "What is the fastest way to reach Marco Strote?",
@@ -623,7 +660,7 @@
     "fileName": "CV-Marco-Strote.pdf",
     "docTitle": "Curriculum Vitae",
     "profileTitle": "Profile",
-    "profile": "AI and transformation consultant focused on the EU AI Act. More than twenty-five years at the intersection of market, business and delivery — first in B2B sales of digital and regulatory solutions, complemented since 2020 by thirteen certifications in project management, business analysis, agile methods and IT strategy. Today I help organisations adopt AI in a compliant way and with measurable results.",
+    "profile": "AI Consultant with 25+ years of experience at the intersection of market, business and delivery — first in B2B sales of digital and regulatory solutions, complemented since 2020 by thirteen certifications in project management, business analysis, agile methods and IT strategy. I advise organisations on AI strategy, process automation and compliance — evidenced by seven self-built AI projects (six scored 100%, one scored 94%) from my ongoing AI Consultant certification program.",
     "skillsTitle": "Skills",
     "experienceTitle": "Professional experience",
     "visibleEntries": 3,
@@ -789,5 +826,31 @@
       "numbered": true
     },
     "backLink": "Back to homepage"
+  },
+  "services": {
+    "enabled": true,
+    "id": "services",
+    "eyebrow": "Services",
+    "title": "What I offer",
+    "lead": "One experienced point of contact for needs, steering and delivery — instead of several loose interfaces.",
+    "intro": "I clarify needs and goals, translate between leadership, the business and technology, and steer the project through to a working application. I am actively building out technical delivery myself — evidenced by several self-built AI projects with top scores from my ongoing AI Consultant certification program (see “Projects” below). For building custom learning models, I bring in specialised experts as needed.",
+    "items": [
+      {
+        "title": "AI Strategy & Roadmap",
+        "description": "From assessment to a prioritised roadmap — including use-case evaluation and a first actionable pilot."
+      },
+      {
+        "title": "AI Inventory & EU AI Act Risk Classification",
+        "description": "A solid inventory of all AI systems in use, classified by risk category, as the basis for governance decisions."
+      },
+      {
+        "title": "AI-Driven Process Automation",
+        "description": "Analysis of existing workflows, identification of suitable automation and prompt-engineering approaches, and delivery support including technical integration."
+      },
+      {
+        "title": "Interim Project Leadership",
+        "description": "Agile or classic steering of transformation projects (PRINCE2, PRINCE2 Agile, Scrum) — including as temporary team capacity."
+      }
+    ]
   }
 }
