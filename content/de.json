@@ -50,6 +50,10 @@
         "label": "Beiträge"
       },
       {
+        "href": "#projekte",
+        "label": "Projekte"
+      },
+      {
         "href": "#faq",
         "label": "FAQ"
       }
