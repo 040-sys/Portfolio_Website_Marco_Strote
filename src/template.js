@@ -353,7 +353,7 @@ function timeline(s) {
         <p class="tl-period">${t(it.period)}</p>
         <div class="tl-body">
           <h3>${t(it.role)}</h3>
-          <p class="tl-company">${t(it.company)}${it.location ? ` <i>· ${t(it.location)}</i>` : ''}</p>
+          <p class="tl-company">${t(it.company)}</p>
           <p class="tl-summary">${t(it.summary)}</p>
           ${
             it.highlights && it.highlights.length

@@ -47,7 +47,7 @@ function renderCv(c) {
         <p class="cv-period">${t(it.period)}</p>
         <div>
           <h3>${t(it.role)}</h3>
-          <p class="cv-org">${t(it.company)}${it.location && !isPlaceholder(it.location) ? ` <span>· ${t(it.location)}</span>` : ''}</p>
+          <p class="cv-org">${t(it.company)}</p>
           ${it.summary && !isPlaceholder(it.summary) ? `<p class="cv-summary">${t(it.summary)}</p>` : ''}
           ${
             it.highlights && it.highlights.length
