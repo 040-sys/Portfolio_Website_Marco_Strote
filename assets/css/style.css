@@ -609,8 +609,9 @@ body.nav-locked { overflow: hidden; }
   font-size: 0.7rem;
   font-weight: 700;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: 0.2rem;
 }
 .cert-summary-txt {
   flex: 1;
