@@ -28,7 +28,7 @@ function renderCv(c) {
     '@type': 'Person',
     name: c.site.name,
     jobTitle: clean(c.meta.jobTitle),
-    description: clean(cv.profile),
+    description: clean(c.hero.intro),
     email: `mailto:${mail}`,
     url: abs(c, c.site.path),
     ...(hasLinkedIn ? { sameAs: [clean(c.contact.linkedin.url)] } : {}),
@@ -96,7 +96,7 @@ function renderCv(c) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(cv.docTitle)} — ${esc(c.site.name)}</title>
-<meta name="description" content="${ta(cv.profile).slice(0, 200)}">
+<meta name="description" content="${ta(c.hero.intro).slice(0, 200)}">
 <meta name="robots" content="${c.site.noindex ? 'noindex, follow' : 'index, follow'}">
 <link rel="canonical" href="${esc(abs(c, c.lang === 'de' ? '/lebenslauf.html' : '/en/cv.html'))}">
 <link rel="icon" href="${esc(u(c, '/assets/img/favicon.svg'))}" type="image/svg+xml">
@@ -152,7 +152,7 @@ ${jsonLd(person)}
 
   <section class="cv-section">
     <h2>${esc(cv.profileTitle)}</h2>
-    <p class="cv-profile">${t(cv.profile)}</p>
+    <p class="cv-profile">${t(c.hero.intro)}</p>
   </section>
 
   <section class="cv-section">
@@ -162,7 +162,7 @@ ${jsonLd(person)}
         .map(
           (tile) => `<div class="cv-skill-group">
         <h3>${t(tile.title)}</h3>
-        <p>${tile.highlights.map((h) => t(h)).join(' · ')}</p>
+        <ul class="cv-skill-tasks">${tile.tasks.map((task) => `<li>${t(task)}</li>`).join('')}</ul>
       </div>`
         )
         .join('\n      ')}
