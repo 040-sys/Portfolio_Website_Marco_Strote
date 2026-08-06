@@ -222,6 +222,30 @@
     });
   });
 
+  /* --- 9c. Qualifikationen-Akkordeon: alle Gruppen-Labels gleich hoch -----
+     Kategorienamen sind unterschiedlich lang ("KI" vs. "ITIL 4 IT Service
+     Management / Strategic Leader") und brechen je nach Breite unterschiedlich
+     oft um. Ohne Angleichung wirkt die kurze Zeile kleiner/leichter als die
+     lange, obwohl beide gleich gewichtet sein sollen. Wir messen die höchste
+     Beschriftung und übertragen sie auf alle - bei Resize/Schriftladen neu,
+     weil sich der Umbruch mit der Breite ändert. */
+  var certLabels = document.querySelectorAll('.cert-label');
+  if (certLabels.length) {
+    var equalizeCertLabels = function () {
+      certLabels.forEach(function (el) { el.style.minHeight = ''; });
+      var max = 0;
+      certLabels.forEach(function (el) { max = Math.max(max, el.offsetHeight); });
+      certLabels.forEach(function (el) { el.style.minHeight = max + 'px'; });
+    };
+    var certResizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(certResizeTimer);
+      certResizeTimer = setTimeout(equalizeCertLabels, 150);
+    });
+    equalizeCertLabels();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(equalizeCertLabels);
+  }
+
   /* --- 10. Vor dem Drucken alles aufklappen ------------------------------
      Auf Papier kann niemand einen Aufklapper öffnen — was zugeklappt bliebe,
      wäre für den Leser schlicht verloren. */
