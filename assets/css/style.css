@@ -621,8 +621,7 @@ body.nav-locked { overflow: hidden; }
   gap: 0.2rem;
 }
 .cert-label {
-  display: flex;
-  align-items: center;
+  display: block;
   min-height: 2.5em;
   font-family: var(--font-serif);
   font-size: var(--fs-lg);
