@@ -561,11 +561,15 @@
     "id": "faq",
     "eyebrow": "FAQ",
     "title": "Answered directly",
-    "lead": "The questions that come up in a first call anyway.",
+    "lead": "Answered briefly, before the conversation starts.",
     "items": [
       {
         "q": "What role is Marco Strote looking for?",
         "a": "Both are open: consulting engagements as an independent adviser and a permanent position. Suitable roles include AI consultant, AI governance manager, AI compliance manager, transformation consultant, digitalisation manager, and project or programme lead in a digitalisation context. Interim project leadership mandates are also of interest."
+      },
+      {
+        "q": "How does working together on a consulting engagement work?",
+        "a": "That depends heavily on the individual project — complexity, the client's available resources and the timeframe all vary. So I clarify it concretely in the first conversation rather than answering with a standard model."
       },
       {
         "q": "When is Marco Strote available?",
@@ -580,12 +584,8 @@
         "a": "It is less a move than a completion. Selling digital and regulatory solutions, I saw over years where implementations actually fail — almost never on technology, almost always on unclear requirements and absent accountability. In 2020 I acquired the methodological side systematically, then immediately led a system introduction as IT project manager. Today I can serve both sides: explain the value and own the delivery."
       },
       {
-        "q": "What makes the EU AI Act experience distinctive?",
+        "q": "How deep does the governance and EU AI Act experience go?",
         "a": "The EU AI Act affects not only organisations that build AI, but everyone deploying third-party AI — they count as deployers and have had obligations since February 2025. Full enforcement begins on 2 August 2026, with fines of up to 35 million euros for high-risk systems. I work at exactly that intersection: AI inventory, risk classification under Annex III, governance structures, and the still unsettled question of how agentic AI can be reconciled with the human oversight required by Article 14."
-      },
-      {
-        "q": "Are you an EU AI Act specialist or more broadly positioned?",
-        "a": "More broadly positioned. The EU AI Act is one of several fields — alongside AI strategy, process automation and, since 2026, deepened technical skills in prompt engineering and AI models from an ongoing AI Consultant certification program."
       },
       {
         "q": "Don't I also need a data scientist or ML engineer for an AI project?",

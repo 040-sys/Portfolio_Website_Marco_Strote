@@ -626,7 +626,7 @@ body.nav-locked { overflow: hidden; }
   display: block;
   font-family: var(--font-serif);
   font-size: var(--fs-lg);
-  font-weight: 700;
+  font-weight: 400;
   color: var(--ink);
   line-height: 1.25;
 }

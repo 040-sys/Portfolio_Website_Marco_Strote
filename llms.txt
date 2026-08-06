@@ -78,6 +78,10 @@
 
 Ich bin offen für beides: Beratungsmandate als selbstständiger Berater und eine Festanstellung. Passende Rollen sind KI-Berater, AI Governance Manager, Referent oder Manager KI-Compliance, Transformationsberater, Digitalisierungsmanager sowie Projekt- und Programmleitung im Digitalisierungsumfeld. Auch Interim-Mandate in der Projektleitung kommen infrage.
 
+### Wie läuft die Zusammenarbeit bei einem Beratungsmandat ab?
+
+Das hängt stark vom einzelnen Projekt ab — Komplexität, verfügbare Ressourcen beim Kunden und Zeitrahmen unterscheiden sich stark. Deshalb kläre ich das im Erstgespräch konkret statt mit einem Standardmodell zu antworten.
+
 ### Ab wann ist Marco Strote verfügbar?
 
 Ab sofort. Als selbstständiger Berater bin ich an keine Kündigungsfrist gebunden und kann kurzfristig einsteigen — sowohl in ein Projekt als auch in eine Festanstellung.
@@ -90,13 +94,9 @@ Alle drei Modelle sind möglich. Mein Standort ist Wentorf bei Hamburg, die Metr
 
 Es ist weniger ein Wechsel als eine Vervollständigung. Im Vertrieb digitaler und regulatorischer Lösungen habe ich über Jahre gesehen, woran Einführungen tatsächlich scheitern — fast nie an der Technik, fast immer an unklaren Anforderungen und fehlender Verantwortung. 2020 habe ich mir die Methodenseite systematisch angeeignet, direkt danach als IT-Projektmanager ein System eingeführt. Heute kann ich beide Seiten bedienen: den Nutzen erklären und die Umsetzung verantworten.
 
-### Was macht die Erfahrung mit dem EU AI Act besonders?
+### Wie tief geht die Governance- und EU-AI-Act-Erfahrung?
 
 Der EU AI Act betrifft nicht nur Unternehmen, die KI entwickeln, sondern auch alle, die fremde KI einsetzen — diese gelten als Betreiber und haben seit Februar 2025 Pflichten. Die volle Durchsetzung beginnt am 2. August 2026, mit Bußgeldern von bis zu 35 Millionen Euro bei Hochrisiko-Systemen. Ich arbeite an genau dieser Schnittstelle: KI-Inventarisierung, Risikoklassifizierung nach Anhang III, Governance-Strukturen und die besonders ungeklärte Frage, wie Agentic AI mit der Anforderung menschlicher Aufsicht nach Artikel 14 vereinbar bleibt.
-
-### Bist du auf EU AI Act spezialisiert oder breiter aufgestellt?
-
-Breiter aufgestellt. EU AI Act ist eines von mehreren Feldern — daneben KI-Strategie, Prozessautomatisierung und, seit 2026, vertiefte technische Kompetenz in Prompt Engineering und KI-Modellen aus einer laufenden Weiterbildung zum KI-Consultant.
 
 ### Brauche ich für ein KI-Projekt nicht auch einen Data Scientist oder ML-Ingenieur?
 
