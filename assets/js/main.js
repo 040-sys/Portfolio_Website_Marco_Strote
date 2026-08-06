@@ -222,14 +222,16 @@
     });
   });
 
-  /* --- 9c. Qualifikationen-Akkordeon: alle Gruppen-Labels gleich hoch -----
+  /* --- 9c. Qualifikationen-Akkordeon: alle Zeilen gleich hoch --------------
      Kategorienamen sind unterschiedlich lang ("KI" vs. "ITIL 4 IT Service
      Management / Strategic Leader") und brechen je nach Breite unterschiedlich
      oft um. Ohne Angleichung wirkt die kurze Zeile kleiner/leichter als die
-     lange, obwohl beide gleich gewichtet sein sollen. Wir messen die höchste
-     Beschriftung und übertragen sie auf alle - bei Resize/Schriftladen neu,
-     weil sich der Umbruch mit der Breite ändert. */
-  var certLabels = document.querySelectorAll('.cert-label');
+     lange, obwohl beide gleich gewichtet sein sollen. Wir gleichen den
+     gesamten Text-Block (Label + Zertifikatszahl) an, nicht nur das Label,
+     damit die Zahl direkt der letzten Label-Zeile folgt und der Ausgleich
+     als Freiraum danach entsteht statt als Lücke davor. Bei Resize/
+     Schriftladen neu, weil sich der Umbruch mit der Breite ändert. */
+  var certLabels = document.querySelectorAll('.cert-summary-txt');
   if (certLabels.length) {
     var equalizeCertLabels = function () {
       certLabels.forEach(function (el) { el.style.minHeight = ''; });
