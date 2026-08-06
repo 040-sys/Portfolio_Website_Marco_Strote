@@ -145,7 +145,7 @@
         "name": "WBS AI Consultant Certificate",
         "issuer": "WBS TRAINING",
         "year": "2026",
-        "category": "AI Consulting"
+        "category": "AI"
       },
       {
         "name": "EXIN BCS Practitioner in Requirements Engineering",
@@ -193,37 +193,37 @@
         "name": "Agile Scrum Product Owner",
         "issuer": "EXIN",
         "year": "2020",
-        "category": "Scrum - Management Framework for Agile Processes"
+        "category": "Scrum / Agile"
       },
       {
         "name": "Agile Scrum Master",
         "issuer": "EXIN",
         "year": "2020",
-        "category": "Scrum - Management Framework for Agile Processes"
+        "category": "Scrum / Agile"
       },
       {
         "name": "Agile Scrum Foundation",
         "issuer": "EXIN",
         "year": "2020",
-        "category": "Scrum - Management Framework for Agile Processes"
+        "category": "Scrum / Agile"
       },
       {
         "name": "ITIL® 4 Leader: Digital & IT Strategy",
         "issuer": "AXELOS Global Best Practice",
         "year": "2021",
-        "category": "ITIL 4 IT Service Management / ITIL 4 Strategic Leader"
+        "category": "ITIL 4 IT Service Management / Strategic Leader"
       },
       {
         "name": "ITIL® 4 Strategist: Direct, Plan and Improve",
         "issuer": "AXELOS Global Best Practice",
         "year": "2021",
-        "category": "ITIL 4 IT Service Management / ITIL 4 Strategic Leader"
+        "category": "ITIL 4 IT Service Management / Strategic Leader"
       },
       {
         "name": "ITIL® Foundation in IT Service Management",
         "issuer": "AXELOS Global Best Practice",
         "year": "2020",
-        "category": "ITIL 4 IT Service Management / ITIL 4 Strategic Leader"
+        "category": "ITIL 4 IT Service Management / Strategic Leader"
       }
     ]
   },

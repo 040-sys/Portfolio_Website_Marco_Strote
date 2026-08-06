@@ -284,24 +284,50 @@ function skillsSection(c, no) {
 
 function certSection(c, no) {
   const s = c.certifications;
-  let lastCategory = null;
-  const cards = s.items
-    .map((it, i) => {
-      const catLabel = t(it.category);
-      const divider =
-        catLabel !== lastCategory
-          ? `<li class="cert-group-label" role="presentation"><span>${catLabel}</span></li>`
-          : '';
-      lastCategory = catLabel;
-      return `${divider}<li class="cert" data-reveal style="--reveal-delay:${(i % 3) * 70}ms">
-        <div class="cert-top">
-          <span class="cert-year">${t(it.year)}</span>
+  const L = c.lang === 'de' ? { one: 'Zertifikat', many: 'Zertifikate' } : { one: 'Certificate', many: 'Certificates' };
+
+  /* Zertifikate nach Kategorie gruppieren, Reihenfolge des ersten Auftretens
+     bleibt erhalten — dieselbe Logik wie im CV-Template. */
+  const groups = [];
+  s.items.forEach((it) => {
+    const catLabel = t(it.category);
+    let group = groups.find((g) => g.label === catLabel);
+    if (!group) {
+      group = { label: catLabel, items: [] };
+      groups.push(group);
+    }
+    group.items.push(it);
+  });
+
+  const panels = groups
+    .map((g, gi) => {
+      const rows = g.items
+        .map(
+          (it) => `<div class="cert-row">
+            <div>
+              <p class="cert-name">${t(it.name)}</p>
+              <p class="cert-issuer">${t(it.issuer)}</p>
+            </div>
+            <span class="cert-year">${t(it.year)}</span>
+          </div>`
+        )
+        .join('\n            ');
+      const count = g.items.length;
+      return `<details class="cert-group"${gi === 0 ? ' open' : ''} data-reveal style="--reveal-delay:${gi * 60}ms">
+        <summary>
+          <span class="cert-badge">${String(gi + 1).padStart(2, '0')}</span>
+          <span class="cert-summary-txt">
+            <span class="cert-label">${g.label}</span>
+            <span class="cert-count">${count} ${count === 1 ? L.one : L.many}</span>
+          </span>
+        </summary>
+        <div class="cert-panel">
+          ${rows}
         </div>
-        <h3>${t(it.name)}</h3>
-        <p>${t(it.issuer)}</p>
-      </li>`;
+      </details>`;
     })
     .join('\n      ');
+
   return `<section class="section" id="${esc(s.id)}" aria-labelledby="${esc(s.id)}-title">
   <div class="wrap">
     <div class="section-head" data-reveal>
@@ -310,9 +336,9 @@ function certSection(c, no) {
       <p class="lead">${t(s.lead)}</p>
     </div>
 
-    <ul class="cert-grid">
-      ${cards}
-    </ul>
+    <div class="cert-acc">
+      ${panels}
+    </div>
   </div>
 </section>`;
 }
