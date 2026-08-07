@@ -565,8 +565,8 @@
   "faq": {
     "id": "faq",
     "eyebrow": "FAQ",
-    "title": "Direkt beantwortet",
-    "lead": "Kurz beantwortet, bevor das Gespräch beginnt.",
+    "title": "Häufige Fragen",
+    "lead": "Direkt beantwortet.",
     "items": [
       {
         "q": "Welche Rolle sucht Marco Strote?",
