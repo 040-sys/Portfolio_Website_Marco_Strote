@@ -282,7 +282,7 @@
         "location": "",
         "summary": "Project management for the introduction and further development of a Laboratory Information Management System (LIMS) at a laboratory specialising in environmental analysis.",
         "highlights": [
-          "Led cross-functional teams developing and implementing new LIMS technology",
+          "Drove forward cross-functional team activities developing and introducing new LIMS technology",
           "Requirements analysis plus use case models, mind maps and rich pictures for solution documentation",
           "Coordination of internal and external stakeholders across scope, budget and schedule",
           "Project objectives delivered within the agreed time and budget frame"
@@ -412,29 +412,32 @@
   "about": {
     "id": "about",
     "eyebrow": "About",
-    "title": "The role between ambition and execution",
-    "pullquote": "An AI project needs five roles. Most organisations fill four — and wonder why the pilot never reaches production.",
+    "title": "Who I am, what drives me",
+    "pullquote": "I help mid-sized and large organisations bring AI initiatives from idea to production — strategically clarified, technically evidenced, cleanly regulated.",
     "paragraphs": [
-      "An AI project needs five roles: one clarifies need and goal and translates between leadership, IT and the business; one collects and structures data; one connects models and interfaces into a usable application; two more build and statistically validate their own learning models. Mid-sized organisations rarely hire more than one person for all of this — usually for the fourth or fifth role, assuming the first will sort itself out. It is exactly the opposite: that first role is the hardest to fill.",
-      "I have covered that first role — clarifying need, sharpening goals, translating between leadership, the business and technology — for more than 25 years: most recently managing an international portfolio for compliance software across EMEA, before that selling an AI-driven personalisation platform, and as key account manager at an e-commerce agency. The common thread across all these roles: organisations do not buy technology. They buy the resolution of a problem they often have not yet named precisely.",
-      "I have been an independent AI and transformation consultant since July 2025. Two results from this early phase speak for themselves: for a real-estate and financial advisory firm, I automated a manual intake process as a 21-node workflow in n8n — with an AI agent for classification, automatic routing and a calculated ROI in the order of roughly 131% over six months. And I steered my own portfolio website from requirements to deployment myself: a JSON-based content system with no tracking, no cookies, fully bilingual.",
-      "In parallel, since April 2026 I have been deepening the technical side in a part-time AI Consultant certification programme: prompt and context engineering, AI models, AI-driven process automation, data and AI management. Of nine practical modules, seven are complete, each with its own graded exam, consistently rated highly — including a multimodal AI prototype with image recognition and planning logic, a production code contribution to a team software migration, and a no-code automation workflow I deliberately modelled on my own client project. Two exams remain.",
-      "What that does not mean: I am no substitute for a data scientist or ML engineer. Independently training and statistically validating learning models is deliberately not part of my profile. Where a project needs that, I bring in specialised experts rather than claim the capability myself.",
-      "For a mid-sized organisation, that means an experienced point of contact for needs assessment and steering who now also brings the technical side — and knows exactly where the line to a specialist role runs. Add to that deep expertise in the EU AI Act: most organisations do not even know which AI systems they already run, and have been subject to deployer obligations since February 2025. Especially where there is no dedicated AI team, that is often the difference between a pilot that stalls and one that reaches production.",
-      "What interests me about this work is rarely the technology itself — it is the point where a vague expectation turns into an approach a team can pick up on Monday morning. Finding that point is the actual job."
+      "For more than 25 years I was on the market side — at digital agencies and SaaS companies: as key account manager, selling an AI-driven personalisation platform, most recently managing an international portfolio for compliance software across EMEA. Along the way, I also saw implementations fail — almost never on technology, almost always on unclear requirements and absent accountability.",
+      "In 2020 I deliberately trained in project management, business analysis, agile methods and IT strategy — not as a collection, but because I no longer wanted to just explain what a system could do. I wanted to understand the system and be accountable for it actually working for the client. Immediately afterwards, as IT project manager, I supported the introduction of a laboratory information system.",
+      "Since 2020 I have systematically built five qualification areas, the newest of them AI — each one externally examined and certified. For me that is not a reorientation, but the completion of 25 years at the intersection of leadership, the business and technology. That translation work is what I do best — combined with the technical delivery capability I have been deliberately building since 2025, including with the possibilities of AI.",
+      "What drives me is rarely the technology itself. It is the moment a strategic idea becomes a visible result that genuinely moves an organisation forward. I dislike managing a status quo — what interests me is questioning existing processes and making them noticeably better.",
+      "Turning complex problems into simple, intuitive solutions that genuinely make people's everyday work easier — that is the challenge that draws me to every new project. Alongside that is a curiosity that never quite settles: every project is also a chance to really understand a new technology, not just know it superficially.",
+      "Part of that is being honest about my own limits. Where a project needs a specialist — for training custom learning models, for instance — I say so openly and bring in the right people rather than claim the capability myself. People come before tools, care before speed."
     ],
     "principles": [
       {
-        "title": "Inventory before strategy",
-        "text": "Without knowing what is already in use, you can neither classify nor prioritise. The least glamorous step is usually the decisive one."
+        "title": "Evidence over assertion",
+        "text": "Every capability I claim can be traced to a project, a certification or a result — not just to self-assessment."
       },
       {
-        "title": "Regulation is not a brake",
-        "text": "The EU AI Act forces clarity about purpose, accountability and risk. Most AI initiatives lack exactly that clarity anyway."
+        "title": "Accountable to the result",
+        "text": "I do not just explain what would be possible. I take responsibility for a solution actually working for the client."
       },
       {
-        "title": "Measurable or not at all",
-        "text": "A transformation project without a defined effect is a budget line. I agree on outcomes before I start."
+        "title": "Kept learning",
+        "text": "Understanding new technology is not extra work for me — it is the part of the job that interests me most."
+      },
+      {
+        "title": "Honest about the limits",
+        "text": "Where a project needs a specialist, I say so openly — and bring in the right people rather than claim the capability myself."
       }
     ]
   },

@@ -286,7 +286,7 @@
         "location": "",
         "summary": "Projektmanagement für Einführung und Weiterentwicklung eines Laborinformationsmanagementsystems (LIMS) in einem auf Umweltanalysen spezialisierten Labor.",
         "highlights": [
-          "Leitung cross-funktionaler Teams für Entwicklung und Implementierung neuer LIMS-Technologien",
+          "Vorantreiben der Aktivitäten funktionsübergreifender Teams für Entwicklung und Einführung neuer LIMS-Technologien",
           "Anforderungsanalysen sowie Use-Case-Modelle, Mind-Maps und Rich Pictures zur Lösungsdokumentation",
           "Koordination interner und externer Stakeholder hinsichtlich Ziel-, Budget- und Zeitplanung",
           "Projektziele innerhalb des vereinbarten Zeit- und Budgetrahmens umgesetzt"
@@ -416,29 +416,32 @@
   "about": {
     "id": "ueber-mich",
     "eyebrow": "Über mich",
-    "title": "Die Rolle zwischen Anspruch und Umsetzung",
-    "pullquote": "Fünf Rollen braucht ein KI-Projekt. Die meisten Unternehmen besetzen vier — und wundern sich, warum der Pilot nie produktiv wird.",
+    "title": "Wer ich bin, was mich antreibt",
+    "pullquote": "Ich helfe Mittelstand und Großunternehmen, KI-Vorhaben von der Idee zur produktiven Anwendung zu bringen — strategisch geklärt, technisch belegt, regulatorisch sauber.",
     "paragraphs": [
-      "Ein KI-Projekt braucht fünf Rollen: eine klärt Bedarf und Ziel und übersetzt zwischen Geschäftsführung, IT und Fachbereich; eine sammelt und strukturiert Daten; eine verbindet Modelle und Schnittstellen zu einer nutzbaren Anwendung; zwei weitere entwickeln und sichern eigene Lernmodelle statistisch ab. Im Mittelstand wird selten mehr als eine Person dafür eingestellt — meistens die vierte oder fünfte, in der Annahme, die erste ergäbe sich von selbst. Genau umgekehrt ist es die schwierigste.",
-      "Diese erste Rolle — Bedarf klären, Ziel schärfen, zwischen Geschäftsführung, Fachbereich und Technik übersetzen — decke ich seit über 25 Jahren ab: zuletzt mit einem internationalen Kundenportfolio für Compliance-Software im EMEA-Raum, davor im Vertrieb einer KI-gestützten Personalisierungslösung und als Key Account Manager bei einer E-Commerce-Agentur. Der gemeinsame Nenner all dieser Stationen: Unternehmen kaufen keine Technologie. Sie kaufen die Lösung eines Problems, das sie selbst oft noch nicht scharf benannt haben.",
-      "Seit Juli 2025 bin ich selbstständiger KI- und Transformationsberater. Zwei Ergebnisse aus dieser Startphase lassen sich konkret zeigen: Für ein Immobilien- und Finanzberatungsunternehmen habe ich einen manuellen Intake-Prozess als 21-Node-Workflow in n8n automatisiert — mit KI-Agent zur Klassifizierung, automatischem Routing und einer kalkulierten ROI-Größenordnung von rund 131 % über sechs Monate. Und meine eigene Portfolio-Website habe ich von Anforderung bis Deployment selbst gesteuert: ein JSON-gestütztes Content-System ohne Tracking, ohne Cookies, vollständig zweisprachig.",
-      "Parallel dazu vertiefe ich seit April 2026 in einer berufsbegleitenden Weiterbildung zum KI-Consultant die technische Seite: Prompt & Context Engineering, KI-Modelle, KI-gestützte Prozessautomatisierung, Daten- und KI-Management. Von neun Praxismodulen sind sieben abgeschlossen, jedes mit eigener Bausteinprüfung und durchweg sehr gut bewertet — darunter ein multimodaler KI-Prototyp mit Bilderkennung und Planungslogik, ein produktiver Code-Beitrag in einer Team-Softwaremigration, und ein No-Code-Automatisierungsworkflow, den ich bewusst an mein eigenes Kundenprojekt angelehnt habe. Zwei Bausteinprüfungen stehen noch aus.",
-      "Was das nicht bedeutet: Ich bin kein Ersatz für einen Data Scientist oder ML-Ingenieur. Das eigenständige Trainieren und statistische Absichern von Lernmodellen ist bewusst nicht Teil meines Profils. Wenn ein Projekt das braucht, arbeite ich gezielt mit spezialisierten Fachleuten zusammen, statt es zu behaupten.",
-      "Für ein mittelständisches Unternehmen heißt das: ein erfahrener Ansprechpartner für Bedarfsklärung und Steuerung, der die technische Seite inzwischen selbst mitbringt und genau weiß, wo die Grenze zur Spezialistenrolle verläuft. Dazu vertiefte Expertise im EU AI Act: Die meisten Unternehmen wissen nicht einmal, welche KI-Systeme sie bereits einsetzen, und sind damit seit Februar 2025 in der Betreiberpflicht. Gerade dort, wo kein eigenes KI-Team vorgehalten wird, ist das oft der Unterschied zwischen einem Piloten, der irgendwo hängen bleibt, und einem, der produktiv wird.",
-      "Was mich an dieser Arbeit reizt, ist selten die Technologie selbst — sondern der Punkt, an dem aus einer vagen Erwartung ein Montagmorgen-taugliches Vorgehen wird. Diesen Punkt zu finden, ist die eigentliche Arbeit."
+      "Über 25 Jahre lang war ich auf der Marktseite — bei Digitalagenturen und SaaS-Unternehmen: als Key Account Manager, im Vertrieb einer KI-gestützten Personalisierungslösung, zuletzt mit einem internationalen Kundenportfolio für Compliance-Software im EMEA-Raum. In dieser Zeit habe ich auch Einführungen gesehen, die gescheitert sind — fast nie an der Technik, fast immer an unklaren Anforderungen und fehlender Verantwortung.",
+      "2020 habe ich mich bewusst in den Feldern Projektmanagement, Business Analyse, agile Methoden und IT-Strategie weitergebildet — nicht als Sammelleidenschaft, sondern weil ich nicht mehr nur erklären wollte, was ein System kann. Ich wollte das System verstehen und verantworten, dass es beim Kunden tatsächlich funktioniert. Direkt danach habe ich als IT-Projektmanager die Einführung eines Laborinformationssystems unterstützt.",
+      "Seit 2020 habe ich fünf Qualifikationsfelder systematisch aufgebaut, das jüngste davon KI — jedes davon extern geprüft und zertifiziert. Für mich ist das keine Neuausrichtung, sondern die Vervollständigung von 25 Jahren an der Schnittstelle zwischen Geschäftsführung, Fachbereich und Technik. Diese Übersetzungsarbeit kann ich am besten — verbunden mit der technischen Umsetzungsfähigkeit, die ich mir seit 2025 auch mit den Möglichkeiten der KI gezielt weiter aufbaue.",
+      "Was mich antreibt, ist selten die Technologie selbst. Es ist der Moment, in dem eine strategische Idee zu einem sichtbaren Ergebnis wird, das ein Unternehmen wirklich weiterbringt. Ich verwalte ungern einen Status quo — mich interessiert, bestehende Prozesse zu hinterfragen und sie spürbar besser zu machen.",
+      "Komplexe Probleme in einfache, intuitive Lösungen zu verwandeln, die Menschen den Alltag tatsächlich erleichtern — das ist die Herausforderung, die mich an jedem neuen Projekt reizt. Dazu kommt eine Neugier, die nie ganz zur Ruhe kommt: Jedes Projekt ist für mich auch eine Gelegenheit, eine neue Technologie wirklich zu verstehen, nicht nur oberflächlich zu kennen.",
+      "Dazu gehört auch, ehrlich über die eigenen Grenzen zu sein. Wo ein Projekt einen Spezialisten braucht — etwa für das Trainieren eigener Lernmodelle —, sage ich das offen und arbeite mit den richtigen Leuten zusammen, statt es zu behaupten. Menschen kommen für mich vor Tools, Sorgfalt vor Tempo."
     ],
     "principles": [
       {
-        "title": "Erst das Inventar, dann die Strategie",
-        "text": "Wer nicht weiß, was bereits im Einsatz ist, kann weder klassifizieren noch priorisieren. Der unspektakulärste Schritt ist meistens der wichtigste."
+        "title": "Belegen statt behaupten",
+        "text": "Jede Kompetenz, die ich nenne, lässt sich an einem Projekt, einem Zertifikat oder einem Ergebnis festmachen — nicht nur an einer Selbsteinschätzung."
       },
       {
-        "title": "Regulatorik ist kein Bremsklotz",
-        "text": "Der EU AI Act zwingt zu Klarheit über Zweck, Verantwortung und Risiko. Genau diese Klarheit fehlt den meisten KI-Vorhaben ohnehin."
+        "title": "Verantwortung bis zum Ergebnis",
+        "text": "Ich erkläre nicht nur, was möglich wäre. Ich verantworte, dass eine Lösung beim Kunden tatsächlich funktioniert."
       },
       {
-        "title": "Messbar oder gar nicht",
-        "text": "Ein Transformationsprojekt ohne definierte Wirkung ist ein Budgetposten. Ich vereinbare Ergebnisse, bevor ich anfange."
+        "title": "Ständig dazugelernt",
+        "text": "Neue Technologie zu verstehen ist für mich kein Zusatzaufwand, sondern der Teil der Arbeit, der mich am meisten interessiert."
+      },
+      {
+        "title": "Ehrlich über die eigenen Grenzen",
+        "text": "Wo ein Projekt einen Spezialisten braucht, sage ich das offen — und arbeite mit den richtigen Leuten zusammen, statt es zu behaupten."
       }
     ]
   },

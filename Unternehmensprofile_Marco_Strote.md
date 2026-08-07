@@ -47,7 +47,7 @@ Das heißt konkret: **3E selbst ist ein SaaS-/Datenanbieter — die Chemie-, Pha
 ### Dr. Jörg Freytag — Mai 2021 bis Februar 2022, IT-Projektmanager
 **Branche: Labor- und Umweltanalytik.**
 
-Aus dem Arbeitszeugnis: "Unser Unternehmen bietet Laborlösungen im Bereich Umweltanalysen, mit Spezialisierung auf physikalische und chemische Untersuchungen an Böden, Reststoffen sowie Wasser und Eluaten." Marco Strote leitete die Einführung eines Laborinformationsmanagementsystems (LIMS). Auch hier: ein Analytik-Dienstleister, kein Chemieunternehmen im engeren Sinn — aber mit Berührungspunkten zu chemischen Untersuchungsverfahren.
+Aus dem Arbeitszeugnis: "Unser Unternehmen bietet Laborlösungen im Bereich Umweltanalysen, mit Spezialisierung auf physikalische und chemische Untersuchungen an Böden, Reststoffen sowie Wasser und Eluaten." Marco Strote unterstützte die Einführung eines Laborinformationsmanagementsystems (LIMS) und trieb dabei die Aktivitäten funktionsübergreifender Teams voran. Auch hier: ein Analytik-Dienstleister, kein Chemieunternehmen im engeren Sinn — aber mit Berührungspunkten zu chemischen Untersuchungsverfahren.
 
 **Heute:** kleines, inhabergeführtes Laborunternehmen; keine öffentlich dokumentierte Übernahme oder Umfirmierung bekannt.
 
