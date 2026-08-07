@@ -37,7 +37,7 @@
 
 ## Beruflicher Werdegang
 
-- Apr. 2026 — Aug. 2026 — Weiterbildung KI-Consultant, WBS TRAINING: Gezielte technische Vertiefung: Prompt & Context Engineering, KI-Modelle und maschinelles Lernen, KI-gestützte Prozessautomatisierung, Daten- und KI-Management. 7 von 10 Modulen bereits mit eigenständigen, durchweg sehr gut bewerteten Praxisprojekten abgeschlossen — Details siehe „Projekte“ unten.
+- Apr. 2026 — Aug. 2026 — Weiterbildung KI-Consultant, WBS TRAINING: Gezielte technische Vertiefung: Prompt & Context Engineering, KI-Modelle und maschinelles Lernen, KI-gestützte Prozessautomatisierung, Daten- und KI-Management. 7 von 9 Praxismodulen bereits mit eigenständigen, durchweg sehr gut bewerteten Praxisprojekten abgeschlossen — Details siehe „Projekte“ unten.
 - Juli 2025 — heute — Berater für KI, Digitalisierung & Transformation, Selbstständig (Hamburg & Umgebung): Begleitung von Unternehmen bei der strategischen und operativen Umsetzung von KI-Projekten, digitalen Transformationsvorhaben und Prozessoptimierungen — mit dem Ziel, messbaren Business Impact zu erzielen.
 - März 2022 — Juni 2025 — Account Manager, EMEA Sales, 3E: Aufbau und Entwicklung strategischer Kundenbeziehungen im EMEA-Raum für SaaS-Lösungen im Bereich EHS Product Compliance und Product Stewardship — Gefahrstoffmanagement und Regulatory Compliance.
 - Mai 2021 — Feb. 2022 — IT-Projektmanager, Dr. Jörg Freytag: Projektmanagement für Einführung und Weiterentwicklung eines Laborinformationsmanagementsystems (LIMS) in einem auf Umweltanalysen spezialisierten Labor.
@@ -123,4 +123,4 @@ Per E-Mail an mstrote@yahoo.de oder über LinkedIn. Ich antworte in der Regel in
 - [Impressum](https://marco-strote.vercel.app/impressum.html)
 - [Datenschutz](https://marco-strote.vercel.app/datenschutz.html)
 
-Stand: 2026-08-06
+Stand: 2026-08-07
