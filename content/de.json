@@ -260,7 +260,7 @@
         "summary": "Begleitung von Unternehmen bei der strategischen und operativen Umsetzung von KI-Projekten, digitalen Transformationsvorhaben und Prozessoptimierungen — mit dem Ziel, messbaren Business Impact zu erzielen.",
         "highlights": [
           "Entwicklung von KI-Strategien und Roadmaps für mittelständische und große Unternehmen",
-          "EU AI Act: KI-Inventarisierung, Risikoklassifizierung und Aufbau von Governance-Strukturen",
+          "Vertiefte Fachexpertise zum EU AI Act — Risikoklassifizierung, Governance-Strukturen, dokumentiert in eigenen Fachartikeln",
           "Konzeption und Steuerung digitaler Transformationsprojekte, agil wie klassisch",
           "Prozessanalyse, -optimierung und Automatisierungsberatung",
           "Interim-Projektleitung und agile Teamsteuerung (Scrum, PRINCE2, PRINCE2 Agile)"
@@ -593,7 +593,7 @@
       },
       {
         "q": "Wie tief geht die Governance- und EU-AI-Act-Erfahrung?",
-        "a": "Der EU AI Act betrifft nicht nur Unternehmen, die KI entwickeln, sondern auch alle, die fremde KI einsetzen — diese gelten als Betreiber und haben seit Februar 2025 Pflichten. Die volle Durchsetzung beginnt am 2. August 2026, mit Bußgeldern von bis zu 35 Millionen Euro bei Hochrisiko-Systemen. Ich arbeite an genau dieser Schnittstelle: KI-Inventarisierung, Risikoklassifizierung nach Anhang III, Governance-Strukturen und die besonders ungeklärte Frage, wie Agentic AI mit der Anforderung menschlicher Aufsicht nach Artikel 14 vereinbar bleibt."
+        "a": "Der EU AI Act betrifft nicht nur Unternehmen, die KI entwickeln, sondern auch alle, die fremde KI einsetzen — diese gelten als Betreiber und haben seit Februar 2025 Pflichten. Die volle Durchsetzung beginnt am 2. August 2026, mit Bußgeldern von bis zu 35 Millionen Euro bei Hochrisiko-Systemen. Mit genau dieser Schnittstelle beschäftige ich mich intensiv und dokumentiere das in eigenen Fachartikeln: KI-Inventarisierung, Risikoklassifizierung nach Anhang III, Governance-Strukturen und die besonders ungeklärte Frage, wie Agentic AI mit der Anforderung menschlicher Aufsicht nach Artikel 14 vereinbar bleibt."
       },
       {
         "q": "Brauche ich für ein KI-Projekt nicht auch einen Data Scientist oder ML-Ingenieur?",
@@ -853,8 +853,8 @@
         "description": "Von der Bestandsaufnahme zur priorisierten Roadmap — inklusive Use-Case-Bewertung und einem ersten umsetzbaren Piloten."
       },
       {
-        "title": "KI-Inventarisierung & EU-AI-Act-Risikoklassifizierung",
-        "description": "Belastbare Bestandsaufnahme aller eingesetzten KI-Systeme, Einordnung nach Risikoklasse, Grundlage für Governance-Entscheidungen."
+        "title": "Agentic-AI-Governance-Beratung",
+        "description": "Einordnung, wie autonome KI-Agenten mit der Anforderung menschlicher Aufsicht nach Artikel 14 EU AI Act vereinbar bleiben — Grundlage für praxistaugliche Kontroll- und Freigabeprozesse."
       },
       {
         "title": "Prozessautomatisierung mit KI",

@@ -256,7 +256,7 @@
         "summary": "Supporting organisations through the strategic and operational delivery of AI projects, digital transformation programmes and process optimisation — with measurable business impact as the objective.",
         "highlights": [
           "AI strategies and roadmaps for mid-sized and large organisations",
-          "EU AI Act: AI inventory, risk classification and governance structures",
+          "In-depth EU AI Act expertise — risk classification, governance structures, documented in my own articles",
           "Design and steering of digital transformation projects, agile and classic",
           "Process analysis, optimisation and automation advisory",
           "Interim project management and agile team leadership (Scrum, PRINCE2, PRINCE2 Agile)"
@@ -589,7 +589,7 @@
       },
       {
         "q": "How deep does the governance and EU AI Act experience go?",
-        "a": "The EU AI Act affects not only organisations that build AI, but everyone deploying third-party AI — they count as deployers and have had obligations since February 2025. Full enforcement begins on 2 August 2026, with fines of up to 35 million euros for high-risk systems. I work at exactly that intersection: AI inventory, risk classification under Annex III, governance structures, and the still unsettled question of how agentic AI can be reconciled with the human oversight required by Article 14."
+        "a": "The EU AI Act affects not only organisations that build AI, but everyone deploying third-party AI — they count as deployers and have had obligations since February 2025. Full enforcement begins on 2 August 2026, with fines of up to 35 million euros for high-risk systems. I engage intensively with exactly that intersection and document it in my own articles: AI inventory, risk classification under Annex III, governance structures, and the still unsettled question of how agentic AI can be reconciled with the human oversight required by Article 14."
       },
       {
         "q": "Don't I also need a data scientist or ML engineer for an AI project?",
@@ -849,8 +849,8 @@
         "description": "From assessment to a prioritised roadmap — including use-case evaluation and a first actionable pilot."
       },
       {
-        "title": "AI Inventory & EU AI Act Risk Classification",
-        "description": "A solid inventory of all AI systems in use, classified by risk category, as the basis for governance decisions."
+        "title": "Agentic AI Governance Advisory",
+        "description": "Assessing how autonomous AI agents can be reconciled with the human-oversight requirement under Article 14 of the EU AI Act — the basis for workable control and approval processes."
       },
       {
         "title": "AI-Driven Process Automation",

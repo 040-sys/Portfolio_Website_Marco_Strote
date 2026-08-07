@@ -96,7 +96,7 @@ Es ist weniger ein Wechsel als eine Vervollständigung. Im Vertrieb digitaler un
 
 ### Wie tief geht die Governance- und EU-AI-Act-Erfahrung?
 
-Der EU AI Act betrifft nicht nur Unternehmen, die KI entwickeln, sondern auch alle, die fremde KI einsetzen — diese gelten als Betreiber und haben seit Februar 2025 Pflichten. Die volle Durchsetzung beginnt am 2. August 2026, mit Bußgeldern von bis zu 35 Millionen Euro bei Hochrisiko-Systemen. Ich arbeite an genau dieser Schnittstelle: KI-Inventarisierung, Risikoklassifizierung nach Anhang III, Governance-Strukturen und die besonders ungeklärte Frage, wie Agentic AI mit der Anforderung menschlicher Aufsicht nach Artikel 14 vereinbar bleibt.
+Der EU AI Act betrifft nicht nur Unternehmen, die KI entwickeln, sondern auch alle, die fremde KI einsetzen — diese gelten als Betreiber und haben seit Februar 2025 Pflichten. Die volle Durchsetzung beginnt am 2. August 2026, mit Bußgeldern von bis zu 35 Millionen Euro bei Hochrisiko-Systemen. Mit genau dieser Schnittstelle beschäftige ich mich intensiv und dokumentiere das in eigenen Fachartikeln: KI-Inventarisierung, Risikoklassifizierung nach Anhang III, Governance-Strukturen und die besonders ungeklärte Frage, wie Agentic AI mit der Anforderung menschlicher Aufsicht nach Artikel 14 vereinbar bleibt.
 
 ### Brauche ich für ein KI-Projekt nicht auch einen Data Scientist oder ML-Ingenieur?
 
