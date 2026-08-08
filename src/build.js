@@ -90,42 +90,48 @@ const written = [];
 /* Quelle sind Markdown-Dateien in content/blog. Die Reihenfolge ergibt sich
    aus dem Datum im Frontmatter, nicht aus dem Dateinamen. */
 
-const BLOG_DIR = path.join(ROOT, 'content/blog');
+const readPosts = (dir, urlBase, label) =>
+  (fs.existsSync(dir) ? fs.readdirSync(dir) : [])
+    .filter((f) => f.endsWith('.md'))
+    .map((file) => {
+      const raw = fs.readFileSync(path.join(dir, file), 'utf8');
+      const { data, body } = parseFrontmatter(raw);
+      const slug = file.replace(/\.md$/, '');
+      const words = toPlainText(body).split(/\s+/).filter(Boolean).length;
 
-const posts = (fs.existsSync(BLOG_DIR) ? fs.readdirSync(BLOG_DIR) : [])
-  .filter((f) => f.endsWith('.md'))
-  .map((file) => {
-    const raw = fs.readFileSync(path.join(BLOG_DIR, file), 'utf8');
-    const { data, body } = parseFrontmatter(raw);
-    const slug = file.replace(/\.md$/, '');
-    const words = toPlainText(body).split(/\s+/).filter(Boolean).length;
+      if (!data.title || !data.date) {
+        console.log(`⚠  ${label}/${file}: title oder date fehlt — Artikel übersprungen.`);
+        return null;
+      }
 
-    if (!data.title || !data.date) {
-      console.log(`⚠  content/blog/${file}: title oder date fehlt — Artikel übersprungen.`);
-      return null;
-    }
+      return {
+        slug,
+        file,
+        body,
+        words,
+        minutes: Math.max(1, Math.round(words / 200)),
+        title: data.title,
+        description: data.description || '',
+        date: data.date,
+        category: data.category || 'Notiz',
+        tags: Array.isArray(data.tags) ? data.tags : data.tags ? [data.tags] : [],
+        url: `${urlBase}${slug}.html`,
+      };
+    })
+    .filter(Boolean)
+    .sort((a, b) => (a.date < b.date ? 1 : -1));
 
-    return {
-      slug,
-      file,
-      body,
-      words,
-      minutes: Math.max(1, Math.round(words / 200)),
-      title: data.title,
-      description: data.description || '',
-      date: data.date,
-      category: data.category || 'Notiz',
-      tags: Array.isArray(data.tags) ? data.tags : data.tags ? [data.tags] : [],
-      url: `/blog/${slug}.html`,
-    };
-  })
-  .filter(Boolean)
-  .sort((a, b) => (a.date < b.date ? 1 : -1));
+const posts = readPosts(path.join(ROOT, 'content/blog'), '/blog/', 'content/blog');
+/* Englische Fassungen liegen parallel unter content/blog-en/, mit denselben
+   Dateinamen (Slugs) wie die deutschen Artikel — das hält die Zuordnung für
+   hreflang und "verwandte Artikel" einfach: gleicher Slug = gleicher Artikel
+   in zwei Sprachen. */
+const postsEn = readPosts(path.join(ROOT, 'content/blog-en'), en.blog.path, 'content/blog-en');
 
 /* --- 1. HTML-Seiten -------------------------------------------------------- */
 
 written.push(write('index.html', renderHome(de, de.blog.enabled ? posts : [])));
-written.push(write('en/index.html', renderHome(en, en.blog.enabled ? posts : [])));
+written.push(write('en/index.html', renderHome(en, en.blog.enabled ? postsEn : [])));
 
 written.push(write('lebenslauf.html', renderCv(de)));
 written.push(write('en/cv.html', renderCv(en)));
@@ -136,14 +142,31 @@ written.push(write('en/cv.html', renderCv(en)));
 written.push(write('kontakt-danke.html', renderThankYou(de)));
 written.push(write('en/thank-you.html', renderThankYou(en)));
 
-/* Blog — derzeit nur auf Deutsch; en.json hat blog.enabled: false */
+/* Blog — auf Deutsch und Englisch. Ein hreflang-Verweis zwischen den Sprach-
+   fassungen wird nur gesetzt, wenn zum jeweiligen Slug auch wirklich ein
+   Artikel in der anderen Sprache existiert — sonst entstünde ein hreflang
+   auf eine nicht vorhandene Seite. */
 if (de.blog.enabled && posts.length) {
-  written.push(write('blog/index.html', renderBlogIndex(de, posts)));
+  const altIndexPath = en.blog.enabled && postsEn.length ? en.blog.path : null;
+  written.push(write('blog/index.html', renderBlogIndex(de, posts, altIndexPath)));
   written.push(write('blog/feed.xml', renderFeed(de, posts)));
 
   for (const post of posts) {
     const related = posts.filter((p) => p.slug !== post.slug).slice(0, 2);
-    written.push(write(`blog/${post.slug}.html`, renderPost(de, post, related)));
+    const altPost = postsEn.find((p) => p.slug === post.slug);
+    written.push(write(`blog/${post.slug}.html`, renderPost(de, post, related, altPost ? altPost.url : null)));
+  }
+}
+
+if (en.blog.enabled && postsEn.length) {
+  const altIndexPath = de.blog.enabled && posts.length ? de.blog.path : null;
+  written.push(write('en/blog/index.html', renderBlogIndex(en, postsEn, altIndexPath)));
+  written.push(write('en/blog/feed.xml', renderFeed(en, postsEn)));
+
+  for (const post of postsEn) {
+    const related = postsEn.filter((p) => p.slug !== post.slug).slice(0, 2);
+    const altPost = posts.find((p) => p.slug === post.slug);
+    written.push(write(`en/blog/${post.slug}.html`, renderPost(en, post, related, altPost ? altPost.url : null)));
   }
 }
 
@@ -204,12 +227,46 @@ const pages = [
   { loc: '/en/privacy.html', de: '/datenschutz.html', en: '/en/privacy.html', priority: '0.2', changefreq: 'yearly' },
 ];
 
-/* Blog-Seiten gibt es bisher nur auf Deutsch — deshalb ohne Sprachalternativen.
-   Ein hreflang auf eine nicht existierende englische Fassung wäre ein Fehler. */
+/* Blog-Seiten: hreflang nur zwischen Artikeln mit demselben Slug in beiden
+   Sprachen — für Artikel, die (noch) nicht in beiden Sprachen vorliegen,
+   wäre ein hreflang auf eine nicht existierende Fassung ein Fehler. */
+const bothBlogsLive = de.blog.enabled && posts.length && en.blog.enabled && postsEn.length;
+
 if (de.blog.enabled && posts.length) {
-  pages.push({ loc: de.blog.path, priority: '0.9', changefreq: 'weekly', noAlt: true });
+  pages.push({
+    loc: de.blog.path,
+    priority: '0.9',
+    changefreq: 'weekly',
+    ...(bothBlogsLive ? { de: de.blog.path, en: en.blog.path } : { noAlt: true }),
+  });
   for (const post of posts) {
-    pages.push({ loc: post.url, priority: '0.8', changefreq: 'yearly', lastmod: post.date, noAlt: true });
+    const altPost = postsEn.find((p) => p.slug === post.slug);
+    pages.push({
+      loc: post.url,
+      priority: '0.8',
+      changefreq: 'yearly',
+      lastmod: post.date,
+      ...(altPost ? { de: post.url, en: altPost.url } : { noAlt: true }),
+    });
+  }
+}
+
+if (en.blog.enabled && postsEn.length) {
+  pages.push({
+    loc: en.blog.path,
+    priority: '0.8',
+    changefreq: 'weekly',
+    ...(bothBlogsLive ? { de: de.blog.path, en: en.blog.path } : { noAlt: true }),
+  });
+  for (const post of postsEn) {
+    const altPost = posts.find((p) => p.slug === post.slug);
+    pages.push({
+      loc: post.url,
+      priority: '0.7',
+      changefreq: 'yearly',
+      lastmod: post.date,
+      ...(altPost ? { de: altPost.url, en: post.url } : { noAlt: true }),
+    });
   }
 }
 
@@ -279,7 +336,7 @@ const llms = [
   '',
   de.certifications.items
     .filter((i) => !isPlaceholder(i.name))
-    .map((i) => `- ${clean(i.name)} (${clean(i.issuer)}, ${clean(i.year)})`)
+    .map((i) => `- ${clean(i.name)} (${clean(i.issuer)}, ${clean(i.year)}${i.inProgress ? ' – läuft noch' : ''})`)
     .join('\n') || '- (noch nicht hinterlegt)',
   '',
   '## Beruflicher Werdegang',
@@ -323,7 +380,8 @@ const llms = [
   `- [Startseite (Deutsch)](${DOMAIN}/)`,
   `- [Homepage (English)](${DOMAIN}/en/)`,
   `- [Lebenslauf](${DOMAIN}/lebenslauf.html)`,
-  ...(posts.length ? [`- [Beiträge](${DOMAIN}/blog/)`] : []),
+  ...(de.blog.enabled && posts.length ? [`- [Beiträge](${DOMAIN}${de.blog.path})`] : []),
+  ...(en.blog.enabled && postsEn.length ? [`- [Writing (English)](${DOMAIN}${en.blog.path})`] : []),
   `- [Impressum](${DOMAIN}/impressum.html)`,
   `- [Datenschutz](${DOMAIN}/datenschutz.html)`,
   '',

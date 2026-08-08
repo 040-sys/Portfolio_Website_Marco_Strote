@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Content-Audit: Portfolio-Website — v1.0</title>
+<style>
+  body { font-family: Georgia, 'Times New Roman', serif; color: #14130f; max-width: 860px; margin: 40px auto; line-height: 1.55; font-size: 15px; padding: 0 20px; }
+  h1 { font-size: 25px; margin-bottom: 4px; }
+  h2 { font-size: 19px; margin-top: 40px; border-bottom: 1px solid #ded8cc; padding-bottom: 6px; }
+  h3 { font-size: 16px; margin-top: 26px; margin-bottom: 6px; color: #a84d24; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 8px 0; padding-left: 22px; }
+  li { margin: 4px 0; }
+  blockquote { border-left: 3px solid #a84d24; margin: 10px 0; padding: 4px 16px; background: #f7f5f0; font-style: italic; }
+  .meta { color: #6e6a61; font-size: 13px; }
+  .highlight { background: #fbeee6; padding: 14px 18px; border-radius: 6px; margin: 16px 0; }
+  hr { border: none; border-top: 1px solid #ded8cc; margin: 30px 0; }
+  strong { color: #14130f; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #ded8cc; vertical-align: top; }
+  th { color: #6e6a61; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.02em; }
+  .fund { border-left: 3px solid #ded8cc; padding: 10px 16px; margin: 14px 0; background: #faf9f6; }
+  .fund.kritisch { border-left-color: #c0392b; }
+  .fund.hoch { border-left-color: #a84d24; }
+  .fund.mittel { border-left-color: #c9a227; }
+  .fund.staerke { border-left-color: #4a7c59; }
+  code { background: #f0ede6; padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  .toc { background: #f7f5f0; border: 1px solid #ded8cc; border-radius: 6px; padding: 16px 22px; font-size: 14px; }
+  .toc a { color: #a84d24; text-decoration: none; }
+  .badge { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 10px; background: #ded8cc; color: #45413a; margin-left: 6px; }
+  .nachtrag { background: #eef4ee; border: 1px solid #4a7c59; border-radius: 6px; padding: 14px 20px; margin: 18px 0; }
+  .nachtrag h2 { border: none; margin-top: 0; }
+  .erledigt { color: #4a7c59; font-weight: 700; }
+  .fehlalarm { color: #a84d24; font-weight: 700; }
+  .offen { color: #6e6a61; }
+  s { color: #918c80; }
+</style>
+</head>
+<body>
+
+<h1>Content-Audit: Portfolio-Website marco-strote.vercel.app</h1>
+<p class="meta">
+<strong>Version:</strong> 1.0 (mit Nachtrag vom 08.08.2026, 16:20 Uhr) &nbsp;·&nbsp;
+<strong>Geprüft am:</strong> 08.08.2026, 10:37 Uhr (CEST) &nbsp;·&nbsp;
+<strong>Geprüfter Datenstand:</strong> content/de.json, content/en.json, gerenderte Ausgabe (Build vom 07.08.2026), robots.txt, sitemap.xml, llms.txt &nbsp;·&nbsp;
+<strong>Geprüft von:</strong> Claude
+</p>
+<p class="meta"><strong>Scope:</strong> Alle Sektionen der Startseite (Hero bis Footer), DE und EN, plus technische SEO-/GEO-/Performance-Basis. <strong>Nicht geprüft:</strong> Lebenslauf-PDFs, Blog-Einzelartikel (Volltext), Impressum/Datenschutz-Detailtext (nur strukturell erfasst).</p>
+
+<div class="nachtrag">
+<h2>Nachtrag vom 08.08.2026, 16:20 Uhr (CEST)</h2>
+<p>Der ursprüngliche Bericht bleibt unten unverändert stehen (Prüfstand vom 07.08.2026) — dieser Nachtrag dokumentiert, was sich seither geändert hat, statt den Bericht rückwirkend zu beschönigen.</p>
+<ul>
+<li><span class="fehlalarm">Befund C1 (Kontaktformular nie konfiguriert) war ein Fehlalarm.</span> Der Web3Forms Access Key wird produktiv über eine Vercel-Umgebungsvariable (<code>WEB3FORMS_ACCESS_KEY</code>) gesetzt, nicht über content/*.json — bewusst so gebaut, damit der Key nicht im Git-Verlauf steht. build.js überschreibt <code>contact.form.web3formsKey</code> damit zur Build-Zeit. Lokale Builds ohne diese Variable zeigen deshalb korrekt den Platzhalter — das ist das erwartete Verhalten, kein Defekt. Marco hat bestätigt, dass das Formular auf der Live-Seite bereits getestet wurde und funktioniert.</li>
+<li><span class="erledigt">Befund C3 (EN-Blog fehlt) ist behoben.</span> Die drei Fachartikel liegen seit dem 08.08.2026 auch auf Englisch vor (content/blog-en/), en.blog.enabled ist true, die Seiten sind unter /en/blog/ live. DE- und EN-Version verweisen artikelweise per hreflang aufeinander, RSS-Feed und Sitemap sind zweisprachig erweitert.</li>
+<li>Welle 1 und Welle 2 der Maßnahmenliste (Befunde 1–3, 5–6) wurden ebenfalls bereits umgesetzt. Details in der Maßnahmenliste unten (Status-Spalte).</li>
+</ul>
+</div>
+
+<div class="toc">
+<strong>Inhalt</strong>
+<ol>
+<li><a href="#summary">Management Summary</a></li>
+<li><a href="#teila">Teil A — Technische Basis (SEO, GEO, Performance)</a></li>
+<li><a href="#teilb">Teil B — Kritische Content-Widersprüche</a></li>
+<li><a href="#teilc">Teil C — Strukturelle Lücken gegen die Ziele</a></li>
+<li><a href="#teild">Teil D — Copywriting-Framework-Analyse</a></li>
+<li><a href="#teile">Teil E — Zielabgleich</a></li>
+<li><a href="#massnahmen">Priorisierte Maßnahmenliste</a></li>
+<li><a href="#methodik">Anhang: Methodik</a></li>
+</ol>
+</div>
+
+<h2>Wie dieser Bericht zu lesen ist</h2>
+<p>Jeder Befund ist mit einem Schweregrad markiert:</p>
+<ul>
+<li>🔴 <strong>Kritisch</strong> — Widerspruch oder Falschaussage, die bei Nachfrage auffliegt und Vertrauen kostet. Zeitnah beheben.</li>
+<li>🟠 <strong>Hoch</strong> — echte Lücke gegen eines der Ziele (Job finden / Projekte gewinnen) oder gegen SEO/GEO/UX-Anforderungen.</li>
+<li>🟡 <strong>Mittel</strong> — spürbar, aber nicht geschäftskritisch.</li>
+<li>⚪ <strong>Hinweis</strong> — Detailoptimierung, kein Handlungsdruck.</li>
+<li>✅ <strong>Stärke</strong> — bewusst benannt, weil der Auftrag „fair" verlangt, nicht nur Schwächen zu suchen.</li>
+</ul>
+<p>Jeder Befund enthält die exakte Fundstelle (Sektion, Feld, teils Zitat), damit er ohne erneute Suche nachvollzogen werden kann.</p>
+
+<h2 id="summary">Management Summary</h2>
+<p>Die Website ist inhaltlich reif, ehrlich in der Grundhaltung und technisch überdurchschnittlich sauber gebaut (Ladezeit, Struktur, KI-Crawler-Freigabe). Die eigentliche Ehrlichkeits-Arbeit der letzten Wochen — Zeugnis-genaue Formulierungen, Rollenmodell, Modulzahlen — ist an den meisten Stellen erfolgreich in den Content eingeflossen.</p>
+<p>Das Audit deckt aber vier Fundstellen auf, an denen sich die Seite <strong>selbst widerspricht</strong>, und zwei strukturelle Lücken, die direkt gegen die Ziele „Job finden" und „Projekte gewinnen" arbeiten:</p>
+<ol>
+<li>🔴 Die Qualifikationen-Sektion (plus JSON-LD plus llms.txt) stellt das laufende WBS-Zertifikat als bereits abgeschlossen dar — im Widerspruch zu Erfahrung-Sektion und FAQ auf derselben Seite.</li>
+<li>🔴 Die englische FAQ behauptet, Marco habe eine Systemeinführung „led" (geleitet) — exakt die Übertreibung, die heute an drei anderen Stellen der Seite korrigiert wurde, hier aber übersehen wurde.</li>
+<li>🔴 Meta-Title und -Description stellen EU AI Act weiterhin als „Schwerpunkt" heraus — im Widerspruch zur heute mehrfach umgesetzten Entscheidung, EU AI Act zu einem Kompetenzfeld unter mehreren zu machen.</li>
+<li>🟠 <s>Das Kontaktformular ist seit Live-Gang nie konfiguriert (Platzhalter-API-Key)</s> — <span class="fehlalarm">Fehlalarm, siehe Nachtrag oben.</span> Der Key war bereits über eine Vercel-Umgebungsvariable gesetzt, das Formular ist getestet und funktionsfähig.</li>
+<li>🟠 Die stärkste Beweis-Sektion der Seite („Ausgewählte Projekte", inkl. echtem ROI) fehlt komplett in der Hauptnavigation.</li>
+<li>🟠 <s>Die englische Version hat eine falsche Navigationsreihenfolge und keinen Blog</s> — <span class="erledigt">beides seit 08.08.2026 behoben, siehe Nachtrag oben.</span></li>
+</ol>
+<p>Alle sechs Punkte sind unten mit exakter Fundstelle und Korrekturvorschlag dokumentiert (Status siehe Nachtrag und Maßnahmenliste).</p>
+
+<h2 id="teila">Teil A — Technische Basis (SEO, GEO, Performance)</h2>
+
+<h3>A1. Performance ✅</h3>
+<ul>
+<li>Startseite komplett (HTML + CSS + JS + Hero-Bild) wiegt <strong>ca. 216 KB</strong> — deutlich unter dem, was für Portfolio-Websites üblich ist.</li>
+<li><strong>Keine externen Requests</strong>: kein Google Fonts, kein CDN, kein Tracking-Script. Ein einziges JavaScript (main.js, 12 KB), mit <code>defer</code> geladen — blockiert das Rendering nicht.</li>
+<li>Hero-Bild als <code>&lt;picture&gt;</code> mit WebP + 1×/2×-Set, <code>width</code>/<code>height</code> gesetzt (verhindert Layout-Shift), <code>fetchpriority="high"</code> auf dem LCP-Bild. Das ist Best Practice, nicht Standard.</li>
+</ul>
+<p><strong>Bewertung:</strong> Die „schnell laden"-Anforderung ist erfüllt, mit Reserve nach oben. Kein Handlungsbedarf.</p>
+
+<h3>A2. On-Page-SEO</h3>
+<div class="fund staerke">✅ Saubere Heading-Hierarchie: genau ein &lt;h1&gt;, konsistente H2/H3/H4-Struktur über alle Sektionen. <code>lang</code>-Attribute, <code>hreflang</code>-Alternates und <code>canonical</code> korrekt auf allen geprüften Seiten.</div>
+<div class="fund mittel">🟡 <strong>Meta-Description zu lang.</strong> DE: 176 Zeichen, EN: 193 Zeichen. Google zeigt in der Regel nur ca. 155–160 Zeichen an — beide werden im Suchergebnis abgeschnitten, EN stärker. <em>(meta.description in de.json / en.json)</em></div>
+<div class="fund">⚪ Title-Tag am oberen Rand (DE 69, EN 71 Zeichen) — meist noch vollständig sichtbar, aber knapp am Limit.</div>
+<div class="fund">⚪ Meta-Keywords-Tag wird seit 2009 von Google ignoriert. Kein Schaden, aber Pflegeaufwand ohne Nutzen.</div>
+
+<h3>A3. GEO (KI-Suchmaschinen-Optimierung) ✅</h3>
+<ul>
+<li><code>robots.txt</code> erlaubt explizit GPTBot, ClaudeBot, Claude-User, Claude-SearchBot, PerplexityBot, Perplexity-User, Google-Extended, Applebot-Extended, Amazonbot, DuckAssistBot, cohere-ai, YouBot, Diffbot — eine ungewöhnlich vollständige Freigabeliste.</li>
+<li><code>llms.txt</code> vorhanden, strukturiert — genau das Format, das KI-Assistenten zum Zitieren bevorzugen.</li>
+<li>JSON-LD deckt Person, ProfilePage, FAQPage, EducationalOccupationalCredential, Organization ab.</li>
+</ul>
+<div class="fund kritisch">🔴 <strong>Aber:</strong> Sowohl <code>llms.txt</code> als auch das JSON-LD (<code>hasCredential</code>) übernehmen den WBS-Zertifikat-Fehler (siehe B1) unverändert. Ein KI-Assistent, der die Seite zitiert, würde denselben Overclaim reproduzieren — die GEO-Stärke der Seite verstärkt hier ungewollt den inhaltlichen Fehler.</div>
+
+<h3>A4. Struktur-/Navigationsfehler (technisch verifiziert)</h3>
+<div class="fund hoch">🟠 <strong>„Projekte"/„Work" fehlt in nav.items</strong> (DE und EN). Im DOM existiert die Sektion, ist aber weder in Desktop- noch Mobile-Navigation verlinkt.</div>
+<div class="fund hoch">🟠 <strong>EN-Navigation in falscher Reihenfolge.</strong> Nav lt. en.json: Skills → Credentials → Experience → <strong>Services → About</strong> → FAQ. Tatsächliche DOM-Reihenfolge: Skills → Credentials → Experience → <strong>About → Services</strong> → Work → FAQ → Contact. Die deutsche Navigation ist korrekt; nur die englische hat Services/About vertauscht.</div>
+
+<h2 id="teilb">Teil B — Kritische Content-Widersprüche</h2>
+
+<h3>B1. 🔴 WBS-Zertifikat wird als abgeschlossen dargestellt</h3>
+<table>
+<tr><th>Ort</th><th>Text</th><th>Problem</th></tr>
+<tr><td>certifications.items[0]</td><td>„WBS-Zertifikat KI-Consultant, WBS TRAINING, 2026"</td><td>Gleichrangig neben 13 abgeschlossenen Zertifikaten gelistet, keine Kennzeichnung „läuft noch"</td></tr>
+<tr><td>certifications.lead</td><td>„…jedes einzelne extern geprüft und zertifiziert."</td><td>Impliziert wörtlich, alle 14 Einträge seien bereits zertifiziert</td></tr>
+<tr><td>JSON-LD hasCredential</td><td>dateCreated: "2026", keine Qualifizierung</td><td>Strukturierte Daten übernehmen den Fehler 1:1</td></tr>
+<tr><td>llms.txt</td><td>„WBS-Zertifikat KI-Consultant (WBS TRAINING, 2026)"</td><td>GEO-Ebene übernimmt den Fehler ebenfalls</td></tr>
+</table>
+<p><strong>Widerspricht:</strong></p>
+<ul>
+<li>experience.items[0].summary: „7 von 9 Praxismodulen … abgeschlossen"</li>
+<li>faq.items[7].a: „…ergänzt um das WBS-Zertifikat KI-Consultant (<strong>voraussichtlicher Abschluss: August 2026</strong>)"</li>
+</ul>
+<p>Eine Person, die zuerst die Qualifikationen-Kachel liest, bekommt einen anderen Stand mitgeteilt als jemand, der die FAQ liest — auf derselben Seite. Für die Zielgruppe Recruiter ist das das riskanteste Detail im gesamten Audit.</p>
+<p><strong>Selbe Systematik in EN:</strong> certifications.items[0].name = „WBS AI Consultant Certificate", certifications.lead = „…each one externally examined and certified."</p>
+<p><strong>Empfehlung:</strong> Status-Zusatz an der Kachel ergänzen („laufend, Abschluss vorauss. Aug. 2026"), JSON-LD und llms.txt nachziehen.</p>
+
+<h3>B2. 🔴 EN-FAQ: „led a system introduction" — Bruch der heute festgelegten Harten Regel</h3>
+<p>Fundstelle: <code>content/en.json</code>, FAQ „Why the move from sales to consulting?":</p>
+<blockquote>„In 2020 I acquired the methodological side systematically, then immediately <strong>led</strong> a system introduction as IT project manager."</blockquote>
+<p>Das Zeugnis von Dr. Jörg Freytag belegt „unterstützte" (supported), nicht „leitete" (led) — diese Korrektur wurde heute bereits in about-Absatz 2 (DE+EN), im Experience-Highlight (DE+EN) und im Skill als Harte Regel festgehalten. Die englische FAQ-Antwort ist offenbar keine Übersetzung der aktuellen deutschen FAQ-Antwort, sondern ein älterer, eigenständiger Text, der bei der Korrekturrunde nicht mitgeprüft wurde.</p>
+<p><strong>Auch die deutsche FAQ-Antwort ist zu prüfen:</strong> „…direkt danach als IT-Projektmanager ein System eingeführt." — „eingeführt" ist schwächer als „geleitet", aber immer noch stärker als das Zeugnis-Wort „unterstützt". Empfehlung: an allen drei Stellen (About, Experience, FAQ) dieselbe Wortwahl verwenden.</p>
+
+<h3>B3. 🔴 Meta-Title/-Description widersprechen der EU-AI-Act-Positionierungsentscheidung</h3>
+<ul>
+<li>meta.title: „Marco Strote — KI- & Transformationsberater | <strong>EU AI Act</strong> | Hamburg"</li>
+<li>meta.description: „…<strong>Schwerpunkt EU AI Act</strong>, KI-Strategie und Digitalisierung…"</li>
+</ul>
+<p>Heute wurden Footer-Tagline, Kontakt-Lead und FAQ-Formulierungen bewusst so überarbeitet, dass EU AI Act nicht mehr als Markenkern, sondern als eines von mehreren Kompetenzfeldern erscheint. Der SEO-Layer — Browser-Tab-Titel, Google-Snippet, Lesezeichen-Name — ist genau der Teil der Seite, den Besucher zuerst sehen, und transportiert dort weiterhin die alte, engere Positionierung. Gleiches Muster bei der LinkedIn-Headline — Cross-Channel-Inkonsistenz zur neuen Positionierung.</p>
+<p><strong>Empfehlung:</strong> Title/Description auf den breiteren Claim umstellen, analog zur Footer-Tagline.</p>
+
+<h2 id="teilc">Teil C — Strukturelle Lücken gegen die Ziele</h2>
+
+<h3>C1. ⚠️ Kontaktformular seit Live-Gang nie konfiguriert — <em>Fehlalarm, siehe Nachtrag oben</em></h3>
+<p><code>contact.form.web3formsKey</code> ist in de.json <strong>und</strong> en.json weiterhin der Platzhalter-String — exakt die „2 Platzhalter", vor denen build.js bei jedem Build warnt. Das Template fängt den Fall sauber ab (zeigt „Das Formular wird gerade eingerichtet" statt einer kaputten Form — <strong>kein Datenverlust-Risiko</strong>), aber: das vollständig gebaute, kategorisierte Kontaktformular war auf der Live-Seite bisher schlicht nie benutzbar.</p>
+<p><strong>Empfehlung:</strong> Web3Forms-Account anlegen, Access Key eintragen (beide Sprachdateien), neu bauen.</p>
+
+<h3>C2. 🟠 „Ausgewählte Projekte" fehlt in der Navigation</h3>
+<p>Die Sektion projects enthält vier Case Studies nach Herausforderung/Vorgehen/Ergebnis-Logik — inklusive der einzigen konkreten ROI-Zahl der ganzen Seite (~131 % über sechs Monate). Genau diese Sektion ist am Leitmotiv „Belege statt Behauptungen" ausgerichtet und damit die überzeugendste Beweisquelle für die Zielgruppe „Projekte gewinnen". Sie fehlt aber in nav.items, wird von keinem Hero-CTA angesteuert und von der Leistungen-Sektion nur als Fließtext erwähnt, nicht verlinkt.</p>
+<p><strong>Empfehlung:</strong> Nav-Eintrag ergänzen (DE: „Projekte", EN: „Work"), plus echten Link aus der Leistungen-Sektion.</p>
+
+<h3>C3. ✅ EN-Version: Blog fehlt komplett, Belegkette bricht für englischsprachige Leser — <em>behoben, siehe Nachtrag oben</em></h3>
+<p><code>blog.enabled</code> ist <code>false</code> in en.json, <code>true</code> in de.json. Die drei veröffentlichten Fachartikel sind exakt der Beleg, auf den sich Experience-Highlight und FAQ berufen. Auf Englisch existiert dieser Beleg für die Leserschaft nicht — die Aussage steht im Raum, ohne verifizierbar zu sein.</p>
+<p><strong>Empfehlung:</strong> Mittelfristig mindestens Kurzfassungen der drei Artikel übersetzen, oder kurzfristig den FAQ-Verweis entschärfen.</p>
+
+<h3>C4. ⚪ Testimonials-Sektion deaktiviert</h3>
+<p><code>testimonials.enabled: false</code> — nachvollziehbar und ehrlich (keine Fake-Zitate), aber es fehlt damit ein Vertrauenssignal, das beide Zielgruppen erwarten würden. Offener Punkt für die Weiterentwicklung, sobald reale Zitate vorliegen.</p>
+
+<h2 id="teild">Teil D — Copywriting-Framework-Analyse</h2>
+
+<h3>D1. AIDA (Hero-Sektion)</h3>
+<table>
+<tr><th>Phase</th><th>Umsetzung</th><th>Bewertung</th></tr>
+<tr><td>Attention</td><td>„Ich mache KI im Unternehmen anwendbar — von der Strategie bis zur einsatzfähigen Anwendung."</td><td>✅ konkret</td></tr>
+<tr><td>Interest</td><td>Intro-Absatz: 25 Jahre, Markt+Fachbereich+Umsetzung</td><td>✅ differenziert sofort</td></tr>
+<tr><td>Desire</td><td>—</td><td>🟡 schwach im Hero selbst; Differenzierung entsteht erst später</td></tr>
+<tr><td>Action</td><td>Primary-CTA „Kontakt aufnehmen", Secondary „Lebenslauf herunterladen"</td><td>✅ zwei klare Pfade, keiner zu den Projekten</td></tr>
+</table>
+<p><strong>Vorschlag:</strong> Ein Satz/Kennzahl aus den Projekten (z. B. die ROI-Größenordnung) direkt im Hero andeuten, um Desire früher aufzubauen.</p>
+
+<h3>D2. PAS (Problem–Agitate–Solve)</h3>
+<div class="fund staerke">✅ FAQ „Warum der Wechsel von Vertrieb zu Beratung?" nutzt PAS sauber: Problem (Einführungen scheitern) → Agitation → Solve.</div>
+<div class="fund mittel">🟡 Leistungen-Sektion nutzt PAS nicht — vier Kacheln als reine Feature-Liste ohne Problem-Rahmen. Eine einleitende Problemzeile würde die Sektion überzeugender machen.</div>
+
+<h3>D3. BAB (Before–After–Bridge)</h3>
+<div class="fund staerke">✅ Über mich folgt BAB implizit über sechs Absätze: Before (Marktseite, gescheiterte Einführungen) → Bridge (2020 Weiterbildung, LIMS) → After (heute: Übersetzer). Stimmig, aber für schnelle Skim-Lesung eher lang.</div>
+<div class="fund staerke">✅ Projekte-Sektion ist die sauberste BAB-Umsetzung der ganzen Seite — jede Case Study hat Herausforderung/Vorgehen/Ergebnis in Reinform. Sollte Vorbild für die Leistungen-Sektion sein.</div>
+
+<h3>D4. UX-Writing-Prinzipien</h3>
+<table>
+<tr><th>Prinzip</th><th>Befund</th></tr>
+<tr><td>CTA-Konsistenz</td><td>✅ durchgängig handlungsorientierte Verben</td></tr>
+<tr><td>Tonalität/Register</td><td>✅ konsistent, keine Du/Sie-Mischung gefunden</td></tr>
+<tr><td>Terminologie</td><td>✅ „KI-Consultant" (nur CV) vs. „KI- & Transformationsberater" (Website) korrekt getrennt</td></tr>
+<tr><td>Buzzword-Kontrolle</td><td>✅ weitgehend sauber; Ausnahme „messbaren Business Impact" (2×) — nahe an bereits geflaggter Kategorie</td></tr>
+<tr><td>Scanbarkeit FAQ</td><td>🟡 einzelne Antworten sehr dicht (z. B. „In welchen Branchen…" — 12 Firmennamen in einem Fließtext-Absatz), widerspricht dem Sektionsversprechen „Direkt beantwortet."</td></tr>
+<tr><td>Gesamtlänge</td><td>⚪ ca. 3.000 Wörter Sichttext ≈ 15 Min. Lesezeit — kein Fehler, aber ein Hinweis</td></tr>
+<tr><td>Barrierefreiheit</td><td>✅ Alt-Texte vorhanden, lang-Attribut korrekt, genau ein H1</td></tr>
+</table>
+
+<h2 id="teile">Teil E — Zielabgleich</h2>
+
+<h3>Job finden (Zielgruppe Recruiter/Personalverantwortliche)</h3>
+<p><strong>Stärken:</strong> klare CV-Downloads, saubere Erfahrungs-Chronologie, FAQ beantwortet die typischsten Recruiter-Fragen direkt.</p>
+<p><strong>Schwäche:</strong> Befund B1 (Qualifikationen-Overclaim) ist für diese Zielgruppe am riskantesten — ein Recruiter, der nachfragt und eine andere Auskunft bekommt als auf der Seite steht, verliert Vertrauen in die gesamte Selbstdarstellung.</p>
+
+<h3>Projekte gewinnen (Zielgruppe Auftraggeber)</h3>
+<p><strong>Stärken:</strong> Projekte-Sektion mit echtem ROI, klar strukturierte Leistungen-Sektion, ungewöhnlich transparenter Datenschutztext.</p>
+<p><strong>Schwäche:</strong> Befund C2 (Projekte nicht auffindbar) trifft diese Zielgruppe am härtesten, da Case Studies der zentrale Vertrauensanker für Auftraggeber sind. Befund C1 (Kontaktformular) erhöht zusätzlich die Hürde für eine unverbindliche Erstanfrage.</p>
+
+<h3>Beide Zielgruppen zugleich</h3>
+<p>Befund C4 (Testimonials deaktiviert) fehlt als Vertrauenssignal für beide Zielgruppen gleichermaßen — nachvollziehbar, aber offen.</p>
+
+<h2 id="massnahmen">Priorisierte Maßnahmenliste</h2>
+<table>
+<tr><th>#</th><th>Befund</th><th>Schweregrad</th><th>Aufwand</th><th>Vorschlag</th><th>Status (08.08.2026)</th></tr>
+<tr><td>1</td><td>WBS-Zertifikat als abgeschlossen dargestellt</td><td>🔴 Kritisch</td><td>Niedrig</td><td>Status-Zusatz an Kachel + JSON-LD/llms.txt nachziehen</td><td class="erledigt">✅ Erledigt (Welle 1)</td></tr>
+<tr><td>2</td><td>EN-FAQ „led a system introduction"</td><td>🔴 Kritisch</td><td>Niedrig</td><td>Auf „supported" umstellen; DE-FAQ „eingeführt" ebenfalls prüfen</td><td class="erledigt">✅ Erledigt (Welle 1)</td></tr>
+<tr><td>3</td><td>Meta-Title/-Description EU-AI-Act-lastig</td><td>🔴 Kritisch</td><td>Niedrig</td><td>Auf breiteren Claim umstellen, LinkedIn danach angleichen</td><td class="erledigt">✅ Website erledigt (Welle 1); LinkedIn-Headline bei Marco offen</td></tr>
+<tr><td>4</td><td>Kontaktformular nie konfiguriert</td><td>🟠 Hoch</td><td>Niedrig</td><td>Web3Forms Access Key eintragen (DE+EN), neu bauen</td><td class="fehlalarm">⚠️ Fehlalarm — Key war bereits gesetzt, siehe Nachtrag</td></tr>
+<tr><td>5</td><td>„Projekte"/„Work" fehlt in Navigation</td><td>🟠 Hoch</td><td>Niedrig</td><td>Nav-Eintrag ergänzen, echten Link aus Leistungen setzen</td><td class="erledigt">✅ Erledigt (Welle 2)</td></tr>
+<tr><td>6</td><td>EN-Navigation falsche Reihenfolge</td><td>🟠 Hoch</td><td>Niedrig</td><td>nav.items in en.json in DOM-Reihenfolge bringen</td><td class="erledigt">✅ Erledigt (Welle 2)</td></tr>
+<tr><td>7</td><td>EN-Blog deaktiviert, Belegkette bricht</td><td>🟠 Hoch</td><td>Mittel</td><td>Kurzfassungen übersetzen oder FAQ-Verweis entschärfen</td><td class="erledigt">✅ Erledigt — vollständig übersetzt, /en/blog/ live</td></tr>
+<tr><td>8</td><td>Meta-Description-Länge</td><td>🟡 Mittel</td><td>Niedrig</td><td>Auf ~155 Zeichen kürzen</td><td class="offen">⏳ Offen</td></tr>
+<tr><td>9</td><td>Leistungen-Sektion ohne PAS-Rahmen</td><td>🟡 Mittel</td><td>Niedrig</td><td>Einleitende Problemzeile vor den 4 Kacheln</td><td class="offen">⏳ Offen (Welle 3)</td></tr>
+<tr><td>10</td><td>FAQ „Branchen"-Antwort zu dicht</td><td>🟡 Mittel</td><td>Niedrig</td><td>Kürzen oder als Liste strukturieren</td><td class="offen">⏳ Offen (Welle 3)</td></tr>
+<tr><td>11</td><td>Testimonials deaktiviert</td><td>⚪ Hinweis</td><td>Hoch</td><td>Zurückstellen, bis echte Zitate vorliegen</td><td class="offen">⏳ Zurückgestellt</td></tr>
+<tr><td>12</td><td>Meta-Keywords-Tag ohne Wirkung</td><td>⚪ Hinweis</td><td>Sehr niedrig</td><td>Optional entfernen</td><td class="offen">⏳ Offen</td></tr>
+</table>
+
+<h2 id="methodik">Anhang: Methodik (für spätere, wiederholte Prüfungen)</h2>
+<p>Diese Prüfung wurde in folgenden Schritten durchgeführt — als Vorlage für künftige, versionierte Durchläufe (z. B. als Skill):</p>
+<ol>
+<li>Vollständige Erfassung von content/de.json und content/en.json (jedes Feld gelesen, nicht nur überflogen).</li>
+<li>Abgleich der gebauten index.html/en/index.html gegen die Content-Dateien, um Render-Logik-Effekte zu erfassen (bedingtes Ausblenden bei Platzhaltern, tatsächliche DOM-Reihenfolge vs. deklarierte Nav-Reihenfolge).</li>
+<li>Technische Prüfung: Asset-Größen, Bild-Handling, Heading-Hierarchie, Meta-Tag-Längen (Zeichenzählung), JSON-LD-Typen, robots.txt, sitemap.xml, llms.txt.</li>
+<li>Cross-Referenzierung von Fakten-Aussagen zwischen Sektionen (Qualifikationen vs. Erfahrung vs. FAQ; DE vs. EN) auf Widersprüche.</li>
+<li>Abgleich gegen die dokumentierten Fakten- und Sprachregeln (Zeugnis-Zitate, Harte Regeln aus dem Positionierungs-Skill).</li>
+<li>Buzzword-Scan gegen eine definierte Vermeidungsliste (automatisiert, keine Stichprobe).</li>
+<li>Framework-Analyse (AIDA/PAS/BAB) je Sektion, qualitativ anhand der Textstruktur.</li>
+<li>UX-Writing-Check: CTA-Konsistenz, Tonalitäts-Konsistenz, Terminologie-Konsistenz, Scanbarkeit, Wortzahl/Lesezeit.</li>
+</ol>
+<p><strong>Nächste Prüfung:</strong> empfohlen nach Umsetzung der Maßnahmen 1–7 (Kritisch + Hoch), zur Verifikation. Diese Version (v1.0) dient als Baseline für den Vergleich.</p>
+
+</body>
+</html>

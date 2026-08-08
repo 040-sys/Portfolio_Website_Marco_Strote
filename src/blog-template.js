@@ -28,6 +28,8 @@ const readingTime = (c, post) => c.blog.readingTime.replace('{n}', String(post.m
 
 function shell(c, page, body, extraSchemas = []) {
   const canonical = abs(c, page.path);
+  const hasAlt = !!(page.hrefDe && page.hrefEn);
+  const altHref = hasAlt ? (c.lang === 'de' ? page.hrefEn : page.hrefDe) : null;
 
   return `<!doctype html>
 <html lang="${esc(c.lang)}">
@@ -42,7 +44,14 @@ function shell(c, page, body, extraSchemas = []) {
 <meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)">
 
 <link rel="canonical" href="${esc(canonical)}">
-<link rel="alternate" type="application/rss+xml" title="${ta(c.blog.feedLabel)}" href="${esc(u(c, '/blog/feed.xml'))}">
+${
+  hasAlt
+    ? `<link rel="alternate" hreflang="de" href="${esc(abs(c, page.hrefDe))}">
+<link rel="alternate" hreflang="en" href="${esc(abs(c, page.hrefEn))}">
+<link rel="alternate" hreflang="x-default" href="${esc(abs(c, page.hrefDe))}">`
+    : ''
+}
+<link rel="alternate" type="application/rss+xml" title="${ta(c.blog.feedLabel)}" href="${esc(u(c, c.blog.path + 'feed.xml'))}">
 
 <meta property="og:type" content="${page.type === 'post' ? 'article' : 'website'}">
 <meta property="og:site_name" content="${esc(c.site.name)}">
@@ -76,8 +85,9 @@ ${extraSchemas.map((s) => `<script type="application/ld+json">\n${jsonLd(s)}\n</
       <a class="nav-link" href="${esc(u(c, c.blog.path))}">${t(c.blog.eyebrow)}</a>
       <a class="nav-link" href="${esc(u(c, c.site.path))}">${t(c.blog.toHomeLabel)}</a>
       <a class="btn btn-primary" href="${esc(u(c, c.site.path + '#' + c.contact.id))}">${t(c.nav.cta.label)}</a>
+      ${altHref ? `<a class="lang-switch" href="${esc(u(c, altHref))}" hreflang="${esc(c.site.altLang)}" lang="${esc(c.site.altLang)}" title="${ta(c.site.altTitle)}">${esc(c.site.altLabel)}</a>` : ''}
     </nav>
-    <a class="lang-switch nav-mobile-only" href="${esc(u(c, c.site.path))}">${t(c.blog.toHomeLabel)}</a>
+    <a class="lang-switch nav-mobile-only" href="${esc(u(c, altHref || c.site.path))}" ${altHref ? `hreflang="${esc(c.site.altLang)}" lang="${esc(c.site.altLang)}" title="${ta(c.site.altTitle)}"` : ''}>${altHref ? esc(c.site.altLabel) : t(c.blog.toHomeLabel)}</a>
   </div>
 </header>
 
@@ -98,7 +108,7 @@ ${body}
       <p>&copy; <span data-current-year>2026</span> ${esc(c.site.name)}. ${t(c.footer.copyright)}</p>
       <nav class="footer-links" aria-label="Legal">
         ${c.footer.links.map((l) => `<a href="${esc(u(c, l.href))}">${t(l.label)}</a>`).join('\n        ')}
-        <a href="${esc(u(c, '/blog/feed.xml'))}">${t(c.blog.feedLabel)}</a>
+        <a href="${esc(u(c, c.blog.path + 'feed.xml'))}">${t(c.blog.feedLabel)}</a>
       </nav>
     </div>
   </div>
@@ -110,12 +120,15 @@ ${body}
 
 /* --- Übersichtsseite ------------------------------------------------------ */
 
-function renderBlogIndex(c, posts) {
+function renderBlogIndex(c, posts, altIndexPath) {
   const page = {
     type: 'index',
     path: c.blog.path,
     title: c.blog.indexTitle,
     description: c.blog.indexDescription,
+    ...(altIndexPath
+      ? { hrefDe: c.lang === 'de' ? c.blog.path : altIndexPath, hrefEn: c.lang === 'en' ? c.blog.path : altIndexPath }
+      : {}),
   };
 
   const schema = {
@@ -182,7 +195,7 @@ function renderBlogIndex(c, posts) {
 
 /* --- Artikelseite --------------------------------------------------------- */
 
-function renderPost(c, post, related) {
+function renderPost(c, post, related, altPostUrl) {
   const page = {
     type: 'post',
     path: post.url,
@@ -190,6 +203,9 @@ function renderPost(c, post, related) {
     description: post.description,
     date: post.date,
     tags: post.tags,
+    ...(altPostUrl
+      ? { hrefDe: c.lang === 'de' ? post.url : altPostUrl, hrefEn: c.lang === 'en' ? post.url : altPostUrl }
+      : {}),
   };
 
   const { html, headings } = render(post.body);
@@ -308,7 +324,7 @@ function renderFeed(c, posts) {
     <description>${esc(clean(c.blog.indexDescription))}</description>
     <language>${esc(c.lang)}</language>
     <lastBuildDate>${now}</lastBuildDate>
-    <atom:link href="${esc(abs(c, '/blog/feed.xml'))}" rel="self" type="application/rss+xml"/>
+    <atom:link href="${esc(abs(c, c.blog.path + 'feed.xml'))}" rel="self" type="application/rss+xml"/>
 ${posts
   .map(
     (p) => `    <item>

@@ -12,8 +12,8 @@
     "altTitle": "Zur deutschen Version wechseln"
   },
   "meta": {
-    "title": "Marco Strote — AI & Transformation Consultant | EU AI Act | Hamburg",
-    "description": "AI and transformation consultant based in Hamburg, Germany. Focused on the EU AI Act, AI strategy and digitalisation with measurable business impact. 14 certifications, 25+ years of experience.",
+    "title": "Marco Strote — AI & Transformation Consultant | Hamburg",
+    "description": "AI and transformation consultant based in the Hamburg area, Germany: AI strategy, process automation and regulatory delivery, including the EU AI Act. 14 certifications, 25+ years of experience.",
     "keywords": "Marco Strote, AI consultant, EU AI Act, AI compliance, AI governance, transformation consultant, digitalisation, project management, PRINCE2, ITIL, Scrum, Hamburg",
     "ogImage": "/assets/img/og-image.jpg",
     "ogImageAlt": "Marco Strote — AI and transformation consultant based in Hamburg",
@@ -38,12 +38,20 @@
         "label": "Experience"
       },
       {
+        "href": "#about",
+        "label": "About"
+      },
+      {
         "href": "#services",
         "label": "Services"
       },
       {
-        "href": "#about",
-        "label": "About"
+        "href": "#writing",
+        "label": "Writing"
+      },
+      {
+        "href": "#work",
+        "label": "Work"
       },
       {
         "href": "#faq",
@@ -139,13 +147,14 @@
     "id": "credentials",
     "eyebrow": "Credentials",
     "title": "Learning, continuously",
-    "lead": "Five qualification areas since 2020, the newest of them AI — each one externally examined and certified.",
+    "lead": "Five qualification areas since 2020, the newest of them AI — fourteen externally examined and certified, one certificate currently in progress.",
     "items": [
       {
         "name": "WBS AI Consultant Certificate",
         "issuer": "WBS TRAINING",
         "year": "2026",
-        "category": "AI"
+        "category": "AI · in progress",
+        "inProgress": true
       },
       {
         "name": "EXIN BCS Practitioner in Requirements Engineering",
@@ -442,9 +451,9 @@
     ]
   },
   "blog": {
-    "enabled": false,
+    "enabled": true,
     "id": "writing",
-    "path": "/blog/",
+    "path": "/en/blog/",
     "eyebrow": "Writing",
     "title": "Written",
     "lead": "Articles on the EU AI Act, AI governance and putting compliance into practice.",
@@ -585,7 +594,7 @@
       },
       {
         "q": "Why the move from sales to consulting?",
-        "a": "It is less a move than a completion. Selling digital and regulatory solutions, I saw over years where implementations actually fail — almost never on technology, almost always on unclear requirements and absent accountability. In 2020 I acquired the methodological side systematically, then immediately led a system introduction as IT project manager. Today I can serve both sides: explain the value and own the delivery."
+        "a": "It is less a move than a completion. Selling digital and regulatory solutions, I saw over years where implementations actually fail — almost never on technology, almost always on unclear requirements and absent accountability. In 2020 I acquired the methodological side systematically, then immediately supported a system introduction as IT project manager. Today I can serve both sides: explain the value and own the delivery."
       },
       {
         "q": "How deep does the governance and EU AI Act experience go?",
@@ -597,7 +606,7 @@
       },
       {
         "q": "Which industries has Marco Strote worked in?",
-        "a": "Across sectors, I now advise mid-sized and large organisations on AI and digital transformation. At 3E (today owned by New Mountain Capital, formerly Verisk) three years selling EHS and compliance solutions to customers in chemicals, retail and pharma; at 1WorldSync (today part of Syndigo) two years of HazMat compliance solutions with an offering focus on DIY and retail. In between, laboratory and environmental analysis, plus several years of e-commerce for retail companies — at hmmh AG (today part of the Plan.Net Group/Serviceplan, clients including Otto and Tchibo), For Sale Digital (still an independent agency in Hamburg) and Akanoo, an AI start-up with its own prediction algorithms for purchase intent — my earliest AI product experience, back in 2016. Plus sales at Egencia (today part of American Express Global Business Travel). Earlier in my career, controlling roles at SinnerSchrader (today Accenture Song), Kabel New Media and TBG Nord-Beton (then part of the Holcim group)."
+        "a": "Across sectors: I currently advise mid-sized and large organisations on AI and digital transformation, with experience in chemicals, retail, pharma and EHS/compliance, plus several years in e-commerce. Career stations at a glance: 3E/New Mountain Capital (3 years EHS/compliance sales, chemicals/retail/pharma), 1WorldSync/Syndigo (2 years HazMat compliance, DIY/retail), laboratory and environmental analysis, several years of e-commerce at hmmh AG (today part of the Plan.Net Group/Serviceplan, clients including Otto and Tchibo), For Sale Digital and Akanoo (AI start-up, prediction algorithms for purchase intent — my earliest AI product experience, 2016), plus sales at Egencia (today Amex GBT). Early career in controlling at SinnerSchrader (today Accenture Song), Kabel New Media and TBG Nord-Beton (then part of the Holcim group)."
       },
       {
         "q": "Which certifications are held?",
@@ -842,7 +851,7 @@
     "eyebrow": "Services",
     "title": "What I offer",
     "lead": "One experienced point of contact for needs, steering and delivery — instead of several loose interfaces.",
-    "intro": "I clarify needs and goals, translate between leadership, the business and technology, and steer the project through to a working application. I am actively building out technical delivery myself — evidenced by several self-built AI projects with top scores from my ongoing AI Consultant certification program (see “Projects” below). For building custom learning models, I bring in specialised experts as needed.",
+    "intro": "AI initiatives rarely fail because of the technology — they fail because of unclear ownership and a missing translation layer between the worlds involved. That's why I clarify needs and goals, translate between leadership, the business and technology, and steer the project through to a working application. I am actively building out technical delivery myself — evidenced by several self-built AI projects with top scores from my ongoing AI Consultant certification program (see “Projects” below). For building custom learning models, I bring in specialised experts as needed.",
     "items": [
       {
         "title": "AI Strategy & Roadmap",

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing — Marco Strote</title>
+    <link>https://marco-strote.vercel.app/en/blog/</link>
+    <description>Articles by Marco Strote on the EU AI Act, AI governance, risk classification and the practice of AI compliance.</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 08 Aug 2026 13:57:43 GMT</lastBuildDate>
+    <atom:link href="https://marco-strote.vercel.app/en/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>The AI Inventory — The Least Glamorous First Step</title>
+      <link>https://marco-strote.vercel.app/en/blog/ki-inventar-aufbauen.html</link>
+      <guid isPermaLink="true">https://marco-strote.vercel.app/en/blog/ki-inventar-aufbauen.html</guid>
+      <description>No inventory, no risk classification. No classification, no compliance. A practical guide to building a defensible AI inventory — and where it usually falls apart.</description>
+      <category>Practice</category>
+      <pubDate>Thu, 25 Jun 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Agentic AI and Article 14 — The Unresolved Conflict</title>
+      <link>https://marco-strote.vercel.app/en/blog/agentic-ai-und-artikel-14.html</link>
+      <guid isPermaLink="true">https://marco-strote.vercel.app/en/blog/agentic-ai-und-artikel-14.html</guid>
+      <description>The EU AI Act requires human oversight of AI decisions. Autonomous agents decide at machine speed. What companies need to ensure regardless.</description>
+      <category>Analysis</category>
+      <pubDate>Thu, 28 May 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Deployers, Not Just Providers — Who the EU AI Act Actually Affects</title>
+      <link>https://marco-strote.vercel.app/en/blog/betreiber-nicht-nur-anbieter.html</link>
+      <guid isPermaLink="true">https://marco-strote.vercel.app/en/blog/betreiber-nicht-nur-anbieter.html</guid>
+      <description>Most companies think the EU AI Act only concerns those who build AI. If you use someone else&#39;s AI, you&#39;re a deployer — with obligations. Since February 2025.</description>
+      <category>Analysis</category>
+      <pubDate>Wed, 20 May 2026 09:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

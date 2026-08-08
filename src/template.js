@@ -807,7 +807,7 @@ function homeSchemas(c) {
       name: clean(it.name),
       credentialCategory: 'certificate',
       ...(isPlaceholder(it.issuer) ? {} : { recognizedBy: { '@type': 'Organization', name: clean(it.issuer) } }),
-      ...(isPlaceholder(it.year) ? {} : { dateCreated: clean(it.year) }),
+      ...(isPlaceholder(it.year) || it.inProgress ? {} : { dateCreated: clean(it.year) }),
     }));
   if (credentials.length) person.hasCredential = credentials;
 

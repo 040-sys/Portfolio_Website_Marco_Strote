@@ -20,7 +20,7 @@
 
 ## Zertifizierungen
 
-- WBS-Zertifikat KI-Consultant (WBS TRAINING, 2026)
+- WBS-Zertifikat KI-Consultant (WBS TRAINING, 2026 – läuft noch)
 - EXIN BCS Practitioner in Requirements Engineering (EXIN, 2020)
 - EXIN BCS Practitioner in Business Analysis Practice (EXIN, 2020)
 - EXIN BCS Practitioner in Modelling Business Processes (EXIN, 2021)
@@ -92,7 +92,7 @@ Alle drei Modelle sind möglich. Mein Standort ist Wentorf bei Hamburg, die Metr
 
 ### Warum der Wechsel von Vertrieb zu Beratung?
 
-Es ist weniger ein Wechsel als eine Vervollständigung. Im Vertrieb digitaler und regulatorischer Lösungen habe ich über Jahre gesehen, woran Einführungen tatsächlich scheitern — fast nie an der Technik, fast immer an unklaren Anforderungen und fehlender Verantwortung. 2020 habe ich mir die Methodenseite systematisch angeeignet, direkt danach als IT-Projektmanager ein System eingeführt. Heute kann ich beide Seiten bedienen: den Nutzen erklären und die Umsetzung verantworten.
+Es ist weniger ein Wechsel als eine Vervollständigung. Im Vertrieb digitaler und regulatorischer Lösungen habe ich über Jahre gesehen, woran Einführungen tatsächlich scheitern — fast nie an der Technik, fast immer an unklaren Anforderungen und fehlender Verantwortung. 2020 habe ich mir die Methodenseite systematisch angeeignet, direkt danach als IT-Projektmanager ein System mit eingeführt. Heute kann ich beide Seiten bedienen: den Nutzen erklären und die Umsetzung verantworten.
 
 ### Wie tief geht die Governance- und EU-AI-Act-Erfahrung?
 
@@ -104,7 +104,7 @@ Kommt auf das Projekt an. Wenn ein eigenes Lernmodell trainiert oder statistisch
 
 ### In welchen Branchen hat Marco Strote gearbeitet?
 
-Branchenübergreifend berate ich heute Mittelstand und Großunternehmen in KI und digitaler Transformation. Bei 3E (heute bei New Mountain Capital, vormals Verisk) drei Jahre Vertrieb von EHS- und Compliance-Lösungen für Kunden aus Chemie, Handel und Pharma, bei 1WorldSync (heute Teil von Syndigo) zwei Jahre HazMat-Compliance-Lösungen mit Angebotsfokus auf DIY und Handel. Dazwischen Labor- und Umweltanalytik sowie mehrere Jahre E-Commerce für Handelsunternehmen — bei hmmh AG (heute Teil von Plan.Net/Serviceplan, Kunden u. a. Otto und Tchibo), For Sale Digital (weiterhin eigenständige Agentur in Hamburg) und Akanoo, einem KI-Start-up mit eigenen Prognose-Algorithmen für Kaufabsichten — meine früheste KI-Produkt-Erfahrung, bereits 2016. Dazu Vertrieb bei Egencia (heute Teil von American Express Global Business Travel). In den ersten Berufsjahren Controlling für SinnerSchrader (heute Accenture Song), Kabel New Media und TBG Nord-Beton (damals Holcim-Gruppe).
+Branchenübergreifend: Aktuell berate ich Mittelstand und Großunternehmen in KI und digitaler Transformation, mit Erfahrung aus Chemie, Handel, Pharma und Compliance/EHS sowie mehreren Jahren E-Commerce. Stationen im Überblick: 3E/New Mountain Capital (3 Jahre EHS-/Compliance-Vertrieb, Chemie/Handel/Pharma), 1WorldSync/Syndigo (2 Jahre HazMat-Compliance, DIY/Handel), Labor- und Umweltanalytik, mehrere Jahre E-Commerce bei hmmh AG (heute Plan.Net/Serviceplan, u. a. Otto und Tchibo), For Sale Digital und Akanoo (KI-Start-up, Prognose-Algorithmen für Kaufabsichten — meine früheste KI-Produkt-Erfahrung, 2016), dazu Vertrieb bei Egencia (heute Amex GBT). Berufseinstieg im Controlling bei SinnerSchrader (heute Accenture Song), Kabel New Media und TBG Nord-Beton (damals Holcim-Gruppe).
 
 ### Welche Zertifizierungen liegen vor?
 
@@ -120,7 +120,8 @@ Per E-Mail an mstrote@yahoo.de oder über LinkedIn. Ich antworte in der Regel in
 - [Homepage (English)](https://marco-strote.vercel.app/en/)
 - [Lebenslauf](https://marco-strote.vercel.app/lebenslauf.html)
 - [Beiträge](https://marco-strote.vercel.app/blog/)
+- [Writing (English)](https://marco-strote.vercel.app/en/blog/)
 - [Impressum](https://marco-strote.vercel.app/impressum.html)
 - [Datenschutz](https://marco-strote.vercel.app/datenschutz.html)
 
-Stand: 2026-08-07
+Stand: 2026-08-08
