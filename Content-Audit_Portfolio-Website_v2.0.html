@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Content-Audit: Portfolio-Website — Folgeaudit v2.0</title>
+<style>
+  body { font-family: Georgia, 'Times New Roman', serif; color: #14130f; max-width: 860px; margin: 40px auto; line-height: 1.55; font-size: 15px; padding: 0 20px; }
+  h1 { font-size: 25px; margin-bottom: 4px; }
+  h2 { font-size: 19px; margin-top: 40px; border-bottom: 1px solid #ded8cc; padding-bottom: 6px; }
+  h3 { font-size: 16px; margin-top: 26px; margin-bottom: 6px; color: #a84d24; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 8px 0; padding-left: 22px; }
+  li { margin: 4px 0; }
+  blockquote { border-left: 3px solid #a84d24; margin: 10px 0; padding: 4px 16px; background: #f7f5f0; font-style: italic; }
+  .meta { color: #6e6a61; font-size: 13px; }
+  .highlight { background: #fbeee6; padding: 14px 18px; border-radius: 6px; margin: 16px 0; }
+  hr { border: none; border-top: 1px solid #ded8cc; margin: 30px 0; }
+  strong { color: #14130f; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #ded8cc; vertical-align: top; }
+  th { color: #6e6a61; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.02em; }
+  .fund { border-left: 3px solid #ded8cc; padding: 10px 16px; margin: 14px 0; background: #faf9f6; }
+  .fund.kritisch { border-left-color: #c0392b; }
+  .fund.hoch { border-left-color: #a84d24; }
+  .fund.mittel { border-left-color: #c9a227; }
+  .fund.staerke { border-left-color: #4a7c59; }
+  code { background: #f0ede6; padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  .toc { background: #f7f5f0; border: 1px solid #ded8cc; border-radius: 6px; padding: 16px 22px; font-size: 14px; }
+  .toc a { color: #a84d24; text-decoration: none; }
+  .badge { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 10px; background: #ded8cc; color: #45413a; margin-left: 6px; }
+  .nachtrag { background: #eef4ee; border: 1px solid #4a7c59; border-radius: 6px; padding: 14px 20px; margin: 18px 0; }
+  .nachtrag h2 { border: none; margin-top: 0; }
+  .erledigt { color: #4a7c59; font-weight: 700; }
+  .fehlalarm { color: #a84d24; font-weight: 700; }
+  .offen { color: #6e6a61; }
+  s { color: #918c80; }
+</style>
+</head>
+<body>
+
+<h1>Content-Audit: Portfolio-Website marco-strote.vercel.app — Folgeaudit v2.0</h1>
+<p class="meta">
+<strong>Version:</strong> 2.0 &nbsp;·&nbsp;
+<strong>Geprüft am:</strong> 08.08.2026, 16:03 Uhr (CEST) &nbsp;·&nbsp;
+<strong>Bezug:</strong> Folgeaudit zu Content-Audit_Portfolio-Website_v1.0 (geprüft 08.08.2026, 10:37 Uhr, mit Nachtrag 16:20 Uhr) &nbsp;·&nbsp;
+<strong>Geprüft von:</strong> Claude
+</p>
+<p class="meta"><strong>Geprüfter Datenstand:</strong> content/de.json, content/en.json, content/blog-en/*.md, gerenderte Ausgabe (index.html, en/index.html, blog/*, en/blog/*, sitemap.xml, llms.txt, JSON-LD) — frischer Build vom 08.08.2026, 16:03 Uhr.</p>
+<p class="meta"><strong>Scope:</strong> (1) Alle 12 Maßnahmen aus der v1.0-Liste einzeln nachverifiziert. (2) Neue EN-Blog-Infrastruktur vollständig geprüft. (3) Welle-3-Änderungen geprüft. (4) Erneuter Cross-Check auf neue Widersprüche. <strong>Nicht erneut geprüft:</strong> unveränderte Stärken aus v1.0 (Performance, Heading-Hierarchie, AIDA/BAB außerhalb geänderter Sektionen).</p>
+
+<div class="toc">
+<strong>Inhalt</strong>
+<ol>
+<li><a href="#summary">Management Summary</a></li>
+<li><a href="#teila">Teil A — Status aller v1.0-Maßnahmen</a></li>
+<li><a href="#teilb">Teil B — Neue Befunde</a></li>
+<li><a href="#teilc">Teil C — EN-Blog-Infrastruktur (nachgeprüft)</a></li>
+<li><a href="#teild">Teil D — Welle-3-Änderungen (nachgeprüft)</a></li>
+<li><a href="#teile">Teil E — Weiterhin offene Punkte</a></li>
+<li><a href="#massnahmen">Priorisierte Maßnahmenliste v2.0</a></li>
+</ol>
+</div>
+
+<h2 id="summary">Management Summary</h2>
+<p><strong>9 von 12 Maßnahmen aus der v1.0-Liste sind vollständig erledigt und im aktuellen Build verifiziert</strong> — inklusive der technisch aufwendigsten (EN-Blog, zweisprachig mit funktionierendem hreflang, Feed und Sitemap-Einträgen). Ein Punkt war ein Fehlalarm (Web3Forms). <strong>3 Punkte sind weiterhin offen</strong> — zwei davon unverändert seit v1.0 (Meta-Description-Länge, Meta-Keywords-Tag), einer bewusst zurückgestellt (Testimonials).</p>
+<p>Bei der Nachprüfung sind <strong>zwei neue, bisher nicht bemerkte Befunde</strong> aufgetaucht — beide vermutlich Nebenwirkungen der Welle-1-Korrekturen vom 07./08.08.2026, nicht der heutigen Welle-3-Änderungen:</p>
+<ol>
+<li>🟡 Die Qualifikationen-Lead-Zeile ("vierzehn extern geprüft und zertifiziert, ein Zertifikat aktuell in Abschluss") liest sich bei genauem Lesen als 14 fertige <strong>plus</strong> 1 laufendes Zertifikat (= 15) — tatsächlich sind es 14 insgesamt (13 fertig + 1 laufend). Die FAQ-Antwort zur selben Frage ist bereits korrekt formuliert; nur die kurze Lead-Zeile ist mehrdeutig.</li>
+<li>🟡 10 von 11 Stationsorten in der Erfahrungs-Sektion (DE+EN) verwenden "Hamburg & Umgebung"/"Hamburg area" — das widerspricht der im Skill selbst festgehaltenen Regel, wonach einzelne Arbeitgeber-Standorte nur als "Hamburg" erscheinen sollen. Nur die hmmh-Station folgt der Regel bereits korrekt.</li>
+</ol>
+<p>Die Welle-3-Änderungen selbst (Leistungen-PAS-Intro, FAQ-Branchen-Kürzung) sind sauber umgesetzt und wurden ohne Beanstandung verifiziert.</p>
+
+<h2 id="teila">Teil A — Status aller v1.0-Maßnahmen</h2>
+<table>
+<tr><th>#</th><th>Befund (v1.0)</th><th>Status v1.0-Nachtrag</th><th>Jetzt verifiziert</th></tr>
+<tr><td>1</td><td>WBS-Zertifikat als abgeschlossen dargestellt</td><td class="erledigt">✅ Erledigt</td><td>✅ Bestätigt (category/inProgress/JSON-LD/llms.txt korrekt) — aber neue Randbemerkung, siehe B1</td></tr>
+<tr><td>2</td><td>EN-FAQ „led a system introduction"</td><td class="erledigt">✅ Erledigt</td><td>✅ Bestätigt — jetzt "supported"</td></tr>
+<tr><td>3</td><td>Meta-Title/-Description EU-AI-Act-lastig</td><td class="erledigt">✅ Website erledigt</td><td class="offen">🟡 Teilweise — Title korrekt, Description weiterhin zu lang (siehe E1)</td></tr>
+<tr><td>4</td><td>Kontaktformular nie konfiguriert</td><td class="fehlalarm">⚠️ Fehlalarm</td><td>✅ Bestätigt als Fehlalarm</td></tr>
+<tr><td>5</td><td>„Projekte"/„Work" fehlt in Navigation</td><td class="erledigt">✅ Erledigt</td><td>✅ Bestätigt, DOM-Reihenfolge geprüft</td></tr>
+<tr><td>6</td><td>EN-Navigation falsche Reihenfolge</td><td class="erledigt">✅ Erledigt</td><td>✅ Bestätigt, exakt spiegelbildlich zur DE-Reihenfolge</td></tr>
+<tr><td>7</td><td>EN-Blog deaktiviert</td><td class="erledigt">✅ Erledigt</td><td>✅ Bestätigt, siehe Teil C</td></tr>
+<tr><td>8</td><td>Meta-Description-Länge</td><td class="offen">⏳ Offen</td><td class="offen">🟡 Weiterhin offen, DE sogar länger (186 statt 176 Zeichen)</td></tr>
+<tr><td>9</td><td>Leistungen-Sektion ohne PAS-Rahmen</td><td class="erledigt">✅ Erledigt (Welle 3)</td><td>✅ Bestätigt, siehe Teil D1</td></tr>
+<tr><td>10</td><td>FAQ „Branchen"-Antwort zu dicht</td><td class="erledigt">✅ Erledigt (Welle 3)</td><td>✅ Bestätigt, siehe Teil D2</td></tr>
+<tr><td>11</td><td>Testimonials deaktiviert</td><td class="offen">⏳ Zurückgestellt</td><td class="offen">⏳ Unverändert, bewusst</td></tr>
+<tr><td>12</td><td>Meta-Keywords-Tag ohne Wirkung</td><td class="offen">⏳ Offen</td><td class="offen">⏳ Unverändert offen</td></tr>
+</table>
+<p><strong>Bilanz:</strong> 9 erledigt, 1 Fehlalarm, 3 weiterhin offen (2 unverändert, 1 bewusst zurückgestellt).</p>
+
+<h2 id="teilb">Teil B — Neue Befunde (bei der Nachprüfung entdeckt)</h2>
+
+<h3>B1. 🟡 Qualifikationen-Lead-Zeile: Zählweise mehrdeutig</h3>
+<p><strong>Fundstelle:</strong> <code>certifications.lead</code> (DE + EN)</p>
+<blockquote>DE: „Fünf Qualifikationsfelder seit 2020, das jüngste davon KI — <strong>vierzehn extern geprüft und zertifiziert, ein Zertifikat aktuell in Abschluss.</strong>"<br>
+EN: „Five qualification areas since 2020, the newest of them AI — <strong>fourteen externally examined and certified, one certificate currently in progress.</strong>"</blockquote>
+<p>Bei wörtlicher Lesart sagt der Satz: 14 Zertifikate sind bereits geprüft und zertifiziert, <strong>zusätzlich</strong> ist eines in Abschluss — macht in Summe 15. Tatsächlich sind es 14 insgesamt: 13 abgeschlossen, 1 (WBS-Zertifikat KI-Consultant) noch laufend. <code>certifications.items</code> enthält exakt 14 Einträge, das bestätigt die 14-Gesamtzahl.</p>
+<p>Die FAQ-Antwort zur selben Frage formuliert es bereits korrekt: „<strong>Vierzehn</strong> Zertifizierungen: <strong>dreizehn</strong> von AXELOS und EXIN [...] — ergänzt um das WBS-Zertifikat KI-Consultant (voraussichtlicher Abschluss: August 2026)." Auch llms.txt ist korrekt. Nur die kurze Lead-Zeile direkt unter der Sektionsüberschrift ist betroffen — ausgerechnet die Stelle, die bei einem schnellen Überfliegen (Recruiter-Zielgruppe!) zuerst hängen bleibt.</p>
+<p><strong>Vermutliche Ursache:</strong> Die Lead-Zeile wurde am 07.08.2026 im Rahmen der WBS-Status-Korrektur angepasst, dabei ist die alte Formulierung nicht sauber auf die neue Zählweise umgestellt worden.</p>
+<p><strong>Empfehlung:</strong> DE: „...vierzehn Zertifizierungen insgesamt, davon dreizehn extern geprüft und zertifiziert, eine aktuell in Abschluss." EN entsprechend: „...fourteen certifications in total, thirteen externally examined and certified, one currently in progress."</p>
+
+<h3>B2. 🟡 Stationsorte "Hamburg & Umgebung"/"Hamburg area" widersprechen der eigenen Skill-Regel</h3>
+<p><strong>Fundstelle:</strong> <code>experience.items[].location</code> (DE + EN), 10 von 11 nicht-leeren Einträgen</p>
+<p>Der Skill <code>marco-positionierung-content</code> hält unter "Harte Regeln" fest: „Für Standortnennungen zu einzelnen Arbeitgebern in Werdegangsdaten immer nur 'Hamburg', nie 'Hamburg & Umgebung'/'Hamburg area'." Auf der Website selbst wird diese Regel aktuell an 10 von 11 Stationen mit Ortsangabe nicht eingehalten — betroffen u. a. "Selbstständig" (beide Zeiträume), Akanoo, For Sale Digital, ISA, EURO TREND, SinnerSchrader, Kabel New Media, TBG Nord-Beton. Einzige korrekte Ausnahme: die hmmh-Station ("Hamburg").</p>
+<p>Keine Falschangabe — "Hamburg & Umgebung" ist sachlich zutreffend — aber eine Inkonsistenz zwischen der Skill-Regel und dem Live-Content.</p>
+<p><strong>Empfehlung:</strong> Entweder die 10 Einträge auf schlichtes "Hamburg" vereinheitlichen, oder die Skill-Regel präzisieren (z. B. "CVs: nur 'Hamburg', Website: 'Hamburg & Umgebung' erlaubt").</p>
+
+<h2 id="teilc">Teil C — EN-Blog-Infrastruktur (neu seit v1.0, vollständig nachgeprüft)</h2>
+<p>Alle Punkte technisch verifiziert, nicht nur behauptet:</p>
+<ul>
+<li><strong>Übersetzung vollständig:</strong> Alle drei Artikel liegen komplett auf Englisch vor, Register-2-Stimme beibehalten, keine gekürzten Zusammenfassungen.</li>
+<li><strong>hreflang korrekt gesetzt:</strong> Blog-Index und alle 3 Artikelseiten haben hreflang de/en/x-default, Ziel-URLs stimmen exakt.</li>
+<li><strong>RSS-Feeds getrennt und korrekt:</strong> /blog/feed.xml und /en/blog/feed.xml mit jeweils eigenem atom:link — der zuvor hartcodierte Pfad-Bug ist behoben.</li>
+<li><strong>Sitemap zweisprachig:</strong> Blog-Index und alle Artikel beider Sprachen mit korrekten hreflang-Alternates.</li>
+<li><strong>Navigation konsistent:</strong> DE "Beiträge" / EN "Writing" an derselben Position, verlinkt auf sprachspezifischen Blog-Pfad.</li>
+<li><strong>llms.txt aktualisiert:</strong> Verweist jetzt auf beide Blog-Versionen.</li>
+<li><strong>Lang-Switch auf Blog-Seiten:</strong> Wechsel zwischen DE/EN-Fassung eines Artikels funktioniert artikelweise.</li>
+</ul>
+<p>Keine Beanstandung.</p>
+
+<h2 id="teild">Teil D — Welle-3-Änderungen (heute umgesetzt, nachgeprüft)</h2>
+<h3>D1. Leistungen-Intro (PAS-Rahmen)</h3>
+<p>Intro beginnt jetzt mit einem Problem-Satz vor der Lösung, DE und EN geprüft, Kernaussage unverändert, keine neuen Fakten behauptet. Die Formulierung "scheitern selten an der Technik" greift dieselbe Kernaussage wie Absatz 1 in "Über mich" auf — bewusste Wiederholung des Leitmotivs, eher Stärke als Redundanz.</p>
+<h3>D2. FAQ „In welchen Branchen..." gekürzt</h3>
+<p>Direkter Antwortsatz vorweg, danach "Stationen im Überblick" als kompakte Aufzählung. Alle Fakten bleiben erhalten, ca. 20 % kürzer, Struktur passt jetzt besser zum Sektionsversprechen "Direkt beantwortet."</p>
+<p>Keine Beanstandung an beiden Änderungen.</p>
+
+<h2 id="teile">Teil E — Weiterhin offene Punkte</h2>
+<h3>E1. 🟡 Meta-Description weiterhin zu lang</h3>
+<p>DE: 186 Zeichen (v1.0: 176), EN: 194 Zeichen (v1.0: 193). Google zeigt üblicherweise nur rund 155–160 Zeichen an. Die Wave-1-Neuformulierung hat den EU-AI-Act-Schwerpunkt korrigiert, dabei aber ungewollt Zeichen hinzugefügt statt reduziert.</p>
+<p><strong>Empfehlung:</strong> DE auf ca. 150–155 Zeichen kürzen, z. B.: „KI- und Transformationsberater aus dem Großraum Hamburg: KI-Strategie, Prozessautomatisierung, EU AI Act. 14 Zertifizierungen, 25+ Jahre Erfahrung." (≈145 Zeichen). EN entsprechend.</p>
+<h3>E2. ⚪ Meta-Keywords-Tag weiterhin ohne Wirkung</h3>
+<p>Unverändert seit v1.0 — kein Google-Effekt seit 2009, reiner Pflegeaufwand. Kein Handlungsdruck.</p>
+<h3>E3. ⏳ Testimonials weiterhin deaktiviert</h3>
+<p>Unverändert, bewusste Entscheidung bis reale Zitate vorliegen. Kein Fehler.</p>
+
+<h2 id="massnahmen">Priorisierte Maßnahmenliste v2.0</h2>
+<table>
+<tr><th>#</th><th>Befund</th><th>Schweregrad</th><th>Aufwand</th><th>Vorschlag</th></tr>
+<tr><td>1</td><td>Qualifikationen-Lead-Zeile zählt mehrdeutig (14+1 statt 14 gesamt)</td><td>🟡 Mittel</td><td>Sehr niedrig</td><td>Lead-Zeile DE+EN umformulieren</td></tr>
+<tr><td>2</td><td>Meta-Description weiterhin zu lang (186/194 Zeichen)</td><td>🟡 Mittel</td><td>Niedrig</td><td>Auf ~150–155 Zeichen kürzen</td></tr>
+<tr><td>3</td><td>Stationsorte "Hamburg & Umgebung" widersprechen Skill-Regel</td><td>🟡 Mittel</td><td>Niedrig</td><td>Vereinheitlichen oder Skill-Regel präzisieren</td></tr>
+<tr><td>4</td><td>Meta-Keywords-Tag ohne Wirkung</td><td>⚪ Hinweis</td><td>Sehr niedrig</td><td>Optional entfernen</td></tr>
+<tr><td>5</td><td>Testimonials deaktiviert</td><td>⚪ Hinweis</td><td>Hoch</td><td>Zurückstellen, bis echte Zitate vorliegen</td></tr>
+</table>
+<p>Alle übrigen v1.0-Punkte sind erledigt oder als Fehlalarm aufgeklärt — siehe Teil A.</p>
+
+</body>
+</html>

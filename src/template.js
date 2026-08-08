@@ -80,7 +80,6 @@ function head(c, page) {
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${esc(page.title)}</title>
 <meta name="description" content="${ta(page.description)}">
-${page.keywords ? `<meta name="keywords" content="${esc(page.keywords)}">` : ''}
 <meta name="author" content="${esc(c.site.name)}">
 <meta name="google-site-verification" content="YcrjtzF4N9nPmfRRZQushdbAwVTft6cj7F_-xgc2KZw" />
 <meta name="robots" content="${page.noindex || c.site.noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}">
@@ -868,7 +867,6 @@ function renderHome(c, posts = []) {
     homePath: c.site.path,
     title: c.meta.title,
     description: c.meta.description,
-    keywords: c.meta.keywords,
     hrefDe: c.lang === 'de' ? c.site.path : c.site.altPath,
     hrefEn: c.lang === 'en' ? c.site.path : c.site.altPath,
   };

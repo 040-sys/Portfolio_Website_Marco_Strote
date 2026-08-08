@@ -13,8 +13,7 @@
   },
   "meta": {
     "title": "Marco Strote — KI- & Transformationsberater | Hamburg",
-    "description": "KI- und Transformationsberater aus dem Großraum Hamburg: KI-Strategie, Prozessautomatisierung und regulatorische Umsetzung, inkl. EU AI Act. 14 Zertifizierungen, über 25 Jahre Erfahrung.",
-    "keywords": "Marco Strote, KI-Berater, EU AI Act, KI-Compliance, Transformationsberater, Digitalisierung, Projektmanagement, PRINCE2, ITIL, Scrum, Hamburg",
+    "description": "KI- und Transformationsberater, Großraum Hamburg: KI-Strategie, Prozessautomatisierung, EU AI Act. 14 Zertifizierungen, 25+ Jahre Erfahrung.",
     "ogImage": "/assets/img/og-image.jpg",
     "ogImageAlt": "Marco Strote — KI- und Transformationsberater aus Hamburg",
     "jobTitle": "KI- & Transformationsberater"
@@ -147,7 +146,7 @@
     "id": "qualifikationen",
     "eyebrow": "Qualifikationen",
     "title": "Laufend dazugelernt",
-    "lead": "Fünf Qualifikationsfelder seit 2020, das jüngste davon KI — vierzehn extern geprüft und zertifiziert, ein Zertifikat aktuell in Abschluss.",
+    "lead": "Fünf Qualifikationsfelder seit 2020, das jüngste davon KI — vierzehn Zertifizierungen insgesamt, davon dreizehn extern geprüft und zertifiziert, eine aktuell in Abschluss.",
     "items": [
       {
         "name": "WBS-Zertifikat KI-Consultant",
@@ -261,7 +260,7 @@
         "period": "Juli 2025 — heute",
         "role": "Berater für KI, Digitalisierung & Transformation",
         "company": "Selbstständig",
-        "location": "Hamburg & Umgebung",
+        "location": "Hamburg",
         "summary": "Begleitung von Unternehmen bei der strategischen und operativen Umsetzung von KI-Projekten, digitalen Transformationsvorhaben und Prozessoptimierungen — mit dem Ziel, messbaren Business Impact zu erzielen.",
         "highlights": [
           "Entwicklung von KI-Strategien und Roadmaps für mittelständische und große Unternehmen",
@@ -313,7 +312,7 @@
         "period": "Juli 2019 — Apr. 2021",
         "role": "Berater für Digitalisierung & Transformation",
         "company": "Selbstständig",
-        "location": "Hamburg & Umgebung",
+        "location": "Hamburg",
         "summary": "Beratung zu Digitalisierungsvorhaben und Prozessgestaltung, parallel zur methodischen Weiterqualifizierung.",
         "highlights": []
       },
@@ -329,7 +328,7 @@
         "period": "2016",
         "role": "Senior Sales Manager",
         "company": "Akanoo",
-        "location": "Hamburg & Umgebung",
+        "location": "Hamburg",
         "summary": "Vertrieb einer KI-gestützten Personalisierungslösung für E-Commerce — selbstlernende Kaufanreize in Echtzeit. Frühe Praxiserfahrung im Vertrieb von KI-Produkten und MarTech.",
         "highlights": []
       },
@@ -337,7 +336,7 @@
         "period": "2014 — 2016",
         "role": "Account Manager Online",
         "company": "For Sale Digital Internet-Agentur GmbH",
-        "location": "Hamburg & Umgebung",
+        "location": "Hamburg",
         "summary": "Betreuung und Entwicklung von Kunden im Bereich digitaler Vertriebs- und Marketinglösungen.",
         "highlights": []
       },
@@ -353,7 +352,7 @@
         "period": "2009 — 2011",
         "role": "Berater für Digitalisierung & Transformation",
         "company": "Selbstständig",
-        "location": "Hamburg & Umgebung",
+        "location": "Hamburg",
         "summary": "Erste selbstständige Beratungstätigkeit rund um Digitalisierung und Geschäftsprozesse.",
         "highlights": []
       },
@@ -361,7 +360,7 @@
         "period": "2010",
         "role": "Leiter Vertrieb",
         "company": "ISA Internet Service Agentur",
-        "location": "Hamburg & Umgebung",
+        "location": "Hamburg",
         "summary": "Vertriebsleitung bei einer Hamburger Internetagentur.",
         "highlights": []
       },
@@ -377,7 +376,7 @@
         "period": "2002 — 2007",
         "role": "Leiter Vertrieb & E-Commerce",
         "company": "EURO TREND",
-        "location": "Hamburg & Umgebung",
+        "location": "Hamburg",
         "summary": "Aufbau und Leitung von Vertrieb und E-Commerce über fünf Jahre.",
         "highlights": []
       },
@@ -385,7 +384,7 @@
         "period": "2001 — 2002",
         "role": "Controller",
         "company": "SinnerSchrader",
-        "location": "Hamburg & Umgebung",
+        "location": "Hamburg",
         "summary": "Controlling bei einer der bekanntesten deutschen Digitalagenturen.",
         "highlights": []
       },
@@ -393,7 +392,7 @@
         "period": "2000 — 2001",
         "role": "Controller",
         "company": "Kabel New Media AG",
-        "location": "Hamburg & Umgebung",
+        "location": "Hamburg",
         "summary": "Controlling in einem Hamburger Medienunternehmen.",
         "highlights": []
       },
@@ -401,7 +400,7 @@
         "period": "1998 — 2000",
         "role": "Controller",
         "company": "TBG Nord-Beton",
-        "location": "Hamburg & Umgebung",
+        "location": "Hamburg",
         "summary": "Einstieg ins Berufsleben im Controlling eines Baustoffunternehmens.",
         "highlights": []
       }
